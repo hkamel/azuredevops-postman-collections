@@ -4,6 +4,8 @@
 
 The collection allows you to test common Azure DevOps Rest APIs from within Postman.
 
+![Image of Postman](./images/postman.png)
+
 ## Setup
 
 To setup the Postman collections follow these steps:
