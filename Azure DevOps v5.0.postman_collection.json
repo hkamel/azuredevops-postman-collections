@@ -1,0 +1,1734 @@
+{
+	"info": {
+		"_postman_id": "e1bcbbeb-2718-4cce-8e5b-047a3f181df8",
+		"name": "Azure DevOps v5.0",
+		"description": "Azure DevOps Services REST API Reference",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "Build",
+			"item": [
+				{
+					"name": "Builds",
+					"item": [
+						{
+							"name": "List",
+							"request": {
+								"auth": {
+									"type": "basic",
+									"basic": [
+										{
+											"key": "username",
+											"value": "Basic",
+											"type": "string"
+										},
+										{
+											"key": "password",
+											"value": "{{AccessToken}}",
+											"type": "string"
+										}
+									]
+								},
+								"method": "GET",
+								"header": [
+									{
+										"key": "Content-Type",
+										"name": "Content-Type",
+										"value": "application/json",
+										"type": "text"
+									},
+									{
+										"key": "Authorization",
+										"value": "Basic {{AccessToken}}",
+										"type": "text"
+									}
+								],
+								"body": {
+									"mode": "raw",
+									"raw": ""
+								},
+								"url": {
+									"raw": "https://dev.azure.com/{{OrganizationId}}/{{ProjectName}}/_apis/build/builds?api-version={{api-version}}",
+									"protocol": "https",
+									"host": [
+										"dev",
+										"azure",
+										"com"
+									],
+									"path": [
+										"{{OrganizationId}}",
+										"{{ProjectName}}",
+										"_apis",
+										"build",
+										"builds"
+									],
+									"query": [
+										{
+											"key": "api-version",
+											"value": "{{api-version}}"
+										}
+									]
+								},
+								"description": "Gets a list of builds"
+							},
+							"response": []
+						}
+					],
+					"_postman_isSubFolder": true
+				}
+			]
+		},
+		{
+			"name": "Work",
+			"item": [
+				{
+					"name": "Backlogs",
+					"item": [
+						{
+							"name": "List",
+							"request": {
+								"auth": {
+									"type": "basic",
+									"basic": [
+										{
+											"key": "username",
+											"value": "Basic",
+											"type": "string"
+										},
+										{
+											"key": "password",
+											"value": "{{AccessToken}}",
+											"type": "string"
+										}
+									]
+								},
+								"method": "GET",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": ""
+								},
+								"url": {
+									"raw": "https://dev.azure.com/{{organization}}/{{project}}/{{team}}/_apis/work/backlogs?api-version={{api-version-preview}}",
+									"protocol": "https",
+									"host": [
+										"dev",
+										"azure",
+										"com"
+									],
+									"path": [
+										"{{organization}}",
+										"{{project}}",
+										"{{team}}",
+										"_apis",
+										"work",
+										"backlogs"
+									],
+									"query": [
+										{
+											"key": "api-version",
+											"value": "{{api-version-preview}}"
+										}
+									]
+								},
+								"description": "List all backlog levels"
+							},
+							"response": []
+						}
+					],
+					"_postman_isSubFolder": true
+				},
+				{
+					"name": "Boardcolumns ",
+					"item": [
+						{
+							"name": "List",
+							"request": {
+								"auth": {
+									"type": "basic",
+									"basic": [
+										{
+											"key": "username",
+											"value": "Basic",
+											"type": "string"
+										},
+										{
+											"key": "password",
+											"value": "{{AccessToken}}",
+											"type": "string"
+										}
+									]
+								},
+								"method": "GET",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": ""
+								},
+								"url": {
+									"raw": "https://dev.azure.com/{{organization}}/{{project}}/_apis/work/boardcolumns?api-version={{api-version}}",
+									"protocol": "https",
+									"host": [
+										"dev",
+										"azure",
+										"com"
+									],
+									"path": [
+										"{{organization}}",
+										"{{project}}",
+										"_apis",
+										"work",
+										"boardcolumns"
+									],
+									"query": [
+										{
+											"key": "api-version",
+											"value": "{{api-version}}"
+										}
+									]
+								},
+								"description": "Get available board columns in a project"
+							},
+							"response": []
+						}
+					],
+					"_postman_isSubFolder": true
+				},
+				{
+					"name": "Boardparents ",
+					"item": [
+						{
+							"name": "List",
+							"request": {
+								"auth": {
+									"type": "basic",
+									"basic": [
+										{
+											"key": "username",
+											"value": "Basic",
+											"type": "string"
+										},
+										{
+											"key": "password",
+											"value": "{{AccessToken}}",
+											"type": "string"
+										}
+									]
+								},
+								"method": "GET",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": ""
+								},
+								"url": {
+									"raw": "https://dev.azure.com/{{organization}}/{{project}}/{{team}}/_apis/work/boardcolumns?api-version={{api-version}}",
+									"protocol": "https",
+									"host": [
+										"dev",
+										"azure",
+										"com"
+									],
+									"path": [
+										"{{organization}}",
+										"{{project}}",
+										"{{team}}",
+										"_apis",
+										"work",
+										"boardcolumns"
+									],
+									"query": [
+										{
+											"key": "api-version",
+											"value": "{{api-version}}"
+										}
+									]
+								},
+								"description": "Returns the list of parent field filter model for the given list of workitem ids"
+							},
+							"response": []
+						}
+					],
+					"_postman_isSubFolder": true
+				}
+			]
+		},
+		{
+			"name": "Core",
+			"item": [
+				{
+					"name": "Projects",
+					"item": [
+						{
+							"name": "List all projects",
+							"request": {
+								"auth": {
+									"type": "basic",
+									"basic": [
+										{
+											"key": "username",
+											"value": "Basic",
+											"type": "string"
+										},
+										{
+											"key": "password",
+											"value": "{{AccessToken}}",
+											"type": "string"
+										}
+									]
+								},
+								"method": "GET",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": ""
+								},
+								"url": {
+									"raw": "https://dev.azure.com/{{organization}}/_apis/projects?api-version={{api-version}}",
+									"protocol": "https",
+									"host": [
+										"dev",
+										"azure",
+										"com"
+									],
+									"path": [
+										"{{organization}}",
+										"_apis",
+										"projects"
+									],
+									"query": [
+										{
+											"key": "api-version",
+											"value": "{{api-version}}"
+										}
+									]
+								},
+								"description": "Get all projects in the organization that the authenticated user has access to.\n[https://docs.microsoft.com/en-us/rest/api/azure/devops/core/projects/list?view=azure-devops-rest-5.0](https://docs.microsoft.com/en-us/rest/api/azure/devops/core/projects/list?view=azure-devops-rest-5.0)"
+							},
+							"response": []
+						},
+						{
+							"name": "List projects by optional parameters",
+							"request": {
+								"auth": {
+									"type": "basic",
+									"basic": [
+										{
+											"key": "username",
+											"value": "Basic",
+											"type": "string"
+										},
+										{
+											"key": "password",
+											"value": "{{AccessToken}}",
+											"type": "string"
+										}
+									]
+								},
+								"method": "GET",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": ""
+								},
+								"url": {
+									"raw": "https://dev.azure.com/{{organization}}/_apis/projects?api-version={{api-version}}&stateFilter=all&getDefaultTeamImageUrl=true",
+									"protocol": "https",
+									"host": [
+										"dev",
+										"azure",
+										"com"
+									],
+									"path": [
+										"{{organization}}",
+										"_apis",
+										"projects"
+									],
+									"query": [
+										{
+											"key": "api-version",
+											"value": "{{api-version}}"
+										},
+										{
+											"key": "stateFilter",
+											"value": "all",
+											"description": "ProjectState: all, createPending, deleted, deleting, new, unchanged, wellFormed"
+										},
+										{
+											"key": "top",
+											"value": "10",
+											"disabled": true
+										},
+										{
+											"key": "skip",
+											"value": "",
+											"disabled": true
+										},
+										{
+											"key": "continuationToken",
+											"value": "",
+											"disabled": true
+										},
+										{
+											"key": "getDefaultTeamImageUrl",
+											"value": "true"
+										}
+									]
+								},
+								"description": "Get all projects in the organization that the authenticated user has access to.\n[https://docs.microsoft.com/en-us/rest/api/azure/devops/core/projects/list?view=azure-devops-rest-5.0](https://docs.microsoft.com/en-us/rest/api/azure/devops/core/projects/list?view=azure-devops-rest-5.0)"
+							},
+							"response": []
+						},
+						{
+							"name": "Get Project by Id or name",
+							"request": {
+								"auth": {
+									"type": "basic",
+									"basic": [
+										{
+											"key": "username",
+											"value": "Basic",
+											"type": "string"
+										},
+										{
+											"key": "password",
+											"value": "{{AccessToken}}",
+											"type": "string"
+										}
+									]
+								},
+								"method": "GET",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": ""
+								},
+								"url": {
+									"raw": "https://dev.azure.com/{{organization}}/_apis/projects/{{project}}?api-version={{api-version}}",
+									"protocol": "https",
+									"host": [
+										"dev",
+										"azure",
+										"com"
+									],
+									"path": [
+										"{{organization}}",
+										"_apis",
+										"projects",
+										"{{project}}"
+									],
+									"query": [
+										{
+											"key": "api-version",
+											"value": "{{api-version}}"
+										}
+									]
+								},
+								"description": "Get project with the specified id or name, optionally including capabilities.\n[https://docs.microsoft.com/en-us/rest/api/azure/devops/core/projects/get?view=azure-devops-rest-5.0](https://docs.microsoft.com/en-us/rest/api/azure/devops/core/projects/get?view=azure-devops-rest-5.0)"
+							},
+							"response": []
+						},
+						{
+							"name": "Get Project by Id or name with optional parameters",
+							"request": {
+								"auth": {
+									"type": "basic",
+									"basic": [
+										{
+											"key": "username",
+											"value": "Basic",
+											"type": "string"
+										},
+										{
+											"key": "password",
+											"value": "{{AccessToken}}",
+											"type": "string"
+										}
+									]
+								},
+								"method": "GET",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": ""
+								},
+								"url": {
+									"raw": "https://dev.azure.com/{{organization}}/_apis/projects/{{project}}?api-version={{api-version}}&includeCapabilities=true&includeHistory=true",
+									"protocol": "https",
+									"host": [
+										"dev",
+										"azure",
+										"com"
+									],
+									"path": [
+										"{{organization}}",
+										"_apis",
+										"projects",
+										"{{project}}"
+									],
+									"query": [
+										{
+											"key": "api-version",
+											"value": "{{api-version}}"
+										},
+										{
+											"key": "includeCapabilities",
+											"value": "true",
+											"description": "Include capabilities (such as source control) in the team project result (default: false)."
+										},
+										{
+											"key": "includeHistory",
+											"value": "true",
+											"description": "Search within renamed projects (that had such name in the past)."
+										}
+									]
+								},
+								"description": "Get project with the specified id or name, optionally including capabilities.\n[https://docs.microsoft.com/en-us/rest/api/azure/devops/core/projects/get?view=azure-devops-rest-5.0](https://docs.microsoft.com/en-us/rest/api/azure/devops/core/projects/get?view=azure-devops-rest-5.0)"
+							},
+							"response": []
+						},
+						{
+							"name": "Get all team project properties",
+							"request": {
+								"auth": {
+									"type": "basic",
+									"basic": [
+										{
+											"key": "username",
+											"value": "Basic",
+											"type": "string"
+										},
+										{
+											"key": "password",
+											"value": "{{AccessToken}}",
+											"type": "string"
+										}
+									]
+								},
+								"method": "GET",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": ""
+								},
+								"url": {
+									"raw": "https://dev.azure.com/{{organization}}/_apis/projects/{{projectId}}/properties?api-version={{api-version-preview}}",
+									"protocol": "https",
+									"host": [
+										"dev",
+										"azure",
+										"com"
+									],
+									"path": [
+										"{{organization}}",
+										"_apis",
+										"projects",
+										"{{projectId}}",
+										"properties"
+									],
+									"query": [
+										{
+											"key": "api-version",
+											"value": "{{api-version-preview}}"
+										}
+									]
+								},
+								"description": "Get a collection of team project properties.\n[https://docs.microsoft.com/en-us/rest/api/azure/devops/core/projects/get%20project%20properties?view=azure-devops-rest-5.0](https://docs.microsoft.com/en-us/rest/api/azure/devops/core/projects/get%20project%20properties?view=azure-devops-rest-5.0)"
+							},
+							"response": []
+						},
+						{
+							"name": "Get specific team project properties",
+							"request": {
+								"auth": {
+									"type": "basic",
+									"basic": [
+										{
+											"key": "username",
+											"value": "Basic",
+											"type": "string"
+										},
+										{
+											"key": "password",
+											"value": "{{AccessToken}}",
+											"type": "string"
+										}
+									]
+								},
+								"method": "GET",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": ""
+								},
+								"url": {
+									"raw": "https://dev.azure.com/{{organization}}/_apis/projects/{{projectId}}/properties?api-version={{api-version-preview}}&keys=System.CurrentProcessTemplateId,*SourceControl*",
+									"protocol": "https",
+									"host": [
+										"dev",
+										"azure",
+										"com"
+									],
+									"path": [
+										"{{organization}}",
+										"_apis",
+										"projects",
+										"{{projectId}}",
+										"properties"
+									],
+									"query": [
+										{
+											"key": "api-version",
+											"value": "{{api-version-preview}}"
+										},
+										{
+											"key": "keys",
+											"value": "System.CurrentProcessTemplateId,*SourceControl*",
+											"description": "A comma-delimited string of team project property names. Wildcard characters (\"?\" and \"*\") are supported. If no key is specified, all properties will be returned."
+										}
+									]
+								},
+								"description": "Get a collection of team project properties.\n[https://docs.microsoft.com/en-us/rest/api/azure/devops/core/projects/get%20project%20properties?view=azure-devops-rest-5.0](https://docs.microsoft.com/en-us/rest/api/azure/devops/core/projects/get%20project%20properties?view=azure-devops-rest-5.0)"
+							},
+							"response": []
+						},
+						{
+							"name": "Create",
+							"request": {
+								"auth": {
+									"type": "basic",
+									"basic": [
+										{
+											"key": "username",
+											"value": "Basic",
+											"type": "string"
+										},
+										{
+											"key": "password",
+											"value": "{{AccessToken}}",
+											"type": "string"
+										}
+									]
+								},
+								"method": "POST",
+								"header": [
+									{
+										"key": "Content-Type",
+										"name": "Content-Type",
+										"value": "application/json",
+										"type": "text"
+									}
+								],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n  \"name\": \"FabrikamTravel\",\r\n  \"description\": \"Frabrikam travel app for Windows Phone\",\r\n  \"capabilities\": {\r\n    \"versioncontrol\": {\r\n      \"sourceControlType\": \"Git\"\r\n    },\r\n    \"processTemplate\": {\r\n      \"templateTypeId\": \"6b724908-ef14-45cf-84f8-768b5384da45\"\r\n    }\r\n  }\r\n}"
+								},
+								"url": {
+									"raw": "https://dev.azure.com/{{organization}}/_apis/projects?api-version={{api-version}}",
+									"protocol": "https",
+									"host": [
+										"dev",
+										"azure",
+										"com"
+									],
+									"path": [
+										"{{organization}}",
+										"_apis",
+										"projects"
+									],
+									"query": [
+										{
+											"key": "api-version",
+											"value": "{{api-version}}"
+										}
+									]
+								},
+								"description": "Queues a project to be created. Use the GetOperation to periodically check for create project status.\r\n[https://docs.microsoft.com/en-us/rest/api/azure/devops/core/projects/create?view=azure-devops-rest-5.0](https://docs.microsoft.com/en-us/rest/api/azure/devops/core/projects/create?view=azure-devops-rest-5.0)"
+							},
+							"response": []
+						},
+						{
+							"name": "Create or update a team project property",
+							"request": {
+								"auth": {
+									"type": "basic",
+									"basic": [
+										{
+											"key": "username",
+											"value": "Basic",
+											"type": "string"
+										},
+										{
+											"key": "password",
+											"value": "{{AccessToken}}",
+											"type": "string"
+										}
+									]
+								},
+								"method": "PATCH",
+								"header": [
+									{
+										"key": "Content-Type",
+										"name": "Content-Type",
+										"value": "application/json-patch+json",
+										"type": "text"
+									}
+								],
+								"body": {
+									"mode": "raw",
+									"raw": "[\r\n  {\r\n    \"op\": \"add\",\r\n    \"path\": \"/Alias\",\r\n    \"value\": \"Frabrikam\"\r\n  }\r\n]"
+								},
+								"url": {
+									"raw": "https://dev.azure.com/{{organization}}/_apis/projects/{{projectId}}/properties?api-version={{api-version-preview}}",
+									"protocol": "https",
+									"host": [
+										"dev",
+										"azure",
+										"com"
+									],
+									"path": [
+										"{{organization}}",
+										"_apis",
+										"projects",
+										"{{projectId}}",
+										"properties"
+									],
+									"query": [
+										{
+											"key": "api-version",
+											"value": "{{api-version-preview}}"
+										}
+									]
+								},
+								"description": "Create, update, and delete team project properties.\r\n[https://docs.microsoft.com/en-us/rest/api/azure/devops/core/projects/set%20project%20properties?view=azure-devops-rest-5.0](https://docs.microsoft.com/en-us/rest/api/azure/devops/core/projects/set%20project%20properties?view=azure-devops-rest-5.0)"
+							},
+							"response": []
+						},
+						{
+							"name": "Delete a team project property",
+							"request": {
+								"auth": {
+									"type": "basic",
+									"basic": [
+										{
+											"key": "username",
+											"value": "Basic",
+											"type": "string"
+										},
+										{
+											"key": "password",
+											"value": "{{AccessToken}}",
+											"type": "string"
+										}
+									]
+								},
+								"method": "PATCH",
+								"header": [
+									{
+										"key": "Content-Type",
+										"name": "Content-Type",
+										"type": "text",
+										"value": "application/json-patch+json"
+									}
+								],
+								"body": {
+									"mode": "raw",
+									"raw": "[\r\n  {\r\n    \"op\": \"remove\",\r\n    \"path\": \"/Alias\"\r\n  }\r\n]"
+								},
+								"url": {
+									"raw": "https://dev.azure.com/{{organization}}/_apis/projects/{{projectId}}/properties?api-version={{api-version-preview}}",
+									"protocol": "https",
+									"host": [
+										"dev",
+										"azure",
+										"com"
+									],
+									"path": [
+										"{{organization}}",
+										"_apis",
+										"projects",
+										"{{projectId}}",
+										"properties"
+									],
+									"query": [
+										{
+											"key": "api-version",
+											"value": "{{api-version-preview}}"
+										}
+									]
+								},
+								"description": "Create, update, and delete team project properties.\r\n[https://docs.microsoft.com/en-us/rest/api/azure/devops/core/projects/set%20project%20properties?view=azure-devops-rest-5.0](https://docs.microsoft.com/en-us/rest/api/azure/devops/core/projects/set%20project%20properties?view=azure-devops-rest-5.0)"
+							},
+							"response": []
+						},
+						{
+							"name": "Delete project",
+							"request": {
+								"auth": {
+									"type": "basic",
+									"basic": [
+										{
+											"key": "username",
+											"value": "Basic",
+											"type": "string"
+										},
+										{
+											"key": "password",
+											"value": "{{AccessToken}}",
+											"type": "string"
+										}
+									]
+								},
+								"method": "DELETE",
+								"header": [
+									{
+										"key": "Content-Type",
+										"name": "Content-Type",
+										"type": "text",
+										"value": "application/json-patch+json"
+									}
+								],
+								"body": {
+									"mode": "raw",
+									"raw": "[\r\n  {\r\n    \"op\": \"remove\",\r\n    \"path\": \"/Alias\"\r\n  }\r\n]"
+								},
+								"url": {
+									"raw": "https://dev.azure.com/{{organization}}/_apis/projects/{{projectId}}?api-version={{api-version}}",
+									"protocol": "https",
+									"host": [
+										"dev",
+										"azure",
+										"com"
+									],
+									"path": [
+										"{{organization}}",
+										"_apis",
+										"projects",
+										"{{projectId}}"
+									],
+									"query": [
+										{
+											"key": "api-version",
+											"value": "{{api-version}}"
+										}
+									]
+								},
+								"description": "Queues a project to be deleted. Use the GetOperation to periodically check for delete project status.\r\n[https://docs.microsoft.com/en-us/rest/api/azure/devops/core/projects/delete?view=azure-devops-rest-5.0](https://docs.microsoft.com/en-us/rest/api/azure/devops/core/projects/delete?view=azure-devops-rest-5.0)"
+							},
+							"response": []
+						}
+					],
+					"_postman_isSubFolder": true
+				},
+				{
+					"name": "Processes",
+					"item": [
+						{
+							"name": "Get a process by ID",
+							"request": {
+								"auth": {
+									"type": "basic",
+									"basic": [
+										{
+											"key": "username",
+											"value": "Basic",
+											"type": "string"
+										},
+										{
+											"key": "password",
+											"value": "{{AccessToken}}",
+											"type": "string"
+										}
+									]
+								},
+								"method": "GET",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": ""
+								},
+								"url": {
+									"raw": "https://dev.azure.com/{{organization}}/_apis/process/processes/{{processId}}?api-version={{api-version}}",
+									"protocol": "https",
+									"host": [
+										"dev",
+										"azure",
+										"com"
+									],
+									"path": [
+										"{{organization}}",
+										"_apis",
+										"process",
+										"processes",
+										"{{processId}}"
+									],
+									"query": [
+										{
+											"key": "api-version",
+											"value": "{{api-version}}"
+										}
+									]
+								},
+								"description": "Get a process by ID."
+							},
+							"response": []
+						},
+						{
+							"name": "List all processes",
+							"request": {
+								"auth": {
+									"type": "basic",
+									"basic": [
+										{
+											"key": "username",
+											"value": "Basic",
+											"type": "string"
+										},
+										{
+											"key": "password",
+											"value": "{{AccessToken}}",
+											"type": "string"
+										}
+									]
+								},
+								"method": "GET",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": ""
+								},
+								"url": {
+									"raw": "https://dev.azure.com/{{organization}}/_apis/process/processes?api-version={{api-version}}",
+									"protocol": "https",
+									"host": [
+										"dev",
+										"azure",
+										"com"
+									],
+									"path": [
+										"{{organization}}",
+										"_apis",
+										"process",
+										"processes"
+									],
+									"query": [
+										{
+											"key": "api-version",
+											"value": "{{api-version}}"
+										}
+									]
+								},
+								"description": "Get a list of processes.\r\n[https://docs.microsoft.com/en-us/rest/api/azure/devops/core/processes/list?view=azure-devops-rest-5.0](https://docs.microsoft.com/en-us/rest/api/azure/devops/core/processes/list?view=azure-devops-rest-5.0)"
+							},
+							"response": []
+						}
+					],
+					"_postman_isSubFolder": true
+				},
+				{
+					"name": "Teams ",
+					"item": [
+						{
+							"name": "Get a specific team",
+							"request": {
+								"auth": {
+									"type": "basic",
+									"basic": [
+										{
+											"key": "username",
+											"value": "Basic",
+											"type": "string"
+										},
+										{
+											"key": "password",
+											"value": "{{AccessToken}}",
+											"type": "string"
+										}
+									]
+								},
+								"method": "GET",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": ""
+								},
+								"url": {
+									"raw": "https://dev.azure.com/{{organization}}/_apis/projects/{{projectId}}/teams/{{team}}?api-version={{api-version}}",
+									"protocol": "https",
+									"host": [
+										"dev",
+										"azure",
+										"com"
+									],
+									"path": [
+										"{{organization}}",
+										"_apis",
+										"projects",
+										"{{projectId}}",
+										"teams",
+										"{{team}}"
+									],
+									"query": [
+										{
+											"key": "api-version",
+											"value": "{{api-version}}"
+										}
+									]
+								},
+								"description": "Get a specific team\n[https://docs.microsoft.com/en-us/rest/api/azure/devops/core/teams/get?view=azure-devops-rest-5.0](https://docs.microsoft.com/en-us/rest/api/azure/devops/core/teams/get?view=azure-devops-rest-5.0)"
+							},
+							"response": []
+						},
+						{
+							"name": "Get All Teams",
+							"request": {
+								"auth": {
+									"type": "basic",
+									"basic": [
+										{
+											"key": "username",
+											"value": "Basic",
+											"type": "string"
+										},
+										{
+											"key": "password",
+											"value": "{{AccessToken}}",
+											"type": "string"
+										}
+									]
+								},
+								"method": "GET",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": ""
+								},
+								"url": {
+									"raw": "https://dev.azure.com/{{organization}}/_apis/teams?$mine=false&$top=100&$skip&api-version={{api-version-preview2}}",
+									"protocol": "https",
+									"host": [
+										"dev",
+										"azure",
+										"com"
+									],
+									"path": [
+										"{{organization}}",
+										"_apis",
+										"teams"
+									],
+									"query": [
+										{
+											"key": "$mine",
+											"value": "false",
+											"description": "If true return all the teams requesting user is member, otherwise return all the teams user has read access"
+										},
+										{
+											"key": "$top",
+											"value": "100",
+											"description": "Maximum number of teams to return."
+										},
+										{
+											"key": "$skip",
+											"value": null,
+											"description": "Number of teams to skip."
+										},
+										{
+											"key": "api-version",
+											"value": "{{api-version-preview2}}"
+										}
+									]
+								},
+								"description": "Get a list of all teams.\n[https://docs.microsoft.com/en-us/rest/api/azure/devops/core/teams/get%20all%20teams?view=azure-devops-rest-5.0](https://docs.microsoft.com/en-us/rest/api/azure/devops/core/teams/get%20all%20teams?view=azure-devops-rest-5.0)"
+							},
+							"response": []
+						},
+						{
+							"name": "Get Teams per project",
+							"request": {
+								"auth": {
+									"type": "basic",
+									"basic": [
+										{
+											"key": "username",
+											"value": "Basic",
+											"type": "string"
+										},
+										{
+											"key": "password",
+											"value": "{{AccessToken}}",
+											"type": "string"
+										}
+									]
+								},
+								"method": "GET",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": ""
+								},
+								"url": {
+									"raw": "https://dev.azure.com/{{organization}}/_apis/projects/{{projectId}}/teams?$mine=false&$top=10&$skip=&api-version={{api-version}}",
+									"protocol": "https",
+									"host": [
+										"dev",
+										"azure",
+										"com"
+									],
+									"path": [
+										"{{organization}}",
+										"_apis",
+										"projects",
+										"{{projectId}}",
+										"teams"
+									],
+									"query": [
+										{
+											"key": "$mine",
+											"value": "false",
+											"description": "If true return all the teams requesting user is member, otherwise return all the teams user has read access"
+										},
+										{
+											"key": "$top",
+											"value": "10",
+											"description": "Maximum number of teams to return."
+										},
+										{
+											"key": "$skip",
+											"value": "",
+											"description": "Number of teams to skip."
+										},
+										{
+											"key": "api-version",
+											"value": "{{api-version}}"
+										}
+									]
+								},
+								"description": "Get a list of teams in a project.\n[https://docs.microsoft.com/en-us/rest/api/azure/devops/core/teams/get%20teams?view=azure-devops-rest-5.0](https://docs.microsoft.com/en-us/rest/api/azure/devops/core/teams/get%20teams?view=azure-devops-rest-5.0)"
+							},
+							"response": []
+						},
+						{
+							"name": "Get Team Members With Extended Properties",
+							"request": {
+								"auth": {
+									"type": "basic",
+									"basic": [
+										{
+											"key": "username",
+											"value": "Basic",
+											"type": "string"
+										},
+										{
+											"key": "password",
+											"value": "{{AccessToken}}",
+											"type": "string"
+										}
+									]
+								},
+								"method": "GET",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": ""
+								},
+								"url": {
+									"raw": "https://dev.azure.com/{{organization}}/_apis/projects/{{projectId}}/teams/{{team}}/members?$mine=false&$top=10&$skip&api-version={{api-version}}",
+									"protocol": "https",
+									"host": [
+										"dev",
+										"azure",
+										"com"
+									],
+									"path": [
+										"{{organization}}",
+										"_apis",
+										"projects",
+										"{{projectId}}",
+										"teams",
+										"{{team}}",
+										"members"
+									],
+									"query": [
+										{
+											"key": "$mine",
+											"value": "false",
+											"description": "If true return all the teams requesting user is member, otherwise return all the teams user has read access"
+										},
+										{
+											"key": "$top",
+											"value": "10",
+											"description": "Maximum number of teams to return."
+										},
+										{
+											"key": "$skip",
+											"value": null,
+											"description": "Number of teams to skip."
+										},
+										{
+											"key": "api-version",
+											"value": "{{api-version}}"
+										}
+									]
+								},
+								"description": "Get a list of members for a specific team.\r\n[https://docs.microsoft.com/en-us/rest/api/azure/devops/core/teams/get%20team%20members%20with%20extended%20properties?view=azure-devops-rest-5.0](https://docs.microsoft.com/en-us/rest/api/azure/devops/core/teams/get%20team%20members%20with%20extended%20properties?view=azure-devops-rest-5.0)"
+							},
+							"response": []
+						},
+						{
+							"name": "Create new team",
+							"request": {
+								"auth": {
+									"type": "basic",
+									"basic": [
+										{
+											"key": "username",
+											"value": "Basic",
+											"type": "string"
+										},
+										{
+											"key": "password",
+											"value": "{{AccessToken}}",
+											"type": "string"
+										}
+									]
+								},
+								"method": "POST",
+								"header": [
+									{
+										"key": "Content-Type",
+										"name": "Content-Type",
+										"value": "application/json",
+										"type": "text"
+									}
+								],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n  \"name\": \"My new team\",\r\n  \"description\": \"sample team create from REST APIs\"\r\n}"
+								},
+								"url": {
+									"raw": "https://dev.azure.com/{{organization}}/_apis/projects/{{projectId}}/teams?api-version={{api-version}}",
+									"protocol": "https",
+									"host": [
+										"dev",
+										"azure",
+										"com"
+									],
+									"path": [
+										"{{organization}}",
+										"_apis",
+										"projects",
+										"{{projectId}}",
+										"teams"
+									],
+									"query": [
+										{
+											"key": "api-version",
+											"value": "{{api-version}}"
+										}
+									]
+								},
+								"description": "Create a team in a team project.\r\nPossible failure scenarios:\r\n* Invalid project name/ID (project doesn't exist) 404 \r\n* Invalid team name or description 400 \r\n* Team already exists 400 \r\n* Insufficient privileges 400\r\n[https://docs.microsoft.com/en-us/rest/api/azure/devops/core/teams/create?view=azure-devops-rest-5.0](https://docs.microsoft.com/en-us/rest/api/azure/devops/core/teams/create?view=azure-devops-rest-5.0)"
+							},
+							"response": []
+						},
+						{
+							"name": "Delete a team",
+							"request": {
+								"auth": {
+									"type": "basic",
+									"basic": [
+										{
+											"key": "username",
+											"value": "Basic",
+											"type": "string"
+										},
+										{
+											"key": "password",
+											"value": "{{AccessToken}}",
+											"type": "string"
+										}
+									]
+								},
+								"method": "DELETE",
+								"header": [
+									{
+										"key": "Content-Type",
+										"name": "Content-Type",
+										"type": "text",
+										"value": "application/json"
+									}
+								],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n  \"name\": \"My new team\",\r\n  \"description\": \"sample team create from REST APIs\"\r\n}"
+								},
+								"url": {
+									"raw": "https://dev.azure.com/{{organization}}/_apis/projects/{{projectId}}/teams/{{team}}?api-version={{api-version}}",
+									"protocol": "https",
+									"host": [
+										"dev",
+										"azure",
+										"com"
+									],
+									"path": [
+										"{{organization}}",
+										"_apis",
+										"projects",
+										"{{projectId}}",
+										"teams",
+										"{{team}}"
+									],
+									"query": [
+										{
+											"key": "api-version",
+											"value": "{{api-version}}"
+										}
+									]
+								},
+								"description": "Delete a team.\r\n[https://docs.microsoft.com/en-us/rest/api/azure/devops/core/teams/delete?view=azure-devops-rest-5.0](https://docs.microsoft.com/en-us/rest/api/azure/devops/core/teams/delete?view=azure-devops-rest-5.0)"
+							},
+							"response": []
+						}
+					],
+					"_postman_isSubFolder": true
+				}
+			]
+		},
+		{
+			"name": "Graph",
+			"item": [
+				{
+					"name": "Users",
+					"item": [
+						{
+							"name": "List users",
+							"request": {
+								"auth": {
+									"type": "basic",
+									"basic": [
+										{
+											"key": "username",
+											"value": "Basic",
+											"type": "string"
+										},
+										{
+											"key": "password",
+											"value": "{{AccessToken}}",
+											"type": "string"
+										}
+									]
+								},
+								"method": "GET",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": ""
+								},
+								"url": {
+									"raw": "https://vssps.dev.azure.com/{{organization}}/_apis/graph/users?api-version={{api-version-preview}}&subjectTypes=aad&continuationToken=",
+									"protocol": "https",
+									"host": [
+										"vssps",
+										"dev",
+										"azure",
+										"com"
+									],
+									"path": [
+										"{{organization}}",
+										"_apis",
+										"graph",
+										"users"
+									],
+									"query": [
+										{
+											"key": "api-version",
+											"value": "{{api-version-preview}}"
+										},
+										{
+											"key": "subjectTypes",
+											"value": "aad",
+											"description": "A comma separated list of user subject subtypes to reduce the retrieved results, e.g. msa’, ‘aad’, ‘svc’ (service identity), ‘imp’ (imported identity), etc."
+										},
+										{
+											"key": "continuationToken",
+											"value": "",
+											"description": "An opaque data blob that allows the next page of data to resume immediately after where the previous page ended. The only reliable way to know if there is more data left is the presence of a continuation token."
+										}
+									]
+								},
+								"description": "Get a list of all users in a given scope.\r\nSince the list of users may be large, results are returned in pages of users. If there are more results than can be returned in a single page, the result set will containt a continuation token for retrieval of the next set of results.\r\n[https://docs.microsoft.com/en-us/rest/api/azure/devops/graph/users/list?view=azure-devops-rest-5.0](https://docs.microsoft.com/en-us/rest/api/azure/devops/graph/users/list?view=azure-devops-rest-5.0)"
+							},
+							"response": []
+						},
+						{
+							"name": "Get a user",
+							"request": {
+								"auth": {
+									"type": "basic",
+									"basic": [
+										{
+											"key": "username",
+											"value": "Basic",
+											"type": "string"
+										},
+										{
+											"key": "password",
+											"value": "{{AccessToken}}",
+											"type": "string"
+										}
+									]
+								},
+								"method": "GET",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": ""
+								},
+								"url": {
+									"raw": "https://vssps.dev.azure.com/{{organization}}/_apis/graph/users/{{userDescriptor}}?api-version={{api-version-preview}}",
+									"protocol": "https",
+									"host": [
+										"vssps",
+										"dev",
+										"azure",
+										"com"
+									],
+									"path": [
+										"{{organization}}",
+										"_apis",
+										"graph",
+										"users",
+										"{{userDescriptor}}"
+									],
+									"query": [
+										{
+											"key": "api-version",
+											"value": "{{api-version-preview}}"
+										},
+										{
+											"key": "",
+											"value": "",
+											"disabled": true
+										}
+									]
+								},
+								"description": "Get a user by its descriptor.\r\n[https://docs.microsoft.com/en-us/rest/api/azure/devops/graph/users/get?view=azure-devops-rest-5.0](https://docs.microsoft.com/en-us/rest/api/azure/devops/graph/users/get?view=azure-devops-rest-5.0)"
+							},
+							"response": []
+						}
+					],
+					"_postman_isSubFolder": true
+				}
+			]
+		},
+		{
+			"name": "Release",
+			"item": [
+				{
+					"name": "Releases",
+					"item": [
+						{
+							"name": "List releases",
+							"request": {
+								"auth": {
+									"type": "basic",
+									"basic": [
+										{
+											"key": "username",
+											"value": "Basic",
+											"type": "string"
+										},
+										{
+											"key": "password",
+											"value": "{{AccessToken}}",
+											"type": "string"
+										}
+									]
+								},
+								"method": "GET",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": ""
+								},
+								"url": {
+									"raw": "https://vsrm.dev.azure.com/{{organization}}/{{project}}/_apis/release/releases?api-version={{api-version}}",
+									"protocol": "https",
+									"host": [
+										"vsrm",
+										"dev",
+										"azure",
+										"com"
+									],
+									"path": [
+										"{{organization}}",
+										"{{project}}",
+										"_apis",
+										"release",
+										"releases"
+									],
+									"query": [
+										{
+											"key": "propertyFilters",
+											"value": "",
+											"description": "A comma-delimited list of extended properties to be retrieved. If set, the returned Releases will contain values for the specified property Ids (if they exist). If not set, properties will not be included. Note that this will not filter out any Release from results irrespective of whether it has property set or not.",
+											"disabled": true
+										},
+										{
+											"key": "tagFilter",
+											"value": "",
+											"description": "A comma-delimited list of tags. Only releases with these tags will be returned.",
+											"disabled": true
+										},
+										{
+											"key": "isDeleted",
+											"value": "false",
+											"description": "Gets the soft deleted releases, if true.",
+											"disabled": true
+										},
+										{
+											"key": "sourceBranchFilter",
+											"value": "",
+											"description": "Releases with given sourceBranchFilter will be returned.",
+											"disabled": true
+										},
+										{
+											"key": "artifactVersionId",
+											"value": "",
+											"description": "Releases with given artifactVersionId will be returned. E.g. in case of Build artifactType, it is buildId.",
+											"disabled": true
+										},
+										{
+											"key": "sourceId",
+											"value": "",
+											"description": "Unique identifier of the artifact used. e.g. For build it would be {projectGuid}:{BuildDefinitionId}, for Jenkins it would be {JenkinsConnectionId}:{JenkinsDefinitionId}, for TfsOnPrem it would be {TfsOnPremConnectionId}:{ProjectName}:{TfsOnPremDefinitionId}. For third-party artifacts e.g. TeamCity, BitBucket you may refer 'uniqueSourceIdentifier' inside vss-extension.json https://github.com/Microsoft/vsts-rm-extensions/blob/master/Extensions.",
+											"disabled": true
+										},
+										{
+											"key": "artifactTypeId",
+											"value": "",
+											"description": "Releases with given artifactTypeId will be returned. Values can be Build, Jenkins, GitHub, Nuget, Team Build (external), ExternalTFSBuild, Git, TFVC, ExternalTfsXamlBuild.",
+											"disabled": true
+										},
+										{
+											"key": "$expand",
+											"value": "",
+											"description": "The property that should be expanded in the list of releases.",
+											"disabled": true
+										},
+										{
+											"key": "continuationToken",
+											"value": "",
+											"description": "Gets the releases after the continuation token provided.",
+											"disabled": true
+										},
+										{
+											"key": "$top",
+											"value": "",
+											"description": "Number of releases to get. Default is 50.",
+											"disabled": true
+										},
+										{
+											"key": "queryOrder",
+											"value": "",
+											"description": "Gets the results in the defined order of created date for releases. Default is descending.",
+											"disabled": true
+										},
+										{
+											"key": "maxCreatedTime",
+											"value": "",
+											"description": "Releases that were created before this time.",
+											"disabled": true
+										},
+										{
+											"key": "minCreatedTime",
+											"value": "",
+											"description": "Releases that were created after this time.",
+											"disabled": true
+										},
+										{
+											"key": "environmentStatusFilter",
+											"value": "",
+											"disabled": true
+										},
+										{
+											"key": "statusFilter",
+											"value": "",
+											"description": "Releases that have this status.",
+											"disabled": true
+										},
+										{
+											"key": "createdBy",
+											"value": "",
+											"description": "Releases created by this user.",
+											"disabled": true
+										},
+										{
+											"key": "searchText",
+											"value": "",
+											"description": "Releases with names containing searchText.",
+											"disabled": true
+										},
+										{
+											"key": "definitionEnvironmentId",
+											"value": "",
+											"disabled": true
+										},
+										{
+											"key": "definitionId",
+											"value": "",
+											"description": "Releases from this release definition Id.",
+											"disabled": true
+										},
+										{
+											"key": "releaseIdFilter",
+											"value": "",
+											"description": "A comma-delimited list of releases Ids. Only releases with these Ids will be returned.",
+											"disabled": true
+										},
+										{
+											"key": "api-version",
+											"value": "{{api-version}}"
+										}
+									]
+								},
+								"description": "Get a list of releases\r\n[https://docs.microsoft.com/en-us/rest/api/azure/devops/release/releases/list?view=azure-devops-rest-5.0](https://docs.microsoft.com/en-us/rest/api/azure/devops/release/releases/list?view=azure-devops-rest-5.0)"
+							},
+							"response": []
+						},
+						{
+							"name": "Get a release",
+							"request": {
+								"auth": {
+									"type": "basic",
+									"basic": [
+										{
+											"key": "username",
+											"value": "Basic",
+											"type": "string"
+										},
+										{
+											"key": "password",
+											"value": "{{AccessToken}}",
+											"type": "string"
+										}
+									]
+								},
+								"method": "GET",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": ""
+								},
+								"url": {
+									"raw": "https://vsrm.dev.azure.com/{{organization}}/{{project}}/_apis/release/releases/{{releaseId}}?$expand=true&api-version={{api-version}}",
+									"protocol": "https",
+									"host": [
+										"vsrm",
+										"dev",
+										"azure",
+										"com"
+									],
+									"path": [
+										"{{organization}}",
+										"{{project}}",
+										"_apis",
+										"release",
+										"releases",
+										"{{releaseId}}"
+									],
+									"query": [
+										{
+											"key": "approvalFilters",
+											"value": null,
+											"description": "A filter which would allow fetching approval steps selectively based on whether it is automated, or manual. This would also decide whether we should fetch pre and post approval snapshots. Assumes All by default",
+											"disabled": true
+										},
+										{
+											"key": "propertyFilters",
+											"value": null,
+											"description": "A comma-delimited list of extended properties to be retrieved. If set, the returned Release will contain values for the specified property Ids (if they exist). If not set, properties will not be included.",
+											"disabled": true
+										},
+										{
+											"key": "$expand",
+											"value": "true",
+											"description": "A property that should be expanded in the release."
+										},
+										{
+											"key": "$topGateRecords",
+											"value": null,
+											"description": "Number of release gate records to get. Default is 5.",
+											"disabled": true
+										},
+										{
+											"key": "api-version",
+											"value": "{{api-version}}"
+										}
+									]
+								},
+								"description": "Get a Release\r\n[https://docs.microsoft.com/en-us/rest/api/azure/devops/release/releases/get%20release?view=azure-devops-rest-5.0](https://docs.microsoft.com/en-us/rest/api/azure/devops/release/releases/get%20release?view=azure-devops-rest-5.0)"
+							},
+							"response": []
+						},
+						{
+							"name": "Get release logs",
+							"request": {
+								"auth": {
+									"type": "basic",
+									"basic": [
+										{
+											"key": "username",
+											"value": "Basic",
+											"type": "string"
+										},
+										{
+											"key": "password",
+											"value": "{{AccessToken}}",
+											"type": "string"
+										}
+									]
+								},
+								"method": "GET",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": ""
+								},
+								"url": {
+									"raw": "https://vsrm.dev.azure.com/{{organization}}/{{project}}/_apis/release/releases/{{releaseId}}/logs?api-version={{api-version-preview2}}",
+									"protocol": "https",
+									"host": [
+										"vsrm",
+										"dev",
+										"azure",
+										"com"
+									],
+									"path": [
+										"{{organization}}",
+										"{{project}}",
+										"_apis",
+										"release",
+										"releases",
+										"{{releaseId}}",
+										"logs"
+									],
+									"query": [
+										{
+											"key": "api-version",
+											"value": "{{api-version-preview2}}"
+										}
+									]
+								},
+								"description": "Get logs for a release Id.\nResponse media types: \"application/zip\", you can click *Download* to save the zip folder.\n[https://docs.microsoft.com/en-us/rest/api/azure/devops/release/releases/get%20logs?view=azure-devops-rest-5.0](https://docs.microsoft.com/en-us/rest/api/azure/devops/release/releases/get%20logs?view=azure-devops-rest-5.0)"
+							},
+							"response": []
+						}
+					],
+					"_postman_isSubFolder": true
+				}
+			]
+		}
+	]
+}
