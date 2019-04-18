@@ -18,9 +18,9 @@ To setup the Postman collections follow these steps:
 
 **4.** Paste the following two URLs and click Import after each.
 
-`https://raw.githubusercontent.com/hkamel/azuredevops-postman-collections/master/Azure%20DevOps%20v5.0.postman_collection.json`
+> [https://raw.githubusercontent.com/hkamel/azuredevops-postman-collections/master/Azure%20DevOps%20v5.0.postman_collection.json](https://raw.githubusercontent.com/hkamel/azuredevops-postman-collections/master/Azure%20DevOps%20v5.0.postman_collection.json)
 
-`https://raw.githubusercontent.com/hkamel/azuredevops-postman-collections/master/Azure%20DevOps%20Environment.postman_environment.json`
+> [https://raw.githubusercontent.com/hkamel/azuredevops-postman-collections/master/Azure%20DevOps%20Environment.postman_environment.json](https://raw.githubusercontent.com/hkamel/azuredevops-postman-collections/master/Azure%20DevOps%20Environment.postman_environment.json)
 
 You should now see the **Azure DevOps v5.0** collection on the left had side Collections pane.
 
