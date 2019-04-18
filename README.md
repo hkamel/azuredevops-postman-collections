@@ -2,9 +2,9 @@
 
 > Inspired by [@Jeremy Thake](https://github.com/jthake-msft)'s [Microsoft Graph Collection](https://github.com/microsoftgraph/microsoftgraph-postman-collections/blob/master/README.md)
 
-The collection allows you to test common Azure DevOps Rest APIs from within Postman.
+The collections allows you to test common Azure DevOps Rest APIs from within Postman.
 
-![Image of Postman](./images/postman.png)
+![Image of Postman](./images/azuredevops-postman.jpg)
 
 ## Setup
 
