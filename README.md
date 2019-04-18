@@ -10,7 +10,7 @@ The collections allows you to test common Azure DevOps Rest APIs from within Pos
 
 To setup the Postman collections follow these steps:
 
-**1.** Download and register for [Postman](https://www.getpostman.com/).
+**1.** Download and register for Postman from their [website](https://www.getpostman.com/) or from [chocolatey.org](https://chocolatey.org/packages/postman).
 
 **2.** Click **File | Import ...**.
 
