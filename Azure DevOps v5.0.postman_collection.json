@@ -2,10 +2,1944 @@
 	"info": {
 		"_postman_id": "e1bcbbeb-2718-4cce-8e5b-047a3f181df8",
 		"name": "Azure DevOps v5.0",
-		"description": "Azure DevOps Services REST API Reference",
+		"description": "Azure DevOps Services REST API Reference.\n\nv1.1",
 		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
 	},
 	"item": [
+		{
+			"name": "Artifacts",
+			"item": [
+				{
+					"name": "Artifacts Details",
+					"item": [
+						{
+							"name": "Get Badge",
+							"request": {
+								"auth": {
+									"type": "basic",
+									"basic": [
+										{
+											"key": "username",
+											"value": "Basic",
+											"type": "string"
+										},
+										{
+											"key": "password",
+											"value": "{{AccessToken}}",
+											"type": "string"
+										}
+									]
+								},
+								"method": "GET",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": ""
+								},
+								"url": {
+									"raw": "https://feeds.dev.azure.com/{{organization}}/_apis/public/packaging/Feeds/{{feedId}}/Packages/{{packageId}}/badge?api-version={{api-version-preview}}",
+									"protocol": "https",
+									"host": [
+										"feeds",
+										"dev",
+										"azure",
+										"com"
+									],
+									"path": [
+										"{{organization}}",
+										"_apis",
+										"public",
+										"packaging",
+										"Feeds",
+										"{{feedId}}",
+										"Packages",
+										"{{packageId}}",
+										"badge"
+									],
+									"query": [
+										{
+											"key": "api-version",
+											"value": "{{api-version-preview}}"
+										}
+									]
+								},
+								"description": "Generate a SVG badge for the latest version of a package. The generated SVG is typically used as the image in an HTML link which takes users to the feed containing the package to accelerate discovery and consumption.\n[https://docs.microsoft.com/en-us/rest/api/azure/devops/artifacts/artifact%20%20details/get%20badge?view=azure-devops-rest-5.0](https://docs.microsoft.com/en-us/rest/api/azure/devops/artifacts/artifact%20%20details/get%20badge?view=azure-devops-rest-5.0)"
+							},
+							"response": []
+						},
+						{
+							"name": "Get Package",
+							"request": {
+								"auth": {
+									"type": "basic",
+									"basic": [
+										{
+											"key": "username",
+											"value": "Basic",
+											"type": "string"
+										},
+										{
+											"key": "password",
+											"value": "{{AccessToken}}",
+											"type": "string"
+										}
+									]
+								},
+								"method": "GET",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": ""
+								},
+								"url": {
+									"raw": "https://feeds.dev.azure.com/{{organization}}/_apis/packaging/Feeds/{{feedId}}/packages/{{packageId}}?api-version={{api-version-preview}}",
+									"protocol": "https",
+									"host": [
+										"feeds",
+										"dev",
+										"azure",
+										"com"
+									],
+									"path": [
+										"{{organization}}",
+										"_apis",
+										"packaging",
+										"Feeds",
+										"{{feedId}}",
+										"packages",
+										"{{packageId}}"
+									],
+									"query": [
+										{
+											"key": "api-version",
+											"value": "{{api-version-preview}}"
+										},
+										{
+											"key": "includeAllVersions",
+											"value": "",
+											"description": "True to return all versions of the package in the response. Default is false (latest version only)",
+											"disabled": true
+										},
+										{
+											"key": "includeUrls",
+											"value": "",
+											"description": "True to return REST Urls with the response. Default is True.",
+											"disabled": true
+										},
+										{
+											"key": "isListed",
+											"value": "",
+											"description": "Only applicable for NuGet packages, setting it for other package types will result in a 404. If false, delisted package versions will be returned. Use this to filter the response when includeAllVersions is set to true. Default is unset (do not return delisted packages).",
+											"disabled": true
+										},
+										{
+											"key": "isRelease",
+											"value": "",
+											"description": "Only applicable for Nuget packages. Use this to filter the response when includeAllVersions is set to true. Default is True (only return packages without prerelease versioning).",
+											"disabled": true
+										},
+										{
+											"key": "includeDeleted",
+											"value": "false",
+											"description": "Return deleted or unpublished versions of packages in the response. Default is False.",
+											"disabled": true
+										},
+										{
+											"key": "includeDescription",
+											"value": "false",
+											"description": "Return the description for every version of each package in the response. Default is False.",
+											"disabled": true
+										}
+									]
+								},
+								"description": "Get details about a specific package.\n[https://docs.microsoft.com/en-us/rest/api/azure/devops/artifacts/artifact%20%20details/get%20package?view=azure-devops-rest-5.0](https://docs.microsoft.com/en-us/rest/api/azure/devops/artifacts/artifact%20%20details/get%20package?view=azure-devops-rest-5.0)"
+							},
+							"response": []
+						},
+						{
+							"name": "Get Package Version",
+							"request": {
+								"auth": {
+									"type": "basic",
+									"basic": [
+										{
+											"key": "username",
+											"value": "Basic",
+											"type": "string"
+										},
+										{
+											"key": "password",
+											"value": "{{AccessToken}}",
+											"type": "string"
+										}
+									]
+								},
+								"method": "GET",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": ""
+								},
+								"url": {
+									"raw": "https://feeds.dev.azure.com/{{organization}}/_apis/packaging/Feeds/{{feedId}}/Packages/{{packageId}}/versions/{{packageVersionId}}?api-version={{api-version-preview}}",
+									"protocol": "https",
+									"host": [
+										"feeds",
+										"dev",
+										"azure",
+										"com"
+									],
+									"path": [
+										"{{organization}}",
+										"_apis",
+										"packaging",
+										"Feeds",
+										"{{feedId}}",
+										"Packages",
+										"{{packageId}}",
+										"versions",
+										"{{packageVersionId}}"
+									],
+									"query": [
+										{
+											"key": "api-version",
+											"value": "{{api-version-preview}}"
+										},
+										{
+											"key": "includeUrls",
+											"value": "",
+											"description": "True to include urls for each version. Default is true.",
+											"disabled": true
+										},
+										{
+											"key": "isListed",
+											"value": "",
+											"description": "Only applicable for NuGet packages. If false, delisted package versions will be returned.",
+											"disabled": true
+										},
+										{
+											"key": "isDeleted",
+											"value": "",
+											"description": "Return deleted or unpublished versions of packages in the response. Default is unset (do not return deleted versions).",
+											"disabled": true
+										}
+									]
+								},
+								"description": "Get details about a specific package version.\n[https://docs.microsoft.com/en-us/rest/api/azure/devops/artifacts/artifact%20%20details/get%20package%20version?view=azure-devops-rest-5.0](https://docs.microsoft.com/en-us/rest/api/azure/devops/artifacts/artifact%20%20details/get%20package%20version?view=azure-devops-rest-5.0)"
+							},
+							"response": []
+						},
+						{
+							"name": "Get Package Version Provenance",
+							"request": {
+								"auth": {
+									"type": "basic",
+									"basic": [
+										{
+											"key": "username",
+											"value": "Basic",
+											"type": "string"
+										},
+										{
+											"key": "password",
+											"value": "{{AccessToken}}",
+											"type": "string"
+										}
+									]
+								},
+								"method": "GET",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": ""
+								},
+								"url": {
+									"raw": "https://feeds.dev.azure.com/{{organization}}/_apis/packaging/Feeds/{{feedId}}/Packages/{{packageId}}/Versions/{{packageVersionId}}/provenance?api-version={{api-version-preview}}",
+									"protocol": "https",
+									"host": [
+										"feeds",
+										"dev",
+										"azure",
+										"com"
+									],
+									"path": [
+										"{{organization}}",
+										"_apis",
+										"packaging",
+										"Feeds",
+										"{{feedId}}",
+										"Packages",
+										"{{packageId}}",
+										"Versions",
+										"{{packageVersionId}}",
+										"provenance"
+									],
+									"query": [
+										{
+											"key": "api-version",
+											"value": "{{api-version-preview}}"
+										}
+									]
+								},
+								"description": "Gets provenance for a package version.\n[https://docs.microsoft.com/en-us/rest/api/azure/devops/artifacts/artifact%20%20details/getpackageversionprovenance?view=azure-devops-rest-5.0](https://docs.microsoft.com/en-us/rest/api/azure/devops/artifacts/artifact%20%20details/getpackageversionprovenance?view=azure-devops-rest-5.0)"
+							},
+							"response": []
+						},
+						{
+							"name": "Get Package Versions",
+							"request": {
+								"auth": {
+									"type": "basic",
+									"basic": [
+										{
+											"key": "username",
+											"value": "Basic",
+											"type": "string"
+										},
+										{
+											"key": "password",
+											"value": "{{AccessToken}}",
+											"type": "string"
+										}
+									]
+								},
+								"method": "GET",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": ""
+								},
+								"url": {
+									"raw": "https://feeds.dev.azure.com/{{organization}}/_apis/packaging/Feeds/{{feedId}}/Packages/{{packageId}}/versions?api-version={{api-version-preview}}",
+									"protocol": "https",
+									"host": [
+										"feeds",
+										"dev",
+										"azure",
+										"com"
+									],
+									"path": [
+										"{{organization}}",
+										"_apis",
+										"packaging",
+										"Feeds",
+										"{{feedId}}",
+										"Packages",
+										"{{packageId}}",
+										"versions"
+									],
+									"query": [
+										{
+											"key": "api-version",
+											"value": "{{api-version-preview}}"
+										},
+										{
+											"key": "includeUrls",
+											"value": "",
+											"description": "True to include urls for each version. Default is true.",
+											"disabled": true
+										},
+										{
+											"key": "isListed",
+											"value": "",
+											"description": "Only applicable for NuGet packages. If false, delisted package versions will be returned.",
+											"disabled": true
+										},
+										{
+											"key": "isDeleted",
+											"value": "",
+											"description": "Return deleted or unpublished versions of packages in the response. Default is unset (do not return deleted versions).",
+											"disabled": true
+										}
+									]
+								},
+								"description": "Get a list of package versions, optionally filtering by state.\n[https://docs.microsoft.com/en-us/rest/api/azure/devops/artifacts/artifact%20%20details/get%20package%20versions?view=azure-devops-rest-5.0](https://docs.microsoft.com/en-us/rest/api/azure/devops/artifacts/artifact%20%20details/get%20package%20versions?view=azure-devops-rest-5.0)"
+							},
+							"response": []
+						},
+						{
+							"name": "Get Packages",
+							"request": {
+								"auth": {
+									"type": "basic",
+									"basic": [
+										{
+											"key": "username",
+											"value": "Basic",
+											"type": "string"
+										},
+										{
+											"key": "password",
+											"value": "{{AccessToken}}",
+											"type": "string"
+										}
+									]
+								},
+								"method": "GET",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": ""
+								},
+								"url": {
+									"raw": "https://feeds.dev.azure.com/{{organization}}/_apis/packaging/Feeds/{{feedId}}/packages?api-version={{api-version-preview}}",
+									"protocol": "https",
+									"host": [
+										"feeds",
+										"dev",
+										"azure",
+										"com"
+									],
+									"path": [
+										"{{organization}}",
+										"_apis",
+										"packaging",
+										"Feeds",
+										"{{feedId}}",
+										"packages"
+									],
+									"query": [
+										{
+											"key": "api-version",
+											"value": "{{api-version-preview}}"
+										},
+										{
+											"key": "includeDeleted",
+											"value": "false",
+											"description": "Return deleted or unpublished versions of packages in the response. Default is False.",
+											"disabled": true
+										},
+										{
+											"key": "$skip",
+											"value": "",
+											"description": "Skip the first N packages (or package versions where getTopPackageVersions=true)",
+											"disabled": true
+										},
+										{
+											"key": "$top",
+											"value": "",
+											"description": "Get the top N packages (or package versions where getTopPackageVersions=true)",
+											"disabled": true
+										},
+										{
+											"key": "includeDescription",
+											"value": "false",
+											"description": "Return the description for every version of each package in the response. Default is False.",
+											"disabled": true
+										},
+										{
+											"key": "isRelease",
+											"value": "",
+											"description": "Only applicable for Nuget packages. Use this to filter the response when includeAllVersions is set to true. Default is True (only return packages without prerelease versioning).",
+											"disabled": true
+										},
+										{
+											"key": "getTopPackageVersions",
+											"value": "",
+											"description": "Changes the behavior of $top and $skip to return all versions of each package up to $top. Must be used in conjunction with includeAllVersions=true",
+											"disabled": true
+										},
+										{
+											"key": "isListed",
+											"value": "",
+											"description": "Only applicable for NuGet packages, setting it for other package types will result in a 404. If false, delisted package versions will be returned. Use this to filter the response when includeAllVersions is set to true. Default is unset (do not return delisted packages).",
+											"disabled": true
+										},
+										{
+											"key": "includeAllVersions",
+											"value": "",
+											"description": "True to return all versions of the package in the response. Default is false (latest version only)",
+											"disabled": true
+										},
+										{
+											"key": "includeUrls",
+											"value": "",
+											"description": "True to return REST Urls with the response. Default is True.",
+											"disabled": true
+										},
+										{
+											"key": "packageNameQuery",
+											"value": "",
+											"description": "Filter to packages that contain the provided string. Characters in the string must conform to the package name constraints.",
+											"disabled": true
+										},
+										{
+											"key": "protocolType",
+											"value": "",
+											"description": "One of the supported artifact package types.",
+											"disabled": true
+										},
+										{
+											"key": "directUpstreamId",
+											"value": "",
+											"description": "Filter results to return packages from a specific upstream.",
+											"disabled": true
+										}
+									]
+								},
+								"description": "Get details about all of the packages in the feed. Use the various filters to include or exclude information from the result set.\n[https://docs.microsoft.com/en-us/rest/api/azure/devops/artifacts/artifact%20%20details/get%20packages?view=azure-devops-rest-5.0](https://docs.microsoft.com/en-us/rest/api/azure/devops/artifacts/artifact%20%20details/get%20packages?view=azure-devops-rest-5.0)"
+							},
+							"response": []
+						}
+					],
+					"_postman_isSubFolder": true
+				},
+				{
+					"name": "Change Tracking",
+					"item": [
+						{
+							"name": "Get Feed Change",
+							"request": {
+								"auth": {
+									"type": "basic",
+									"basic": [
+										{
+											"key": "username",
+											"value": "Basic",
+											"type": "string"
+										},
+										{
+											"key": "password",
+											"value": "{{AccessToken}}",
+											"type": "string"
+										}
+									]
+								},
+								"method": "GET",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": ""
+								},
+								"url": {
+									"raw": "https://feeds.dev.azure.com/{{organization}}/_apis/packaging/feedchanges/{{feedId}}?api-version={{api-version-preview}}",
+									"protocol": "https",
+									"host": [
+										"feeds",
+										"dev",
+										"azure",
+										"com"
+									],
+									"path": [
+										"{{organization}}",
+										"_apis",
+										"packaging",
+										"feedchanges",
+										"{{feedId}}"
+									],
+									"query": [
+										{
+											"key": "api-version",
+											"value": "{{api-version-preview}}"
+										}
+									]
+								},
+								"description": "Query a feed to determine its current state.\r\n\r\n[https://docs.microsoft.com/en-us/rest/api/azure/devops/artifacts/change%20%20tracking/get%20feed%20change?view=azure-devops-rest-5.0](https://docs.microsoft.com/en-us/rest/api/azure/devops/artifacts/change%20%20tracking/get%20feed%20change?view=azure-devops-rest-5.0)"
+							},
+							"response": []
+						},
+						{
+							"name": "Get Feed Changes",
+							"request": {
+								"auth": {
+									"type": "basic",
+									"basic": [
+										{
+											"key": "username",
+											"value": "Basic",
+											"type": "string"
+										},
+										{
+											"key": "password",
+											"value": "{{AccessToken}}",
+											"type": "string"
+										}
+									]
+								},
+								"method": "GET",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": ""
+								},
+								"url": {
+									"raw": "https://feeds.dev.azure.com/{{organization}}/_apis/packaging/feedchanges?api-version={{api-version-preview}}",
+									"protocol": "https",
+									"host": [
+										"feeds",
+										"dev",
+										"azure",
+										"com"
+									],
+									"path": [
+										"{{organization}}",
+										"_apis",
+										"packaging",
+										"feedchanges"
+									],
+									"query": [
+										{
+											"key": "api-version",
+											"value": "{{api-version-preview}}"
+										},
+										{
+											"key": "includeDeleted",
+											"value": "",
+											"description": "If true, get changes for all feeds including deleted feeds. The default value is false.",
+											"disabled": true
+										},
+										{
+											"key": "continuationToken",
+											"value": "",
+											"description": "A continuation token which acts as a bookmark to a previously retrieved change. This token allows the user to continue retrieving changes in batches, picking up where the previous batch left off. If specified, all the changes that occur strictly after the token will be returned. If not specified or 0, iteration will start with the first change.",
+											"disabled": true
+										},
+										{
+											"key": "batchSize",
+											"value": "",
+											"description": "Number of package changes to fetch. The default value is 1000. The maximum value is 2000.",
+											"disabled": true
+										}
+									]
+								},
+								"description": "Query to determine which feeds have changed since the last call, tracked through the provided continuationToken. Only changes to a feed itself are returned and impact the continuationToken, not additions or alterations to packages within the feeds.\r\n\r\n[https://docs.microsoft.com/en-us/rest/api/azure/devops/artifacts/change%20%20tracking/get%20feed%20changes?view=azure-devops-rest-5.0](https://docs.microsoft.com/en-us/rest/api/azure/devops/artifacts/change%20%20tracking/get%20feed%20changes?view=azure-devops-rest-5.0)"
+							},
+							"response": []
+						},
+						{
+							"name": "Get Package Changes",
+							"request": {
+								"auth": {
+									"type": "basic",
+									"basic": [
+										{
+											"key": "username",
+											"value": "Basic",
+											"type": "string"
+										},
+										{
+											"key": "password",
+											"value": "{{AccessToken}}",
+											"type": "string"
+										}
+									]
+								},
+								"method": "GET",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": ""
+								},
+								"url": {
+									"raw": "https://feeds.dev.azure.com/{{organization}}/_apis/packaging/Feeds/{{feedId}}/packagechanges?api-version={{api-version-preview}}",
+									"protocol": "https",
+									"host": [
+										"feeds",
+										"dev",
+										"azure",
+										"com"
+									],
+									"path": [
+										"{{organization}}",
+										"_apis",
+										"packaging",
+										"Feeds",
+										"{{feedId}}",
+										"packagechanges"
+									],
+									"query": [
+										{
+											"key": "api-version",
+											"value": "{{api-version-preview}}"
+										},
+										{
+											"key": "continuationToken",
+											"value": "",
+											"description": "A continuation token which acts as a bookmark to a previously retrieved change. This token allows the user to continue retrieving changes in batches, picking up where the previous batch left off. If specified, all the changes that occur strictly after the token will be returned. If not specified or 0, iteration will start with the first change.",
+											"disabled": true
+										},
+										{
+											"key": "batchSize",
+											"value": "",
+											"description": "Number of package changes to fetch. The default value is 1000. The maximum value is 2000.",
+											"disabled": true
+										}
+									]
+								},
+								"description": "Get a batch of package changes made to a feed. The changes returned are 'most recent change' so if an Add is followed by an Update before you begin enumerating, you'll only see one change in the batch. While consuming batches using the continuation token, you may see changes to the same package version multiple times if they are happening as you enumerate.\r\n\r\n[https://docs.microsoft.com/en-us/rest/api/azure/devops/artifacts/change%20%20tracking/get%20package%20changes?view=azure-devops-rest-5.0](https://docs.microsoft.com/en-us/rest/api/azure/devops/artifacts/change%20%20tracking/get%20package%20changes?view=azure-devops-rest-5.0)"
+							},
+							"response": []
+						}
+					],
+					"auth": {
+						"type": "basic",
+						"basic": [
+							{
+								"key": "username",
+								"value": "Basic",
+								"type": "string"
+							},
+							{
+								"key": "password",
+								"value": "{{AccessToken}}",
+								"type": "string"
+							}
+						]
+					},
+					"_postman_isSubFolder": true
+				},
+				{
+					"name": "Feed Management",
+					"item": [
+						{
+							"name": "Create Feed",
+							"request": {
+								"auth": {
+									"type": "basic",
+									"basic": [
+										{
+											"key": "username",
+											"value": "Basic",
+											"type": "string"
+										},
+										{
+											"key": "password",
+											"value": "{{AccessToken}}",
+											"type": "string"
+										}
+									]
+								},
+								"method": "POST",
+								"header": [
+									{
+										"key": "Content-Type",
+										"name": "Content-Type",
+										"value": "application/json",
+										"type": "text"
+									}
+								],
+								"body": {
+									"mode": "raw",
+									"raw": "{\n    \"description\": \"Sample feed created by postman\",\n    \"hideDeletedPackageVersions\": true,\n    \"badgesEnabled\": true,\n    \"name\": \"feedbypostman\",\n    \"upstreamEnabled\": true,\n    \"viewId\": null,\n    \"viewName\": null,\n    \"fullyQualifiedName\": \"feedbypostman\",\n    \"upstreamSources\": [\n        {\n            \"id\": \"40cea34f-c6ef-4898-b379-626926723a16\",\n            \"name\": \"npmjs\",\n            \"protocol\": \"npm\",\n            \"location\": \"https://registry.npmjs.org/\",\n            \"upstreamSourceType\": \"public\"\n        },\n        {\n            \"id\": \"2a28a64e-8822-4bf7-bc7b-5f1475178b36\",\n            \"name\": \"nuget.org\",\n            \"protocol\": \"nuget\",\n            \"location\": \"https://api.nuget.org/v3/index.json\",\n            \"upstreamSourceType\": \"public\"\n        }\n    ],\n    \"capabilities\": \"defaultCapabilities\"\n}"
+								},
+								"url": {
+									"raw": "https://feeds.dev.azure.com/{{organization}}/_apis/packaging/feeds?api-version={{api-version-preview}}",
+									"protocol": "https",
+									"host": [
+										"feeds",
+										"dev",
+										"azure",
+										"com"
+									],
+									"path": [
+										"{{organization}}",
+										"_apis",
+										"packaging",
+										"feeds"
+									],
+									"query": [
+										{
+											"key": "api-version",
+											"value": "{{api-version-preview}}"
+										}
+									]
+								},
+								"description": "Create a feed, a container for various package types.\r\n\r\n[https://docs.microsoft.com/en-us/rest/api/azure/devops/artifacts/feed%20%20management/create%20feed?view=azure-devops-rest-5.0](https://docs.microsoft.com/en-us/rest/api/azure/devops/artifacts/feed%20%20management/create%20feed?view=azure-devops-rest-5.0)"
+							},
+							"response": []
+						},
+						{
+							"name": "Create Feed View",
+							"request": {
+								"auth": {
+									"type": "basic",
+									"basic": [
+										{
+											"key": "username",
+											"value": "Basic",
+											"type": "string"
+										},
+										{
+											"key": "password",
+											"value": "{{AccessToken}}",
+											"type": "string"
+										}
+									]
+								},
+								"method": "POST",
+								"header": [
+									{
+										"key": "Content-Type",
+										"name": "Content-Type",
+										"type": "text",
+										"value": "application/json"
+									}
+								],
+								"body": {
+									"mode": "raw",
+									"raw": "{\n    \"visibility\": \"collection\",\n    \"name\": \"CustomView01\",\n    \"type\": \"release\"\n}"
+								},
+								"url": {
+									"raw": "https://feeds.dev.azure.com/{{organization}}/_apis/packaging/feeds/{{feedId}}/views?api-version={{api-version-preview}}",
+									"protocol": "https",
+									"host": [
+										"feeds",
+										"dev",
+										"azure",
+										"com"
+									],
+									"path": [
+										"{{organization}}",
+										"_apis",
+										"packaging",
+										"feeds",
+										"{{feedId}}",
+										"views"
+									],
+									"query": [
+										{
+											"key": "api-version",
+											"value": "{{api-version-preview}}"
+										}
+									]
+								},
+								"description": "Create a new view on the referenced feed.\r\n\r\n[https://docs.microsoft.com/en-us/rest/api/azure/devops/artifacts/feed%20%20management/create%20feed%20view?view=azure-devops-rest-5.0](https://docs.microsoft.com/en-us/rest/api/azure/devops/artifacts/feed%20%20management/create%20feed%20view?view=azure-devops-rest-5.0)"
+							},
+							"response": []
+						},
+						{
+							"name": "Delete Feed",
+							"request": {
+								"auth": {
+									"type": "basic",
+									"basic": [
+										{
+											"key": "username",
+											"value": "Basic",
+											"type": "string"
+										},
+										{
+											"key": "password",
+											"value": "{{AccessToken}}",
+											"type": "string"
+										}
+									]
+								},
+								"method": "DELETE",
+								"header": [
+									{
+										"key": "Content-Type",
+										"name": "Content-Type",
+										"value": "application/json",
+										"type": "text"
+									}
+								],
+								"body": {
+									"mode": "raw",
+									"raw": "{\n    \"description\": \"Sample feed created by postman\",\n    \"hideDeletedPackageVersions\": true,\n    \"badgesEnabled\": true,\n    \"name\": \"feedbypostman\",\n    \"upstreamEnabled\": true,\n    \"viewId\": null,\n    \"viewName\": null,\n    \"fullyQualifiedName\": \"feedbypostman\",\n    \"upstreamSources\": [\n        {\n            \"id\": \"40cea34f-c6ef-4898-b379-626926723a16\",\n            \"name\": \"npmjs\",\n            \"protocol\": \"npm\",\n            \"location\": \"https://registry.npmjs.org/\",\n            \"upstreamSourceType\": \"public\"\n        },\n        {\n            \"id\": \"2a28a64e-8822-4bf7-bc7b-5f1475178b36\",\n            \"name\": \"nuget.org\",\n            \"protocol\": \"nuget\",\n            \"location\": \"https://api.nuget.org/v3/index.json\",\n            \"upstreamSourceType\": \"public\"\n        }\n    ],\n    \"capabilities\": \"defaultCapabilities\"\n}"
+								},
+								"url": {
+									"raw": "https://feeds.dev.azure.com/{{organization}}/_apis/packaging/feeds/{{feedId}}?api-version={{api-version-preview}}",
+									"protocol": "https",
+									"host": [
+										"feeds",
+										"dev",
+										"azure",
+										"com"
+									],
+									"path": [
+										"{{organization}}",
+										"_apis",
+										"packaging",
+										"feeds",
+										"{{feedId}}"
+									],
+									"query": [
+										{
+											"key": "api-version",
+											"value": "{{api-version-preview}}"
+										}
+									]
+								},
+								"description": "Remove a feed and all its packages. The action does not result in packages moving to the RecycleBin and is not reversible.\r\n\r\n[https://docs.microsoft.com/en-us/rest/api/azure/devops/artifacts/feed%20%20management/delete%20feed?view=azure-devops-rest-5.0](https://docs.microsoft.com/en-us/rest/api/azure/devops/artifacts/feed%20%20management/delete%20feed?view=azure-devops-rest-5.0)"
+							},
+							"response": []
+						},
+						{
+							"name": "Delete Feed View",
+							"request": {
+								"auth": {
+									"type": "basic",
+									"basic": [
+										{
+											"key": "username",
+											"value": "Basic",
+											"type": "string"
+										},
+										{
+											"key": "password",
+											"value": "{{AccessToken}}",
+											"type": "string"
+										}
+									]
+								},
+								"method": "DELETE",
+								"header": [
+									{
+										"key": "Content-Type",
+										"name": "Content-Type",
+										"type": "text",
+										"value": "application/json"
+									}
+								],
+								"body": {
+									"mode": "raw",
+									"raw": ""
+								},
+								"url": {
+									"raw": "https://feeds.dev.azure.com/{{organization}}/_apis/packaging/feeds/{{feedId}}/views/{{viewId}}?api-version={{api-version-preview}}",
+									"protocol": "https",
+									"host": [
+										"feeds",
+										"dev",
+										"azure",
+										"com"
+									],
+									"path": [
+										"{{organization}}",
+										"_apis",
+										"packaging",
+										"feeds",
+										"{{feedId}}",
+										"views",
+										"{{viewId}}"
+									],
+									"query": [
+										{
+											"key": "api-version",
+											"value": "{{api-version-preview}}"
+										}
+									]
+								},
+								"description": "Delete a feed view.\r\n\r\n[https://docs.microsoft.com/en-us/rest/api/azure/devops/artifacts/feed%20%20management/delete%20feed%20view?view=azure-devops-rest-5.0](https://docs.microsoft.com/en-us/rest/api/azure/devops/artifacts/feed%20%20management/delete%20feed%20view?view=azure-devops-rest-5.0)"
+							},
+							"response": []
+						},
+						{
+							"name": "Get Feed",
+							"request": {
+								"auth": {
+									"type": "basic",
+									"basic": [
+										{
+											"key": "username",
+											"value": "Basic",
+											"type": "string"
+										},
+										{
+											"key": "password",
+											"value": "{{AccessToken}}",
+											"type": "string"
+										}
+									]
+								},
+								"method": "GET",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": ""
+								},
+								"url": {
+									"raw": "https://feeds.dev.azure.com/{{organization}}/_apis/packaging/Feeds/{{feedId}}?api-version={{api-version-preview}}",
+									"protocol": "https",
+									"host": [
+										"feeds",
+										"dev",
+										"azure",
+										"com"
+									],
+									"path": [
+										"{{organization}}",
+										"_apis",
+										"packaging",
+										"Feeds",
+										"{{feedId}}"
+									],
+									"query": [
+										{
+											"key": "api-version",
+											"value": "{{api-version-preview}}"
+										}
+									]
+								},
+								"description": "Get the settings for a specific feed.\r\n\r\n[https://docs.microsoft.com/en-us/rest/api/azure/devops/artifacts/feed%20%20management/get%20feed?view=azure-devops-rest-5.0](https://docs.microsoft.com/en-us/rest/api/azure/devops/artifacts/feed%20%20management/get%20feed?view=azure-devops-rest-5.0)"
+							},
+							"response": []
+						},
+						{
+							"name": "Get Feed Permissions",
+							"request": {
+								"auth": {
+									"type": "basic",
+									"basic": [
+										{
+											"key": "username",
+											"value": "Basic",
+											"type": "string"
+										},
+										{
+											"key": "password",
+											"value": "{{AccessToken}}",
+											"type": "string"
+										}
+									]
+								},
+								"method": "GET",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": ""
+								},
+								"url": {
+									"raw": "https://feeds.dev.azure.com/{{organization}}/_apis/packaging/Feeds/{{feedId}}/permissions?api-version={{api-version-preview}}",
+									"protocol": "https",
+									"host": [
+										"feeds",
+										"dev",
+										"azure",
+										"com"
+									],
+									"path": [
+										"{{organization}}",
+										"_apis",
+										"packaging",
+										"Feeds",
+										"{{feedId}}",
+										"permissions"
+									],
+									"query": [
+										{
+											"key": "api-version",
+											"value": "{{api-version-preview}}"
+										},
+										{
+											"key": "includeIds",
+											"value": "",
+											"description": "True to include user Ids in the response. Default is false.",
+											"disabled": true
+										},
+										{
+											"key": "excludeInheritedPermissions",
+											"value": "",
+											"description": "True to only return explicitly set permissions on the feed. Default is false.",
+											"disabled": true
+										},
+										{
+											"key": "identityDescriptor",
+											"value": "",
+											"description": "Filter permissions to the provided identity.",
+											"disabled": true
+										}
+									]
+								},
+								"description": "Get the permissions for a feed.\r\n\r\n[https://docs.microsoft.com/en-us/rest/api/azure/devops/artifacts/feed%20%20management/get%20feed%20permissions?view=azure-devops-rest-5.0](https://docs.microsoft.com/en-us/rest/api/azure/devops/artifacts/feed%20%20management/get%20feed%20permissions?view=azure-devops-rest-5.0)"
+							},
+							"response": []
+						},
+						{
+							"name": "Get Feed View",
+							"request": {
+								"auth": {
+									"type": "basic",
+									"basic": [
+										{
+											"key": "username",
+											"value": "Basic",
+											"type": "string"
+										},
+										{
+											"key": "password",
+											"value": "{{AccessToken}}",
+											"type": "string"
+										}
+									]
+								},
+								"method": "GET",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": ""
+								},
+								"url": {
+									"raw": "https://feeds.dev.azure.com/{{organization}}/_apis/packaging/Feeds/{{feedId}}/views/{{viewId}}?api-version={{api-version-preview}}",
+									"protocol": "https",
+									"host": [
+										"feeds",
+										"dev",
+										"azure",
+										"com"
+									],
+									"path": [
+										"{{organization}}",
+										"_apis",
+										"packaging",
+										"Feeds",
+										"{{feedId}}",
+										"views",
+										"{{viewId}}"
+									],
+									"query": [
+										{
+											"key": "api-version",
+											"value": "{{api-version-preview}}"
+										},
+										{
+											"key": "continuationToken",
+											"value": "",
+											"description": "A continuation token which acts as a bookmark to a previously retrieved change. This token allows the user to continue retrieving changes in batches, picking up where the previous batch left off. If specified, all the changes that occur strictly after the token will be returned. If not specified or 0, iteration will start with the first change.",
+											"disabled": true
+										},
+										{
+											"key": "batchSize",
+											"value": "",
+											"description": "Number of package changes to fetch. The default value is 1000. The maximum value is 2000.",
+											"disabled": true
+										}
+									]
+								},
+								"description": "Get a view by Id\r\n\r\n[https://docs.microsoft.com/en-us/rest/api/azure/devops/artifacts/feed%20%20management/get%20feed%20view?view=azure-devops-rest-5.0](https://docs.microsoft.com/en-us/rest/api/azure/devops/artifacts/feed%20%20management/get%20feed%20view?view=azure-devops-rest-5.0)"
+							},
+							"response": []
+						},
+						{
+							"name": "Get Feed Views",
+							"request": {
+								"auth": {
+									"type": "basic",
+									"basic": [
+										{
+											"key": "username",
+											"value": "Basic",
+											"type": "string"
+										},
+										{
+											"key": "password",
+											"value": "{{AccessToken}}",
+											"type": "string"
+										}
+									]
+								},
+								"method": "GET",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": ""
+								},
+								"url": {
+									"raw": "https://feeds.dev.azure.com/{{organization}}/_apis/packaging/Feeds/{{feedId}}/views?api-version={{api-version-preview}}",
+									"protocol": "https",
+									"host": [
+										"feeds",
+										"dev",
+										"azure",
+										"com"
+									],
+									"path": [
+										"{{organization}}",
+										"_apis",
+										"packaging",
+										"Feeds",
+										"{{feedId}}",
+										"views"
+									],
+									"query": [
+										{
+											"key": "api-version",
+											"value": "{{api-version-preview}}"
+										},
+										{
+											"key": "continuationToken",
+											"value": "",
+											"description": "A continuation token which acts as a bookmark to a previously retrieved change. This token allows the user to continue retrieving changes in batches, picking up where the previous batch left off. If specified, all the changes that occur strictly after the token will be returned. If not specified or 0, iteration will start with the first change.",
+											"disabled": true
+										},
+										{
+											"key": "batchSize",
+											"value": "",
+											"description": "Number of package changes to fetch. The default value is 1000. The maximum value is 2000.",
+											"disabled": true
+										}
+									]
+								},
+								"description": "Get all views for a feed.\r\n\r\n[https://docs.microsoft.com/en-us/rest/api/azure/devops/artifacts/feed%20%20management/get%20feed%20views?view=azure-devops-rest-5.0](https://docs.microsoft.com/en-us/rest/api/azure/devops/artifacts/feed%20%20management/get%20feed%20views?view=azure-devops-rest-5.0)"
+							},
+							"response": []
+						},
+						{
+							"name": "Get Feeds",
+							"request": {
+								"auth": {
+									"type": "basic",
+									"basic": [
+										{
+											"key": "username",
+											"value": "Basic",
+											"type": "string"
+										},
+										{
+											"key": "password",
+											"value": "{{AccessToken}}",
+											"type": "string"
+										}
+									]
+								},
+								"method": "GET",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": ""
+								},
+								"url": {
+									"raw": "https://feeds.dev.azure.com/{{organization}}/_apis/packaging/Feeds?api-version={{api-version-preview}}",
+									"protocol": "https",
+									"host": [
+										"feeds",
+										"dev",
+										"azure",
+										"com"
+									],
+									"path": [
+										"{{organization}}",
+										"_apis",
+										"packaging",
+										"Feeds"
+									],
+									"query": [
+										{
+											"key": "api-version",
+											"value": "{{api-version-preview}}"
+										},
+										{
+											"key": "feedRole",
+											"value": "",
+											"description": "Filter by this role, either Administrator(4), Contributor(3), or Reader(2) level permissions.",
+											"disabled": true
+										},
+										{
+											"key": "includeDeletedUpstreams",
+											"value": "",
+											"description": "Include upstreams that have been deleted in the response.",
+											"disabled": true
+										}
+									]
+								},
+								"description": "Get all feeds in an account where you have the provided role access.\r\n\r\n[https://docs.microsoft.com/en-us/rest/api/azure/devops/artifacts/feed%20%20management/get%20feeds?view=azure-devops-rest-5.0](https://docs.microsoft.com/en-us/rest/api/azure/devops/artifacts/feed%20%20management/get%20feeds?view=azure-devops-rest-5.0)"
+							},
+							"response": []
+						},
+						{
+							"name": "Set Feed Permissions",
+							"request": {
+								"auth": {
+									"type": "basic",
+									"basic": [
+										{
+											"key": "username",
+											"value": "Basic",
+											"type": "string"
+										},
+										{
+											"key": "password",
+											"value": "{{AccessToken}}",
+											"type": "string"
+										}
+									]
+								},
+								"method": "PATCH",
+								"header": [
+									{
+										"key": "Content-Type",
+										"name": "Content-Type",
+										"value": "application/json",
+										"type": "text"
+									}
+								],
+								"body": {
+									"mode": "raw",
+									"raw": "[\n    {\n        \"role\": \"administrator\",\n        \"identityDescriptor\": \"Microsoft.IdentityModel.Claims.ClaimsIdentity;xxxxx-86f1-xxxx-xxxx-2d7cd011db47\\\\demo@demo.com\",\n        \"displayName\": \"Hosam Kamel\"\n    }\n]"
+								},
+								"url": {
+									"raw": "https://feeds.dev.azure.com/{{organization}}/_apis/packaging/Feeds/{{feedId}}/permissions?api-version={{api-version-preview}}",
+									"protocol": "https",
+									"host": [
+										"feeds",
+										"dev",
+										"azure",
+										"com"
+									],
+									"path": [
+										"{{organization}}",
+										"_apis",
+										"packaging",
+										"Feeds",
+										"{{feedId}}",
+										"permissions"
+									],
+									"query": [
+										{
+											"key": "api-version",
+											"value": "{{api-version-preview}}"
+										}
+									]
+								},
+								"description": "Update the permissions on a feed.\r\n\r\n[https://docs.microsoft.com/en-us/rest/api/azure/devops/artifacts/feed%20%20management/set%20feed%20permissions?view=azure-devops-rest-5.0](https://docs.microsoft.com/en-us/rest/api/azure/devops/artifacts/feed%20%20management/set%20feed%20permissions?view=azure-devops-rest-5.0)"
+							},
+							"response": []
+						},
+						{
+							"name": "Update Feed",
+							"request": {
+								"auth": {
+									"type": "basic",
+									"basic": [
+										{
+											"key": "username",
+											"value": "Basic",
+											"type": "string"
+										},
+										{
+											"key": "password",
+											"value": "{{AccessToken}}",
+											"type": "string"
+										}
+									]
+								},
+								"method": "PATCH",
+								"header": [
+									{
+										"key": "Content-Type",
+										"name": "Content-Type",
+										"type": "text",
+										"value": "application/json"
+									}
+								],
+								"body": {
+									"mode": "raw",
+									"raw": "{\n    \"description\": \"Sample feed created by postman\",\n    \"hideDeletedPackageVersions\": true,\n    \"badgesEnabled\": true\n}"
+								},
+								"url": {
+									"raw": "https://feeds.dev.azure.com/{{organization}}/_apis/packaging/Feeds/{{feedId}}?api-version={{api-version-preview}}",
+									"protocol": "https",
+									"host": [
+										"feeds",
+										"dev",
+										"azure",
+										"com"
+									],
+									"path": [
+										"{{organization}}",
+										"_apis",
+										"packaging",
+										"Feeds",
+										"{{feedId}}"
+									],
+									"query": [
+										{
+											"key": "api-version",
+											"value": "{{api-version-preview}}"
+										}
+									]
+								},
+								"description": "Change the attributes of a feed.\r\n\r\n[https://docs.microsoft.com/en-us/rest/api/azure/devops/artifacts/feed%20%20management/update%20feed?view=azure-devops-rest-5.0](https://docs.microsoft.com/en-us/rest/api/azure/devops/artifacts/feed%20%20management/update%20feed?view=azure-devops-rest-5.0)"
+							},
+							"response": []
+						},
+						{
+							"name": "Update Feed View",
+							"request": {
+								"auth": {
+									"type": "basic",
+									"basic": [
+										{
+											"key": "username",
+											"value": "Basic",
+											"type": "string"
+										},
+										{
+											"key": "password",
+											"value": "{{AccessToken}}",
+											"type": "string"
+										}
+									]
+								},
+								"method": "PATCH",
+								"header": [
+									{
+										"key": "Content-Type",
+										"name": "Content-Type",
+										"type": "text",
+										"value": "application/json"
+									}
+								],
+								"body": {
+									"mode": "raw",
+									"raw": "{\n    \"visibility\": \"organization\",\n    \"name\": \"CustomView\",\n    \"type\": \"none\"\n}"
+								},
+								"url": {
+									"raw": "https://feeds.dev.azure.com/{{organization}}/_apis/packaging/feeds/{{feedId}}/views/{{viewId}}?api-version={{api-version-preview}}",
+									"protocol": "https",
+									"host": [
+										"feeds",
+										"dev",
+										"azure",
+										"com"
+									],
+									"path": [
+										"{{organization}}",
+										"_apis",
+										"packaging",
+										"feeds",
+										"{{feedId}}",
+										"views",
+										"{{viewId}}"
+									],
+									"query": [
+										{
+											"key": "api-version",
+											"value": "{{api-version-preview}}"
+										}
+									]
+								},
+								"description": "Update a view.\r\n\r\n[https://docs.microsoft.com/en-us/rest/api/azure/devops/artifacts/feed%20%20management/update%20feed%20view?view=azure-devops-rest-5.0](https://docs.microsoft.com/en-us/rest/api/azure/devops/artifacts/feed%20%20management/update%20feed%20view?view=azure-devops-rest-5.0)"
+							},
+							"response": []
+						}
+					],
+					"auth": {
+						"type": "basic",
+						"basic": [
+							{
+								"key": "username",
+								"value": "Basic",
+								"type": "string"
+							},
+							{
+								"key": "password",
+								"value": "{{AccessToken}}",
+								"type": "string"
+							}
+						]
+					},
+					"_postman_isSubFolder": true
+				},
+				{
+					"name": "Provenance",
+					"item": [],
+					"auth": {
+						"type": "basic",
+						"basic": [
+							{
+								"key": "username",
+								"value": "Basic",
+								"type": "string"
+							},
+							{
+								"key": "password",
+								"value": "{{AccessToken}}",
+								"type": "string"
+							}
+						]
+					},
+					"_postman_isSubFolder": true
+				},
+				{
+					"name": "Recycle Bin",
+					"item": [
+						{
+							"name": "Get Recycle Bin Package",
+							"request": {
+								"method": "GET",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": ""
+								},
+								"url": {
+									"raw": "https://feeds.dev.azure.com/{{organization}}/_apis/packaging/Feeds/{{feedId}}/RecycleBin/Packages/{{packageId}}?api-version={{api-version-preview}}",
+									"protocol": "https",
+									"host": [
+										"feeds",
+										"dev",
+										"azure",
+										"com"
+									],
+									"path": [
+										"{{organization}}",
+										"_apis",
+										"packaging",
+										"Feeds",
+										"{{feedId}}",
+										"RecycleBin",
+										"Packages",
+										"{{packageId}}"
+									],
+									"query": [
+										{
+											"key": "api-version",
+											"value": "{{api-version-preview}}"
+										}
+									]
+								},
+								"description": "Get information about a package and all its versions within the recycle bin.\r\n\r\n[https://docs.microsoft.com/en-us/rest/api/azure/devops/artifacts/recycle%20%20bin/get%20recycle%20bin%20package?view=azure-devops-rest-5.0](https://docs.microsoft.com/en-us/rest/api/azure/devops/artifacts/recycle%20%20bin/get%20recycle%20bin%20package?view=azure-devops-rest-5.0)"
+							},
+							"response": []
+						},
+						{
+							"name": "Get Recycle Bin Package Version",
+							"request": {
+								"method": "GET",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": ""
+								},
+								"url": {
+									"raw": "https://feeds.dev.azure.com/{{organization}}/_apis/packaging/Feeds/{{feedId}}/RecycleBin/Packages/{{packageId}}/Versions/{{packageVersionGuid}}?api-version={{api-version-preview}}",
+									"protocol": "https",
+									"host": [
+										"feeds",
+										"dev",
+										"azure",
+										"com"
+									],
+									"path": [
+										"{{organization}}",
+										"_apis",
+										"packaging",
+										"Feeds",
+										"{{feedId}}",
+										"RecycleBin",
+										"Packages",
+										"{{packageId}}",
+										"Versions",
+										"{{packageVersionGuid}}"
+									],
+									"query": [
+										{
+											"key": "api-version",
+											"value": "{{api-version-preview}}"
+										},
+										{
+											"key": "includeUrls",
+											"value": "true",
+											"description": "True to return REST Urls with the response. Default is True.",
+											"disabled": true
+										}
+									]
+								},
+								"description": "Get information about a package version within the recycle bin.\r\n\r\n[https://docs.microsoft.com/en-us/rest/api/azure/devops/artifacts/recycle%20%20bin/get%20recycle%20bin%20package%20version?view=azure-devops-rest-5.0](https://docs.microsoft.com/en-us/rest/api/azure/devops/artifacts/recycle%20%20bin/get%20recycle%20bin%20package%20version?view=azure-devops-rest-5.0)"
+							},
+							"response": []
+						},
+						{
+							"name": "Get Recycle Bin Package Versions",
+							"request": {
+								"method": "GET",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": ""
+								},
+								"url": {
+									"raw": "https://feeds.dev.azure.com/{{organization}}/_apis/packaging/Feeds/{{feedId}}/RecycleBin/Packages/{{packageId}}/Versions?api-version={{api-version-preview}}",
+									"protocol": "https",
+									"host": [
+										"feeds",
+										"dev",
+										"azure",
+										"com"
+									],
+									"path": [
+										"{{organization}}",
+										"_apis",
+										"packaging",
+										"Feeds",
+										"{{feedId}}",
+										"RecycleBin",
+										"Packages",
+										"{{packageId}}",
+										"Versions"
+									],
+									"query": [
+										{
+											"key": "api-version",
+											"value": "{{api-version-preview}}"
+										},
+										{
+											"key": "includeUrls",
+											"value": "true",
+											"description": "True to return REST Urls with the response. Default is True.",
+											"disabled": true
+										}
+									]
+								},
+								"description": "Get a list of package versions within the recycle bin.\r\n\r\n[https://docs.microsoft.com/en-us/rest/api/azure/devops/artifacts/recycle%20%20bin/get%20recycle%20bin%20package%20versions?view=azure-devops-rest-5.0](https://docs.microsoft.com/en-us/rest/api/azure/devops/artifacts/recycle%20%20bin/get%20recycle%20bin%20package%20versions?view=azure-devops-rest-5.0)"
+							},
+							"response": []
+						},
+						{
+							"name": "Get Recycle Bin Packages",
+							"request": {
+								"method": "GET",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": ""
+								},
+								"url": {
+									"raw": "https://feeds.dev.azure.com/{{organization}}/_apis/packaging/Feeds/{{feedId}}/RecycleBin/Packages?api-version={{api-version-preview}}",
+									"protocol": "https",
+									"host": [
+										"feeds",
+										"dev",
+										"azure",
+										"com"
+									],
+									"path": [
+										"{{organization}}",
+										"_apis",
+										"packaging",
+										"Feeds",
+										"{{feedId}}",
+										"RecycleBin",
+										"Packages"
+									],
+									"query": [
+										{
+											"key": "api-version",
+											"value": "{{api-version-preview}}"
+										},
+										{
+											"key": "protocolType",
+											"value": "",
+											"description": "Type of package (e.g. NuGet, npm, ...)",
+											"disabled": true
+										},
+										{
+											"key": "packageNameQuery",
+											"value": "",
+											"description": "Filter to packages matching this name",
+											"disabled": true
+										},
+										{
+											"key": "includeUrls",
+											"value": "",
+											"description": "True to return REST Urls with the response. Default is True.",
+											"disabled": true
+										},
+										{
+											"key": "$top",
+											"value": "",
+											"description": "Get the top N packages.",
+											"disabled": true
+										},
+										{
+											"key": "$skip",
+											"value": "",
+											"description": "Skip the first N packages.",
+											"disabled": true
+										},
+										{
+											"key": "includeAllVersions",
+											"value": "",
+											"description": "True to return all versions of the package in the response. Default is false (latest version only).",
+											"disabled": true
+										}
+									]
+								},
+								"description": "Query for packages within the recycle bin.\r\n\r\n[https://docs.microsoft.com/en-us/rest/api/azure/devops/artifacts/recycle%20%20bin/get%20recycle%20bin%20packages?view=azure-devops-rest-5.0](https://docs.microsoft.com/en-us/rest/api/azure/devops/artifacts/recycle%20%20bin/get%20recycle%20bin%20packages?view=azure-devops-rest-5.0)"
+							},
+							"response": []
+						}
+					],
+					"auth": {
+						"type": "basic",
+						"basic": [
+							{
+								"key": "username",
+								"value": "Basic",
+								"type": "string"
+							},
+							{
+								"key": "password",
+								"value": "{{AccessToken}}",
+								"type": "string"
+							}
+						]
+					},
+					"_postman_isSubFolder": true
+				},
+				{
+					"name": "Retention Policies",
+					"item": [
+						{
+							"name": "Get Retention Policy",
+							"request": {
+								"method": "GET",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": ""
+								},
+								"url": {
+									"raw": "https://feeds.dev.azure.com/{{organization}}/_apis/packaging/Feeds/{{feedId}}/retentionpolicies?api-version={{api-version-preview}}",
+									"protocol": "https",
+									"host": [
+										"feeds",
+										"dev",
+										"azure",
+										"com"
+									],
+									"path": [
+										"{{organization}}",
+										"_apis",
+										"packaging",
+										"Feeds",
+										"{{feedId}}",
+										"retentionpolicies"
+									],
+									"query": [
+										{
+											"key": "api-version",
+											"value": "{{api-version-preview}}"
+										}
+									]
+								},
+								"description": "Get the retention policy for a feed.\n\n[https://docs.microsoft.com/en-us/rest/api/azure/devops/artifacts/retention%20%20policies/get%20retention%20policy?view=azure-devops-rest-5.0](https://docs.microsoft.com/en-us/rest/api/azure/devops/artifacts/retention%20%20policies/get%20retention%20policy?view=azure-devops-rest-5.0)"
+							},
+							"response": []
+						},
+						{
+							"name": "Set Retention Policy",
+							"request": {
+								"method": "PUT",
+								"header": [
+									{
+										"key": "Content-Type",
+										"name": "Content-Type",
+										"value": "application/json",
+										"type": "text"
+									}
+								],
+								"body": {
+									"mode": "raw",
+									"raw": "{\n    \"ageLimitInDays\": 30,\n    \"countLimit\": 20,\n    \"daysToKeepRecentlyDownloadedPackages\": 30\n}"
+								},
+								"url": {
+									"raw": "https://feeds.dev.azure.com/{{organization}}/_apis/packaging/Feeds/{{feedId}}/retentionpolicies?api-version={{api-version-preview}}",
+									"protocol": "https",
+									"host": [
+										"feeds",
+										"dev",
+										"azure",
+										"com"
+									],
+									"path": [
+										"{{organization}}",
+										"_apis",
+										"packaging",
+										"Feeds",
+										"{{feedId}}",
+										"retentionpolicies"
+									],
+									"query": [
+										{
+											"key": "api-version",
+											"value": "{{api-version-preview}}"
+										}
+									]
+								},
+								"description": "Set the retention policy for a feed.\r\n\r\n[https://docs.microsoft.com/en-us/rest/api/azure/devops/artifacts/retention%20%20policies/set%20retention%20policy?view=azure-devops-rest-5.0](https://docs.microsoft.com/en-us/rest/api/azure/devops/artifacts/retention%20%20policies/set%20retention%20policy?view=azure-devops-rest-5.0)"
+							},
+							"response": []
+						},
+						{
+							"name": "Delete Retention Policy",
+							"request": {
+								"method": "DELETE",
+								"header": [
+									{
+										"key": "Content-Type",
+										"name": "Content-Type",
+										"value": "application/json",
+										"type": "text"
+									}
+								],
+								"body": {
+									"mode": "raw",
+									"raw": ""
+								},
+								"url": {
+									"raw": "https://feeds.dev.azure.com/{{organization}}/_apis/packaging/Feeds/{{feedId}}/retentionpolicies?api-version={{api-version-preview}}",
+									"protocol": "https",
+									"host": [
+										"feeds",
+										"dev",
+										"azure",
+										"com"
+									],
+									"path": [
+										"{{organization}}",
+										"_apis",
+										"packaging",
+										"Feeds",
+										"{{feedId}}",
+										"retentionpolicies"
+									],
+									"query": [
+										{
+											"key": "api-version",
+											"value": "{{api-version-preview}}"
+										}
+									]
+								},
+								"description": "Delete the retention policy for a feed.\r\n\r\n[https://docs.microsoft.com/en-us/rest/api/azure/devops/artifacts/retention%20%20policies/delete%20retention%20policy?view=azure-devops-rest-5.0](https://docs.microsoft.com/en-us/rest/api/azure/devops/artifacts/retention%20%20policies/delete%20retention%20policy?view=azure-devops-rest-5.0)"
+							},
+							"response": []
+						}
+					],
+					"auth": {
+						"type": "basic",
+						"basic": [
+							{
+								"key": "username",
+								"value": "Basic",
+								"type": "string"
+							},
+							{
+								"key": "password",
+								"value": "{{AccessToken}}",
+								"type": "string"
+							}
+						]
+					},
+					"_postman_isSubFolder": true
+				},
+				{
+					"name": "Service Settings",
+					"item": [
+						{
+							"name": "Get Global Permissions",
+							"request": {
+								"method": "GET",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": ""
+								},
+								"url": {
+									"raw": "https://feeds.dev.azure.com/{{organization}}/_apis/packaging/globalpermissions?api-version={{api-version-preview}}",
+									"protocol": "https",
+									"host": [
+										"feeds",
+										"dev",
+										"azure",
+										"com"
+									],
+									"path": [
+										"{{organization}}",
+										"_apis",
+										"packaging",
+										"globalpermissions"
+									],
+									"query": [
+										{
+											"key": "api-version",
+											"value": "{{api-version-preview}}"
+										}
+									]
+								},
+								"description": "Get all service-wide feed creation permissions.\n\n[https://docs.microsoft.com/en-us/rest/api/azure/devops/artifacts/service%20%20settings/getglobalpermissions?view=azure-devops-rest-5.0](https://docs.microsoft.com/en-us/rest/api/azure/devops/artifacts/service%20%20settings/getglobalpermissions?view=azure-devops-rest-5.0)"
+							},
+							"response": []
+						},
+						{
+							"name": "Set Global Permissions",
+							"request": {
+								"method": "PATCH",
+								"header": [
+									{
+										"key": "Content-Type",
+										"name": "Content-Type",
+										"value": "application/json",
+										"type": "text"
+									}
+								],
+								"body": {
+									"mode": "raw",
+									"raw": "[\n    {\n        \"role\": \"administrator\",\n        \"identityDescriptor\": \"Microsoft.TeamFoundation.Identity;S-x-x-xxxxxxxxxx-1xxxx0969-2402xxxx-21xxxxx16-0-0-0-0-1\"\n    }\n]"
+								},
+								"url": {
+									"raw": "https://feeds.dev.azure.com/{{organization}}/_apis/packaging/globalpermissions?api-version={{api-version-preview}}",
+									"protocol": "https",
+									"host": [
+										"feeds",
+										"dev",
+										"azure",
+										"com"
+									],
+									"path": [
+										"{{organization}}",
+										"_apis",
+										"packaging",
+										"globalpermissions"
+									],
+									"query": [
+										{
+											"key": "api-version",
+											"value": "{{api-version-preview}}"
+										}
+									]
+								},
+								"description": "Set service-wide permissions that govern feed creation.\r\n\r\n[https://docs.microsoft.com/en-us/rest/api/azure/devops/artifacts/service%20%20settings/setglobalpermissions?view=azure-devops-rest-5.0](https://docs.microsoft.com/en-us/rest/api/azure/devops/artifacts/service%20%20settings/setglobalpermissions?view=azure-devops-rest-5.0)"
+							},
+							"response": []
+						}
+					],
+					"auth": {
+						"type": "basic",
+						"basic": [
+							{
+								"key": "username",
+								"value": "Basic",
+								"type": "string"
+							},
+							{
+								"key": "password",
+								"value": "{{AccessToken}}",
+								"type": "string"
+							}
+						]
+					},
+					"_postman_isSubFolder": true
+				}
+			],
+			"auth": {
+				"type": "basic",
+				"basic": [
+					{
+						"key": "username",
+						"value": "Basic",
+						"type": "string"
+					},
+					{
+						"key": "password",
+						"value": "{{AccessToken}}",
+						"type": "string"
+					}
+				]
+			}
+		},
 		{
 			"name": "Build",
 			"item": [
@@ -14,6 +1948,68 @@
 					"item": [
 						{
 							"name": "List",
+							"request": {
+								"auth": {
+									"type": "basic",
+									"basic": [
+										{
+											"key": "username",
+											"value": "Basic",
+											"type": "string"
+										},
+										{
+											"key": "password",
+											"value": "{{AccessToken}}",
+											"type": "string"
+										}
+									]
+								},
+								"method": "GET",
+								"header": [
+									{
+										"key": "Content-Type",
+										"name": "Content-Type",
+										"value": "application/json",
+										"type": "text"
+									},
+									{
+										"key": "Authorization",
+										"value": "Basic {{AccessToken}}",
+										"type": "text"
+									}
+								],
+								"body": {
+									"mode": "raw",
+									"raw": ""
+								},
+								"url": {
+									"raw": "https://dev.azure.com/{{OrganizationId}}/{{ProjectName}}/_apis/build/builds?api-version={{api-version}}",
+									"protocol": "https",
+									"host": [
+										"dev",
+										"azure",
+										"com"
+									],
+									"path": [
+										"{{OrganizationId}}",
+										"{{ProjectName}}",
+										"_apis",
+										"build",
+										"builds"
+									],
+									"query": [
+										{
+											"key": "api-version",
+											"value": "{{api-version}}"
+										}
+									]
+								},
+								"description": "Gets a list of builds"
+							},
+							"response": []
+						},
+						{
+							"name": "List Copy",
 							"request": {
 								"auth": {
 									"type": "basic",
@@ -1729,6 +3725,28 @@
 					"_postman_isSubFolder": true
 				}
 			]
+		}
+	],
+	"event": [
+		{
+			"listen": "prerequest",
+			"script": {
+				"id": "dd0e4f31-e4aa-419c-81d0-89e8d22feb90",
+				"type": "text/javascript",
+				"exec": [
+					""
+				]
+			}
+		},
+		{
+			"listen": "test",
+			"script": {
+				"id": "0331b1a2-5387-4059-9a72-aac4ea848f59",
+				"type": "text/javascript",
+				"exec": [
+					""
+				]
+			}
 		}
 	]
 }
