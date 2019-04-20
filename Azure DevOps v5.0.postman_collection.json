@@ -1,6 +1,6 @@
 {
 	"info": {
-		"_postman_id": "e1bcbbeb-2718-4cce-8e5b-047a3f181df8",
+		"_postman_id": "25018e75-b6f6-4ab5-a96a-457b6526d29b",
 		"name": "Azure DevOps v5.0",
 		"description": "Azure DevOps Services REST API Reference.\n\nv1.1",
 		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
@@ -3723,6 +3723,558 @@
 						}
 					],
 					"_postman_isSubFolder": true
+				}
+			]
+		},
+		{
+			"name": "Wiki",
+			"item": [
+				{
+					"name": "Wikis",
+					"item": [
+						{
+							"name": "Create (Create project wiki)",
+							"request": {
+								"auth": {
+									"type": "basic",
+									"basic": [
+										{
+											"key": "password",
+											"value": "{{AccessToken}}",
+											"type": "string"
+										},
+										{
+											"key": "username",
+											"value": "Basic",
+											"type": "string"
+										}
+									]
+								},
+								"method": "POST",
+								"header": [
+									{
+										"key": "Content-Type",
+										"name": "Content-Type",
+										"value": "application/json",
+										"type": "text"
+									}
+								],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n  \"type\": \"projectWiki\",\r\n  \"name\": \"{{projectWikiName}}\",\r\n  \"projectId\": \"{{projectId}}\",\r\n}"
+								},
+								"url": {
+									"raw": "https://dev.azure.com/{{organization}}/{{project}}/_apis/wiki/wikis?api-version={{api-version}}",
+									"protocol": "https",
+									"host": [
+										"dev",
+										"azure",
+										"com"
+									],
+									"path": [
+										"{{organization}}",
+										"{{project}}",
+										"_apis",
+										"wiki",
+										"wikis"
+									],
+									"query": [
+										{
+											"key": "api-version",
+											"value": "{{api-version}}"
+										}
+									]
+								},
+								"description": "Creates the project wiki resource.\n[https://docs.microsoft.com/en-us/rest/api/azure/devops/wiki/wikis/create?view=azure-devops-rest-5.0](https://docs.microsoft.com/en-us/rest/api/azure/devops/wiki/wikis/create?view=azure-devops-rest-5.0)"
+							},
+							"response": [
+								{
+									"name": "Create (Create project wiki)",
+									"originalRequest": {
+										"method": "POST",
+										"header": [
+											{
+												"key": "Content-Type",
+												"name": "Content-Type",
+												"value": "application/json",
+												"type": "text"
+											}
+										],
+										"body": {
+											"mode": "raw",
+											"raw": "{\r\n  \"type\": \"projectWiki\",\r\n  \"name\": \"sampleProjectWiki\",\r\n  \"projectId\": \"f38a86b5-98b0-49ef-ae9f-213c2b531cbe\"\r\n}"
+										},
+										"url": {
+											"raw": "https://dev.azure.com/{{organization}}/{{project}}/_apis/wiki/wikis?api-version={{api-version}}",
+											"protocol": "https",
+											"host": [
+												"dev",
+												"azure",
+												"com"
+											],
+											"path": [
+												"{{organization}}",
+												"{{project}}",
+												"_apis",
+												"wiki",
+												"wikis"
+											],
+											"query": [
+												{
+													"key": "api-version",
+													"value": "{{api-version}}"
+												}
+											]
+										}
+									},
+									"status": "Conflict",
+									"code": 409,
+									"_postman_previewlanguage": "json",
+									"header": [
+										{
+											"key": "Cache-Control",
+											"value": "no-cache"
+										},
+										{
+											"key": "Pragma",
+											"value": "no-cache"
+										},
+										{
+											"key": "Content-Length",
+											"value": "274"
+										},
+										{
+											"key": "Content-Type",
+											"value": "application/json; charset=utf-8"
+										},
+										{
+											"key": "Expires",
+											"value": "-1"
+										},
+										{
+											"key": "P3P",
+											"value": "CP=\"CAO DSP COR ADMa DEV CONo TELo CUR PSA PSD TAI IVDo OUR SAMi BUS DEM NAV STA UNI COM INT PHY ONL FIN PUR LOC CNT\""
+										},
+										{
+											"key": "X-TFS-ProcessId",
+											"value": "0fc04c81-569d-4326-ad5b-b2276af1887b"
+										},
+										{
+											"key": "Strict-Transport-Security",
+											"value": "max-age=31536000; includeSubDomains"
+										},
+										{
+											"key": "ActivityId",
+											"value": "b7d2f3b1-50a1-4d6b-a0b0-8842dd0ab013"
+										},
+										{
+											"key": "X-TFS-Session",
+											"value": "b7d2f3b1-50a1-4d6b-a0b0-8842dd0ab013"
+										},
+										{
+											"key": "X-VSS-E2EID",
+											"value": "b7d2f3b1-50a1-4d6b-a0b0-8842dd0ab013"
+										},
+										{
+											"key": "X-VSS-UserData",
+											"value": "934786f9-caa5-45e0-956e-cca10a7965e9:taq.abubaker@gmail.com"
+										},
+										{
+											"key": "X-FRAME-OPTIONS",
+											"value": "SAMEORIGIN"
+										},
+										{
+											"key": "X-Content-Type-Options",
+											"value": "nosniff"
+										},
+										{
+											"key": "X-MSEdge-Ref",
+											"value": "Ref A: 9AA3BFC95791455D8000C723A0926952 Ref B: AM3EDGE0121 Ref C: 2019-04-19T22:53:56Z"
+										},
+										{
+											"key": "Date",
+											"value": "Fri, 19 Apr 2019 22:53:56 GMT"
+										}
+									],
+									"cookie": [],
+									"body": "{\r\n  \"id\": \"a4cfa859-1089-4445-9ef1-837b0fbd44bd\",\r\n  \"versions\": [\r\n    {\r\n      \"version\": \"wikiMaster\"\r\n    }\r\n  ],\r\n  \"url\": \"https://dev.azure.com/fabrikam/f38a86b5-98b0-49ef-ae9f-213c2b531cbe/_apis/wiki/wikis/a4cfa859-1089-4445-9ef1-837b0fbd44bd\",\r\n  \"remoteUrl\": \"https://dev.azure.com/fabrikam/f38a86b5-98b0-49ef-ae9f-213c2b531cbe/_wiki/wikis/a4cfa859-1089-4445-9ef1-837b0fbd44bd\",\r\n  \"type\": \"projectWiki\",\r\n  \"name\": \"sampleProjectWiki\",\r\n  \"projectId\": \"f38a86b5-98b0-49ef-ae9f-213c2b531cbe\",\r\n  \"repositoryId\": \"a4cfa859-1089-4445-9ef1-837b0fbd44bd\",\r\n  \"mappedPath\": \"/\"\r\n}"
+								}
+							]
+						},
+						{
+							"name": "Create (Create code wiki)",
+							"request": {
+								"auth": {
+									"type": "basic",
+									"basic": [
+										{
+											"key": "password",
+											"value": "{{AccessToken}}",
+											"type": "string"
+										},
+										{
+											"key": "username",
+											"value": "Basic",
+											"type": "string"
+										}
+									]
+								},
+								"method": "POST",
+								"header": [
+									{
+										"key": "Content-Type",
+										"name": "Content-Type",
+										"value": "application/json",
+										"type": "text"
+									}
+								],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n  \"version\": {\r\n    \"version\": \"{{version}}\",\r\n    \"versionOptions\": \"{{GitVersionOptions}}\",\r\n    \"versionType\": \"{{GitVersionType}}\"\r\n  },\r\n  \"type\": \"codeWiki\",\r\n  \"name\": \"sampleCodeWiki\",\r\n  \"projectId\": \"{{projectId}}\",\r\n  \"repositoryId\": \"{{repositoryId}}\",\r\n  \"mappedPath\": \"/docs\"\r\n}"
+								},
+								"url": {
+									"raw": "https://dev.azure.com/{{organization}}/{{project}}/_apis/wiki/wikis?api-version={{api-version}}",
+									"protocol": "https",
+									"host": [
+										"dev",
+										"azure",
+										"com"
+									],
+									"path": [
+										"{{organization}}",
+										"{{project}}",
+										"_apis",
+										"wiki",
+										"wikis"
+									],
+									"query": [
+										{
+											"key": "api-version",
+											"value": "{{api-version}}"
+										}
+									]
+								},
+								"description": "Creates the code wiki resource.\n[https://docs.microsoft.com/en-us/rest/api/azure/devops/wiki/wikis/create?view=azure-devops-rest-5.0](https://docs.microsoft.com/en-us/rest/api/azure/devops/wiki/wikis/create?view=azure-devops-rest-5.0)"
+							},
+							"response": [
+								{
+									"name": "Create (Create code wiki)",
+									"originalRequest": {
+										"method": "POST",
+										"header": [
+											{
+												"key": "Content-Type",
+												"name": "Content-Type",
+												"value": "application/json",
+												"type": "text"
+											}
+										],
+										"body": {
+											"mode": "raw",
+											"raw": "{\r\n  \"version\": {\r\n    \"version\": \"master\"\r\n  },\r\n  \"type\": \"codeWiki\",\r\n  \"name\": \"sampleCodeWiki\",\r\n  \"projectId\": \"15cbba90-8ac5-450e-934c-16f43021546b\",\r\n  \"repositoryId\": \"cd327f27-561b-45aa-9913-4af25ad85889\",\r\n  \"mappedPath\": \"/docs\"\r\n}"
+										},
+										"url": {
+											"raw": "https://dev.azure.com/{{organization}}/{{project}}/_apis/wiki/wikis?api-version={{api-version}}",
+											"protocol": "https",
+											"host": [
+												"dev",
+												"azure",
+												"com"
+											],
+											"path": [
+												"{{organization}}",
+												"{{project}}",
+												"_apis",
+												"wiki",
+												"wikis"
+											],
+											"query": [
+												{
+													"key": "api-version",
+													"value": "{{api-version}}"
+												}
+											]
+										}
+									},
+									"_postman_previewlanguage": "json",
+									"header": null,
+									"cookie": [],
+									"body": "{\n    \"id\": \"9bfc671f-8116-4b3f-9aad-c17a9d677ab6\",\n    \"versions\": [\n        {\n            \"version\": \"master\"\n        }\n    ],\n    \"url\": \"https://dev.azure.com/fabrikam/15cbba90-8ac5-450e-934c-16f43021546b/_apis/wiki/wikis/9bfc671f-8116-4b3f-9aad-c17a9d677ab6\",\n    \"remoteUrl\": \"https://dev.azure.com/fabrikam/15cbba90-8ac5-450e-934c-16f43021546b/_wiki/wikis/9bfc671f-8116-4b3f-9aad-c17a9d677ab6\",\n    \"type\": \"codeWiki\",\n    \"name\": \"sampleCodeWiki\",\n    \"projectId\": \"15cbba90-8ac5-450e-934c-16f43021546b\",\n    \"repositoryId\": \"cd327f27-561b-45aa-9913-4af25ad85889\",\n    \"mappedPath\": \"/docs\"\n}"
+								}
+							]
+						},
+						{
+							"name": "Delete",
+							"request": {
+								"auth": {
+									"type": "basic",
+									"basic": [
+										{
+											"key": "password",
+											"value": "{{AccessToken}}",
+											"type": "string"
+										},
+										{
+											"key": "username",
+											"value": "Basic",
+											"type": "string"
+										}
+									]
+								},
+								"method": "DELETE",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": ""
+								},
+								"url": {
+									"raw": "https://dev.azure.com/{{organization}}/{{project}}/_apis/wiki/wikis/{{wikiIdentifier}}?api-version={{api-version}}",
+									"protocol": "https",
+									"host": [
+										"dev",
+										"azure",
+										"com"
+									],
+									"path": [
+										"{{organization}}",
+										"{{project}}",
+										"_apis",
+										"wiki",
+										"wikis",
+										"{{wikiIdentifier}}"
+									],
+									"query": [
+										{
+											"key": "api-version",
+											"value": "{{api-version}}"
+										}
+									]
+								},
+								"description": "Deletes the wiki corresponding to the wiki name or Id provided.\n[https://docs.microsoft.com/en-us/rest/api/azure/devops/wiki/wikis/delete?view=azure-devops-rest-5.0](https://docs.microsoft.com/en-us/rest/api/azure/devops/wiki/wikis/delete?view=azure-devops-rest-5.0)"
+							},
+							"response": []
+						},
+						{
+							"name": "Get",
+							"request": {
+								"auth": {
+									"type": "basic",
+									"basic": [
+										{
+											"key": "password",
+											"value": "{{AccessToken}}",
+											"type": "string"
+										},
+										{
+											"key": "username",
+											"value": "Basic",
+											"type": "string"
+										}
+									]
+								},
+								"method": "GET",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": ""
+								},
+								"url": {
+									"raw": "https://dev.azure.com/{{organization}}/{{project}}/_apis/wiki/wikis/{{wikiIdentifier}}?api-version={{api-version}}",
+									"protocol": "https",
+									"host": [
+										"dev",
+										"azure",
+										"com"
+									],
+									"path": [
+										"{{organization}}",
+										"{{project}}",
+										"_apis",
+										"wiki",
+										"wikis",
+										"{{wikiIdentifier}}"
+									],
+									"query": [
+										{
+											"key": "api-version",
+											"value": "{{api-version}}"
+										}
+									]
+								},
+								"description": "Gets the wiki corresponding to the wiki name or Id provided.\r\n[https://docs.microsoft.com/en-us/rest/api/azure/devops/wiki/wikis/get?view=azure-devops-rest-5.0](https://docs.microsoft.com/en-us/rest/api/azure/devops/wiki/wikis/delete?view=azure-devops-rest-5.0)"
+							},
+							"response": []
+						},
+						{
+							"name": "List",
+							"request": {
+								"auth": {
+									"type": "basic",
+									"basic": [
+										{
+											"key": "password",
+											"value": "{{AccessToken}}",
+											"type": "string"
+										},
+										{
+											"key": "username",
+											"value": "Basic",
+											"type": "string"
+										}
+									]
+								},
+								"method": "GET",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": ""
+								},
+								"url": {
+									"raw": "https://dev.azure.com/{{organization}}/{{project}}/_apis/wiki/wikis?api-version={{api-version}}",
+									"protocol": "https",
+									"host": [
+										"dev",
+										"azure",
+										"com"
+									],
+									"path": [
+										"{{organization}}",
+										"{{project}}",
+										"_apis",
+										"wiki",
+										"wikis"
+									],
+									"query": [
+										{
+											"key": "api-version",
+											"value": "{{api-version}}"
+										}
+									]
+								},
+								"description": "Gets all wikis in a project or collection.\n[https://docs.microsoft.com/en-us/rest/api/azure/devops/wiki/wikis/list?view=azure-devops-rest-5.0](https://docs.microsoft.com/en-us/rest/api/azure/devops/wiki/wikis/delete?view=azure-devops-rest-5.0)"
+							},
+							"response": []
+						},
+						{
+							"name": "Update",
+							"request": {
+								"auth": {
+									"type": "basic",
+									"basic": [
+										{
+											"key": "password",
+											"value": "{{AccessToken}}",
+											"type": "string"
+										},
+										{
+											"key": "username",
+											"value": "Basic",
+											"type": "string"
+										}
+									]
+								},
+								"method": "PATCH",
+								"header": [
+									{
+										"key": "Content-Type",
+										"name": "Content-Type",
+										"value": "application/json",
+										"type": "text"
+									}
+								],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n  \"versions\": [\r\n    {\r\n      \"version\": \"{{version}}\"\r\n    }\r\n  ],\r\n  \"name\": \"TaqName\"\r\n}"
+								},
+								"url": {
+									"raw": "https://dev.azure.com/{{organization}}/{{project}}/_apis/wiki/wikis/{{wikiIdentifier}}?api-version={{api-version}}",
+									"protocol": "https",
+									"host": [
+										"dev",
+										"azure",
+										"com"
+									],
+									"path": [
+										"{{organization}}",
+										"{{project}}",
+										"_apis",
+										"wiki",
+										"wikis",
+										"{{wikiIdentifier}}"
+									],
+									"query": [
+										{
+											"key": "api-version",
+											"value": "{{api-version}}"
+										}
+									]
+								},
+								"description": "Updates the wiki corresponding to the wiki Id or name provided using the update parameters.\n[https://docs.microsoft.com/en-us/rest/api/azure/devops/wiki/wikis/update?view=azure-devops-rest-5.0](https://docs.microsoft.com/en-us/rest/api/azure/devops/wiki/wikis/update?view=azure-devops-rest-5.0)"
+							},
+							"response": []
+						}
+					],
+					"description": "Wiki is a collection of pages maintained in a particular hierarchy. Every wiki is backed up by a Git repository.\n[https://docs.microsoft.com/en-us/rest/api/azure/devops/wiki/wikis?view=azure-devops-rest-5.0](https://docs.microsoft.com/en-us/rest/api/azure/devops/wiki/wikis?view=azure-devops-rest-5.0)",
+					"event": [
+						{
+							"listen": "prerequest",
+							"script": {
+								"id": "fa7730ad-e8cf-429d-8697-401872ac46b0",
+								"type": "text/javascript",
+								"exec": [
+									""
+								]
+							}
+						},
+						{
+							"listen": "test",
+							"script": {
+								"id": "84486755-1942-4a8b-85ae-d1c2bcc328ab",
+								"type": "text/javascript",
+								"exec": [
+									""
+								]
+							}
+						}
+					],
+					"_postman_isSubFolder": true
+				}
+			],
+			"auth": {
+				"type": "basic",
+				"basic": [
+					{
+						"key": "password",
+						"value": "{{AccessToken}}",
+						"type": "string"
+					},
+					{
+						"key": "username",
+						"value": "Basic",
+						"type": "string"
+					}
+				]
+			},
+			"event": [
+				{
+					"listen": "prerequest",
+					"script": {
+						"id": "c154c472-d53f-44a0-91fd-4040d345fef4",
+						"type": "text/javascript",
+						"exec": [
+							""
+						]
+					}
+				},
+				{
+					"listen": "test",
+					"script": {
+						"id": "52e8946b-8ef9-4f29-8f39-3ecee81c8ee5",
+						"type": "text/javascript",
+						"exec": [
+							""
+						]
+					}
 				}
 			]
 		}
