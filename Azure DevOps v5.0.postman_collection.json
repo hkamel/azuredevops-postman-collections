@@ -1,6 +1,6 @@
 {
 	"info": {
-		"_postman_id": "25018e75-b6f6-4ab5-a96a-457b6526d29b",
+		"_postman_id": "be468682-c704-4c04-8c32-4dffc14f2f71",
 		"name": "Azure DevOps v5.0",
 		"description": "Azure DevOps Services REST API Reference.\n\nv1.1",
 		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
@@ -37,13 +37,10 @@
 									"raw": ""
 								},
 								"url": {
-									"raw": "https://feeds.dev.azure.com/{{organization}}/_apis/public/packaging/Feeds/{{feedId}}/Packages/{{packageId}}/badge?api-version={{api-version-preview}}",
+									"raw": "https://{{feedsServer}}/{{organization}}/_apis/public/packaging/Feeds/{{feedId}}/Packages/{{packageId}}/badge?api-version={{api-version-preview}}",
 									"protocol": "https",
 									"host": [
-										"feeds",
-										"dev",
-										"azure",
-										"com"
+										"{{feedsServer}}"
 									],
 									"path": [
 										"{{organization}}",
@@ -92,13 +89,10 @@
 									"raw": ""
 								},
 								"url": {
-									"raw": "https://feeds.dev.azure.com/{{organization}}/_apis/packaging/Feeds/{{feedId}}/packages/{{packageId}}?api-version={{api-version-preview}}",
+									"raw": "https://{{feedsServer}}/{{organization}}/_apis/packaging/Feeds/{{feedId}}/packages/{{packageId}}?api-version={{api-version-preview}}",
 									"protocol": "https",
 									"host": [
-										"feeds",
-										"dev",
-										"azure",
-										"com"
+										"{{feedsServer}}"
 									],
 									"path": [
 										"{{organization}}",
@@ -181,13 +175,10 @@
 									"raw": ""
 								},
 								"url": {
-									"raw": "https://feeds.dev.azure.com/{{organization}}/_apis/packaging/Feeds/{{feedId}}/Packages/{{packageId}}/versions/{{packageVersionId}}?api-version={{api-version-preview}}",
+									"raw": "https://{{feedsServer}}/{{organization}}/_apis/packaging/Feeds/{{feedId}}/Packages/{{packageId}}/versions/{{packageVersionId}}?api-version={{api-version-preview}}",
 									"protocol": "https",
 									"host": [
-										"feeds",
-										"dev",
-										"azure",
-										"com"
+										"{{feedsServer}}"
 									],
 									"path": [
 										"{{organization}}",
@@ -254,13 +245,10 @@
 									"raw": ""
 								},
 								"url": {
-									"raw": "https://feeds.dev.azure.com/{{organization}}/_apis/packaging/Feeds/{{feedId}}/Packages/{{packageId}}/Versions/{{packageVersionId}}/provenance?api-version={{api-version-preview}}",
+									"raw": "https://{{feedsServer}}/{{organization}}/_apis/packaging/Feeds/{{feedId}}/Packages/{{packageId}}/Versions/{{packageVersionId}}/provenance?api-version={{api-version-preview}}",
 									"protocol": "https",
 									"host": [
-										"feeds",
-										"dev",
-										"azure",
-										"com"
+										"{{feedsServer}}"
 									],
 									"path": [
 										"{{organization}}",
@@ -310,13 +298,10 @@
 									"raw": ""
 								},
 								"url": {
-									"raw": "https://feeds.dev.azure.com/{{organization}}/_apis/packaging/Feeds/{{feedId}}/Packages/{{packageId}}/versions?api-version={{api-version-preview}}",
+									"raw": "https://{{feedsServer}}/{{organization}}/_apis/packaging/Feeds/{{feedId}}/Packages/{{packageId}}/versions?api-version={{api-version-preview}}",
 									"protocol": "https",
 									"host": [
-										"feeds",
-										"dev",
-										"azure",
-										"com"
+										"{{feedsServer}}"
 									],
 									"path": [
 										"{{organization}}",
@@ -382,13 +367,10 @@
 									"raw": ""
 								},
 								"url": {
-									"raw": "https://feeds.dev.azure.com/{{organization}}/_apis/packaging/Feeds/{{feedId}}/packages?api-version={{api-version-preview}}",
+									"raw": "https://{{feedsServer}}/{{organization}}/_apis/packaging/Feeds/{{feedId}}/packages?api-version={{api-version-preview}}",
 									"protocol": "https",
 									"host": [
-										"feeds",
-										"dev",
-										"azure",
-										"com"
+										"{{feedsServer}}"
 									],
 									"path": [
 										"{{organization}}",
@@ -512,13 +494,10 @@
 									"raw": ""
 								},
 								"url": {
-									"raw": "https://feeds.dev.azure.com/{{organization}}/_apis/packaging/feedchanges/{{feedId}}?api-version={{api-version-preview}}",
+									"raw": "https://{{feedsServer}}/{{organization}}/_apis/packaging/feedchanges/{{feedId}}?api-version={{api-version-preview}}",
 									"protocol": "https",
 									"host": [
-										"feeds",
-										"dev",
-										"azure",
-										"com"
+										"{{feedsServer}}"
 									],
 									"path": [
 										"{{organization}}",
@@ -563,13 +542,10 @@
 									"raw": ""
 								},
 								"url": {
-									"raw": "https://feeds.dev.azure.com/{{organization}}/_apis/packaging/feedchanges?api-version={{api-version-preview}}",
+									"raw": "https://{{feedsServer}}/{{organization}}/_apis/packaging/feedchanges?api-version={{api-version-preview}}",
 									"protocol": "https",
 									"host": [
-										"feeds",
-										"dev",
-										"azure",
-										"com"
+										"{{feedsServer}}"
 									],
 									"path": [
 										"{{organization}}",
@@ -631,13 +607,10 @@
 									"raw": ""
 								},
 								"url": {
-									"raw": "https://feeds.dev.azure.com/{{organization}}/_apis/packaging/Feeds/{{feedId}}/packagechanges?api-version={{api-version-preview}}",
+									"raw": "https://{{feedsServer}}/{{organization}}/_apis/packaging/Feeds/{{feedId}}/packagechanges?api-version={{api-version-preview}}",
 									"protocol": "https",
 									"host": [
-										"feeds",
-										"dev",
-										"azure",
-										"com"
+										"{{feedsServer}}"
 									],
 									"path": [
 										"{{organization}}",
@@ -723,13 +696,10 @@
 									"raw": "{\n    \"description\": \"Sample feed created by postman\",\n    \"hideDeletedPackageVersions\": true,\n    \"badgesEnabled\": true,\n    \"name\": \"feedbypostman\",\n    \"upstreamEnabled\": true,\n    \"viewId\": null,\n    \"viewName\": null,\n    \"fullyQualifiedName\": \"feedbypostman\",\n    \"upstreamSources\": [\n        {\n            \"id\": \"40cea34f-c6ef-4898-b379-626926723a16\",\n            \"name\": \"npmjs\",\n            \"protocol\": \"npm\",\n            \"location\": \"https://registry.npmjs.org/\",\n            \"upstreamSourceType\": \"public\"\n        },\n        {\n            \"id\": \"2a28a64e-8822-4bf7-bc7b-5f1475178b36\",\n            \"name\": \"nuget.org\",\n            \"protocol\": \"nuget\",\n            \"location\": \"https://api.nuget.org/v3/index.json\",\n            \"upstreamSourceType\": \"public\"\n        }\n    ],\n    \"capabilities\": \"defaultCapabilities\"\n}"
 								},
 								"url": {
-									"raw": "https://feeds.dev.azure.com/{{organization}}/_apis/packaging/feeds?api-version={{api-version-preview}}",
+									"raw": "https://{{feedsServer}}/{{organization}}/_apis/packaging/feeds?api-version={{api-version-preview}}",
 									"protocol": "https",
 									"host": [
-										"feeds",
-										"dev",
-										"azure",
-										"com"
+										"{{feedsServer}}"
 									],
 									"path": [
 										"{{organization}}",
@@ -780,13 +750,10 @@
 									"raw": "{\n    \"visibility\": \"collection\",\n    \"name\": \"CustomView01\",\n    \"type\": \"release\"\n}"
 								},
 								"url": {
-									"raw": "https://feeds.dev.azure.com/{{organization}}/_apis/packaging/feeds/{{feedId}}/views?api-version={{api-version-preview}}",
+									"raw": "https://{{feedsServer}}/{{organization}}/_apis/packaging/feeds/{{feedId}}/views?api-version={{api-version-preview}}",
 									"protocol": "https",
 									"host": [
-										"feeds",
-										"dev",
-										"azure",
-										"com"
+										"{{feedsServer}}"
 									],
 									"path": [
 										"{{organization}}",
@@ -839,13 +806,10 @@
 									"raw": "{\n    \"description\": \"Sample feed created by postman\",\n    \"hideDeletedPackageVersions\": true,\n    \"badgesEnabled\": true,\n    \"name\": \"feedbypostman\",\n    \"upstreamEnabled\": true,\n    \"viewId\": null,\n    \"viewName\": null,\n    \"fullyQualifiedName\": \"feedbypostman\",\n    \"upstreamSources\": [\n        {\n            \"id\": \"40cea34f-c6ef-4898-b379-626926723a16\",\n            \"name\": \"npmjs\",\n            \"protocol\": \"npm\",\n            \"location\": \"https://registry.npmjs.org/\",\n            \"upstreamSourceType\": \"public\"\n        },\n        {\n            \"id\": \"2a28a64e-8822-4bf7-bc7b-5f1475178b36\",\n            \"name\": \"nuget.org\",\n            \"protocol\": \"nuget\",\n            \"location\": \"https://api.nuget.org/v3/index.json\",\n            \"upstreamSourceType\": \"public\"\n        }\n    ],\n    \"capabilities\": \"defaultCapabilities\"\n}"
 								},
 								"url": {
-									"raw": "https://feeds.dev.azure.com/{{organization}}/_apis/packaging/feeds/{{feedId}}?api-version={{api-version-preview}}",
+									"raw": "https://{{feedsServer}}/{{organization}}/_apis/packaging/feeds/{{feedId}}?api-version={{api-version-preview}}",
 									"protocol": "https",
 									"host": [
-										"feeds",
-										"dev",
-										"azure",
-										"com"
+										"{{feedsServer}}"
 									],
 									"path": [
 										"{{organization}}",
@@ -897,13 +861,10 @@
 									"raw": ""
 								},
 								"url": {
-									"raw": "https://feeds.dev.azure.com/{{organization}}/_apis/packaging/feeds/{{feedId}}/views/{{viewId}}?api-version={{api-version-preview}}",
+									"raw": "https://{{feedsServer}}/{{organization}}/_apis/packaging/feeds/{{feedId}}/views/{{viewId}}?api-version={{api-version-preview}}",
 									"protocol": "https",
 									"host": [
-										"feeds",
-										"dev",
-										"azure",
-										"com"
+										"{{feedsServer}}"
 									],
 									"path": [
 										"{{organization}}",
@@ -950,13 +911,10 @@
 									"raw": ""
 								},
 								"url": {
-									"raw": "https://feeds.dev.azure.com/{{organization}}/_apis/packaging/Feeds/{{feedId}}?api-version={{api-version-preview}}",
+									"raw": "https://{{feedsServer}}/{{organization}}/_apis/packaging/Feeds/{{feedId}}?api-version={{api-version-preview}}",
 									"protocol": "https",
 									"host": [
-										"feeds",
-										"dev",
-										"azure",
-										"com"
+										"{{feedsServer}}"
 									],
 									"path": [
 										"{{organization}}",
@@ -1001,13 +959,10 @@
 									"raw": ""
 								},
 								"url": {
-									"raw": "https://feeds.dev.azure.com/{{organization}}/_apis/packaging/Feeds/{{feedId}}/permissions?api-version={{api-version-preview}}",
+									"raw": "https://{{feedsServer}}/{{organization}}/_apis/packaging/Feeds/{{feedId}}/permissions?api-version={{api-version-preview}}",
 									"protocol": "https",
 									"host": [
-										"feeds",
-										"dev",
-										"azure",
-										"com"
+										"{{feedsServer}}"
 									],
 									"path": [
 										"{{organization}}",
@@ -1071,13 +1026,10 @@
 									"raw": ""
 								},
 								"url": {
-									"raw": "https://feeds.dev.azure.com/{{organization}}/_apis/packaging/Feeds/{{feedId}}/views/{{viewId}}?api-version={{api-version-preview}}",
+									"raw": "https://{{feedsServer}}/{{organization}}/_apis/packaging/Feeds/{{feedId}}/views/{{viewId}}?api-version={{api-version-preview}}",
 									"protocol": "https",
 									"host": [
-										"feeds",
-										"dev",
-										"azure",
-										"com"
+										"{{feedsServer}}"
 									],
 									"path": [
 										"{{organization}}",
@@ -1136,13 +1088,10 @@
 									"raw": ""
 								},
 								"url": {
-									"raw": "https://feeds.dev.azure.com/{{organization}}/_apis/packaging/Feeds/{{feedId}}/views?api-version={{api-version-preview}}",
+									"raw": "https://{{feedsServer}}/{{organization}}/_apis/packaging/Feeds/{{feedId}}/views?api-version={{api-version-preview}}",
 									"protocol": "https",
 									"host": [
-										"feeds",
-										"dev",
-										"azure",
-										"com"
+										"{{feedsServer}}"
 									],
 									"path": [
 										"{{organization}}",
@@ -1200,13 +1149,10 @@
 									"raw": ""
 								},
 								"url": {
-									"raw": "https://feeds.dev.azure.com/{{organization}}/_apis/packaging/Feeds?api-version={{api-version-preview}}",
+									"raw": "https://{{feedsServer}}/{{organization}}/_apis/packaging/Feeds?api-version={{api-version-preview}}",
 									"protocol": "https",
 									"host": [
-										"feeds",
-										"dev",
-										"azure",
-										"com"
+										"{{feedsServer}}"
 									],
 									"path": [
 										"{{organization}}",
@@ -1269,13 +1215,10 @@
 									"raw": "[\n    {\n        \"role\": \"administrator\",\n        \"identityDescriptor\": \"Microsoft.IdentityModel.Claims.ClaimsIdentity;xxxxx-86f1-xxxx-xxxx-2d7cd011db47\\\\demo@demo.com\",\n        \"displayName\": \"Hosam Kamel\"\n    }\n]"
 								},
 								"url": {
-									"raw": "https://feeds.dev.azure.com/{{organization}}/_apis/packaging/Feeds/{{feedId}}/permissions?api-version={{api-version-preview}}",
+									"raw": "https://{{feedsServer}}/{{organization}}/_apis/packaging/Feeds/{{feedId}}/permissions?api-version={{api-version-preview}}",
 									"protocol": "https",
 									"host": [
-										"feeds",
-										"dev",
-										"azure",
-										"com"
+										"{{feedsServer}}"
 									],
 									"path": [
 										"{{organization}}",
@@ -1328,13 +1271,10 @@
 									"raw": "{\n    \"description\": \"Sample feed created by postman\",\n    \"hideDeletedPackageVersions\": true,\n    \"badgesEnabled\": true\n}"
 								},
 								"url": {
-									"raw": "https://feeds.dev.azure.com/{{organization}}/_apis/packaging/Feeds/{{feedId}}?api-version={{api-version-preview}}",
+									"raw": "https://{{feedsServer}}/{{organization}}/_apis/packaging/Feeds/{{feedId}}?api-version={{api-version-preview}}",
 									"protocol": "https",
 									"host": [
-										"feeds",
-										"dev",
-										"azure",
-										"com"
+										"{{feedsServer}}"
 									],
 									"path": [
 										"{{organization}}",
@@ -1386,13 +1326,10 @@
 									"raw": "{\n    \"visibility\": \"organization\",\n    \"name\": \"CustomView\",\n    \"type\": \"none\"\n}"
 								},
 								"url": {
-									"raw": "https://feeds.dev.azure.com/{{organization}}/_apis/packaging/feeds/{{feedId}}/views/{{viewId}}?api-version={{api-version-preview}}",
+									"raw": "https://{{feedsServer}}/{{organization}}/_apis/packaging/feeds/{{feedId}}/views/{{viewId}}?api-version={{api-version-preview}}",
 									"protocol": "https",
 									"host": [
-										"feeds",
-										"dev",
-										"azure",
-										"com"
+										"{{feedsServer}}"
 									],
 									"path": [
 										"{{organization}}",
@@ -1465,13 +1402,10 @@
 									"raw": ""
 								},
 								"url": {
-									"raw": "https://feeds.dev.azure.com/{{organization}}/_apis/packaging/Feeds/{{feedId}}/RecycleBin/Packages/{{packageId}}?api-version={{api-version-preview}}",
+									"raw": "https://{{feedsServer}}/{{organization}}/_apis/packaging/Feeds/{{feedId}}/RecycleBin/Packages/{{packageId}}?api-version={{api-version-preview}}",
 									"protocol": "https",
 									"host": [
-										"feeds",
-										"dev",
-										"azure",
-										"com"
+										"{{feedsServer}}"
 									],
 									"path": [
 										"{{organization}}",
@@ -1504,13 +1438,10 @@
 									"raw": ""
 								},
 								"url": {
-									"raw": "https://feeds.dev.azure.com/{{organization}}/_apis/packaging/Feeds/{{feedId}}/RecycleBin/Packages/{{packageId}}/Versions/{{packageVersionGuid}}?api-version={{api-version-preview}}",
+									"raw": "https://{{feedsServer}}/{{organization}}/_apis/packaging/Feeds/{{feedId}}/RecycleBin/Packages/{{packageId}}/Versions/{{packageVersionGuid}}?api-version={{api-version-preview}}",
 									"protocol": "https",
 									"host": [
-										"feeds",
-										"dev",
-										"azure",
-										"com"
+										"{{feedsServer}}"
 									],
 									"path": [
 										"{{organization}}",
@@ -1551,13 +1482,10 @@
 									"raw": ""
 								},
 								"url": {
-									"raw": "https://feeds.dev.azure.com/{{organization}}/_apis/packaging/Feeds/{{feedId}}/RecycleBin/Packages/{{packageId}}/Versions?api-version={{api-version-preview}}",
+									"raw": "https://{{feedsServer}}/{{organization}}/_apis/packaging/Feeds/{{feedId}}/RecycleBin/Packages/{{packageId}}/Versions?api-version={{api-version-preview}}",
 									"protocol": "https",
 									"host": [
-										"feeds",
-										"dev",
-										"azure",
-										"com"
+										"{{feedsServer}}"
 									],
 									"path": [
 										"{{organization}}",
@@ -1597,13 +1525,10 @@
 									"raw": ""
 								},
 								"url": {
-									"raw": "https://feeds.dev.azure.com/{{organization}}/_apis/packaging/Feeds/{{feedId}}/RecycleBin/Packages?api-version={{api-version-preview}}",
+									"raw": "https://{{feedsServer}}/{{organization}}/_apis/packaging/Feeds/{{feedId}}/RecycleBin/Packages?api-version={{api-version-preview}}",
 									"protocol": "https",
 									"host": [
-										"feeds",
-										"dev",
-										"azure",
-										"com"
+										"{{feedsServer}}"
 									],
 									"path": [
 										"{{organization}}",
@@ -1692,13 +1617,10 @@
 									"raw": ""
 								},
 								"url": {
-									"raw": "https://feeds.dev.azure.com/{{organization}}/_apis/packaging/Feeds/{{feedId}}/retentionpolicies?api-version={{api-version-preview}}",
+									"raw": "https://{{feedsServer}}/{{organization}}/_apis/packaging/Feeds/{{feedId}}/retentionpolicies?api-version={{api-version-preview}}",
 									"protocol": "https",
 									"host": [
-										"feeds",
-										"dev",
-										"azure",
-										"com"
+										"{{feedsServer}}"
 									],
 									"path": [
 										"{{organization}}",
@@ -1736,13 +1658,10 @@
 									"raw": "{\n    \"ageLimitInDays\": 30,\n    \"countLimit\": 20,\n    \"daysToKeepRecentlyDownloadedPackages\": 30\n}"
 								},
 								"url": {
-									"raw": "https://feeds.dev.azure.com/{{organization}}/_apis/packaging/Feeds/{{feedId}}/retentionpolicies?api-version={{api-version-preview}}",
+									"raw": "https://{{feedsServer}}/{{organization}}/_apis/packaging/Feeds/{{feedId}}/retentionpolicies?api-version={{api-version-preview}}",
 									"protocol": "https",
 									"host": [
-										"feeds",
-										"dev",
-										"azure",
-										"com"
+										"{{feedsServer}}"
 									],
 									"path": [
 										"{{organization}}",
@@ -1780,13 +1699,10 @@
 									"raw": ""
 								},
 								"url": {
-									"raw": "https://feeds.dev.azure.com/{{organization}}/_apis/packaging/Feeds/{{feedId}}/retentionpolicies?api-version={{api-version-preview}}",
+									"raw": "https://{{feedsServer}}/{{organization}}/_apis/packaging/Feeds/{{feedId}}/retentionpolicies?api-version={{api-version-preview}}",
 									"protocol": "https",
 									"host": [
-										"feeds",
-										"dev",
-										"azure",
-										"com"
+										"{{feedsServer}}"
 									],
 									"path": [
 										"{{organization}}",
@@ -1838,13 +1754,10 @@
 									"raw": ""
 								},
 								"url": {
-									"raw": "https://feeds.dev.azure.com/{{organization}}/_apis/packaging/globalpermissions?api-version={{api-version-preview}}",
+									"raw": "https://{{feedsServer}}/{{organization}}/_apis/packaging/globalpermissions?api-version={{api-version-preview}}",
 									"protocol": "https",
 									"host": [
-										"feeds",
-										"dev",
-										"azure",
-										"com"
+										"{{feedsServer}}"
 									],
 									"path": [
 										"{{organization}}",
@@ -1880,13 +1793,10 @@
 									"raw": "[\n    {\n        \"role\": \"administrator\",\n        \"identityDescriptor\": \"Microsoft.TeamFoundation.Identity;S-x-x-xxxxxxxxxx-1xxxx0969-2402xxxx-21xxxxx16-0-0-0-0-1\"\n    }\n]"
 								},
 								"url": {
-									"raw": "https://feeds.dev.azure.com/{{organization}}/_apis/packaging/globalpermissions?api-version={{api-version-preview}}",
+									"raw": "https://{{feedsServer}}/{{organization}}/_apis/packaging/globalpermissions?api-version={{api-version-preview}}",
 									"protocol": "https",
 									"host": [
-										"feeds",
-										"dev",
-										"azure",
-										"com"
+										"{{feedsServer}}"
 									],
 									"path": [
 										"{{organization}}",
@@ -1966,12 +1876,10 @@
 									"raw": ""
 								},
 								"url": {
-									"raw": "https://dev.azure.com/{{organization}}/{{project}}/_apis/build/builds/{{buildId}}/artifacts?api-version={{api-version}}",
+									"raw": "https://{{coreServer}}/{{organization}}/{{project}}/_apis/build/builds/{{buildId}}/artifacts?api-version={{api-version}}",
 									"protocol": "https",
 									"host": [
-										"dev",
-										"azure",
-										"com"
+										"{{coreServer}}"
 									],
 									"path": [
 										"{{organization}}",
@@ -2013,12 +1921,10 @@
 									"raw": ""
 								},
 								"url": {
-									"raw": "https://dev.azure.com/{{organization}}/{{project}}/_apis/build/builds/{{buildId}}/artifacts?artifactName={{artifactName}}&api-version={{api-version}}",
+									"raw": "https://{{coreServer}}/{{organization}}/{{project}}/_apis/build/builds/{{buildId}}/artifacts?artifactName={{artifactName}}&api-version={{api-version}}",
 									"protocol": "https",
 									"host": [
-										"dev",
-										"azure",
-										"com"
+										"{{coreServer}}"
 									],
 									"path": [
 										"{{organization}}",
@@ -2076,12 +1982,10 @@
 									"raw": ""
 								},
 								"url": {
-									"raw": "https://dev.azure.com/{{organization}}/{{project}}/_apis/build/builds/{{buildId}}/artifacts?artifactName={{artifactName}}&api-version={{api-version}}",
+									"raw": "https://{{coreServer}}/{{organization}}/{{project}}/_apis/build/builds/{{buildId}}/artifacts?artifactName={{artifactName}}&api-version={{api-version}}",
 									"protocol": "https",
 									"host": [
-										"dev",
-										"azure",
-										"com"
+										"{{coreServer}}"
 									],
 									"path": [
 										"{{organization}}",
@@ -2134,12 +2038,10 @@
 									"raw": "{\n    \"name\": \"drops01\",\n    \"resource\": {\n        \"type\": \"Container\",\n        \"url\": \"\",\n        \"downloadUrl\": \"\"\n    }\n}"
 								},
 								"url": {
-									"raw": "https://dev.azure.com/{{organization}}/{{project}}/_apis/build/builds/{{buildId}}/artifacts?api-version={{api-version}}",
+									"raw": "https://{{coreServer}}/{{organization}}/{{project}}/_apis/build/builds/{{buildId}}/artifacts?api-version={{api-version}}",
 									"protocol": "https",
 									"host": [
-										"dev",
-										"azure",
-										"com"
+										"{{coreServer}}"
 									],
 									"path": [
 										"{{organization}}",
@@ -2207,12 +2109,10 @@
 									"raw": ""
 								},
 								"url": {
-									"raw": "https://dev.azure.com/{{organization}}/{{project}}/_apis/build/authorizedresources?api-version={{api-version-preview}}",
+									"raw": "https://{{coreServer}}/{{organization}}/{{project}}/_apis/build/authorizedresources?api-version={{api-version-preview}}",
 									"protocol": "https",
 									"host": [
-										"dev",
-										"azure",
-										"com"
+										"{{coreServer}}"
 									],
 									"path": [
 										"{{organization}}",
@@ -2263,12 +2163,10 @@
 									"raw": ""
 								},
 								"url": {
-									"raw": "https://dev.azure.com/{{organization}}/_apis/build/controllers/{{}}?api-version={{api-version-previe",
+									"raw": "https://{{coreServer}}/{{organization}}/_apis/build/controllers/{{}}?api-version={{api-version-previe",
 									"protocol": "https",
 									"host": [
-										"dev",
-										"azure",
-										"com"
+										"{{coreServer}}"
 									],
 									"path": [
 										"{{organization}}",
@@ -2298,12 +2196,10 @@
 									"raw": ""
 								},
 								"url": {
-									"raw": "https://dev.azure.com/{{organization}}/{{project}}/_apis/build/repos/git/badge?api-version={{api-version-preview2}}&branchName=master",
+									"raw": "https://{{coreServer}}/{{organization}}/{{project}}/_apis/build/repos/git/badge?api-version={{api-version-preview2}}&branchName=master",
 									"protocol": "https",
 									"host": [
-										"dev",
-										"azure",
-										"com"
+										"{{coreServer}}"
 									],
 									"path": [
 										"{{organization}}",
@@ -2394,12 +2290,10 @@
 									"raw": "{\n    \"definition\": {\n        \"id\": 217\n    },\n    \"sourceBranch\": \"refs/heads/master\",\n    \"sourceVersion\": \"\",\n    \"reason\": 1,\n    \"demands\": [],\n    \"parameters\": \"{\\\"system.debug\\\":\\\"true\\\"}\"\n}"
 								},
 								"url": {
-									"raw": "https://dev.azure.com/{{organization}}/{{project}}/_apis/build/builds/{{buildId}}?api-version={{api-version}}",
+									"raw": "https://{{coreServer}}/{{organization}}/{{project}}/_apis/build/builds/{{buildId}}?api-version={{api-version}}",
 									"protocol": "https",
 									"host": [
-										"dev",
-										"azure",
-										"com"
+										"{{coreServer}}"
 									],
 									"path": [
 										"{{organization}}",
@@ -2457,12 +2351,10 @@
 									"raw": ""
 								},
 								"url": {
-									"raw": "https://dev.azure.com/{{organization}}/{{project}}/_apis/build/builds/{{buildId}}?api-version={{api-version}}",
+									"raw": "https://{{coreServer}}/{{organization}}/{{project}}/_apis/build/builds/{{buildId}}?api-version={{api-version}}",
 									"protocol": "https",
 									"host": [
-										"dev",
-										"azure",
-										"com"
+										"{{coreServer}}"
 									],
 									"path": [
 										"{{organization}}",
@@ -2525,12 +2417,10 @@
 									"raw": ""
 								},
 								"url": {
-									"raw": "https://dev.azure.com/{{organization}}/{{project}}/_apis/build/builds/{{buildId}}/changes?api-version={{api-version}}&includeSourceChange=true",
+									"raw": "https://{{coreServer}}/{{organization}}/{{project}}/_apis/build/builds/{{buildId}}/changes?api-version={{api-version}}&includeSourceChange=true",
 									"protocol": "https",
 									"host": [
-										"dev",
-										"azure",
-										"com"
+										"{{coreServer}}"
 									],
 									"path": [
 										"{{organization}}",
@@ -2604,12 +2494,10 @@
 									"raw": ""
 								},
 								"url": {
-									"raw": "https://dev.azure.com/{{organization}}/{{project}}/_apis/build/builds/{{buildId}}/logs?api-version={{api-version}}",
+									"raw": "https://{{coreServer}}/{{organization}}/{{project}}/_apis/build/builds/{{buildId}}/logs?api-version={{api-version}}",
 									"protocol": "https",
 									"host": [
-										"dev",
-										"azure",
-										"com"
+										"{{coreServer}}"
 									],
 									"path": [
 										"{{organization}}",
@@ -2668,12 +2556,10 @@
 									"raw": ""
 								},
 								"url": {
-									"raw": "https://dev.azure.com/{{organization}}/{{project}}/_apis/build/builds/{{buildId}}/logs/{{logId}}?api-version={{api-version}}",
+									"raw": "https://{{coreServer}}/{{organization}}/{{project}}/_apis/build/builds/{{buildId}}/logs/{{logId}}?api-version={{api-version}}",
 									"protocol": "https",
 									"host": [
-										"dev",
-										"azure",
-										"com"
+										"{{coreServer}}"
 									],
 									"path": [
 										"{{organization}}",
@@ -2745,12 +2631,10 @@
 									"raw": ""
 								},
 								"url": {
-									"raw": "https://dev.azure.com/{{organization}}/{{project}}/_apis/build/builds/{{buildId}}/workitems?api-version={{api-version}}",
+									"raw": "https://{{coreServer}}/{{organization}}/{{project}}/_apis/build/builds/{{buildId}}/workitems?api-version={{api-version}}",
 									"protocol": "https",
 									"host": [
-										"dev",
-										"azure",
-										"com"
+										"{{coreServer}}"
 									],
 									"path": [
 										"{{organization}}",
@@ -2815,12 +2699,10 @@
 									"raw": ""
 								},
 								"url": {
-									"raw": "https://dev.azure.com/{{organization}}/{{project}}/_apis/build/builds/{{buildId}}/workitems?api-version={{api-version}}",
+									"raw": "https://{{coreServer}}/{{organization}}/{{project}}/_apis/build/builds/{{buildId}}/workitems?api-version={{api-version}}",
 									"protocol": "https",
 									"host": [
-										"dev",
-										"azure",
-										"com"
+										"{{coreServer}}"
 									],
 									"path": [
 										"{{organization}}",
@@ -2879,12 +2761,10 @@
 									"raw": ""
 								},
 								"url": {
-									"raw": "https://dev.azure.com/{{organization}}/{{project}}/_apis/build/changes?api-version={{api-version-preview2}}&fromBuildId=1637&toBuildId=1638",
+									"raw": "https://{{coreServer}}/{{organization}}/{{project}}/_apis/build/changes?api-version={{api-version-preview2}}&fromBuildId=1637&toBuildId=1638",
 									"protocol": "https",
 									"host": [
-										"dev",
-										"azure",
-										"com"
+										"{{coreServer}}"
 									],
 									"path": [
 										"{{organization}}",
@@ -2957,12 +2837,10 @@
 									"raw": ""
 								},
 								"url": {
-									"raw": "https://dev.azure.com/{{organization}}/{{project}}/_apis/build/workitems?api-version={{api-version-preview2}}&fromBuildId=1637&toBuildId=1638",
+									"raw": "https://{{coreServer}}/{{organization}}/{{project}}/_apis/build/workitems?api-version={{api-version-preview2}}&fromBuildId=1637&toBuildId=1638",
 									"protocol": "https",
 									"host": [
-										"dev",
-										"azure",
-										"com"
+										"{{coreServer}}"
 									],
 									"path": [
 										"{{organization}}",
@@ -3035,12 +2913,10 @@
 									"raw": ""
 								},
 								"url": {
-									"raw": "https://dev.azure.com/{{organization}}/{{project}}/_apis/build/builds?api-version={{api-version}}",
+									"raw": "https://{{coreServer}}/{{organization}}/{{project}}/_apis/build/builds?api-version={{api-version}}",
 									"protocol": "https",
 									"host": [
-										"dev",
-										"azure",
-										"com"
+										"{{coreServer}}"
 									],
 									"path": [
 										"{{organization}}",
@@ -3211,12 +3087,10 @@
 									"raw": "{\n    \"definition\": {\n        \"id\": 217\n    },\n    \"sourceBranch\": \"refs/heads/master\",\n    \"sourceVersion\": \"\",\n    \"reason\": 1,\n    \"demands\": [],\n    \"parameters\": \"{\\\"system.debug\\\":\\\"true\\\"}\"\n}"
 								},
 								"url": {
-									"raw": "https://dev.azure.com/{{organization}}/{{project}}/_apis/build/builds?api-version={{api-version}}",
+									"raw": "https://{{coreServer}}/{{organization}}/{{project}}/_apis/build/builds?api-version={{api-version}}",
 									"protocol": "https",
 									"host": [
-										"dev",
-										"azure",
-										"com"
+										"{{coreServer}}"
 									],
 									"path": [
 										"{{organization}}",
@@ -3282,12 +3156,10 @@
 									"raw": ""
 								},
 								"url": {
-									"raw": "https://dev.azure.com/{{organization}}/_apis/build/controllers?api-version={{api-version}}",
+									"raw": "https://{{coreServer}}/{{organization}}/_apis/build/controllers?api-version={{api-version}}",
 									"protocol": "https",
 									"host": [
-										"dev",
-										"azure",
-										"com"
+										"{{coreServer}}"
 									],
 									"path": [
 										"{{organization}}",
@@ -3336,12 +3208,10 @@
 									"raw": ""
 								},
 								"url": {
-									"raw": "https://dev.azure.com/{{organization}}/_apis/build/controllers/{{controllerId}}?api-version={{api-version}}",
+									"raw": "https://{{coreServer}}/{{organization}}/_apis/build/controllers/{{controllerId}}?api-version={{api-version}}",
 									"protocol": "https",
 									"host": [
-										"dev",
-										"azure",
-										"com"
+										"{{coreServer}}"
 									],
 									"path": [
 										"{{organization}}",
@@ -3397,12 +3267,10 @@
 									"raw": ""
 								},
 								"url": {
-									"raw": "https://dev.azure.com/{{organization}}/{{project}}/_apis/build/definitions/{{definitionId}}?api-version={{api-version}}",
+									"raw": "https://{{coreServer}}/{{organization}}/{{project}}/_apis/build/definitions/{{definitionId}}?api-version={{api-version}}",
 									"protocol": "https",
 									"host": [
-										"dev",
-										"azure",
-										"com"
+										"{{coreServer}}"
 									],
 									"path": [
 										"{{organization}}",
@@ -3457,12 +3325,10 @@
 									"raw": ""
 								},
 								"url": {
-									"raw": "https://dev.azure.com/{{organization}}/{{project}}/_apis/build/definitions/{{definitionId}}/revisions?api-version={{api-version}}",
+									"raw": "https://{{coreServer}}/{{organization}}/{{project}}/_apis/build/definitions/{{definitionId}}/revisions?api-version={{api-version}}",
 									"protocol": "https",
 									"host": [
-										"dev",
-										"azure",
-										"com"
+										"{{coreServer}}"
 									],
 									"path": [
 										"{{organization}}",
@@ -3494,12 +3360,10 @@
 									"raw": ""
 								},
 								"url": {
-									"raw": "https://dev.azure.com/{{organization}}/{{project}}/_apis/build/definitions?api-version={{api-version}}",
+									"raw": "https://{{coreServer}}/{{organization}}/{{project}}/_apis/build/definitions?api-version={{api-version}}",
 									"protocol": "https",
 									"host": [
-										"dev",
-										"azure",
-										"com"
+										"{{coreServer}}"
 									],
 									"path": [
 										"{{organization}}",
@@ -3632,12 +3496,10 @@
 									"raw": ""
 								},
 								"url": {
-									"raw": "https://dev.azure.com/{{organization}}/{{project}}/_apis/build/definitions/{{definitionId}}?api-version={{api-version}}",
+									"raw": "https://{{coreServer}}/{{organization}}/{{project}}/_apis/build/definitions/{{definitionId}}?api-version={{api-version}}",
 									"protocol": "https",
 									"host": [
-										"dev",
-										"azure",
-										"com"
+										"{{coreServer}}"
 									],
 									"path": [
 										"{{organization}}",
@@ -3675,12 +3537,10 @@
 									"raw": ""
 								},
 								"url": {
-									"raw": "https://dev.azure.com/{{organization}}/{{project}}/_apis/build/definitions/{{definitionId}}?api-version={{api-version}}&deleted=false",
+									"raw": "https://{{coreServer}}/{{organization}}/{{project}}/_apis/build/definitions/{{definitionId}}?api-version={{api-version}}&deleted=false",
 									"protocol": "https",
 									"host": [
-										"dev",
-										"azure",
-										"com"
+										"{{coreServer}}"
 									],
 									"path": [
 										"{{organization}}",
@@ -3720,15 +3580,13 @@
 								],
 								"body": {
 									"mode": "raw",
-									"raw": "{\n    \"options\": [\n        {\n            \"enabled\": true,\n            \"inputs\": {\n                \"parallel\": \"false\",\n                \"multipliers\": \"[\\\"config\\\",\\\"platform\\\"]\"\n            }\n        },\n        {\n            \"enabled\": false\n        },\n        {\n            \"enabled\": false,\n            \"inputs\": {\n                \"branchFilters\": \"[\\\"+refs/heads/*\\\"]\",\n                \"additionalFields\": \"{}\"\n            }\n        }\n    ],\n    \"triggers\": [\n        {\n            \"branchFilters\": [\n                \"+refs/heads/master\"\n            ],\n            \"pathFilters\": [],\n            \"batchChanges\": true,\n            \"maxConcurrentBuildsPerBranch\": 1,\n            \"triggerType\": \"continuousIntegration\"\n        }\n    ],\n    \"variables\": {\n        \"config\": {\n            \"value\": \"debug, release\",\n            \"allowOverride\": true\n        },\n        \"forceClean\": {\n            \"value\": \"false\",\n            \"allowOverride\": true\n        },\n        \"platform\": {\n            \"value\": \"any cpu\",\n            \"allowOverride\": true\n        }\n    },\n    \"retentionRules\": [\n        {\n            \"branches\": [\n                \"+refs/heads/*\"\n            ],\n            \"artifacts\": [\n                \"build.SourceLabel\"\n            ],\n            \"artifactTypesToDelete\": [\n                \"FilePath\",\n                \"SymbolStore\"\n            ],\n            \"daysToKeep\": 10,\n            \"minimumToKeep\": 1,\n            \"deleteBuildRecord\": true,\n            \"deleteTestResults\": true\n        }\n    ],\n    \"jobAuthorizationScope\": \"projectCollection\",\n    \"jobCancelTimeoutInMinutes\": 5,\n    \"process\": {\n        \"phases\": [\n            {\n                \"steps\": [\n                    {\n                        \"environment\": {},\n                        \"enabled\": true,\n                        \"continueOnError\": false,\n                        \"alwaysRun\": false,\n                        \"displayName\": \"Build solution Fab.sln\",\n                        \"timeoutInMinutes\": 0,\n                        \"condition\": \"succeeded()\",\n                        \"refName\": \"VSBuild_2\",\n                        \"task\": {\n                            \"id\": \"71a9a2d3-a98a-4caa-96ab-affca411ecda\",\n                            \"versionSpec\": \"1.*\",\n                            \"definitionType\": null\n                        },\n                        \"inputs\": {\n                            \"solution\": \"FabrikamFiber.CallCenter/FabrikamFiber.CallCenter.sln\",\n                            \"vsVersion\": \"latest\",\n                            \"msbuildArgs\": \"/p:DeployOnBuild=true /p:WebPublishMethod=Package /p:PackageAsSingleFile=true /p:SkipInvalidConfigurations=true\",\n                            \"platform\": \"$(platform)\",\n                            \"configuration\": \"\",\n                            \"clean\": \"false\",\n                            \"maximumCpuCount\": \"false\",\n                            \"restoreNugetPackages\": \"true\",\n                            \"msbuildArchitecture\": \"x86\",\n                            \"logProjectEvents\": \"true\",\n                            \"createLogFile\": \"false\",\n                            \"logFileVerbosity\": \"normal\"\n                        }\n                    },\n                    {\n                        \"environment\": {},\n                        \"enabled\": true,\n                        \"continueOnError\": false,\n                        \"alwaysRun\": false,\n                        \"displayName\": \"Test Assemblies **\\\\*test*.dll;-:**\\\\obj\\\\**\",\n                        \"timeoutInMinutes\": 0,\n                        \"condition\": \"succeeded()\",\n                        \"refName\": \"VSTest_3\",\n                        \"task\": {\n                            \"id\": \"ef087383-ee5e-42c7-9a53-ab56c98420f9\",\n                            \"versionSpec\": \"1.*\",\n                            \"definitionType\": null\n                        },\n                        \"inputs\": {\n                            \"testAssembly\": \"**\\\\*test*.dll;-:**\\\\obj\\\\**\",\n                            \"testFiltercriteria\": \"\",\n                            \"runSettingsFile\": \"\",\n                            \"overrideTestrunParameters\": \"\",\n                            \"codeCoverageEnabled\": \"true\",\n                            \"runInParallel\": \"false\",\n                            \"vstestLocationMethod\": \"version\",\n                            \"vsTestVersion\": \"14.0\",\n                            \"vstestLocation\": \"\",\n                            \"pathtoCustomTestAdapters\": \"\",\n                            \"otherConsoleOptions\": \"\",\n                            \"testRunTitle\": \"\",\n                            \"platform\": \"\",\n                            \"configuration\": \"\",\n                            \"publishRunAttachments\": \"true\"\n                        }\n                    },\n                    {\n                        \"environment\": {},\n                        \"enabled\": true,\n                        \"continueOnError\": false,\n                        \"alwaysRun\": false,\n                        \"displayName\": \"Copy Publish Artifact: drops\",\n                        \"timeoutInMinutes\": 0,\n                        \"condition\": \"succeeded()\",\n                        \"refName\": \"PublishBuildArtifacts_4\",\n                        \"task\": {\n                            \"id\": \"1d341bb0-2106-458c-8422-d00bcea6512a\",\n                            \"versionSpec\": \"1.*\",\n                            \"definitionType\": \"task\"\n                        },\n                        \"inputs\": {\n                            \"CopyRoot\": \"\",\n                            \"Contents\": \"**\\\\*.zip\",\n                            \"ArtifactName\": \"drops\",\n                            \"ArtifactType\": \"Container\",\n                            \"TargetPath\": \"\\\\\\\\my\\\\share\\\\$(Build.DefinitionName)\\\\$(Build.BuildNumber)\"\n                        }\n                    }\n                ],\n                \"name\": \"Agent job 1\",\n                \"refName\": \"Phase_1\",\n                \"condition\": \"succeeded()\",\n                \"target\": {\n                    \"executionOptions\": {\n                        \"type\": 0\n                    },\n                    \"allowScriptsAuthAccessOption\": false,\n                    \"type\": 1\n                },\n                \"jobAuthorizationScope\": \"projectCollection\"\n            }\n        ],\n        \"type\": 1\n    },\n    \"repository\": {\n        \"properties\": {\n            \"cleanOptions\": \"0\",\n            \"labelSources\": \"0\",\n            \"labelSourcesFormat\": \"$(build.buildNumber)\",\n            \"fetchDepth\": \"0\",\n            \"gitLfsSupport\": \"false\",\n            \"skipSyncSource\": \"false\",\n            \"reportBuildStatus\": \"false\",\n            \"checkoutNestedSubmodules\": \"false\"\n        },\n        \"id\": \"698c952d-5903-4b2b-b62a-ef6ac108c147\",\n        \"type\": \"TfsGit\",\n        \"name\": \"Fabrikam\",\n        \"url\": \"https://{{organization}}@dev.azure.com/{{organization}}/Fabrikam/_git/Fabrikam\",\n        \"defaultBranch\": \"refs/heads/master\",\n        \"clean\": \"false\",\n        \"checkoutSubmodules\": false\n    },\n    \"processParameters\": {},\n    \"quality\": \"definition\",\n    \"drafts\": [],\n    \"queue\": {\n        \"_links\": {\n            \"self\": {\n                \"href\": \"https://dev.azure.com/{{organization}}/_apis/build/Queues/75\"\n            }\n        },\n        \"id\": 75,\n        \"name\": \"Hosted\",\n        \"url\": \"https://dev.azure.com/{{organization}}/_apis/build/Queues/75\",\n        \"pool\": {\n            \"id\": 2,\n            \"name\": \"Hosted\",\n            \"isHosted\": true\n        }\n    },\n    \"name\": \"FabrikamFiber-CI\",\n    \"path\": \"\\\\\",\n    \"type\": \"build\",\n    \"queueStatus\": \"enabled\"\n}"
+									"raw": "{\n    \"options\": [\n        {\n            \"enabled\": true,\n            \"inputs\": {\n                \"parallel\": \"false\",\n                \"multipliers\": \"[\\\"config\\\",\\\"platform\\\"]\"\n            }\n        },\n        {\n            \"enabled\": false\n        },\n        {\n            \"enabled\": false,\n            \"inputs\": {\n                \"branchFilters\": \"[\\\"+refs/heads/*\\\"]\",\n                \"additionalFields\": \"{}\"\n            }\n        }\n    ],\n    \"triggers\": [\n        {\n            \"branchFilters\": [\n                \"+refs/heads/master\"\n            ],\n            \"pathFilters\": [],\n            \"batchChanges\": true,\n            \"maxConcurrentBuildsPerBranch\": 1,\n            \"triggerType\": \"continuousIntegration\"\n        }\n    ],\n    \"variables\": {\n        \"config\": {\n            \"value\": \"debug, release\",\n            \"allowOverride\": true\n        },\n        \"forceClean\": {\n            \"value\": \"false\",\n            \"allowOverride\": true\n        },\n        \"platform\": {\n            \"value\": \"any cpu\",\n            \"allowOverride\": true\n        }\n    },\n    \"retentionRules\": [\n        {\n            \"branches\": [\n                \"+refs/heads/*\"\n            ],\n            \"artifacts\": [\n                \"build.SourceLabel\"\n            ],\n            \"artifactTypesToDelete\": [\n                \"FilePath\",\n                \"SymbolStore\"\n            ],\n            \"daysToKeep\": 10,\n            \"minimumToKeep\": 1,\n            \"deleteBuildRecord\": true,\n            \"deleteTestResults\": true\n        }\n    ],\n    \"jobAuthorizationScope\": \"projectCollection\",\n    \"jobCancelTimeoutInMinutes\": 5,\n    \"process\": {\n        \"phases\": [\n            {\n                \"steps\": [\n                    {\n                        \"environment\": {},\n                        \"enabled\": true,\n                        \"continueOnError\": false,\n                        \"alwaysRun\": false,\n                        \"displayName\": \"Build solution Fab.sln\",\n                        \"timeoutInMinutes\": 0,\n                        \"condition\": \"succeeded()\",\n                        \"refName\": \"VSBuild_2\",\n                        \"task\": {\n                            \"id\": \"71a9a2d3-a98a-4caa-96ab-affca411ecda\",\n                            \"versionSpec\": \"1.*\",\n                            \"definitionType\": null\n                        },\n                        \"inputs\": {\n                            \"solution\": \"FabrikamFiber.CallCenter/FabrikamFiber.CallCenter.sln\",\n                            \"vsVersion\": \"latest\",\n                            \"msbuildArgs\": \"/p:DeployOnBuild=true /p:WebPublishMethod=Package /p:PackageAsSingleFile=true /p:SkipInvalidConfigurations=true\",\n                            \"platform\": \"$(platform)\",\n                            \"configuration\": \"\",\n                            \"clean\": \"false\",\n                            \"maximumCpuCount\": \"false\",\n                            \"restoreNugetPackages\": \"true\",\n                            \"msbuildArchitecture\": \"x86\",\n                            \"logProjectEvents\": \"true\",\n                            \"createLogFile\": \"false\",\n                            \"logFileVerbosity\": \"normal\"\n                        }\n                    },\n                    {\n                        \"environment\": {},\n                        \"enabled\": true,\n                        \"continueOnError\": false,\n                        \"alwaysRun\": false,\n                        \"displayName\": \"Test Assemblies **\\\\*test*.dll;-:**\\\\obj\\\\**\",\n                        \"timeoutInMinutes\": 0,\n                        \"condition\": \"succeeded()\",\n                        \"refName\": \"VSTest_3\",\n                        \"task\": {\n                            \"id\": \"ef087383-ee5e-42c7-9a53-ab56c98420f9\",\n                            \"versionSpec\": \"1.*\",\n                            \"definitionType\": null\n                        },\n                        \"inputs\": {\n                            \"testAssembly\": \"**\\\\*test*.dll;-:**\\\\obj\\\\**\",\n                            \"testFiltercriteria\": \"\",\n                            \"runSettingsFile\": \"\",\n                            \"overrideTestrunParameters\": \"\",\n                            \"codeCoverageEnabled\": \"true\",\n                            \"runInParallel\": \"false\",\n                            \"vstestLocationMethod\": \"version\",\n                            \"vsTestVersion\": \"14.0\",\n                            \"vstestLocation\": \"\",\n                            \"pathtoCustomTestAdapters\": \"\",\n                            \"otherConsoleOptions\": \"\",\n                            \"testRunTitle\": \"\",\n                            \"platform\": \"\",\n                            \"configuration\": \"\",\n                            \"publishRunAttachments\": \"true\"\n                        }\n                    },\n                    {\n                        \"environment\": {},\n                        \"enabled\": true,\n                        \"continueOnError\": false,\n                        \"alwaysRun\": false,\n                        \"displayName\": \"Copy Publish Artifact: drops\",\n                        \"timeoutInMinutes\": 0,\n                        \"condition\": \"succeeded()\",\n                        \"refName\": \"PublishBuildArtifacts_4\",\n                        \"task\": {\n                            \"id\": \"1d341bb0-2106-458c-8422-d00bcea6512a\",\n                            \"versionSpec\": \"1.*\",\n                            \"definitionType\": \"task\"\n                        },\n                        \"inputs\": {\n                            \"CopyRoot\": \"\",\n                            \"Contents\": \"**\\\\*.zip\",\n                            \"ArtifactName\": \"drops\",\n                            \"ArtifactType\": \"Container\",\n                            \"TargetPath\": \"\\\\\\\\my\\\\share\\\\$(Build.DefinitionName)\\\\$(Build.BuildNumber)\"\n                        }\n                    }\n                ],\n                \"name\": \"Agent job 1\",\n                \"refName\": \"Phase_1\",\n                \"condition\": \"succeeded()\",\n                \"target\": {\n                    \"executionOptions\": {\n                        \"type\": 0\n                    },\n                    \"allowScriptsAuthAccessOption\": false,\n                    \"type\": 1\n                },\n                \"jobAuthorizationScope\": \"projectCollection\"\n            }\n        ],\n        \"type\": 1\n    },\n    \"repository\": {\n        \"properties\": {\n            \"cleanOptions\": \"0\",\n            \"labelSources\": \"0\",\n            \"labelSourcesFormat\": \"$(build.buildNumber)\",\n            \"fetchDepth\": \"0\",\n            \"gitLfsSupport\": \"false\",\n            \"skipSyncSource\": \"false\",\n            \"reportBuildStatus\": \"false\",\n            \"checkoutNestedSubmodules\": \"false\"\n        },\n        \"id\": \"698c952d-5903-4b2b-b62a-ef6ac108c147\",\n        \"type\": \"TfsGit\",\n        \"name\": \"Fabrikam\",\n        \"url\": \"https://{{organization}}@{{coreServer}}/{{organization}}/Fabrikam/_git/Fabrikam\",\n        \"defaultBranch\": \"refs/heads/master\",\n        \"clean\": \"false\",\n        \"checkoutSubmodules\": false\n    },\n    \"processParameters\": {},\n    \"quality\": \"definition\",\n    \"drafts\": [],\n    \"queue\": {\n        \"_links\": {\n            \"self\": {\n                \"href\": \"https://{{coreServer}}/{{organization}}/_apis/build/Queues/75\"\n            }\n        },\n        \"id\": 75,\n        \"name\": \"Hosted\",\n        \"url\": \"https://{{coreServer}}/{{organization}}/_apis/build/Queues/75\",\n        \"pool\": {\n            \"id\": 2,\n            \"name\": \"Hosted\",\n            \"isHosted\": true\n        }\n    },\n    \"name\": \"FabrikamFiber-CI\",\n    \"path\": \"\\\\\",\n    \"type\": \"build\",\n    \"queueStatus\": \"enabled\"\n}"
 								},
 								"url": {
-									"raw": "https://dev.azure.com/{{organization}}/{{project}}/_apis/build/definitions?api-version={{api-version}}",
+									"raw": "https://{{coreServer}}/{{organization}}/{{project}}/_apis/build/definitions?api-version={{api-version}}",
 									"protocol": "https",
 									"host": [
-										"dev",
-										"azure",
-										"com"
+										"{{coreServer}}"
 									],
 									"path": [
 										"{{organization}}",
@@ -3772,15 +3630,13 @@
 								],
 								"body": {
 									"mode": "raw",
-									"raw": "{\n    \"options\": [\n        {\n            \"enabled\": true,\n            \"inputs\": {\n                \"parallel\": \"false\",\n                \"multipliers\": \"[\\\"config\\\",\\\"platform\\\"]\"\n            }\n        },\n        {\n            \"enabled\": false\n        },\n        {\n            \"enabled\": false,\n            \"inputs\": {\n                \"branchFilters\": \"[\\\"+refs/heads/*\\\"]\",\n                \"additionalFields\": \"{}\"\n            }\n        }\n    ],\n    \"triggers\": [\n        {\n            \"branchFilters\": [\n                \"+refs/heads/master\"\n            ],\n            \"pathFilters\": [],\n            \"batchChanges\": true,\n            \"maxConcurrentBuildsPerBranch\": 1,\n            \"triggerType\": \"continuousIntegration\"\n        }\n    ],\n    \"variables\": {\n        \"config\": {\n            \"value\": \"debug, release\",\n            \"allowOverride\": true\n        },\n        \"forceClean\": {\n            \"value\": \"false\",\n            \"allowOverride\": true\n        },\n        \"platform\": {\n            \"value\": \"any cpu\",\n            \"allowOverride\": true\n        }\n    },\n    \"retentionRules\": [\n        {\n            \"branches\": [\n                \"+refs/heads/*\"\n            ],\n            \"artifacts\": [\n                \"build.SourceLabel\"\n            ],\n            \"artifactTypesToDelete\": [\n                \"FilePath\",\n                \"SymbolStore\"\n            ],\n            \"daysToKeep\": 10,\n            \"minimumToKeep\": 1,\n            \"deleteBuildRecord\": true,\n            \"deleteTestResults\": true\n        }\n    ],\n    \"jobAuthorizationScope\": \"projectCollection\",\n    \"jobCancelTimeoutInMinutes\": 5,\n    \"process\": {\n        \"phases\": [\n            {\n                \"steps\": [\n                    {\n                        \"environment\": {},\n                        \"enabled\": true,\n                        \"continueOnError\": false,\n                        \"alwaysRun\": false,\n                        \"displayName\": \"Build solution Fab.sln\",\n                        \"timeoutInMinutes\": 0,\n                        \"condition\": \"succeeded()\",\n                        \"refName\": \"VSBuild_2\",\n                        \"task\": {\n                            \"id\": \"71a9a2d3-a98a-4caa-96ab-affca411ecda\",\n                            \"versionSpec\": \"1.*\",\n                            \"definitionType\": null\n                        },\n                        \"inputs\": {\n                            \"solution\": \"FabrikamFiber.CallCenter/FabrikamFiber.CallCenter.sln\",\n                            \"vsVersion\": \"latest\",\n                            \"msbuildArgs\": \"/p:DeployOnBuild=true /p:WebPublishMethod=Package /p:PackageAsSingleFile=true /p:SkipInvalidConfigurations=true\",\n                            \"platform\": \"$(platform)\",\n                            \"configuration\": \"\",\n                            \"clean\": \"false\",\n                            \"maximumCpuCount\": \"false\",\n                            \"restoreNugetPackages\": \"true\",\n                            \"msbuildArchitecture\": \"x86\",\n                            \"logProjectEvents\": \"true\",\n                            \"createLogFile\": \"false\",\n                            \"logFileVerbosity\": \"normal\"\n                        }\n                    },\n                    {\n                        \"environment\": {},\n                        \"enabled\": true,\n                        \"continueOnError\": false,\n                        \"alwaysRun\": false,\n                        \"displayName\": \"Test Assemblies **\\\\*test*.dll;-:**\\\\obj\\\\**\",\n                        \"timeoutInMinutes\": 0,\n                        \"condition\": \"succeeded()\",\n                        \"refName\": \"VSTest_3\",\n                        \"task\": {\n                            \"id\": \"ef087383-ee5e-42c7-9a53-ab56c98420f9\",\n                            \"versionSpec\": \"1.*\",\n                            \"definitionType\": null\n                        },\n                        \"inputs\": {\n                            \"testAssembly\": \"**\\\\*test*.dll;-:**\\\\obj\\\\**\",\n                            \"testFiltercriteria\": \"\",\n                            \"runSettingsFile\": \"\",\n                            \"overrideTestrunParameters\": \"\",\n                            \"codeCoverageEnabled\": \"true\",\n                            \"runInParallel\": \"false\",\n                            \"vstestLocationMethod\": \"version\",\n                            \"vsTestVersion\": \"14.0\",\n                            \"vstestLocation\": \"\",\n                            \"pathtoCustomTestAdapters\": \"\",\n                            \"otherConsoleOptions\": \"\",\n                            \"testRunTitle\": \"\",\n                            \"platform\": \"\",\n                            \"configuration\": \"\",\n                            \"publishRunAttachments\": \"true\"\n                        }\n                    },\n                    {\n                        \"environment\": {},\n                        \"enabled\": true,\n                        \"continueOnError\": false,\n                        \"alwaysRun\": false,\n                        \"displayName\": \"Copy Publish Artifact: drops\",\n                        \"timeoutInMinutes\": 0,\n                        \"condition\": \"succeeded()\",\n                        \"refName\": \"PublishBuildArtifacts_4\",\n                        \"task\": {\n                            \"id\": \"1d341bb0-2106-458c-8422-d00bcea6512a\",\n                            \"versionSpec\": \"1.*\",\n                            \"definitionType\": \"task\"\n                        },\n                        \"inputs\": {\n                            \"CopyRoot\": \"\",\n                            \"Contents\": \"**\\\\*.zip\",\n                            \"ArtifactName\": \"drops\",\n                            \"ArtifactType\": \"Container\",\n                            \"TargetPath\": \"\\\\\\\\my\\\\share\\\\$(Build.DefinitionName)\\\\$(Build.BuildNumber)\"\n                        }\n                    }\n                ],\n                \"name\": \"Agent job 1\",\n                \"refName\": \"Phase_1\",\n                \"condition\": \"succeeded()\",\n                \"target\": {\n                    \"executionOptions\": {\n                        \"type\": 0\n                    },\n                    \"allowScriptsAuthAccessOption\": false,\n                    \"type\": 1\n                },\n                \"jobAuthorizationScope\": \"projectCollection\"\n            }\n        ],\n        \"type\": 1\n    },\n    \"repository\": {\n        \"properties\": {\n            \"cleanOptions\": \"0\",\n            \"labelSources\": \"0\",\n            \"labelSourcesFormat\": \"$(build.buildNumber)\",\n            \"fetchDepth\": \"0\",\n            \"gitLfsSupport\": \"false\",\n            \"skipSyncSource\": \"false\",\n            \"reportBuildStatus\": \"false\",\n            \"checkoutNestedSubmodules\": \"false\"\n        },\n        \"id\": \"698c952d-5903-4b2b-b62a-ef6ac108c147\",\n        \"type\": \"TfsGit\",\n        \"name\": \"Fabrikam\",\n        \"url\": \"https://{{organization}}@dev.azure.com/{{organization}}/Fabrikam/_git/Fabrikam\",\n        \"defaultBranch\": \"refs/heads/master\",\n        \"clean\": \"false\",\n        \"checkoutSubmodules\": false\n    },\n    \"processParameters\": {},\n    \"quality\": \"definition\",\n    \"drafts\": [],\n    \"queue\": {\n        \"_links\": {\n            \"self\": {\n                \"href\": \"https://dev.azure.com/{{organization}}/_apis/build/Queues/75\"\n            }\n        },\n        \"id\": 75,\n        \"name\": \"Hosted\",\n        \"url\": \"https://dev.azure.com/{{organization}}/_apis/build/Queues/75\",\n        \"pool\": {\n            \"id\": 2,\n            \"name\": \"Hosted\",\n            \"isHosted\": true\n        }\n    },\n    \"name\": \"FabrikamFiber-CI\",\n    \"path\": \"\\\\\",\n    \"type\": \"build\",\n    \"queueStatus\": \"enabled\"\n}"
+									"raw": "{\n    \"options\": [\n        {\n            \"enabled\": true,\n            \"inputs\": {\n                \"parallel\": \"false\",\n                \"multipliers\": \"[\\\"config\\\",\\\"platform\\\"]\"\n            }\n        },\n        {\n            \"enabled\": false\n        },\n        {\n            \"enabled\": false,\n            \"inputs\": {\n                \"branchFilters\": \"[\\\"+refs/heads/*\\\"]\",\n                \"additionalFields\": \"{}\"\n            }\n        }\n    ],\n    \"triggers\": [\n        {\n            \"branchFilters\": [\n                \"+refs/heads/master\"\n            ],\n            \"pathFilters\": [],\n            \"batchChanges\": true,\n            \"maxConcurrentBuildsPerBranch\": 1,\n            \"triggerType\": \"continuousIntegration\"\n        }\n    ],\n    \"variables\": {\n        \"config\": {\n            \"value\": \"debug, release\",\n            \"allowOverride\": true\n        },\n        \"forceClean\": {\n            \"value\": \"false\",\n            \"allowOverride\": true\n        },\n        \"platform\": {\n            \"value\": \"any cpu\",\n            \"allowOverride\": true\n        }\n    },\n    \"retentionRules\": [\n        {\n            \"branches\": [\n                \"+refs/heads/*\"\n            ],\n            \"artifacts\": [\n                \"build.SourceLabel\"\n            ],\n            \"artifactTypesToDelete\": [\n                \"FilePath\",\n                \"SymbolStore\"\n            ],\n            \"daysToKeep\": 10,\n            \"minimumToKeep\": 1,\n            \"deleteBuildRecord\": true,\n            \"deleteTestResults\": true\n        }\n    ],\n    \"jobAuthorizationScope\": \"projectCollection\",\n    \"jobCancelTimeoutInMinutes\": 5,\n    \"process\": {\n        \"phases\": [\n            {\n                \"steps\": [\n                    {\n                        \"environment\": {},\n                        \"enabled\": true,\n                        \"continueOnError\": false,\n                        \"alwaysRun\": false,\n                        \"displayName\": \"Build solution Fab.sln\",\n                        \"timeoutInMinutes\": 0,\n                        \"condition\": \"succeeded()\",\n                        \"refName\": \"VSBuild_2\",\n                        \"task\": {\n                            \"id\": \"71a9a2d3-a98a-4caa-96ab-affca411ecda\",\n                            \"versionSpec\": \"1.*\",\n                            \"definitionType\": null\n                        },\n                        \"inputs\": {\n                            \"solution\": \"FabrikamFiber.CallCenter/FabrikamFiber.CallCenter.sln\",\n                            \"vsVersion\": \"latest\",\n                            \"msbuildArgs\": \"/p:DeployOnBuild=true /p:WebPublishMethod=Package /p:PackageAsSingleFile=true /p:SkipInvalidConfigurations=true\",\n                            \"platform\": \"$(platform)\",\n                            \"configuration\": \"\",\n                            \"clean\": \"false\",\n                            \"maximumCpuCount\": \"false\",\n                            \"restoreNugetPackages\": \"true\",\n                            \"msbuildArchitecture\": \"x86\",\n                            \"logProjectEvents\": \"true\",\n                            \"createLogFile\": \"false\",\n                            \"logFileVerbosity\": \"normal\"\n                        }\n                    },\n                    {\n                        \"environment\": {},\n                        \"enabled\": true,\n                        \"continueOnError\": false,\n                        \"alwaysRun\": false,\n                        \"displayName\": \"Test Assemblies **\\\\*test*.dll;-:**\\\\obj\\\\**\",\n                        \"timeoutInMinutes\": 0,\n                        \"condition\": \"succeeded()\",\n                        \"refName\": \"VSTest_3\",\n                        \"task\": {\n                            \"id\": \"ef087383-ee5e-42c7-9a53-ab56c98420f9\",\n                            \"versionSpec\": \"1.*\",\n                            \"definitionType\": null\n                        },\n                        \"inputs\": {\n                            \"testAssembly\": \"**\\\\*test*.dll;-:**\\\\obj\\\\**\",\n                            \"testFiltercriteria\": \"\",\n                            \"runSettingsFile\": \"\",\n                            \"overrideTestrunParameters\": \"\",\n                            \"codeCoverageEnabled\": \"true\",\n                            \"runInParallel\": \"false\",\n                            \"vstestLocationMethod\": \"version\",\n                            \"vsTestVersion\": \"14.0\",\n                            \"vstestLocation\": \"\",\n                            \"pathtoCustomTestAdapters\": \"\",\n                            \"otherConsoleOptions\": \"\",\n                            \"testRunTitle\": \"\",\n                            \"platform\": \"\",\n                            \"configuration\": \"\",\n                            \"publishRunAttachments\": \"true\"\n                        }\n                    },\n                    {\n                        \"environment\": {},\n                        \"enabled\": true,\n                        \"continueOnError\": false,\n                        \"alwaysRun\": false,\n                        \"displayName\": \"Copy Publish Artifact: drops\",\n                        \"timeoutInMinutes\": 0,\n                        \"condition\": \"succeeded()\",\n                        \"refName\": \"PublishBuildArtifacts_4\",\n                        \"task\": {\n                            \"id\": \"1d341bb0-2106-458c-8422-d00bcea6512a\",\n                            \"versionSpec\": \"1.*\",\n                            \"definitionType\": \"task\"\n                        },\n                        \"inputs\": {\n                            \"CopyRoot\": \"\",\n                            \"Contents\": \"**\\\\*.zip\",\n                            \"ArtifactName\": \"drops\",\n                            \"ArtifactType\": \"Container\",\n                            \"TargetPath\": \"\\\\\\\\my\\\\share\\\\$(Build.DefinitionName)\\\\$(Build.BuildNumber)\"\n                        }\n                    }\n                ],\n                \"name\": \"Agent job 1\",\n                \"refName\": \"Phase_1\",\n                \"condition\": \"succeeded()\",\n                \"target\": {\n                    \"executionOptions\": {\n                        \"type\": 0\n                    },\n                    \"allowScriptsAuthAccessOption\": false,\n                    \"type\": 1\n                },\n                \"jobAuthorizationScope\": \"projectCollection\"\n            }\n        ],\n        \"type\": 1\n    },\n    \"repository\": {\n        \"properties\": {\n            \"cleanOptions\": \"0\",\n            \"labelSources\": \"0\",\n            \"labelSourcesFormat\": \"$(build.buildNumber)\",\n            \"fetchDepth\": \"0\",\n            \"gitLfsSupport\": \"false\",\n            \"skipSyncSource\": \"false\",\n            \"reportBuildStatus\": \"false\",\n            \"checkoutNestedSubmodules\": \"false\"\n        },\n        \"id\": \"698c952d-5903-4b2b-b62a-ef6ac108c147\",\n        \"type\": \"TfsGit\",\n        \"name\": \"Fabrikam\",\n        \"url\": \"https://{{organization}}@{{coreServer}}/{{organization}}/Fabrikam/_git/Fabrikam\",\n        \"defaultBranch\": \"refs/heads/master\",\n        \"clean\": \"false\",\n        \"checkoutSubmodules\": false\n    },\n    \"processParameters\": {},\n    \"quality\": \"definition\",\n    \"drafts\": [],\n    \"queue\": {\n        \"_links\": {\n            \"self\": {\n                \"href\": \"https://{{coreServer}}/{{organization}}/_apis/build/Queues/75\"\n            }\n        },\n        \"id\": 75,\n        \"name\": \"Hosted\",\n        \"url\": \"https://{{coreServer}}/{{organization}}/_apis/build/Queues/75\",\n        \"pool\": {\n            \"id\": 2,\n            \"name\": \"Hosted\",\n            \"isHosted\": true\n        }\n    },\n    \"name\": \"FabrikamFiber-CI\",\n    \"path\": \"\\\\\",\n    \"type\": \"build\",\n    \"queueStatus\": \"enabled\"\n}"
 								},
 								"url": {
-									"raw": "https://dev.azure.com/{{organization}}/{{project}}/_apis/build/definitions/224?api-version={{api-version}}",
+									"raw": "https://{{coreServer}}/{{organization}}/{{project}}/_apis/build/definitions/224?api-version={{api-version}}",
 									"protocol": "https",
 									"host": [
-										"dev",
-										"azure",
-										"com"
+										"{{coreServer}}"
 									],
 									"path": [
 										"{{organization}}",
@@ -3857,12 +3713,10 @@
 									"raw": ""
 								},
 								"url": {
-									"raw": "https://dev.azure.com/{{organization}}/{{project}}/_apis/build/folders?api-version={{api-version-preview2}}",
+									"raw": "https://{{coreServer}}/{{organization}}/{{project}}/_apis/build/folders?api-version={{api-version-preview2}}",
 									"protocol": "https",
 									"host": [
-										"dev",
-										"azure",
-										"com"
+										"{{coreServer}}"
 									],
 									"path": [
 										"{{organization}}",
@@ -3926,12 +3780,10 @@
 									"raw": "{\n    \"path\": \"\\\\CI_Builds\",\n    \"description\":\"CI Builds\"\n}"
 								},
 								"url": {
-									"raw": "https://dev.azure.com/{{organization}}/{{project}}/_apis/build/folders?api-version={{api-version-preview2}}&path=//CI_Builds",
+									"raw": "https://{{coreServer}}/{{organization}}/{{project}}/_apis/build/folders?api-version={{api-version-preview2}}&path=//CI_Builds",
 									"protocol": "https",
 									"host": [
-										"dev",
-										"azure",
-										"com"
+										"{{coreServer}}"
 									],
 									"path": [
 										"{{organization}}",
@@ -3988,12 +3840,10 @@
 									"raw": "{\n    \"path\": \"\\\\CI_Builds\",\n    \"description\":\"CI Builds for Dev branches\"\n}"
 								},
 								"url": {
-									"raw": "https://dev.azure.com/{{organization}}/{{project}}/_apis/build/folders?api-version={{api-version-preview2}}&path=//CI_Builds",
+									"raw": "https://{{coreServer}}/{{organization}}/{{project}}/_apis/build/folders?api-version={{api-version-preview2}}&path=//CI_Builds",
 									"protocol": "https",
 									"host": [
-										"dev",
-										"azure",
-										"com"
+										"{{coreServer}}"
 									],
 									"path": [
 										"{{organization}}",
@@ -4050,12 +3900,10 @@
 									"raw": ""
 								},
 								"url": {
-									"raw": "https://dev.azure.com/{{organization}}/{{project}}/_apis/build/folders?api-version={{api-version-preview2}}&path=//CI_Builds",
+									"raw": "https://{{coreServer}}/{{organization}}/{{project}}/_apis/build/folders?api-version={{api-version-preview2}}&path=//CI_Builds",
 									"protocol": "https",
 									"host": [
-										"dev",
-										"azure",
-										"com"
+										"{{coreServer}}"
 									],
 									"path": [
 										"{{organization}}",
@@ -4111,12 +3959,10 @@
 									"raw": ""
 								},
 								"url": {
-									"raw": "https://dev.azure.com/{{organization}}/{{project}}/_apis/build/latest/{{definitonName}}?api-version={{api-version-preview}}",
+									"raw": "https://{{coreServer}}/{{organization}}/{{project}}/_apis/build/latest/{{definitonName}}?api-version={{api-version-preview}}",
 									"protocol": "https",
 									"host": [
-										"dev",
-										"azure",
-										"com"
+										"{{coreServer}}"
 									],
 									"path": [
 										"{{organization}}",
@@ -4189,12 +4035,10 @@
 									"raw": ""
 								},
 								"url": {
-									"raw": "https://dev.azure.com/{{organization}}/{{project}}/_apis/build/definitions/{{definitionId}}/metrics?api-version={{api-version-preview}}",
+									"raw": "https://{{coreServer}}/{{organization}}/{{project}}/_apis/build/definitions/{{definitionId}}/metrics?api-version={{api-version-preview}}",
 									"protocol": "https",
 									"host": [
-										"dev",
-										"azure",
-										"com"
+										"{{coreServer}}"
 									],
 									"path": [
 										"{{organization}}",
@@ -4247,12 +4091,10 @@
 									"raw": ""
 								},
 								"url": {
-									"raw": "https://dev.azure.com/{{organization}}/{{project}}/_apis/build/metrics?api-version={{api-version-preview}}",
+									"raw": "https://{{coreServer}}/{{organization}}/{{project}}/_apis/build/metrics?api-version={{api-version-preview}}",
 									"protocol": "https",
 									"host": [
-										"dev",
-										"azure",
-										"com"
+										"{{coreServer}}"
 									],
 									"path": [
 										"{{organization}}",
@@ -4330,12 +4172,10 @@
 									"raw": ""
 								},
 								"url": {
-									"raw": "https://dev.azure.com/{{organization}}/{{project}}/_apis/build/options?api-version={{api-version}}",
+									"raw": "https://{{coreServer}}/{{organization}}/{{project}}/_apis/build/options?api-version={{api-version}}",
 									"protocol": "https",
 									"host": [
-										"dev",
-										"azure",
-										"com"
+										"{{coreServer}}"
 									],
 									"path": [
 										"{{organization}}",
@@ -4424,12 +4264,10 @@
 									"raw": ""
 								},
 								"url": {
-									"raw": "https://dev.azure.com/{{organization}}/{{project}}/_apis/build/builds/{{buildId}}/properties?api-version={{api-version-preview}}",
+									"raw": "https://{{coreServer}}/{{organization}}/{{project}}/_apis/build/builds/{{buildId}}/properties?api-version={{api-version-preview}}",
 									"protocol": "https",
 									"host": [
-										"dev",
-										"azure",
-										"com"
+										"{{coreServer}}"
 									],
 									"path": [
 										"{{organization}}",
@@ -4482,12 +4320,10 @@
 									"raw": ""
 								},
 								"url": {
-									"raw": "https://dev.azure.com/{{organization}}/{{project}}/_apis/build/definitions/{{definitionId}}/properties?api-version={{api-version-preview}}",
+									"raw": "https://{{coreServer}}/{{organization}}/{{project}}/_apis/build/definitions/{{definitionId}}/properties?api-version={{api-version-preview}}",
 									"protocol": "https",
 									"host": [
-										"dev",
-										"azure",
-										"com"
+										"{{coreServer}}"
 									],
 									"path": [
 										"{{organization}}",
@@ -4584,12 +4420,10 @@
 									"raw": ""
 								},
 								"url": {
-									"raw": "https://dev.azure.com/{{organization}}/{{project}}/_apis/build/builds/{{buildId}}/report?api-version={{api-version-preview2}}",
+									"raw": "https://{{coreServer}}/{{organization}}/{{project}}/_apis/build/builds/{{buildId}}/report?api-version={{api-version-preview2}}",
 									"protocol": "https",
 									"host": [
-										"dev",
-										"azure",
-										"com"
+										"{{coreServer}}"
 									],
 									"path": [
 										"{{organization}}",
@@ -4685,12 +4519,10 @@
 									"raw": ""
 								},
 								"url": {
-									"raw": "https://dev.azure.com/{{organization}}/_apis/build/resourceusage?api-version={{api-version-preview2}}",
+									"raw": "https://{{coreServer}}/{{organization}}/_apis/build/resourceusage?api-version={{api-version-preview2}}",
 									"protocol": "https",
 									"host": [
-										"dev",
-										"azure",
-										"com"
+										"{{coreServer}}"
 									],
 									"path": [
 										"{{organization}}",
@@ -4778,12 +4610,10 @@
 									"raw": ""
 								},
 								"url": {
-									"raw": "https://dev.azure.com/{{organization}}/{{project}}/_apis/build/definitions/{{definitionId}}/resources?api-version={{api-version-preview}}",
+									"raw": "https://{{coreServer}}/{{organization}}/{{project}}/_apis/build/definitions/{{definitionId}}/resources?api-version={{api-version-preview}}",
 									"protocol": "https",
 									"host": [
-										"dev",
-										"azure",
-										"com"
+										"{{coreServer}}"
 									],
 									"path": [
 										"{{organization}}",
@@ -4873,12 +4703,10 @@
 									"raw": ""
 								},
 								"url": {
-									"raw": "https://dev.azure.com/{{organization}}/{{project}}/_apis/build/settings?api-version={{api-version}}",
+									"raw": "https://{{coreServer}}/{{organization}}/{{project}}/_apis/build/settings?api-version={{api-version}}",
 									"protocol": "https",
 									"host": [
-										"dev",
-										"azure",
-										"com"
+										"{{coreServer}}"
 									],
 									"path": [
 										"{{organization}}",
@@ -4952,12 +4780,10 @@
 									"raw": ""
 								},
 								"url": {
-									"raw": "https://dev.azure.com/{{organization}}/{{project}}/_apis/sourceproviders?api-version={{api-version-preview}}",
+									"raw": "https://{{coreServer}}/{{organization}}/{{project}}/_apis/sourceproviders?api-version={{api-version-preview}}",
 									"protocol": "https",
 									"host": [
-										"dev",
-										"azure",
-										"com"
+										"{{coreServer}}"
 									],
 									"path": [
 										"{{organization}}",
@@ -5040,12 +4866,10 @@
 									"raw": ""
 								},
 								"url": {
-									"raw": "https://dev.azure.com/{{organization}}/{{project}}/_apis/build/status/{{definitionId}}?api-version={{api-version-preview}}",
+									"raw": "https://{{coreServer}}/{{organization}}/{{project}}/_apis/build/status/{{definitionId}}?api-version={{api-version-preview}}",
 									"protocol": "https",
 									"host": [
-										"dev",
-										"azure",
-										"com"
+										"{{coreServer}}"
 									],
 									"path": [
 										"{{organization}}",
@@ -5165,12 +4989,10 @@
 									"raw": ""
 								},
 								"url": {
-									"raw": "https://dev.azure.com/{{organization}}/{{project}}/_apis/build/builds/{{buildId}}/timeline?api-version={{api-version}}",
+									"raw": "https://{{coreServer}}/{{organization}}/{{project}}/_apis/build/builds/{{buildId}}/timeline?api-version={{api-version}}",
 									"protocol": "https",
 									"host": [
-										"dev",
-										"azure",
-										"com"
+										"{{coreServer}}"
 									],
 									"path": [
 										"{{organization}}",
@@ -5281,12 +5103,10 @@
 									"raw": ""
 								},
 								"url": {
-									"raw": "https://dev.azure.com/{{organization}}/{{project}}/{{team}}/_apis/work/backlogs?api-version={{api-version-preview}}",
+									"raw": "https://{{coreServer}}/{{organization}}/{{project}}/{{team}}/_apis/work/backlogs?api-version={{api-version-preview}}",
 									"protocol": "https",
 									"host": [
-										"dev",
-										"azure",
-										"com"
+										"{{coreServer}}"
 									],
 									"path": [
 										"{{organization}}",
@@ -5338,12 +5158,10 @@
 									"raw": ""
 								},
 								"url": {
-									"raw": "https://dev.azure.com/{{organization}}/{{project}}/_apis/work/boardcolumns?api-version={{api-version}}",
+									"raw": "https://{{coreServer}}/{{organization}}/{{project}}/_apis/work/boardcolumns?api-version={{api-version}}",
 									"protocol": "https",
 									"host": [
-										"dev",
-										"azure",
-										"com"
+										"{{coreServer}}"
 									],
 									"path": [
 										"{{organization}}",
@@ -5394,12 +5212,10 @@
 									"raw": ""
 								},
 								"url": {
-									"raw": "https://dev.azure.com/{{organization}}/{{project}}/{{team}}/_apis/work/boardcolumns?api-version={{api-version}}",
+									"raw": "https://{{coreServer}}/{{organization}}/{{project}}/{{team}}/_apis/work/boardcolumns?api-version={{api-version}}",
 									"protocol": "https",
 									"host": [
-										"dev",
-										"azure",
-										"com"
+										"{{coreServer}}"
 									],
 									"path": [
 										"{{organization}}",
@@ -5456,12 +5272,10 @@
 									"raw": ""
 								},
 								"url": {
-									"raw": "https://dev.azure.com/{{organization}}/_apis/projects?api-version={{api-version}}",
+									"raw": "https://{{coreServer}}/{{organization}}/_apis/projects?api-version={{api-version}}",
 									"protocol": "https",
 									"host": [
-										"dev",
-										"azure",
-										"com"
+										"{{coreServer}}"
 									],
 									"path": [
 										"{{organization}}",
@@ -5504,12 +5318,10 @@
 									"raw": ""
 								},
 								"url": {
-									"raw": "https://dev.azure.com/{{organization}}/_apis/projects?api-version={{api-version}}&stateFilter=all&getDefaultTeamImageUrl=true",
+									"raw": "https://{{coreServer}}/{{organization}}/_apis/projects?api-version={{api-version}}&stateFilter=all&getDefaultTeamImageUrl=true",
 									"protocol": "https",
 									"host": [
-										"dev",
-										"azure",
-										"com"
+										"{{coreServer}}"
 									],
 									"path": [
 										"{{organization}}",
@@ -5576,12 +5388,10 @@
 									"raw": ""
 								},
 								"url": {
-									"raw": "https://dev.azure.com/{{organization}}/_apis/projects/{{project}}?api-version={{api-version}}",
+									"raw": "https://{{coreServer}}/{{organization}}/_apis/projects/{{project}}?api-version={{api-version}}",
 									"protocol": "https",
 									"host": [
-										"dev",
-										"azure",
-										"com"
+										"{{coreServer}}"
 									],
 									"path": [
 										"{{organization}}",
@@ -5625,12 +5435,10 @@
 									"raw": ""
 								},
 								"url": {
-									"raw": "https://dev.azure.com/{{organization}}/_apis/projects/{{project}}?api-version={{api-version}}&includeCapabilities=true&includeHistory=true",
+									"raw": "https://{{coreServer}}/{{organization}}/_apis/projects/{{project}}?api-version={{api-version}}&includeCapabilities=true&includeHistory=true",
 									"protocol": "https",
 									"host": [
-										"dev",
-										"azure",
-										"com"
+										"{{coreServer}}"
 									],
 									"path": [
 										"{{organization}}",
@@ -5684,12 +5492,10 @@
 									"raw": ""
 								},
 								"url": {
-									"raw": "https://dev.azure.com/{{organization}}/_apis/projects/{{projectId}}/properties?api-version={{api-version-preview}}",
+									"raw": "https://{{coreServer}}/{{organization}}/_apis/projects/{{projectId}}/properties?api-version={{api-version-preview}}",
 									"protocol": "https",
 									"host": [
-										"dev",
-										"azure",
-										"com"
+										"{{coreServer}}"
 									],
 									"path": [
 										"{{organization}}",
@@ -5734,12 +5540,10 @@
 									"raw": ""
 								},
 								"url": {
-									"raw": "https://dev.azure.com/{{organization}}/_apis/projects/{{projectId}}/properties?api-version={{api-version-preview}}&keys=System.CurrentProcessTemplateId,*SourceControl*",
+									"raw": "https://{{coreServer}}/{{organization}}/_apis/projects/{{projectId}}/properties?api-version={{api-version-preview}}&keys=System.CurrentProcessTemplateId,*SourceControl*",
 									"protocol": "https",
 									"host": [
-										"dev",
-										"azure",
-										"com"
+										"{{coreServer}}"
 									],
 									"path": [
 										"{{organization}}",
@@ -5796,12 +5600,10 @@
 									"raw": "{\r\n  \"name\": \"FabrikamTravel\",\r\n  \"description\": \"Frabrikam travel app for Windows Phone\",\r\n  \"capabilities\": {\r\n    \"versioncontrol\": {\r\n      \"sourceControlType\": \"Git\"\r\n    },\r\n    \"processTemplate\": {\r\n      \"templateTypeId\": \"6b724908-ef14-45cf-84f8-768b5384da45\"\r\n    }\r\n  }\r\n}"
 								},
 								"url": {
-									"raw": "https://dev.azure.com/{{organization}}/_apis/projects?api-version={{api-version}}",
+									"raw": "https://{{coreServer}}/{{organization}}/_apis/projects?api-version={{api-version}}",
 									"protocol": "https",
 									"host": [
-										"dev",
-										"azure",
-										"com"
+										"{{coreServer}}"
 									],
 									"path": [
 										"{{organization}}",
@@ -5851,12 +5653,10 @@
 									"raw": "[\r\n  {\r\n    \"op\": \"add\",\r\n    \"path\": \"/Alias\",\r\n    \"value\": \"Frabrikam\"\r\n  }\r\n]"
 								},
 								"url": {
-									"raw": "https://dev.azure.com/{{organization}}/_apis/projects/{{projectId}}/properties?api-version={{api-version-preview}}",
+									"raw": "https://{{coreServer}}/{{organization}}/_apis/projects/{{projectId}}/properties?api-version={{api-version-preview}}",
 									"protocol": "https",
 									"host": [
-										"dev",
-										"azure",
-										"com"
+										"{{coreServer}}"
 									],
 									"path": [
 										"{{organization}}",
@@ -5908,12 +5708,10 @@
 									"raw": "[\r\n  {\r\n    \"op\": \"remove\",\r\n    \"path\": \"/Alias\"\r\n  }\r\n]"
 								},
 								"url": {
-									"raw": "https://dev.azure.com/{{organization}}/_apis/projects/{{projectId}}/properties?api-version={{api-version-preview}}",
+									"raw": "https://{{coreServer}}/{{organization}}/_apis/projects/{{projectId}}/properties?api-version={{api-version-preview}}",
 									"protocol": "https",
 									"host": [
-										"dev",
-										"azure",
-										"com"
+										"{{coreServer}}"
 									],
 									"path": [
 										"{{organization}}",
@@ -5965,12 +5763,10 @@
 									"raw": "[\r\n  {\r\n    \"op\": \"remove\",\r\n    \"path\": \"/Alias\"\r\n  }\r\n]"
 								},
 								"url": {
-									"raw": "https://dev.azure.com/{{organization}}/_apis/projects/{{projectId}}?api-version={{api-version}}",
+									"raw": "https://{{coreServer}}/{{organization}}/_apis/projects/{{projectId}}?api-version={{api-version}}",
 									"protocol": "https",
 									"host": [
-										"dev",
-										"azure",
-										"com"
+										"{{coreServer}}"
 									],
 									"path": [
 										"{{organization}}",
@@ -6020,12 +5816,10 @@
 									"raw": ""
 								},
 								"url": {
-									"raw": "https://dev.azure.com/{{organization}}/_apis/process/processes/{{processId}}?api-version={{api-version}}",
+									"raw": "https://{{coreServer}}/{{organization}}/_apis/process/processes/{{processId}}?api-version={{api-version}}",
 									"protocol": "https",
 									"host": [
-										"dev",
-										"azure",
-										"com"
+										"{{coreServer}}"
 									],
 									"path": [
 										"{{organization}}",
@@ -6070,12 +5864,10 @@
 									"raw": ""
 								},
 								"url": {
-									"raw": "https://dev.azure.com/{{organization}}/_apis/process/processes?api-version={{api-version}}",
+									"raw": "https://{{coreServer}}/{{organization}}/_apis/process/processes?api-version={{api-version}}",
 									"protocol": "https",
 									"host": [
-										"dev",
-										"azure",
-										"com"
+										"{{coreServer}}"
 									],
 									"path": [
 										"{{organization}}",
@@ -6125,12 +5917,10 @@
 									"raw": ""
 								},
 								"url": {
-									"raw": "https://dev.azure.com/{{organization}}/_apis/projects/{{projectId}}/teams/{{team}}?api-version={{api-version}}",
+									"raw": "https://{{coreServer}}/{{organization}}/_apis/projects/{{projectId}}/teams/{{team}}?api-version={{api-version}}",
 									"protocol": "https",
 									"host": [
-										"dev",
-										"azure",
-										"com"
+										"{{coreServer}}"
 									],
 									"path": [
 										"{{organization}}",
@@ -6176,12 +5966,10 @@
 									"raw": ""
 								},
 								"url": {
-									"raw": "https://dev.azure.com/{{organization}}/_apis/teams?$mine=false&$top=100&$skip&api-version={{api-version-preview2}}",
+									"raw": "https://{{coreServer}}/{{organization}}/_apis/teams?$mine=false&$top=100&$skip&api-version={{api-version-preview2}}",
 									"protocol": "https",
 									"host": [
-										"dev",
-										"azure",
-										"com"
+										"{{coreServer}}"
 									],
 									"path": [
 										"{{organization}}",
@@ -6239,12 +6027,10 @@
 									"raw": ""
 								},
 								"url": {
-									"raw": "https://dev.azure.com/{{organization}}/_apis/projects/{{projectId}}/teams?$mine=false&$top=10&$skip=&api-version={{api-version}}",
+									"raw": "https://{{coreServer}}/{{organization}}/_apis/projects/{{projectId}}/teams?$mine=false&$top=10&$skip=&api-version={{api-version}}",
 									"protocol": "https",
 									"host": [
-										"dev",
-										"azure",
-										"com"
+										"{{coreServer}}"
 									],
 									"path": [
 										"{{organization}}",
@@ -6304,12 +6090,10 @@
 									"raw": ""
 								},
 								"url": {
-									"raw": "https://dev.azure.com/{{organization}}/_apis/projects/{{projectId}}/teams/{{team}}/members?$mine=false&$top=10&$skip&api-version={{api-version}}",
+									"raw": "https://{{coreServer}}/{{organization}}/_apis/projects/{{projectId}}/teams/{{team}}/members?$mine=false&$top=10&$skip&api-version={{api-version}}",
 									"protocol": "https",
 									"host": [
-										"dev",
-										"azure",
-										"com"
+										"{{coreServer}}"
 									],
 									"path": [
 										"{{organization}}",
@@ -6378,12 +6162,10 @@
 									"raw": "{\r\n  \"name\": \"My new team\",\r\n  \"description\": \"sample team create from REST APIs\"\r\n}"
 								},
 								"url": {
-									"raw": "https://dev.azure.com/{{organization}}/_apis/projects/{{projectId}}/teams?api-version={{api-version}}",
+									"raw": "https://{{coreServer}}/{{organization}}/_apis/projects/{{projectId}}/teams?api-version={{api-version}}",
 									"protocol": "https",
 									"host": [
-										"dev",
-										"azure",
-										"com"
+										"{{coreServer}}"
 									],
 									"path": [
 										"{{organization}}",
@@ -6435,12 +6217,10 @@
 									"raw": "{\r\n  \"name\": \"My new team\",\r\n  \"description\": \"sample team create from REST APIs\"\r\n}"
 								},
 								"url": {
-									"raw": "https://dev.azure.com/{{organization}}/_apis/projects/{{projectId}}/teams/{{team}}?api-version={{api-version}}",
+									"raw": "https://{{coreServer}}/{{organization}}/_apis/projects/{{projectId}}/teams/{{team}}?api-version={{api-version}}",
 									"protocol": "https",
 									"host": [
-										"dev",
-										"azure",
-										"com"
+										"{{coreServer}}"
 									],
 									"path": [
 										"{{organization}}",
@@ -6497,13 +6277,10 @@
 									"raw": ""
 								},
 								"url": {
-									"raw": "https://vssps.dev.azure.com/{{organization}}/_apis/graph/users?api-version={{api-version-preview}}&subjectTypes=aad&continuationToken=",
+									"raw": "https://{{graphServer}}/{{organization}}/_apis/graph/users?api-version={{api-version-preview}}&subjectTypes=aad&continuationToken=",
 									"protocol": "https",
 									"host": [
-										"vssps",
-										"dev",
-										"azure",
-										"com"
+										"{{graphServer}}"
 									],
 									"path": [
 										"{{organization}}",
@@ -6557,13 +6334,10 @@
 									"raw": ""
 								},
 								"url": {
-									"raw": "https://vssps.dev.azure.com/{{organization}}/_apis/graph/users/{{userDescriptor}}?api-version={{api-version-preview}}",
+									"raw": "https://{{graphServer}}/{{organization}}/_apis/graph/users/{{userDescriptor}}?api-version={{api-version-preview}}",
 									"protocol": "https",
 									"host": [
-										"vssps",
-										"dev",
-										"azure",
-										"com"
+										"{{graphServer}}"
 									],
 									"path": [
 										"{{organization}}",
@@ -6624,13 +6398,10 @@
 									"raw": ""
 								},
 								"url": {
-									"raw": "https://vsrm.dev.azure.com/{{organization}}/{{project}}/_apis/release/releases?api-version={{api-version}}",
+									"raw": "https://{{releaseServer}}/{{organization}}/{{project}}/_apis/release/releases?api-version={{api-version}}",
 									"protocol": "https",
 									"host": [
-										"vsrm",
-										"dev",
-										"azure",
-										"com"
+										"{{releaseServer}}"
 									],
 									"path": [
 										"{{organization}}",
@@ -6793,13 +6564,10 @@
 									"raw": ""
 								},
 								"url": {
-									"raw": "https://vsrm.dev.azure.com/{{organization}}/{{project}}/_apis/release/releases/{{releaseId}}?$expand=true&api-version={{api-version}}",
+									"raw": "https://{{releaseServer}}/{{organization}}/{{project}}/_apis/release/releases/{{releaseId}}?$expand=true&api-version={{api-version}}",
 									"protocol": "https",
 									"host": [
-										"vsrm",
-										"dev",
-										"azure",
-										"com"
+										"{{releaseServer}}"
 									],
 									"path": [
 										"{{organization}}",
@@ -6868,13 +6636,10 @@
 									"raw": ""
 								},
 								"url": {
-									"raw": "https://vsrm.dev.azure.com/{{organization}}/{{project}}/_apis/release/releases/{{releaseId}}/logs?api-version={{api-version-preview2}}",
+									"raw": "https://{{releaseServer}}/{{organization}}/{{project}}/_apis/release/releases/{{releaseId}}/logs?api-version={{api-version-preview2}}",
 									"protocol": "https",
 									"host": [
-										"vsrm",
-										"dev",
-										"azure",
-										"com"
+										"{{releaseServer}}"
 									],
 									"path": [
 										"{{organization}}",
@@ -6939,12 +6704,10 @@
 									"raw": "{\r\n  \"type\": \"projectWiki\",\r\n  \"name\": \"{{projectWikiName}}\",\r\n  \"projectId\": \"{{projectId}}\",\r\n}"
 								},
 								"url": {
-									"raw": "https://dev.azure.com/{{organization}}/{{project}}/_apis/wiki/wikis?api-version={{api-version}}",
+									"raw": "https://{{coreServer}}/{{organization}}/{{project}}/_apis/wiki/wikis?api-version={{api-version}}",
 									"protocol": "https",
 									"host": [
-										"dev",
-										"azure",
-										"com"
+										"{{coreServer}}"
 									],
 									"path": [
 										"{{organization}}",
@@ -6980,12 +6743,10 @@
 											"raw": "{\r\n  \"type\": \"projectWiki\",\r\n  \"name\": \"sampleProjectWiki\",\r\n  \"projectId\": \"f38a86b5-98b0-49ef-ae9f-213c2b531cbe\"\r\n}"
 										},
 										"url": {
-											"raw": "https://dev.azure.com/{{organization}}/{{project}}/_apis/wiki/wikis?api-version={{api-version}}",
+											"raw": "https://{{coreServer}}/{{organization}}/{{project}}/_apis/wiki/wikis?api-version={{api-version}}",
 											"protocol": "https",
 											"host": [
-												"dev",
-												"azure",
-												"com"
+												"{{coreServer}}"
 											],
 											"path": [
 												"{{organization}}",
@@ -7072,7 +6833,7 @@
 										}
 									],
 									"cookie": [],
-									"body": "{\r\n  \"id\": \"a4cfa859-1089-4445-9ef1-837b0fbd44bd\",\r\n  \"versions\": [\r\n    {\r\n      \"version\": \"wikiMaster\"\r\n    }\r\n  ],\r\n  \"url\": \"https://dev.azure.com/fabrikam/f38a86b5-98b0-49ef-ae9f-213c2b531cbe/_apis/wiki/wikis/a4cfa859-1089-4445-9ef1-837b0fbd44bd\",\r\n  \"remoteUrl\": \"https://dev.azure.com/fabrikam/f38a86b5-98b0-49ef-ae9f-213c2b531cbe/_wiki/wikis/a4cfa859-1089-4445-9ef1-837b0fbd44bd\",\r\n  \"type\": \"projectWiki\",\r\n  \"name\": \"sampleProjectWiki\",\r\n  \"projectId\": \"f38a86b5-98b0-49ef-ae9f-213c2b531cbe\",\r\n  \"repositoryId\": \"a4cfa859-1089-4445-9ef1-837b0fbd44bd\",\r\n  \"mappedPath\": \"/\"\r\n}"
+									"body": "{\r\n  \"id\": \"a4cfa859-1089-4445-9ef1-837b0fbd44bd\",\r\n  \"versions\": [\r\n    {\r\n      \"version\": \"wikiMaster\"\r\n    }\r\n  ],\r\n  \"url\": \"https://{{coreServer}}/fabrikam/f38a86b5-98b0-49ef-ae9f-213c2b531cbe/_apis/wiki/wikis/a4cfa859-1089-4445-9ef1-837b0fbd44bd\",\r\n  \"remoteUrl\": \"https://{{coreServer}}/fabrikam/f38a86b5-98b0-49ef-ae9f-213c2b531cbe/_wiki/wikis/a4cfa859-1089-4445-9ef1-837b0fbd44bd\",\r\n  \"type\": \"projectWiki\",\r\n  \"name\": \"sampleProjectWiki\",\r\n  \"projectId\": \"f38a86b5-98b0-49ef-ae9f-213c2b531cbe\",\r\n  \"repositoryId\": \"a4cfa859-1089-4445-9ef1-837b0fbd44bd\",\r\n  \"mappedPath\": \"/\"\r\n}"
 								}
 							]
 						},
@@ -7108,12 +6869,10 @@
 									"raw": "{\r\n  \"version\": {\r\n    \"version\": \"{{version}}\",\r\n    \"versionOptions\": \"{{GitVersionOptions}}\",\r\n    \"versionType\": \"{{GitVersionType}}\"\r\n  },\r\n  \"type\": \"codeWiki\",\r\n  \"name\": \"sampleCodeWiki\",\r\n  \"projectId\": \"{{projectId}}\",\r\n  \"repositoryId\": \"{{repositoryId}}\",\r\n  \"mappedPath\": \"/docs\"\r\n}"
 								},
 								"url": {
-									"raw": "https://dev.azure.com/{{organization}}/{{project}}/_apis/wiki/wikis?api-version={{api-version}}",
+									"raw": "https://{{coreServer}}/{{organization}}/{{project}}/_apis/wiki/wikis?api-version={{api-version}}",
 									"protocol": "https",
 									"host": [
-										"dev",
-										"azure",
-										"com"
+										"{{coreServer}}"
 									],
 									"path": [
 										"{{organization}}",
@@ -7149,12 +6908,10 @@
 											"raw": "{\r\n  \"version\": {\r\n    \"version\": \"master\"\r\n  },\r\n  \"type\": \"codeWiki\",\r\n  \"name\": \"sampleCodeWiki\",\r\n  \"projectId\": \"15cbba90-8ac5-450e-934c-16f43021546b\",\r\n  \"repositoryId\": \"cd327f27-561b-45aa-9913-4af25ad85889\",\r\n  \"mappedPath\": \"/docs\"\r\n}"
 										},
 										"url": {
-											"raw": "https://dev.azure.com/{{organization}}/{{project}}/_apis/wiki/wikis?api-version={{api-version}}",
+											"raw": "https://{{coreServer}}/{{organization}}/{{project}}/_apis/wiki/wikis?api-version={{api-version}}",
 											"protocol": "https",
 											"host": [
-												"dev",
-												"azure",
-												"com"
+												"{{coreServer}}"
 											],
 											"path": [
 												"{{organization}}",
@@ -7172,9 +6929,9 @@
 										}
 									},
 									"_postman_previewlanguage": "json",
-									"header": null,
+									"header": [],
 									"cookie": [],
-									"body": "{\n    \"id\": \"9bfc671f-8116-4b3f-9aad-c17a9d677ab6\",\n    \"versions\": [\n        {\n            \"version\": \"master\"\n        }\n    ],\n    \"url\": \"https://dev.azure.com/fabrikam/15cbba90-8ac5-450e-934c-16f43021546b/_apis/wiki/wikis/9bfc671f-8116-4b3f-9aad-c17a9d677ab6\",\n    \"remoteUrl\": \"https://dev.azure.com/fabrikam/15cbba90-8ac5-450e-934c-16f43021546b/_wiki/wikis/9bfc671f-8116-4b3f-9aad-c17a9d677ab6\",\n    \"type\": \"codeWiki\",\n    \"name\": \"sampleCodeWiki\",\n    \"projectId\": \"15cbba90-8ac5-450e-934c-16f43021546b\",\n    \"repositoryId\": \"cd327f27-561b-45aa-9913-4af25ad85889\",\n    \"mappedPath\": \"/docs\"\n}"
+									"body": "{\n    \"id\": \"9bfc671f-8116-4b3f-9aad-c17a9d677ab6\",\n    \"versions\": [\n        {\n            \"version\": \"master\"\n        }\n    ],\n    \"url\": \"https://{{coreServer}}/fabrikam/15cbba90-8ac5-450e-934c-16f43021546b/_apis/wiki/wikis/9bfc671f-8116-4b3f-9aad-c17a9d677ab6\",\n    \"remoteUrl\": \"https://{{coreServer}}/fabrikam/15cbba90-8ac5-450e-934c-16f43021546b/_wiki/wikis/9bfc671f-8116-4b3f-9aad-c17a9d677ab6\",\n    \"type\": \"codeWiki\",\n    \"name\": \"sampleCodeWiki\",\n    \"projectId\": \"15cbba90-8ac5-450e-934c-16f43021546b\",\n    \"repositoryId\": \"cd327f27-561b-45aa-9913-4af25ad85889\",\n    \"mappedPath\": \"/docs\"\n}"
 								}
 							]
 						},
@@ -7203,12 +6960,10 @@
 									"raw": ""
 								},
 								"url": {
-									"raw": "https://dev.azure.com/{{organization}}/{{project}}/_apis/wiki/wikis/{{wikiIdentifier}}?api-version={{api-version}}",
+									"raw": "https://{{coreServer}}/{{organization}}/{{project}}/_apis/wiki/wikis/{{wikiIdentifier}}?api-version={{api-version}}",
 									"protocol": "https",
 									"host": [
-										"dev",
-										"azure",
-										"com"
+										"{{coreServer}}"
 									],
 									"path": [
 										"{{organization}}",
@@ -7254,12 +7009,10 @@
 									"raw": ""
 								},
 								"url": {
-									"raw": "https://dev.azure.com/{{organization}}/{{project}}/_apis/wiki/wikis/{{wikiIdentifier}}?api-version={{api-version}}",
+									"raw": "https://{{coreServer}}/{{organization}}/{{project}}/_apis/wiki/wikis/{{wikiIdentifier}}?api-version={{api-version}}",
 									"protocol": "https",
 									"host": [
-										"dev",
-										"azure",
-										"com"
+										"{{coreServer}}"
 									],
 									"path": [
 										"{{organization}}",
@@ -7305,12 +7058,10 @@
 									"raw": ""
 								},
 								"url": {
-									"raw": "https://dev.azure.com/{{organization}}/{{project}}/_apis/wiki/wikis?api-version={{api-version}}",
+									"raw": "https://{{coreServer}}/{{organization}}/{{project}}/_apis/wiki/wikis?api-version={{api-version}}",
 									"protocol": "https",
 									"host": [
-										"dev",
-										"azure",
-										"com"
+										"{{coreServer}}"
 									],
 									"path": [
 										"{{organization}}",
@@ -7362,12 +7113,10 @@
 									"raw": "{\r\n  \"versions\": [\r\n    {\r\n      \"version\": \"{{version}}\"\r\n    }\r\n  ],\r\n  \"name\": \"TaqName\"\r\n}"
 								},
 								"url": {
-									"raw": "https://dev.azure.com/{{organization}}/{{project}}/_apis/wiki/wikis/{{wikiIdentifier}}?api-version={{api-version}}",
+									"raw": "https://{{coreServer}}/{{organization}}/{{project}}/_apis/wiki/wikis/{{wikiIdentifier}}?api-version={{api-version}}",
 									"protocol": "https",
 									"host": [
-										"dev",
-										"azure",
-										"com"
+										"{{coreServer}}"
 									],
 									"path": [
 										"{{organization}}",
