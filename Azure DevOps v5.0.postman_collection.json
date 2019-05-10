@@ -1,6 +1,6 @@
 {
 	"info": {
-		"_postman_id": "be468682-c704-4c04-8c32-4dffc14f2f71",
+		"_postman_id": "cc78453d-9038-460d-8be1-38404f79cccd",
 		"name": "Azure DevOps v5.0",
 		"description": "Azure DevOps Services REST API Reference.\n\nv1.1",
 		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
@@ -5079,7 +5079,24 @@
 					"name": "Backlogs",
 					"item": [
 						{
-							"name": "List",
+							"name": "List all backlog levels",
+							"event": [
+								{
+									"listen": "test",
+									"script": {
+										"id": "8a5173c8-455a-4474-8872-70aec775d255",
+										"exec": [
+											"",
+											"var jsonData = pm.response.json();",
+											"",
+											"pm.test(\"Found a total of \" + jsonData.count + \" backlog levels\", function () {",
+											"    return true; // shame that tests don't offer a way to write output to the Test Results window",
+											"});"
+										],
+										"type": "text/javascript"
+									}
+								}
+							],
 							"request": {
 								"auth": {
 									"type": "basic",
@@ -5123,9 +5140,329 @@
 										}
 									]
 								},
-								"description": "List all backlog levels"
+								"description": "List all backlog levels\n\n[Documentation Link](https://docs.microsoft.com/en-us/rest/api/azure/devops/work/backlogs/list?view=azure-devops-rest-5.0)"
 							},
-							"response": []
+							"response": [
+								{
+									"name": "Fabrikam backlogs",
+									"originalRequest": {
+										"method": "GET",
+										"header": [],
+										"body": {
+											"mode": "raw",
+											"raw": ""
+										},
+										"url": {
+											"raw": "https://{{coreServer}}/{{organization}}/{{project}}/{{team}}/_apis/work/backlogs?api-version={{api-version-preview}}",
+											"protocol": "https",
+											"host": [
+												"{{coreServer}}"
+											],
+											"path": [
+												"{{organization}}",
+												"{{project}}",
+												"{{team}}",
+												"_apis",
+												"work",
+												"backlogs"
+											],
+											"query": [
+												{
+													"key": "api-version",
+													"value": "{{api-version-preview}}"
+												}
+											]
+										}
+									},
+									"_postman_previewlanguage": "json",
+									"header": null,
+									"cookie": [],
+									"body": "{\n    \"count\": 4,\n    \"value\": [\n        {\n            \"id\": \"Microsoft.EpicCategory\",\n            \"name\": \"Epics\",\n            \"rank\": 4,\n            \"workItemCountLimit\": 1000,\n            \"addPanelFields\": [\n                {\n                    \"referenceName\": \"System.Title\",\n                    \"name\": \"Title\",\n                    \"url\": \"https://dev.azure.com/fabrikam/_apis/wit/fields/System.Title\"\n                }\n            ],\n            \"columnFields\": [\n                {\n                    \"columnFieldReference\": {\n                        \"referenceName\": \"System.WorkItemType\",\n                        \"name\": \"Work Item Type\",\n                        \"url\": \"https://dev.azure.com/fabrikam/_apis/wit/fields/System.WorkItemType\"\n                    },\n                    \"width\": 100\n                },\n                {\n                    \"columnFieldReference\": {\n                        \"referenceName\": \"System.Title\",\n                        \"name\": \"Title\",\n                        \"url\": \"https://dev.azure.com/fabrikam/_apis/wit/fields/System.Title\"\n                    },\n                    \"width\": 400\n                },\n                {\n                    \"columnFieldReference\": {\n                        \"referenceName\": \"System.State\",\n                        \"name\": \"State\",\n                        \"url\": \"https://dev.azure.com/fabrikam/_apis/wit/fields/System.State\"\n                    },\n                    \"width\": 100\n                },\n                {\n                    \"columnFieldReference\": {\n                        \"referenceName\": \"Microsoft.VSTS.Scheduling.Effort\",\n                        \"name\": \"Effort\",\n                        \"url\": \"https://dev.azure.com/fabrikam/_apis/wit/fields/Microsoft.VSTS.Scheduling.Effort\"\n                    },\n                    \"width\": 50\n                },\n                {\n                    \"columnFieldReference\": {\n                        \"referenceName\": \"Microsoft.VSTS.Common.BusinessValue\",\n                        \"name\": \"Business Value\",\n                        \"url\": \"https://dev.azure.com/fabrikam/_apis/wit/fields/Microsoft.VSTS.Common.BusinessValue\"\n                    },\n                    \"width\": 50\n                },\n                {\n                    \"columnFieldReference\": {\n                        \"referenceName\": \"Microsoft.VSTS.Common.ValueArea\",\n                        \"name\": \"Value Area\",\n                        \"url\": \"https://dev.azure.com/fabrikam/_apis/wit/fields/Microsoft.VSTS.Common.ValueArea\"\n                    },\n                    \"width\": 100\n                },\n                {\n                    \"columnFieldReference\": {\n                        \"referenceName\": \"System.Tags\",\n                        \"name\": \"Tags\",\n                        \"url\": \"https://dev.azure.com/fabrikam/_apis/wit/fields/System.Tags\"\n                    },\n                    \"width\": 200\n                }\n            ],\n            \"workItemTypes\": [\n                {\n                    \"name\": \"Epic\",\n                    \"url\": \"https://dev.azure.com/fabrikam/Fabrikam-Fiber/_apis/wit/workItemTypes/Epic\"\n                }\n            ],\n            \"defaultWorkItemType\": {\n                \"name\": \"Epic\",\n                \"url\": \"https://dev.azure.com/fabrikam/Fabrikam-Fiber/_apis/wit/workItemTypes/Epic\"\n            },\n            \"color\": \"FF7B00\",\n            \"isHidden\": false,\n            \"type\": \"portfolio\"\n        },\n        {\n            \"id\": \"Microsoft.FeatureCategory\",\n            \"name\": \"Features\",\n            \"rank\": 3,\n            \"workItemCountLimit\": 1000,\n            \"addPanelFields\": [\n                {\n                    \"referenceName\": \"System.Title\",\n                    \"name\": \"Title\",\n                    \"url\": \"https://dev.azure.com/fabrikam/_apis/wit/fields/System.Title\"\n                }\n            ],\n            \"columnFields\": [\n                {\n                    \"columnFieldReference\": {\n                        \"referenceName\": \"System.WorkItemType\",\n                        \"name\": \"Work Item Type\",\n                        \"url\": \"https://dev.azure.com/fabrikam/_apis/wit/fields/System.WorkItemType\"\n                    },\n                    \"width\": 100\n                },\n                {\n                    \"columnFieldReference\": {\n                        \"referenceName\": \"System.Title\",\n                        \"name\": \"Title\",\n                        \"url\": \"https://dev.azure.com/fabrikam/_apis/wit/fields/System.Title\"\n                    },\n                    \"width\": 400\n                },\n                {\n                    \"columnFieldReference\": {\n                        \"referenceName\": \"System.State\",\n                        \"name\": \"State\",\n                        \"url\": \"https://dev.azure.com/fabrikam/_apis/wit/fields/System.State\"\n                    },\n                    \"width\": 100\n                },\n                {\n                    \"columnFieldReference\": {\n                        \"referenceName\": \"Microsoft.VSTS.Scheduling.Effort\",\n                        \"name\": \"Effort\",\n                        \"url\": \"https://dev.azure.com/fabrikam/_apis/wit/fields/Microsoft.VSTS.Scheduling.Effort\"\n                    },\n                    \"width\": 50\n                },\n                {\n                    \"columnFieldReference\": {\n                        \"referenceName\": \"Microsoft.VSTS.Common.BusinessValue\",\n                        \"name\": \"Business Value\",\n                        \"url\": \"https://dev.azure.com/fabrikam/_apis/wit/fields/Microsoft.VSTS.Common.BusinessValue\"\n                    },\n                    \"width\": 50\n                },\n                {\n                    \"columnFieldReference\": {\n                        \"referenceName\": \"Microsoft.VSTS.Common.ValueArea\",\n                        \"name\": \"Value Area\",\n                        \"url\": \"https://dev.azure.com/fabrikam/_apis/wit/fields/Microsoft.VSTS.Common.ValueArea\"\n                    },\n                    \"width\": 100\n                },\n                {\n                    \"columnFieldReference\": {\n                        \"referenceName\": \"System.Tags\",\n                        \"name\": \"Tags\",\n                        \"url\": \"https://dev.azure.com/fabrikam/_apis/wit/fields/System.Tags\"\n                    },\n                    \"width\": 200\n                }\n            ],\n            \"workItemTypes\": [\n                {\n                    \"name\": \"Feature\",\n                    \"url\": \"https://dev.azure.com/fabrikam/Fabrikam-Fiber/_apis/wit/workItemTypes/Feature\"\n                }\n            ],\n            \"defaultWorkItemType\": {\n                \"name\": \"Feature\",\n                \"url\": \"https://dev.azure.com/fabrikam/Fabrikam-Fiber/_apis/wit/workItemTypes/Feature\"\n            },\n            \"color\": \"773B93\",\n            \"isHidden\": false,\n            \"type\": \"portfolio\"\n        },\n        {\n            \"id\": \"Microsoft.RequirementCategory\",\n            \"name\": \"Stories\",\n            \"rank\": 2,\n            \"workItemCountLimit\": 1000,\n            \"addPanelFields\": [\n                {\n                    \"referenceName\": \"System.Title\",\n                    \"name\": \"Title\",\n                    \"url\": \"https://dev.azure.com/fabrikam/_apis/wit/fields/System.Title\"\n                }\n            ],\n            \"columnFields\": [\n                {\n                    \"columnFieldReference\": {\n                        \"referenceName\": \"System.WorkItemType\",\n                        \"name\": \"Work Item Type\",\n                        \"url\": \"https://dev.azure.com/fabrikam/_apis/wit/fields/System.WorkItemType\"\n                    },\n                    \"width\": 100\n                },\n                {\n                    \"columnFieldReference\": {\n                        \"referenceName\": \"System.Title\",\n                        \"name\": \"Title\",\n                        \"url\": \"https://dev.azure.com/fabrikam/_apis/wit/fields/System.Title\"\n                    },\n                    \"width\": 400\n                },\n                {\n                    \"columnFieldReference\": {\n                        \"referenceName\": \"System.State\",\n                        \"name\": \"State\",\n                        \"url\": \"https://dev.azure.com/fabrikam/_apis/wit/fields/System.State\"\n                    },\n                    \"width\": 100\n                },\n                {\n                    \"columnFieldReference\": {\n                        \"referenceName\": \"Microsoft.VSTS.Scheduling.StoryPoints\",\n                        \"name\": \"Story Points\",\n                        \"url\": \"https://dev.azure.com/fabrikam/_apis/wit/fields/Microsoft.VSTS.Scheduling.StoryPoints\"\n                    },\n                    \"width\": 50\n                },\n                {\n                    \"columnFieldReference\": {\n                        \"referenceName\": \"Microsoft.VSTS.Common.ValueArea\",\n                        \"name\": \"Value Area\",\n                        \"url\": \"https://dev.azure.com/fabrikam/_apis/wit/fields/Microsoft.VSTS.Common.ValueArea\"\n                    },\n                    \"width\": 100\n                },\n                {\n                    \"columnFieldReference\": {\n                        \"referenceName\": \"System.IterationPath\",\n                        \"name\": \"Iteration Path\",\n                        \"url\": \"https://dev.azure.com/fabrikam/_apis/wit/fields/System.IterationPath\"\n                    },\n                    \"width\": 200\n                },\n                {\n                    \"columnFieldReference\": {\n                        \"referenceName\": \"System.Tags\",\n                        \"name\": \"Tags\",\n                        \"url\": \"https://dev.azure.com/fabrikam/_apis/wit/fields/System.Tags\"\n                    },\n                    \"width\": 200\n                }\n            ],\n            \"workItemTypes\": [\n                {\n                    \"name\": \"User Story\",\n                    \"url\": \"https://dev.azure.com/fabrikam/Fabrikam-Fiber/_apis/wit/workItemTypes/User%20Story\"\n                },\n                {\n                    \"name\": \"Bug\",\n                    \"url\": \"https://dev.azure.com/fabrikam/Fabrikam-Fiber/_apis/wit/workItemTypes/Bug\"\n                }\n            ],\n            \"defaultWorkItemType\": {\n                \"name\": \"User Story\",\n                \"url\": \"https://dev.azure.com/fabrikam/Fabrikam-Fiber/_apis/wit/workItemTypes/User%20Story\"\n            },\n            \"color\": \"009CCC\",\n            \"isHidden\": false,\n            \"type\": \"requirement\"\n        },\n        {\n            \"id\": \"Microsoft.TaskCategory\",\n            \"name\": \"Tasks\",\n            \"rank\": 1,\n            \"workItemCountLimit\": 1000,\n            \"addPanelFields\": [\n                {\n                    \"referenceName\": \"System.Title\",\n                    \"name\": \"Title\",\n                    \"url\": \"https://dev.azure.com/fabrikam/_apis/wit/fields/System.Title\"\n                }\n            ],\n            \"columnFields\": [\n                {\n                    \"columnFieldReference\": {\n                        \"referenceName\": \"System.Title\",\n                        \"name\": \"Title\",\n                        \"url\": \"https://dev.azure.com/fabrikam/_apis/wit/fields/System.Title\"\n                    },\n                    \"width\": 400\n                },\n                {\n                    \"columnFieldReference\": {\n                        \"referenceName\": \"System.State\",\n                        \"name\": \"State\",\n                        \"url\": \"https://dev.azure.com/fabrikam/_apis/wit/fields/System.State\"\n                    },\n                    \"width\": 100\n                },\n                {\n                    \"columnFieldReference\": {\n                        \"referenceName\": \"System.AssignedTo\",\n                        \"name\": \"Assigned To\",\n                        \"url\": \"https://dev.azure.com/fabrikam/_apis/wit/fields/System.AssignedTo\"\n                    },\n                    \"width\": 100\n                },\n                {\n                    \"columnFieldReference\": {\n                        \"referenceName\": \"Microsoft.VSTS.Scheduling.RemainingWork\",\n                        \"name\": \"Remaining Work\",\n                        \"url\": \"https://dev.azure.com/fabrikam/_apis/wit/fields/Microsoft.VSTS.Scheduling.RemainingWork\"\n                    },\n                    \"width\": 50\n                }\n            ],\n            \"workItemTypes\": [\n                {\n                    \"name\": \"Task\",\n                    \"url\": \"https://dev.azure.com/fabrikam/Fabrikam-Fiber/_apis/wit/workItemTypes/Task\"\n                }\n            ],\n            \"defaultWorkItemType\": {\n                \"name\": \"Task\",\n                \"url\": \"https://dev.azure.com/fabrikam/Fabrikam-Fiber/_apis/wit/workItemTypes/Task\"\n            },\n            \"color\": \"F2CB1D\",\n            \"isHidden\": false,\n            \"type\": \"task\"\n        }\n    ]\n}"
+								}
+							]
+						},
+						{
+							"name": "Get backlog level",
+							"request": {
+								"auth": {
+									"type": "basic",
+									"basic": [
+										{
+											"key": "password",
+											"value": "{{AccessToken}}",
+											"type": "string"
+										},
+										{
+											"key": "username",
+											"value": "Basic",
+											"type": "string"
+										}
+									]
+								},
+								"method": "GET",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": ""
+								},
+								"url": {
+									"raw": "https://{{coreServer}}/{{organization}}/{{project}}/{{team}}/_apis/work/backlogs/Microsoft.EpicCategory?api-version={{api-version-preview}}",
+									"protocol": "https",
+									"host": [
+										"{{coreServer}}"
+									],
+									"path": [
+										"{{organization}}",
+										"{{project}}",
+										"{{team}}",
+										"_apis",
+										"work",
+										"backlogs",
+										"Microsoft.EpicCategory"
+									],
+									"query": [
+										{
+											"key": "api-version",
+											"value": "{{api-version-preview}}"
+										}
+									]
+								},
+								"description": "Gets a backlog level\n\nBy default this gets a list of all Epic work items, but the segmnet ``/Microsoft.EpicCategory/`` can be swapped for other values such as ``Microsoft.FeatureCategory``. A complete list of values is available by calling ``Backlogs > List`` and using one of the ID fields returned.\n\n[Documentation Link](https://docs.microsoft.com/en-us/rest/api/azure/devops/work/backlogs/get%20backlog?view=azure-devops-rest-5.0)"
+							},
+							"response": [
+								{
+									"name": "Fabrikam features backlog",
+									"originalRequest": {
+										"method": "GET",
+										"header": [],
+										"body": {
+											"mode": "raw",
+											"raw": ""
+										},
+										"url": {
+											"raw": "https://{{coreServer}}/{{organization}}/{{project}}/{{team}}/_apis/work/backlogs/Microsoft.EpicCategory?api-version={{api-version-preview}}",
+											"protocol": "https",
+											"host": [
+												"{{coreServer}}"
+											],
+											"path": [
+												"{{organization}}",
+												"{{project}}",
+												"{{team}}",
+												"_apis",
+												"work",
+												"backlogs",
+												"Microsoft.EpicCategory"
+											],
+											"query": [
+												{
+													"key": "api-version",
+													"value": "{{api-version-preview}}"
+												}
+											]
+										}
+									},
+									"_postman_previewlanguage": "json",
+									"header": null,
+									"cookie": [],
+									"body": "{\n    \"id\": \"Microsoft.FeatureCategory\",\n    \"name\": \"Features\",\n    \"rank\": 3,\n    \"workItemCountLimit\": 1000,\n    \"addPanelFields\": [\n        {\n            \"referenceName\": \"System.Title\",\n            \"name\": \"Title\",\n            \"url\": \"https://dev.azure.com/fabrikam/_apis/wit/fields/System.Title\"\n        }\n    ],\n    \"columnFields\": [\n        {\n            \"columnFieldReference\": {\n                \"referenceName\": \"System.WorkItemType\",\n                \"name\": \"Work Item Type\",\n                \"url\": \"https://dev.azure.com/fabrikam/_apis/wit/fields/System.WorkItemType\"\n            },\n            \"width\": 100\n        },\n        {\n            \"columnFieldReference\": {\n                \"referenceName\": \"System.Title\",\n                \"name\": \"Title\",\n                \"url\": \"https://dev.azure.com/fabrikam/_apis/wit/fields/System.Title\"\n            },\n            \"width\": 400\n        },\n        {\n            \"columnFieldReference\": {\n                \"referenceName\": \"System.State\",\n                \"name\": \"State\",\n                \"url\": \"https://dev.azure.com/fabrikam/_apis/wit/fields/System.State\"\n            },\n            \"width\": 100\n        },\n        {\n            \"columnFieldReference\": {\n                \"referenceName\": \"Microsoft.VSTS.Scheduling.Effort\",\n                \"name\": \"Effort\",\n                \"url\": \"https://dev.azure.com/fabrikam/_apis/wit/fields/Microsoft.VSTS.Scheduling.Effort\"\n            },\n            \"width\": 50\n        },\n        {\n            \"columnFieldReference\": {\n                \"referenceName\": \"Microsoft.VSTS.Common.BusinessValue\",\n                \"name\": \"Business Value\",\n                \"url\": \"https://dev.azure.com/fabrikam/_apis/wit/fields/Microsoft.VSTS.Common.BusinessValue\"\n            },\n            \"width\": 50\n        },\n        {\n            \"columnFieldReference\": {\n                \"referenceName\": \"Microsoft.VSTS.Common.ValueArea\",\n                \"name\": \"Value Area\",\n                \"url\": \"https://dev.azure.com/fabrikam/_apis/wit/fields/Microsoft.VSTS.Common.ValueArea\"\n            },\n            \"width\": 100\n        },\n        {\n            \"columnFieldReference\": {\n                \"referenceName\": \"System.Tags\",\n                \"name\": \"Tags\",\n                \"url\": \"https://dev.azure.com/fabrikam/_apis/wit/fields/System.Tags\"\n            },\n            \"width\": 200\n        }\n    ],\n    \"workItemTypes\": [\n        {\n            \"name\": \"Feature\",\n            \"url\": \"https://dev.azure.com/fabrikam/Fabrikam-Fiber/_apis/wit/workItemTypes/Feature\"\n        }\n    ],\n    \"defaultWorkItemType\": {\n        \"name\": \"Feature\",\n        \"url\": \"https://dev.azure.com/fabrikam/Fabrikam-Fiber/_apis/wit/workItemTypes/Feature\"\n    },\n    \"color\": \"773B93\",\n    \"isHidden\": false,\n    \"type\": \"portfolio\"\n}"
+								}
+							]
+						},
+						{
+							"name": "Get backlog level work items",
+							"event": [
+								{
+									"listen": "test",
+									"script": {
+										"id": "18138f9d-bb11-46e3-bbb3-cf10100ad6aa",
+										"exec": [
+											"",
+											"var jsonData = pm.response.json();",
+											"",
+											"pm.test(\"Found a total of \" + jsonData.workItems.length + \" work items\", function () {",
+											"    return true; // shame that tests don't offer a way to write output to the Test Results window",
+											"});"
+										],
+										"type": "text/javascript"
+									}
+								}
+							],
+							"request": {
+								"auth": {
+									"type": "basic",
+									"basic": [
+										{
+											"key": "password",
+											"value": "{{AccessToken}}",
+											"type": "string"
+										},
+										{
+											"key": "username",
+											"value": "Basic",
+											"type": "string"
+										}
+									]
+								},
+								"method": "GET",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": ""
+								},
+								"url": {
+									"raw": "https://{{coreServer}}/{{organization}}/{{project}}/{{team}}/_apis/work/backlogs/Microsoft.EpicCategory/workItems?api-version={{api-version-preview}}",
+									"protocol": "https",
+									"host": [
+										"{{coreServer}}"
+									],
+									"path": [
+										"{{organization}}",
+										"{{project}}",
+										"{{team}}",
+										"_apis",
+										"work",
+										"backlogs",
+										"Microsoft.EpicCategory",
+										"workItems"
+									],
+									"query": [
+										{
+											"key": "api-version",
+											"value": "{{api-version-preview}}"
+										}
+									]
+								},
+								"description": "Gets a list of work items within a backlog level. \n\nBy default this gets a list of all Epic work items, but the segmnet ``/Microsoft.EpicCategory/`` can be swapped for other values such as ``Microsoft.FeatureCategory``. A complete list of values is available by calling ``Backlogs > List`` and using one of the ID fields returned.\n\n[Documentation Link](https://docs.microsoft.com/en-us/rest/api/azure/devops/work/backlogs/get%20backlog%20level%20work%20items?view=azure-devops-rest-5.0)"
+							},
+							"response": [
+								{
+									"name": "Fabrikam team feature work items",
+									"originalRequest": {
+										"method": "GET",
+										"header": [],
+										"body": {
+											"mode": "raw",
+											"raw": ""
+										},
+										"url": {
+											"raw": "https://{{coreServer}}/{{organization}}/{{project}}/{{team}}/_apis/work/backlogs/Microsoft.EpicCategory/workItems?api-version={{api-version-preview}}",
+											"protocol": "https",
+											"host": [
+												"{{coreServer}}"
+											],
+											"path": [
+												"{{organization}}",
+												"{{project}}",
+												"{{team}}",
+												"_apis",
+												"work",
+												"backlogs",
+												"Microsoft.EpicCategory",
+												"workItems"
+											],
+											"query": [
+												{
+													"key": "api-version",
+													"value": "{{api-version-preview}}"
+												}
+											]
+										}
+									},
+									"_postman_previewlanguage": "json",
+									"header": null,
+									"cookie": [],
+									"body": "{\n    \"workItems\": [\n        {\n            \"rel\": null,\n            \"source\": null,\n            \"target\": {\n                \"id\": 50\n            }\n        },\n        {\n            \"rel\": null,\n            \"source\": null,\n            \"target\": {\n                \"id\": 49\n            }\n        }\n    ]\n}"
+								}
+							]
+						},
+						{
+							"name": "Get team backlog configurations",
+							"request": {
+								"auth": {
+									"type": "basic",
+									"basic": [
+										{
+											"key": "password",
+											"value": "{{AccessToken}}",
+											"type": "string"
+										},
+										{
+											"key": "username",
+											"value": "Basic",
+											"type": "string"
+										}
+									]
+								},
+								"method": "GET",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": ""
+								},
+								"url": {
+									"raw": "https://{{coreServer}}/{{organization}}/{{project}}/{{team}}/_apis/work/backlogconfiguration/?api-version={{api-version-preview}}",
+									"protocol": "https",
+									"host": [
+										"{{coreServer}}"
+									],
+									"path": [
+										"{{organization}}",
+										"{{project}}",
+										"{{team}}",
+										"_apis",
+										"work",
+										"backlogconfiguration",
+										""
+									],
+									"query": [
+										{
+											"key": "api-version",
+											"value": "{{api-version-preview}}"
+										}
+									]
+								},
+								"description": "Gets backlog configuration for a team\n\n[Documentation Link](https://docs.microsoft.com/en-us/rest/api/azure/devops/work/backlogconfiguration/get?view=azure-devops-rest-5.0)"
+							},
+							"response": [
+								{
+									"name": "Fabrikam backlog configurations",
+									"originalRequest": {
+										"method": "GET",
+										"header": [],
+										"body": {
+											"mode": "raw",
+											"raw": ""
+										},
+										"url": {
+											"raw": "https://{{coreServer}}/{{organization}}/{{project}}/{{team}}/_apis/work/backlogconfiguration/?api-version={{api-version-preview}}",
+											"protocol": "https",
+											"host": [
+												"{{coreServer}}"
+											],
+											"path": [
+												"{{organization}}",
+												"{{project}}",
+												"{{team}}",
+												"_apis",
+												"work",
+												"backlogconfiguration",
+												""
+											],
+											"query": [
+												{
+													"key": "api-version",
+													"value": "{{api-version-preview}}"
+												}
+											]
+										}
+									},
+									"_postman_previewlanguage": "json",
+									"header": null,
+									"cookie": [],
+									"body": "{\n    \"taskBacklog\": {\n        \"id\": \"Microsoft.TaskCategory\",\n        \"name\": \"Tasks\",\n        \"rank\": 1,\n        \"workItemCountLimit\": 1000,\n        \"addPanelFields\": [\n            {\n                \"referenceName\": \"System.Title\",\n                \"name\": \"Title\",\n                \"url\": \"https://dev.azure.com/fabrikam/_apis/wit/fields\"\n            }\n        ],\n        \"columnFields\": [\n            {\n                \"columnFieldReference\": {\n                    \"referenceName\": \"System.Title\",\n                    \"name\": \"Title\",\n                    \"url\": \"https://dev.azure.com/fabrikam/_apis/wit/fields\"\n                },\n                \"width\": 400\n            },\n            {\n                \"columnFieldReference\": {\n                    \"referenceName\": \"System.State\",\n                    \"name\": \"State\",\n                    \"url\": \"https://dev.azure.com/fabrikam/_apis/wit/fields\"\n                },\n                \"width\": 100\n            },\n            {\n                \"columnFieldReference\": {\n                    \"referenceName\": \"System.AssignedTo\",\n                    \"name\": \"Assigned To\",\n                    \"url\": \"https://dev.azure.com/fabrikam/_apis/wit/fields\"\n                },\n                \"width\": 100\n            },\n            {\n                \"columnFieldReference\": {\n                    \"referenceName\": \"Microsoft.VSTS.Scheduling.RemainingWork\",\n                    \"name\": \"Remaining Work\",\n                    \"url\": \"https://dev.azure.com/fabrikam/_apis/wit/fields\"\n                },\n                \"width\": 50\n            }\n        ],\n        \"workItemTypes\": [\n            {\n                \"name\": \"Task\",\n                \"url\": \"https://dev.azure.com/fabrikam/c3b6da71-2b4a-497b-9137-ba8695203871/_apis/wit/workItemTypes/Task\"\n            }\n        ],\n        \"defaultWorkItemType\": {\n            \"name\": \"Task\",\n            \"url\": \"https://dev.azure.com/fabrikam/c3b6da71-2b4a-497b-9137-ba8695203871/_apis/wit/workItemTypes/Task\"\n        },\n        \"color\": \"F2CB1D\"\n    },\n    \"requirementBacklog\": {\n        \"id\": \"Microsoft.RequirementCategory\",\n        \"name\": \"Stories\",\n        \"rank\": 2,\n        \"workItemCountLimit\": 1000,\n        \"addPanelFields\": [\n            {\n                \"referenceName\": \"System.Title\",\n                \"name\": \"Title\",\n                \"url\": \"https://dev.azure.com/fabrikam/_apis/wit/fields\"\n            }\n        ],\n        \"columnFields\": [\n            {\n                \"columnFieldReference\": {\n                    \"referenceName\": \"System.WorkItemType\",\n                    \"name\": \"Work Item Type\",\n                    \"url\": \"https://dev.azure.com/fabrikam/_apis/wit/fields\"\n                },\n                \"width\": 100\n            },\n            {\n                \"columnFieldReference\": {\n                    \"referenceName\": \"System.Title\",\n                    \"name\": \"Title\",\n                    \"url\": \"https://dev.azure.com/fabrikam/_apis/wit/fields\"\n                },\n                \"width\": 400\n            },\n            {\n                \"columnFieldReference\": {\n                    \"referenceName\": \"System.State\",\n                    \"name\": \"State\",\n                    \"url\": \"https://dev.azure.com/fabrikam/_apis/wit/fields\"\n                },\n                \"width\": 100\n            },\n            {\n                \"columnFieldReference\": {\n                    \"referenceName\": \"Microsoft.VSTS.Scheduling.StoryPoints\",\n                    \"name\": \"Story Points\",\n                    \"url\": \"https://dev.azure.com/fabrikam/_apis/wit/fields\"\n                },\n                \"width\": 50\n            },\n            {\n                \"columnFieldReference\": {\n                    \"referenceName\": \"Microsoft.VSTS.Common.ValueArea\",\n                    \"name\": \"Value Area\",\n                    \"url\": \"https://dev.azure.com/fabrikam/_apis/wit/fields\"\n                },\n                \"width\": 100\n            },\n            {\n                \"columnFieldReference\": {\n                    \"referenceName\": \"System.IterationPath\",\n                    \"name\": \"Iteration Path\",\n                    \"url\": \"https://dev.azure.com/fabrikam/_apis/wit/fields\"\n                },\n                \"width\": 200\n            },\n            {\n                \"columnFieldReference\": {\n                    \"referenceName\": \"System.Tags\",\n                    \"name\": \"Tags\",\n                    \"url\": \"https://dev.azure.com/fabrikam/_apis/wit/fields\"\n                },\n                \"width\": 200\n            }\n        ],\n        \"workItemTypes\": [\n            {\n                \"name\": \"Ticket\",\n                \"url\": \"https://dev.azure.com/fabrikam/c3b6da71-2b4a-497b-9137-ba8695203871/_apis/wit/workItemTypes/Ticket\"\n            },\n            {\n                \"name\": \"User Story\",\n                \"url\": \"https://dev.azure.com/fabrikam/c3b6da71-2b4a-497b-9137-ba8695203871/_apis/wit/workItemTypes/User%20Story\"\n            }\n        ],\n        \"defaultWorkItemType\": {\n            \"name\": \"User Story\",\n            \"url\": \"https://dev.azure.com/fabrikam/c3b6da71-2b4a-497b-9137-ba8695203871/_apis/wit/workItemTypes/User%20Story\"\n        },\n        \"color\": \"009CCC\"\n    },\n    \"portfolioBacklogs\": [\n        {\n            \"id\": \"Microsoft.EpicCategory\",\n            \"name\": \"My level\",\n            \"rank\": 4,\n            \"workItemCountLimit\": 1000,\n            \"addPanelFields\": [\n                {\n                    \"referenceName\": \"System.Title\",\n                    \"name\": \"Title\",\n                    \"url\": \"https://dev.azure.com/fabrikam/_apis/wit/fields\"\n                }\n            ],\n            \"columnFields\": [\n                {\n                    \"columnFieldReference\": {\n                        \"referenceName\": \"System.WorkItemType\",\n                        \"name\": \"Work Item Type\",\n                        \"url\": \"https://dev.azure.com/fabrikam/_apis/wit/fields\"\n                    },\n                    \"width\": 100\n                },\n                {\n                    \"columnFieldReference\": {\n                        \"referenceName\": \"System.Title\",\n                        \"name\": \"Title\",\n                        \"url\": \"https://dev.azure.com/fabrikam/_apis/wit/fields\"\n                    },\n                    \"width\": 400\n                },\n                {\n                    \"columnFieldReference\": {\n                        \"referenceName\": \"System.State\",\n                        \"name\": \"State\",\n                        \"url\": \"https://dev.azure.com/fabrikam/_apis/wit/fields\"\n                    },\n                    \"width\": 100\n                },\n                {\n                    \"columnFieldReference\": {\n                        \"referenceName\": \"Microsoft.VSTS.Scheduling.Effort\",\n                        \"name\": \"Effort\",\n                        \"url\": \"https://dev.azure.com/fabrikam/_apis/wit/fields\"\n                    },\n                    \"width\": 50\n                },\n                {\n                    \"columnFieldReference\": {\n                        \"referenceName\": \"Microsoft.VSTS.Common.BusinessValue\",\n                        \"name\": \"Business Value\",\n                        \"url\": \"https://dev.azure.com/fabrikam/_apis/wit/fields\"\n                    },\n                    \"width\": 50\n                },\n                {\n                    \"columnFieldReference\": {\n                        \"referenceName\": \"Microsoft.VSTS.Common.ValueArea\",\n                        \"name\": \"Value Area\",\n                        \"url\": \"https://dev.azure.com/fabrikam/_apis/wit/fields\"\n                    },\n                    \"width\": 100\n                },\n                {\n                    \"columnFieldReference\": {\n                        \"referenceName\": \"System.Tags\",\n                        \"name\": \"Tags\",\n                        \"url\": \"https://dev.azure.com/fabrikam/_apis/wit/fields\"\n                    },\n                    \"width\": 200\n                }\n            ],\n            \"workItemTypes\": [\n                {\n                    \"name\": \"Epic\",\n                    \"url\": \"https://dev.azure.com/fabrikam/c3b6da71-2b4a-497b-9137-ba8695203871/_apis/wit/workItemTypes/Epic\"\n                }\n            ],\n            \"defaultWorkItemType\": {\n                \"name\": \"Epic\",\n                \"url\": \"https://dev.azure.com/fabrikam/c3b6da71-2b4a-497b-9137-ba8695203871/_apis/wit/workItemTypes/Epic\"\n            },\n            \"color\": \"60af49\"\n        },\n        {\n            \"id\": \"Microsoft.FeatureCategory\",\n            \"name\": \"Features\",\n            \"rank\": 3,\n            \"workItemCountLimit\": 1000,\n            \"addPanelFields\": [\n                {\n                    \"referenceName\": \"System.Title\",\n                    \"name\": \"Title\",\n                    \"url\": \"https://dev.azure.com/fabrikam/_apis/wit/fields\"\n                }\n            ],\n            \"columnFields\": [\n                {\n                    \"columnFieldReference\": {\n                        \"referenceName\": \"System.WorkItemType\",\n                        \"name\": \"Work Item Type\",\n                        \"url\": \"https://dev.azure.com/fabrikam/_apis/wit/fields\"\n                    },\n                    \"width\": 100\n                },\n                {\n                    \"columnFieldReference\": {\n                        \"referenceName\": \"System.Title\",\n                        \"name\": \"Title\",\n                        \"url\": \"https://dev.azure.com/fabrikam/_apis/wit/fields\"\n                    },\n                    \"width\": 400\n                },\n                {\n                    \"columnFieldReference\": {\n                        \"referenceName\": \"System.State\",\n                        \"name\": \"State\",\n                        \"url\": \"https://dev.azure.com/fabrikam/_apis/wit/fields\"\n                    },\n                    \"width\": 100\n                },\n                {\n                    \"columnFieldReference\": {\n                        \"referenceName\": \"Microsoft.VSTS.Scheduling.Effort\",\n                        \"name\": \"Effort\",\n                        \"url\": \"https://dev.azure.com/fabrikam/_apis/wit/fields\"\n                    },\n                    \"width\": 50\n                },\n                {\n                    \"columnFieldReference\": {\n                        \"referenceName\": \"Microsoft.VSTS.Common.BusinessValue\",\n                        \"name\": \"Business Value\",\n                        \"url\": \"https://dev.azure.com/fabrikam/_apis/wit/fields\"\n                    },\n                    \"width\": 50\n                },\n                {\n                    \"columnFieldReference\": {\n                        \"referenceName\": \"Microsoft.VSTS.Common.ValueArea\",\n                        \"name\": \"Value Area\",\n                        \"url\": \"https://dev.azure.com/fabrikam/_apis/wit/fields\"\n                    },\n                    \"width\": 100\n                },\n                {\n                    \"columnFieldReference\": {\n                        \"referenceName\": \"System.Tags\",\n                        \"name\": \"Tags\",\n                        \"url\": \"https://dev.azure.com/fabrikam/_apis/wit/fields\"\n                    },\n                    \"width\": 200\n                }\n            ],\n            \"workItemTypes\": [\n                {\n                    \"name\": \"Feature\",\n                    \"url\": \"https://dev.azure.com/fabrikam/c3b6da71-2b4a-497b-9137-ba8695203871/_apis/wit/workItemTypes/Feature\"\n                }\n            ],\n            \"defaultWorkItemType\": {\n                \"name\": \"Feature\",\n                \"url\": \"https://dev.azure.com/fabrikam/c3b6da71-2b4a-497b-9137-ba8695203871/_apis/wit/workItemTypes/Feature\"\n            },\n            \"color\": \"773B93\"\n        }\n    ],\n    \"workItemTypeMappedStates\": [\n        {\n            \"workItemTypeName\": \"User Story\",\n            \"states\": {\n                \"New\": \"Proposed\",\n                \"Active\": \"InProgress\",\n                \"Resolved\": \"InProgress\",\n                \"In Progress\": \"InProgress\",\n                \"Closed\": \"Completed\"\n            }\n        },\n        {\n            \"workItemTypeName\": \"Ticket\",\n            \"states\": {\n                \"New\": \"Proposed\",\n                \"Active\": \"InProgress\",\n                \"Closed\": \"Completed\"\n            }\n        },\n        {\n            \"workItemTypeName\": \"Feature\",\n            \"states\": {\n                \"New\": \"Proposed\",\n                \"Active\": \"InProgress\",\n                \"Resolved\": \"InProgress\",\n                \"Closed\": \"Completed\"\n            }\n        },\n        {\n            \"workItemTypeName\": \"Epic\",\n            \"states\": {\n                \"New\": \"Proposed\",\n                \"Active\": \"InProgress\",\n                \"Closed\": \"Completed\"\n            }\n        },\n        {\n            \"workItemTypeName\": \"Task\",\n            \"states\": {\n                \"New\": \"Proposed\",\n                \"Active\": \"InProgress\",\n                \"Closed\": \"Completed\"\n            }\n        },\n        {\n            \"workItemTypeName\": \"Bug\",\n            \"states\": {\n                \"Proposed\": \"Proposed\",\n                \"Testing\": \"InProgress\",\n                \"Resolved\": \"Resolved\",\n                \"Closed\": \"Completed\"\n            }\n        }\n    ],\n    \"backlogFields\": {\n        \"typeFields\": {\n            \"Order\": \"Microsoft.VSTS.Common.StackRank\",\n            \"Effort\": \"Microsoft.VSTS.Scheduling.StoryPoints\",\n            \"RemainingWork\": \"Microsoft.VSTS.Scheduling.RemainingWork\",\n            \"Activity\": \"Microsoft.VSTS.Common.Activity\"\n        }\n    },\n    \"bugsBehavior\": \"asTasks\",\n    \"hiddenBacklogs\": [\n        \"Microsoft.EpicCategory\"\n    ],\n    \"url\": \"https://dev.azure.com/fabrikam/c3b6da71-2b4a-497b-9137-ba8695203871/_apis/work/backlogconfiguration\"\n}"
+								}
+							]
 						}
 					],
 					"_postman_isSubFolder": true
@@ -5233,6 +5570,1414 @@
 									]
 								},
 								"description": "Returns the list of parent field filter model for the given list of workitem ids"
+							},
+							"response": []
+						}
+					],
+					"_postman_isSubFolder": true
+				},
+				{
+					"name": "Work Items",
+					"item": [
+						{
+							"name": "Get individual work item",
+							"event": [
+								{
+									"listen": "test",
+									"script": {
+										"id": "60b88978-98c8-461b-8cce-a6cbdb91ab0a",
+										"exec": [
+											""
+										],
+										"type": "text/javascript"
+									}
+								}
+							],
+							"request": {
+								"auth": {
+									"type": "basic",
+									"basic": [
+										{
+											"key": "password",
+											"value": "{{AccessToken}}",
+											"type": "string"
+										},
+										{
+											"key": "username",
+											"value": "Basic",
+											"type": "string"
+										}
+									]
+								},
+								"method": "GET",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": ""
+								},
+								"url": {
+									"raw": "https://{{coreServer}}/{{organization}}/{{project}}/_apis/wit/workitems/{{workItemId}}?api-version={{api-version}}",
+									"protocol": "https",
+									"host": [
+										"{{coreServer}}"
+									],
+									"path": [
+										"{{organization}}",
+										"{{project}}",
+										"_apis",
+										"wit",
+										"workitems",
+										"{{workItemId}}"
+									],
+									"query": [
+										{
+											"key": "api-version",
+											"value": "{{api-version}}"
+										},
+										{
+											"key": "asOf",
+											"value": "11/21/2018",
+											"description": "Returns the state of the requested item as it was on the given date",
+											"disabled": true
+										},
+										{
+											"key": "fields",
+											"value": "System.TeamProject,System.AreaPath",
+											"description": "Comma-separated list of requested fields",
+											"disabled": true
+										}
+									]
+								},
+								"description": "Gets the details of an individual work item, optionally querying the state of the work item on a specific date\n\n[Documentation Link](https://docs.microsoft.com/en-us/rest/api/azure/devops/wit/work%20items/get%20work%20item?view=azure-devops-rest-5.0)"
+							},
+							"response": [
+								{
+									"name": "As Of date before work item existed",
+									"originalRequest": {
+										"method": "GET",
+										"header": [],
+										"body": {
+											"mode": "raw",
+											"raw": ""
+										},
+										"url": {
+											"raw": "https://{{coreServer}}/{{organization}}/{{project}}/_apis/wit/workitems/{{workItemId}}?api-version={{api-version}}&asOf=11/21/2018",
+											"protocol": "https",
+											"host": [
+												"{{coreServer}}"
+											],
+											"path": [
+												"{{organization}}",
+												"{{project}}",
+												"_apis",
+												"wit",
+												"workitems",
+												"{{workItemId}}"
+											],
+											"query": [
+												{
+													"key": "api-version",
+													"value": "{{api-version}}"
+												},
+												{
+													"key": "asOf",
+													"value": "11/21/2018",
+													"description": "Returns the state of the requested item as it was on the given date"
+												}
+											]
+										}
+									},
+									"status": "Not Found",
+									"code": 404,
+									"_postman_previewlanguage": "json",
+									"header": [
+										{
+											"key": "Cache-Control",
+											"value": "no-cache"
+										},
+										{
+											"key": "Pragma",
+											"value": "no-cache"
+										},
+										{
+											"key": "Content-Length",
+											"value": "297"
+										},
+										{
+											"key": "Content-Type",
+											"value": "application/json; charset=utf-8"
+										},
+										{
+											"key": "Expires",
+											"value": "-1"
+										},
+										{
+											"key": "P3P",
+											"value": "CP=\"CAO DSP COR ADMa DEV CONo TELo CUR PSA PSD TAI IVDo OUR SAMi BUS DEM NAV STA UNI COM INT PHY ONL FIN PUR LOC CNT\""
+										},
+										{
+											"key": "X-TFS-ProcessId",
+											"value": "896a28f1-7f6e-429f-a85f-485a7d720e37"
+										},
+										{
+											"key": "Strict-Transport-Security",
+											"value": "max-age=31536000; includeSubDomains"
+										},
+										{
+											"key": "ActivityId",
+											"value": "030d74cd-98eb-4a4f-a445-87487e145570"
+										},
+										{
+											"key": "X-TFS-Session",
+											"value": "030d74cd-98eb-4a4f-a445-87487e145570"
+										},
+										{
+											"key": "X-VSS-E2EID",
+											"value": "030d74cd-98eb-4a4f-a445-87487e145570"
+										},
+										{
+											"key": "X-VSS-UserData",
+											"value": "e622a2cf-3745-6572-8ff2-25c1350faa8b:josh.kewley@bluechip-llc.com"
+										},
+										{
+											"key": "X-FRAME-OPTIONS",
+											"value": "SAMEORIGIN"
+										},
+										{
+											"key": "Request-Context",
+											"value": "appId=cid-v1:e3d45cd2-3b08-46bc-b297-cda72fdc1dc1"
+										},
+										{
+											"key": "Access-Control-Expose-Headers",
+											"value": "Request-Context"
+										},
+										{
+											"key": "X-Content-Type-Options",
+											"value": "nosniff"
+										},
+										{
+											"key": "X-MSEdge-Ref",
+											"value": "Ref A: E164F077FF2E4F5091891FB9B7AF64F2 Ref B: BN3EDGE0308 Ref C: 2019-05-09T21:11:12Z"
+										},
+										{
+											"key": "Date",
+											"value": "Thu, 09 May 2019 21:11:12 GMT"
+										}
+									],
+									"cookie": [],
+									"body": "{\n    \"$id\": \"1\",\n    \"innerException\": null,\n    \"message\": \"The work item ### does not exist at time 11/21/2018 12:00:00 AM.\",\n    \"typeName\": \"Microsoft.Azure.Boards.WebApi.Common.WitResourceNotFoundException, Microsoft.Azure.Boards.WebApi.Common\",\n    \"typeKey\": \"WitResourceNotFoundException\",\n    \"errorCode\": 0,\n    \"eventId\": 3000\n}"
+								},
+								{
+									"name": "Fabrikam work item",
+									"originalRequest": {
+										"method": "GET",
+										"header": [],
+										"body": {
+											"mode": "raw",
+											"raw": ""
+										},
+										"url": {
+											"raw": "https://{{coreServer}}/{{organization}}/{{project}}/_apis/wit/workitems/{{workItemId}}?api-version={{api-version}}",
+											"protocol": "https",
+											"host": [
+												"{{coreServer}}"
+											],
+											"path": [
+												"{{organization}}",
+												"{{project}}",
+												"_apis",
+												"wit",
+												"workitems",
+												"{{workItemId}}"
+											],
+											"query": [
+												{
+													"key": "api-version",
+													"value": "{{api-version}}"
+												}
+											]
+										}
+									},
+									"status": "OK",
+									"code": 200,
+									"_postman_previewlanguage": "json",
+									"header": [
+										{
+											"key": "Cache-Control",
+											"value": "no-cache"
+										},
+										{
+											"key": "Pragma",
+											"value": "no-cache"
+										},
+										{
+											"key": "Content-Length",
+											"value": "1163"
+										},
+										{
+											"key": "Content-Type",
+											"value": "application/json; charset=utf-8; api-version=5.0"
+										},
+										{
+											"key": "Content-Encoding",
+											"value": "gzip"
+										},
+										{
+											"key": "Expires",
+											"value": "-1"
+										},
+										{
+											"key": "Vary",
+											"value": "Accept-Encoding"
+										},
+										{
+											"key": "P3P",
+											"value": "CP=\"CAO DSP COR ADMa DEV CONo TELo CUR PSA PSD TAI IVDo OUR SAMi BUS DEM NAV STA UNI COM INT PHY ONL FIN PUR LOC CNT\""
+										},
+										{
+											"key": "X-TFS-ProcessId",
+											"value": "8c044192-381a-453f-a46d-bcd7dbe0a146"
+										},
+										{
+											"key": "Strict-Transport-Security",
+											"value": "max-age=31536000; includeSubDomains"
+										},
+										{
+											"key": "ActivityId",
+											"value": "3d898a74-bbe8-4087-b9d1-27e794f5a7d3"
+										},
+										{
+											"key": "X-TFS-Session",
+											"value": "3d898a74-bbe8-4087-b9d1-27e794f5a7d3"
+										},
+										{
+											"key": "X-VSS-E2EID",
+											"value": "3d898a74-bbe8-4087-b9d1-27e794f5a7d3"
+										},
+										{
+											"key": "X-VSS-UserData",
+											"value": "e622a2cf-3745-6572-8ff2-25c1350faa8b:josh.kewley@bluechip-llc.com"
+										},
+										{
+											"key": "X-FRAME-OPTIONS",
+											"value": "SAMEORIGIN"
+										},
+										{
+											"key": "Request-Context",
+											"value": "appId=cid-v1:e3d45cd2-3b08-46bc-b297-cda72fdc1dc1"
+										},
+										{
+											"key": "Access-Control-Expose-Headers",
+											"value": "Request-Context"
+										},
+										{
+											"key": "X-Content-Type-Options",
+											"value": "nosniff"
+										},
+										{
+											"key": "X-MSEdge-Ref",
+											"value": "Ref A: 6A07424B1D4741BD9C55714C26276D17 Ref B: BN3EDGE0320 Ref C: 2019-05-09T21:04:42Z"
+										},
+										{
+											"key": "Date",
+											"value": "Thu, 09 May 2019 21:04:41 GMT"
+										}
+									],
+									"cookie": [],
+									"body": "{\r\n  \"id\": 12,\r\n  \"rev\": 3,\r\n  \"fields\": {\r\n    \"System.AreaPath\": \"MyAgilePrj2\",\r\n    \"System.TeamProject\": \"MyAgilePrj2\",\r\n    \"System.IterationPath\": \"MyAgilePrj2\\\\Iteration 1\",\r\n    \"System.WorkItemType\": \"User Story\",\r\n    \"System.State\": \"Active\",\r\n    \"System.Reason\": \"Implementation started\",\r\n    \"System.AssignedTo\": {\r\n      \"displayName\": \"Jamal Hartnett\",\r\n      \"url\": \"https://vssps.dev.azure.com/fabrikam/_apis/Identities/d291b0c4-a05c-4ea6-8df1-4b41d5f39eff\",\r\n      \"_links\": {\r\n        \"avatar\": {\r\n          \"href\": \"https://dev.azure.com/mseng/_apis/GraphProfile/MemberAvatars/aad.YTkzODFkODYtNTYxYS03ZDdiLWJjM2QtZDUzMjllMjM5OTAz\"\r\n        }\r\n      },\r\n      \"id\": \"d291b0c4-a05c-4ea6-8df1-4b41d5f39eff\",\r\n      \"uniqueName\": \"fabrikamfiber4@hotmail.com\",\r\n      \"imageUrl\": \"https://dev.azure.com/fabrikam/_api/_common/identityImage?id=d291b0c4-a05c-4ea6-8df1-4b41d5f39eff\",\r\n      \"descriptor\": \"aad.YTkzODFkODYtNTYxYS03ZDdiLWJjM2QtZDUzMjllMjM5OTAz\"\r\n    },\r\n    \"System.CreatedDate\": \"2017-09-04T06:11:59.05Z\",\r\n    \"System.CreatedBy\": {\r\n      \"displayName\": \"Jamal Hartnett\",\r\n      \"url\": \"https://vssps.dev.azure.com/fabrikam/_apis/Identities/d291b0c4-a05c-4ea6-8df1-4b41d5f39eff\",\r\n      \"_links\": {\r\n        \"avatar\": {\r\n          \"href\": \"https://dev.azure.com/mseng/_apis/GraphProfile/MemberAvatars/aad.YTkzODFkODYtNTYxYS03ZDdiLWJjM2QtZDUzMjllMjM5OTAz\"\r\n        }\r\n      },\r\n      \"id\": \"d291b0c4-a05c-4ea6-8df1-4b41d5f39eff\",\r\n      \"uniqueName\": \"fabrikamfiber4@hotmail.com\",\r\n      \"imageUrl\": \"https://dev.azure.com/fabrikam/_api/_common/identityImage?id=d291b0c4-a05c-4ea6-8df1-4b41d5f39eff\",\r\n      \"descriptor\": \"aad.YTkzODFkODYtNTYxYS03ZDdiLWJjM2QtZDUzMjllMjM5OTAz\"\r\n    },\r\n    \"System.ChangedDate\": \"2017-10-04T23:32:02.18Z\",\r\n    \"System.ChangedBy\": {\r\n      \"displayName\": \"Jamal Hartnett\",\r\n      \"url\": \"https://vssps.dev.azure.com/fabrikam/_apis/Identities/d291b0c4-a05c-4ea6-8df1-4b41d5f39eff\",\r\n      \"_links\": {\r\n        \"avatar\": {\r\n          \"href\": \"https://dev.azure.com/mseng/_apis/GraphProfile/MemberAvatars/aad.YTkzODFkODYtNTYxYS03ZDdiLWJjM2QtZDUzMjllMjM5OTAz\"\r\n        }\r\n      },\r\n      \"id\": \"d291b0c4-a05c-4ea6-8df1-4b41d5f39eff\",\r\n      \"uniqueName\": \"fabrikamfiber4@hotmail.com\",\r\n      \"imageUrl\": \"https://dev.azure.com/fabrikam/_api/_common/identityImage?id=d291b0c4-a05c-4ea6-8df1-4b41d5f39eff\",\r\n      \"descriptor\": \"aad.YTkzODFkODYtNTYxYS03ZDdiLWJjM2QtZDUzMjllMjM5OTAz\"\r\n    },\r\n    \"System.Title\": \"Epic 2\",\r\n    \"Microsoft.VSTS.Common.StateChangeDate\": \"2017-10-04T23:32:01.6Z\",\r\n    \"Microsoft.VSTS.Common.ActivatedDate\": \"2017-10-04T23:32:01.6Z\",\r\n    \"Microsoft.VSTS.Common.ActivatedBy\": \"Jamal Hartnett <fabrikamfiber4@hotmail.com>\",\r\n    \"Microsoft.VSTS.Common.Priority\": 2,\r\n    \"Microsoft.VSTS.Common.ValueArea\": \"Business\",\r\n    \"System.Tags\": \"client; sample; teamservices\"\r\n  },\r\n  \"_links\": {\r\n    \"self\": {\r\n      \"href\": \"https://dev.azure.com/fabrikam/_apis/wit/workItems/12\"\r\n    },\r\n    \"workItemUpdates\": {\r\n      \"href\": \"https://dev.azure.com/fabrikam/_apis/wit/workItems/12/updates\"\r\n    },\r\n    \"workItemRevisions\": {\r\n      \"href\": \"https://dev.azure.com/fabrikam/_apis/wit/workItems/12/revisions\"\r\n    },\r\n    \"workItemHistory\": {\r\n      \"href\": \"https://dev.azure.com/fabrikam/_apis/wit/workItems/12/history\"\r\n    },\r\n    \"html\": {\r\n      \"href\": \"https://dev.azure.com/fabrikam/web/wi.aspx?pcguid=20cda608-32f0-4e6e-9b7c-8def7b38d15a&id=12\"\r\n    },\r\n    \"workItemType\": {\r\n      \"href\": \"https://dev.azure.com/fabrikam/54332e84-3d54-4c67-9bd0-0e88a9849330/_apis/wit/workItemTypes/User%20Story\"\r\n    },\r\n    \"fields\": {\r\n      \"href\": \"https://dev.azure.com/fabrikam/_apis/wit/fields\"\r\n    }\r\n  },\r\n  \"url\": \"https://dev.azure.com/fabrikam/_apis/wit/workItems/12\"\r\n}"
+								}
+							]
+						},
+						{
+							"name": "Get work item comments",
+							"event": [
+								{
+									"listen": "test",
+									"script": {
+										"id": "60b88978-98c8-461b-8cce-a6cbdb91ab0a",
+										"exec": [
+											""
+										],
+										"type": "text/javascript"
+									}
+								}
+							],
+							"request": {
+								"auth": {
+									"type": "basic",
+									"basic": [
+										{
+											"key": "password",
+											"value": "{{AccessToken}}",
+											"type": "string"
+										},
+										{
+											"key": "username",
+											"value": "Basic",
+											"type": "string"
+										}
+									]
+								},
+								"method": "GET",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": ""
+								},
+								"url": {
+									"raw": "https://{{coreServer}}/{{organization}}/{{project}}/_apis/wit/workitems/{{workItemId}}/comments?api-version={{api-version-preview2}}",
+									"protocol": "https",
+									"host": [
+										"{{coreServer}}"
+									],
+									"path": [
+										"{{organization}}",
+										"{{project}}",
+										"_apis",
+										"wit",
+										"workitems",
+										"{{workItemId}}",
+										"comments"
+									],
+									"query": [
+										{
+											"key": "api-version",
+											"value": "{{api-version-preview2}}"
+										},
+										{
+											"key": "fromRevision",
+											"value": "2",
+											"description": "Revision from which comments are to be fetched (default is 1)",
+											"disabled": true
+										},
+										{
+											"key": "$top",
+											"value": "5",
+											"description": "The number of comments to return (default is 200)",
+											"disabled": true
+										},
+										{
+											"key": "order",
+											"value": "asc",
+											"description": "Ascending or descending by revision id (default is ascending) asc/desc",
+											"disabled": true
+										}
+									]
+								},
+								"description": "Gets the specified number of comments (Discussion area of work item form) for a work item from the specified revision.\n\n[Documentation Link](https://docs.microsoft.com/en-us/rest/api/azure/devops/wit/comments/get%20comments?view=azure-devops-rest-5.0)"
+							},
+							"response": [
+								{
+									"name": "Fabrikam comments",
+									"originalRequest": {
+										"method": "GET",
+										"header": [],
+										"body": {
+											"mode": "raw",
+											"raw": ""
+										},
+										"url": {
+											"raw": "https://{{coreServer}}/{{organization}}/{{project}}/_apis/wit/workitems/{{workItemId}}/comments?api-version={{api-version-preview2}}",
+											"protocol": "https",
+											"host": [
+												"{{coreServer}}"
+											],
+											"path": [
+												"{{organization}}",
+												"{{project}}",
+												"_apis",
+												"wit",
+												"workitems",
+												"{{workItemId}}",
+												"comments"
+											],
+											"query": [
+												{
+													"key": "api-version",
+													"value": "{{api-version-preview2}}"
+												},
+												{
+													"key": "fromRevision",
+													"value": "11/21/2018",
+													"description": "Returns the state of the requested item as it was on the given date",
+													"disabled": true
+												}
+											]
+										}
+									},
+									"status": "OK",
+									"code": 200,
+									"_postman_previewlanguage": "json",
+									"header": [
+										{
+											"key": "Cache-Control",
+											"value": "no-cache"
+										},
+										{
+											"key": "Pragma",
+											"value": "no-cache"
+										},
+										{
+											"key": "Content-Length",
+											"value": "1144"
+										},
+										{
+											"key": "Content-Type",
+											"value": "application/json; charset=utf-8; api-version=5.0-preview.2"
+										},
+										{
+											"key": "Content-Encoding",
+											"value": "gzip"
+										},
+										{
+											"key": "Expires",
+											"value": "-1"
+										},
+										{
+											"key": "Vary",
+											"value": "Accept-Encoding"
+										},
+										{
+											"key": "P3P",
+											"value": "CP=\"CAO DSP COR ADMa DEV CONo TELo CUR PSA PSD TAI IVDo OUR SAMi BUS DEM NAV STA UNI COM INT PHY ONL FIN PUR LOC CNT\""
+										},
+										{
+											"key": "X-TFS-ProcessId",
+											"value": "1f4fce07-2d22-4ff8-88ab-df0f8513245a"
+										},
+										{
+											"key": "Strict-Transport-Security",
+											"value": "max-age=31536000; includeSubDomains"
+										},
+										{
+											"key": "ActivityId",
+											"value": "113eed6a-913a-4999-a8f2-88916420c50d"
+										},
+										{
+											"key": "X-TFS-Session",
+											"value": "113eed6a-913a-4999-a8f2-88916420c50d"
+										},
+										{
+											"key": "X-VSS-E2EID",
+											"value": "113eed6a-913a-4999-a8f2-88916420c50d"
+										},
+										{
+											"key": "X-VSS-UserData",
+											"value": "e622a2cf-3745-6572-8ff2-25c1350faa8b:josh.kewley@bluechip-llc.com"
+										},
+										{
+											"key": "X-FRAME-OPTIONS",
+											"value": "SAMEORIGIN"
+										},
+										{
+											"key": "Request-Context",
+											"value": "appId=cid-v1:e3d45cd2-3b08-46bc-b297-cda72fdc1dc1"
+										},
+										{
+											"key": "Access-Control-Expose-Headers",
+											"value": "Request-Context"
+										},
+										{
+											"key": "X-Content-Type-Options",
+											"value": "nosniff"
+										},
+										{
+											"key": "X-MSEdge-Ref",
+											"value": "Ref A: 5BD385690E6543B6AF82F4255D218CA8 Ref B: BN3EDGE0419 Ref C: 2019-05-09T21:53:03Z"
+										},
+										{
+											"key": "Date",
+											"value": "Thu, 09 May 2019 21:53:03 GMT"
+										}
+									],
+									"cookie": [],
+									"body": "{\r\n  \"totalCount\": 5,\r\n  \"fromRevisionCount\": 5,\r\n  \"count\": 2,\r\n  \"value\": [\r\n    {\r\n      \"revision\": 2,\r\n      \"text\": \"Moving to the right area path\",\r\n      \"revisedBy\": {\r\n        \"displayName\": \"Jamal Hartnett\",\r\n        \"url\": \"https://vssps.dev.azure.com/fabrikam/_apis/Identities/d291b0c4-a05c-4ea6-8df1-4b41d5f39eff\",\r\n        \"_links\": {\r\n          \"avatar\": {\r\n            \"href\": \"https://dev.azure.com/mseng/_apis/GraphProfile/MemberAvatars/aad.YTkzODFkODYtNTYxYS03ZDdiLWJjM2QtZDUzMjllMjM5OTAz\"\r\n          }\r\n        },\r\n        \"id\": \"d291b0c4-a05c-4ea6-8df1-4b41d5f39eff\",\r\n        \"uniqueName\": \"fabrikamfiber4@hotmail.com\",\r\n        \"imageUrl\": \"https://dev.azure.com/fabrikam/_api/_common/identityImage?id=d291b0c4-a05c-4ea6-8df1-4b41d5f39eff\",\r\n        \"descriptor\": \"aad.YTkzODFkODYtNTYxYS03ZDdiLWJjM2QtZDUzMjllMjM5OTAz\"\r\n      },\r\n      \"revisedDate\": \"2014-12-29T20:49:24.67Z\",\r\n      \"url\": \"https://dev.azure.com/fabrikam/6ce954b1-ce1f-45d1-b94d-e6bf2464ba2c/_apis/wit/workItems/299/comments/2\"\r\n    },\r\n    {\r\n      \"revision\": 3,\r\n      \"text\": \"Johnnie is going to take this work over.\",\r\n      \"revisedBy\": {\r\n        \"displayName\": \"Jamal Hartnett\",\r\n        \"url\": \"https://vssps.dev.azure.com/fabrikam/_apis/Identities/d291b0c4-a05c-4ea6-8df1-4b41d5f39eff\",\r\n        \"_links\": {\r\n          \"avatar\": {\r\n            \"href\": \"https://dev.azure.com/mseng/_apis/GraphProfile/MemberAvatars/aad.YTkzODFkODYtNTYxYS03ZDdiLWJjM2QtZDUzMjllMjM5OTAz\"\r\n          }\r\n        },\r\n        \"id\": \"d291b0c4-a05c-4ea6-8df1-4b41d5f39eff\",\r\n        \"uniqueName\": \"fabrikamfiber4@hotmail.com\",\r\n        \"imageUrl\": \"https://dev.azure.com/fabrikam/_api/_common/identityImage?id=d291b0c4-a05c-4ea6-8df1-4b41d5f39eff\",\r\n        \"descriptor\": \"aad.YTkzODFkODYtNTYxYS03ZDdiLWJjM2QtZDUzMjllMjM5OTAz\"\r\n      },\r\n      \"revisedDate\": \"2014-12-29T20:49:26.99Z\",\r\n      \"url\": \"https://dev.azure.com/fabrikam/6ce954b1-ce1f-45d1-b94d-e6bf2464ba2c/_apis/wit/workItems/299/comments/3\"\r\n    }\r\n  ]\r\n}"
+								}
+							]
+						},
+						{
+							"name": "Get work items in bulk",
+							"event": [
+								{
+									"listen": "test",
+									"script": {
+										"id": "60b88978-98c8-461b-8cce-a6cbdb91ab0a",
+										"exec": [
+											""
+										],
+										"type": "text/javascript"
+									}
+								}
+							],
+							"request": {
+								"auth": {
+									"type": "basic",
+									"basic": [
+										{
+											"key": "password",
+											"value": "{{AccessToken}}",
+											"type": "string"
+										},
+										{
+											"key": "username",
+											"value": "Basic",
+											"type": "string"
+										}
+									]
+								},
+								"method": "POST",
+								"header": [
+									{
+										"key": "Content-Type",
+										"name": "Content-Type",
+										"value": "application/json",
+										"type": "text"
+									}
+								],
+								"body": {
+									"mode": "raw",
+									"raw": "{\n    \"ids\": [\n        297,\n        299,\n        300\n    ],\n    \"asOf\": \"2000-12-27T00:00:00.000Z\",\n    \"errorPolicy\": \"omit\",\n    \"fields\": [\n        \"System.Id\",\n        \"System.Title\",\n        \"System.WorkItemType\",\n        \"Microsoft.VSTS.Scheduling.RemainingWork\"\n    ]\n}"
+								},
+								"url": {
+									"raw": "https://{{coreServer}}/{{organization}}/{{project}}/_apis/wit/workitemsbatch?api-version={{api-version}}",
+									"protocol": "https",
+									"host": [
+										"{{coreServer}}"
+									],
+									"path": [
+										"{{organization}}",
+										"{{project}}",
+										"_apis",
+										"wit",
+										"workitemsbatch"
+									],
+									"query": [
+										{
+											"key": "api-version",
+											"value": "{{api-version}}"
+										}
+									]
+								},
+								"description": "Gets the details of up to 200 work items, optionally querying the state of the work item on a specific date\n\nThe request can include a list of fields which should be returned in the response\n\n[Documentation Link](https://docs.microsoft.com/en-us/rest/api/azure/devops/wit/work%20items/get%20work%20items%20batch?view=azure-devops-rest-5.0)"
+							},
+							"response": [
+								{
+									"name": "Fabrikam bulk work item response",
+									"originalRequest": {
+										"method": "POST",
+										"header": [
+											{
+												"key": "Content-Type",
+												"name": "Content-Type",
+												"value": "application/json",
+												"type": "text"
+											}
+										],
+										"body": {
+											"mode": "raw",
+											"raw": "{\n    \"ids\": [\n        297,\n        299,\n        300\n    ],\n    \"fields\": [\n        \"System.Id\",\n        \"System.Title\",\n        \"System.WorkItemType\",\n        \"Microsoft.VSTS.Scheduling.RemainingWork\"\n    ]\n}"
+										},
+										"url": {
+											"raw": "https://{{coreServer}}/{{organization}}/{{project}}/_apis/wit/workitemsbatch?api-version={{api-version}}",
+											"protocol": "https",
+											"host": [
+												"{{coreServer}}"
+											],
+											"path": [
+												"{{organization}}",
+												"{{project}}",
+												"_apis",
+												"wit",
+												"workitemsbatch"
+											],
+											"query": [
+												{
+													"key": "api-version",
+													"value": "{{api-version}}"
+												}
+											]
+										}
+									},
+									"status": "OK",
+									"code": 200,
+									"_postman_previewlanguage": "json",
+									"header": [
+										{
+											"key": "Cache-Control",
+											"value": "no-cache"
+										},
+										{
+											"key": "Pragma",
+											"value": "no-cache"
+										},
+										{
+											"key": "Content-Length",
+											"value": "431"
+										},
+										{
+											"key": "Content-Type",
+											"value": "application/json; charset=utf-8; api-version=5.0"
+										},
+										{
+											"key": "Content-Encoding",
+											"value": "gzip"
+										},
+										{
+											"key": "Expires",
+											"value": "-1"
+										},
+										{
+											"key": "Vary",
+											"value": "Accept-Encoding"
+										},
+										{
+											"key": "P3P",
+											"value": "CP=\"CAO DSP COR ADMa DEV CONo TELo CUR PSA PSD TAI IVDo OUR SAMi BUS DEM NAV STA UNI COM INT PHY ONL FIN PUR LOC CNT\""
+										},
+										{
+											"key": "X-TFS-ProcessId",
+											"value": "c404978f-7b8d-4391-91f3-468db037bfcd"
+										},
+										{
+											"key": "Strict-Transport-Security",
+											"value": "max-age=31536000; includeSubDomains"
+										},
+										{
+											"key": "ActivityId",
+											"value": "36e0ee22-17b0-4711-86ac-c43b33d9dc6d"
+										},
+										{
+											"key": "X-TFS-Session",
+											"value": "36e0ee22-17b0-4711-86ac-c43b33d9dc6d"
+										},
+										{
+											"key": "X-VSS-E2EID",
+											"value": "36e0ee22-17b0-4711-86ac-c43b33d9dc6d"
+										},
+										{
+											"key": "X-VSS-UserData",
+											"value": "e622a2cf-3745-6572-8ff2-25c1350faa8b:josh.kewley@bluechip-llc.com"
+										},
+										{
+											"key": "X-FRAME-OPTIONS",
+											"value": "SAMEORIGIN"
+										},
+										{
+											"key": "Request-Context",
+											"value": "appId=cid-v1:e3d45cd2-3b08-46bc-b297-cda72fdc1dc1"
+										},
+										{
+											"key": "Access-Control-Expose-Headers",
+											"value": "Request-Context"
+										},
+										{
+											"key": "X-Content-Type-Options",
+											"value": "nosniff"
+										},
+										{
+											"key": "X-MSEdge-Ref",
+											"value": "Ref A: 727A1CA8086B43BE86E2BAFB0D494039 Ref B: BN3EDGE0717 Ref C: 2019-05-09T21:35:00Z"
+										},
+										{
+											"key": "Date",
+											"value": "Thu, 09 May 2019 21:35:00 GMT"
+										}
+									],
+									"cookie": [],
+									"body": "{\r\n  \"count\": 3,\r\n  \"value\": [\r\n    {\r\n      \"id\": 297,\r\n      \"rev\": 1,\r\n      \"fields\": {\r\n        \"System.Id\": 297,\r\n        \"System.WorkItemType\": \"Product Backlog Item\",\r\n        \"System.Title\": \"Customer can sign in using their Microsoft Account\"\r\n      },\r\n      \"url\": \"https://dev.azure.com/fabrikam/_apis/wit/workItems/297\"\r\n    },\r\n    {\r\n      \"id\": 299,\r\n      \"rev\": 7,\r\n      \"fields\": {\r\n        \"System.Id\": 299,\r\n        \"System.WorkItemType\": \"Task\",\r\n        \"System.Title\": \"JavaScript implementation for Microsoft Account\",\r\n        \"Microsoft.VSTS.Scheduling.RemainingWork\": 4\r\n      },\r\n      \"url\": \"https://dev.azure.com/fabrikam/_apis/wit/workItems/299\"\r\n    },\r\n    {\r\n      \"id\": 300,\r\n      \"rev\": 1,\r\n      \"fields\": {\r\n        \"System.Id\": 300,\r\n        \"System.WorkItemType\": \"Task\",\r\n        \"System.Title\": \"Unit Testing for MSA login\",\r\n        \"Microsoft.VSTS.Scheduling.RemainingWork\": 3\r\n      },\r\n      \"url\": \"https://dev.azure.com/fabrikam/_apis/wit/workItems/300\"\r\n    }\r\n  ]\r\n}"
+								},
+								{
+									"name": "Error policy omit with very old asOf date (no results)",
+									"originalRequest": {
+										"method": "POST",
+										"header": [
+											{
+												"key": "Content-Type",
+												"name": "Content-Type",
+												"value": "application/json",
+												"type": "text"
+											}
+										],
+										"body": {
+											"mode": "raw",
+											"raw": "{\n    \"ids\": [\n        297,\n        299,\n        300\n    ],\n    \"asOf\": \"2000-12-27T00:00:00.000Z\",\n    \"errorPolicy\": \"omit\",\n    \"fields\": [\n        \"System.Id\",\n        \"System.Title\",\n        \"System.WorkItemType\",\n        \"Microsoft.VSTS.Scheduling.RemainingWork\"\n    ]\n}"
+										},
+										"url": {
+											"raw": "https://{{coreServer}}/{{organization}}/{{project}}/_apis/wit/workitemsbatch?api-version={{api-version}}",
+											"protocol": "https",
+											"host": [
+												"{{coreServer}}"
+											],
+											"path": [
+												"{{organization}}",
+												"{{project}}",
+												"_apis",
+												"wit",
+												"workitemsbatch"
+											],
+											"query": [
+												{
+													"key": "api-version",
+													"value": "{{api-version}}"
+												}
+											]
+										}
+									},
+									"status": "OK",
+									"code": 200,
+									"_postman_previewlanguage": "json",
+									"header": [
+										{
+											"key": "Cache-Control",
+											"value": "no-cache"
+										},
+										{
+											"key": "Pragma",
+											"value": "no-cache"
+										},
+										{
+											"key": "Content-Length",
+											"value": "143"
+										},
+										{
+											"key": "Content-Type",
+											"value": "application/json; charset=utf-8; api-version=5.0"
+										},
+										{
+											"key": "Content-Encoding",
+											"value": "gzip"
+										},
+										{
+											"key": "Expires",
+											"value": "-1"
+										},
+										{
+											"key": "Vary",
+											"value": "Accept-Encoding"
+										},
+										{
+											"key": "P3P",
+											"value": "CP=\"CAO DSP COR ADMa DEV CONo TELo CUR PSA PSD TAI IVDo OUR SAMi BUS DEM NAV STA UNI COM INT PHY ONL FIN PUR LOC CNT\""
+										},
+										{
+											"key": "X-TFS-ProcessId",
+											"value": "8c044192-381a-453f-a46d-bcd7dbe0a146"
+										},
+										{
+											"key": "Strict-Transport-Security",
+											"value": "max-age=31536000; includeSubDomains"
+										},
+										{
+											"key": "ActivityId",
+											"value": "3dbf0f88-bbe8-4087-b9d1-27e794f5a7d3"
+										},
+										{
+											"key": "X-TFS-Session",
+											"value": "3dbf0f88-bbe8-4087-b9d1-27e794f5a7d3"
+										},
+										{
+											"key": "X-VSS-E2EID",
+											"value": "3dbf0f88-bbe8-4087-b9d1-27e794f5a7d3"
+										},
+										{
+											"key": "X-VSS-UserData",
+											"value": "e622a2cf-3745-6572-8ff2-25c1350faa8b:josh.kewley@bluechip-llc.com"
+										},
+										{
+											"key": "X-FRAME-OPTIONS",
+											"value": "SAMEORIGIN"
+										},
+										{
+											"key": "Request-Context",
+											"value": "appId=cid-v1:e3d45cd2-3b08-46bc-b297-cda72fdc1dc1"
+										},
+										{
+											"key": "Access-Control-Expose-Headers",
+											"value": "Request-Context"
+										},
+										{
+											"key": "X-Content-Type-Options",
+											"value": "nosniff"
+										},
+										{
+											"key": "X-MSEdge-Ref",
+											"value": "Ref A: 893F3109060E41AEAF03A06E6F6AD6A1 Ref B: BN3EDGE0714 Ref C: 2019-05-09T21:42:10Z"
+										},
+										{
+											"key": "Date",
+											"value": "Thu, 09 May 2019 21:42:10 GMT"
+										}
+									],
+									"cookie": [],
+									"body": "{\n    \"count\": 0,\n    \"value\": []\n}"
+								}
+							]
+						},
+						{
+							"name": "Get individual work item with relationships",
+							"event": [
+								{
+									"listen": "test",
+									"script": {
+										"id": "60b88978-98c8-461b-8cce-a6cbdb91ab0a",
+										"exec": [
+											"var data = JSON.parse(responseBody);\r",
+											"\r",
+											"//find first child link\r",
+											"//https://lodash.com/docs/4.17.11#find\r",
+											"var firstChild = _.find(data.relations, function(o) { return o.rel === 'System.LinkTypes.Hierarchy-Forward'; });\r",
+											"console.log(firstChild.url);\r",
+											"\r",
+											"pm.test(\"has children\", function () {\r",
+											"    //https://www.chaijs.com/guide/styles/#expect\r",
+											"    pm.expect(firstChild).to.not.be.null\r",
+											"});\r",
+											"\r",
+											"//get the title of the child link and log it to console\r",
+											"pm.sendRequest({\r",
+											"  url: firstChild.url,\r",
+											"  method: 'GET',\r",
+											"  header: {\r",
+											"    'Accept': 'application/json',\r",
+											"    'cache-control': \"no-cache\",\r",
+											"    'Authorization': request.headers[\"authorization\"]\r",
+											"  }\r",
+											"}, function (err, res) {\r",
+											"      if (err) {\r",
+											"        console.log(err);\r",
+											"      } else {\r",
+											"          var childData = res.json();\r",
+											"        //console.log(childData)\r",
+											"        console.log(childData.fields['System.Title'])\r",
+											"      }\r",
+											"});"
+										],
+										"type": "text/javascript"
+									}
+								}
+							],
+							"request": {
+								"auth": {
+									"type": "basic",
+									"basic": [
+										{
+											"key": "password",
+											"value": "{{AccessToken}}",
+											"type": "string"
+										},
+										{
+											"key": "username",
+											"value": "Basic",
+											"type": "string"
+										}
+									]
+								},
+								"method": "GET",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": ""
+								},
+								"url": {
+									"raw": "https://{{coreServer}}/{{organization}}/{{project}}/_apis/wit/workitems/{{workItemId}}?api-version={{api-version}}&$expand=relations",
+									"protocol": "https",
+									"host": [
+										"{{coreServer}}"
+									],
+									"path": [
+										"{{organization}}",
+										"{{project}}",
+										"_apis",
+										"wit",
+										"workitems",
+										"{{workItemId}}"
+									],
+									"query": [
+										{
+											"key": "api-version",
+											"value": "{{api-version}}"
+										},
+										{
+											"key": "$expand",
+											"value": "relations",
+											"description": "Directive to include the list of related work items in the resulting payload"
+										},
+										{
+											"key": "asOf",
+											"value": "11/21/2018",
+											"description": "Returns the state of the requested item as it was on the given date",
+											"disabled": true
+										}
+									]
+								},
+								"description": "Gets the details of an individual work item, optionally querying the state of the work item on a specific date\n\nPayload will include pointers to realted work items\n\n[Documentation Link](https://docs.microsoft.com/en-us/rest/api/azure/devops/wit/work%20items/get%20work%20item?view=azure-devops-rest-5.0)"
+							},
+							"response": [
+								{
+									"name": "Fabrikam individual work item with relationships",
+									"originalRequest": {
+										"method": "GET",
+										"header": [],
+										"body": {
+											"mode": "raw",
+											"raw": ""
+										},
+										"url": {
+											"raw": "https://{{coreServer}}/{{organization}}/{{project}}/_apis/wit/workitems/{{workItemId}}?api-version={{api-version}}&$expand=relations",
+											"protocol": "https",
+											"host": [
+												"{{coreServer}}"
+											],
+											"path": [
+												"{{organization}}",
+												"{{project}}",
+												"_apis",
+												"wit",
+												"workitems",
+												"{{workItemId}}"
+											],
+											"query": [
+												{
+													"key": "api-version",
+													"value": "{{api-version}}"
+												},
+												{
+													"key": "$expand",
+													"value": "relations",
+													"description": "Directive to include the list of related work items in the resulting payload"
+												},
+												{
+													"key": "asOf",
+													"value": "11/21/2018",
+													"description": "Returns the state of the requested item as it was on the given date",
+													"disabled": true
+												}
+											]
+										}
+									},
+									"status": "OK",
+									"code": 200,
+									"_postman_previewlanguage": "json",
+									"header": [
+										{
+											"key": "Cache-Control",
+											"value": "no-cache"
+										},
+										{
+											"key": "Pragma",
+											"value": "no-cache"
+										},
+										{
+											"key": "Content-Length",
+											"value": "1465"
+										},
+										{
+											"key": "Content-Type",
+											"value": "application/json; charset=utf-8; api-version=5.0"
+										},
+										{
+											"key": "Content-Encoding",
+											"value": "gzip"
+										},
+										{
+											"key": "Expires",
+											"value": "-1"
+										},
+										{
+											"key": "Vary",
+											"value": "Accept-Encoding"
+										},
+										{
+											"key": "P3P",
+											"value": "CP=\"CAO DSP COR ADMa DEV CONo TELo CUR PSA PSD TAI IVDo OUR SAMi BUS DEM NAV STA UNI COM INT PHY ONL FIN PUR LOC CNT\""
+										},
+										{
+											"key": "X-TFS-ProcessId",
+											"value": "896a28f1-7f6e-429f-a85f-485a7d720e37"
+										},
+										{
+											"key": "Strict-Transport-Security",
+											"value": "max-age=31536000; includeSubDomains"
+										},
+										{
+											"key": "ActivityId",
+											"value": "03081512-98eb-4a4f-a445-87487e145570"
+										},
+										{
+											"key": "X-TFS-Session",
+											"value": "03081512-98eb-4a4f-a445-87487e145570"
+										},
+										{
+											"key": "X-VSS-E2EID",
+											"value": "03081512-98eb-4a4f-a445-87487e145570"
+										},
+										{
+											"key": "X-VSS-UserData",
+											"value": "e622a2cf-3745-6572-8ff2-25c1350faa8b:josh.kewley@bluechip-llc.com"
+										},
+										{
+											"key": "X-FRAME-OPTIONS",
+											"value": "SAMEORIGIN"
+										},
+										{
+											"key": "Request-Context",
+											"value": "appId=cid-v1:e3d45cd2-3b08-46bc-b297-cda72fdc1dc1"
+										},
+										{
+											"key": "Access-Control-Expose-Headers",
+											"value": "Request-Context"
+										},
+										{
+											"key": "X-Content-Type-Options",
+											"value": "nosniff"
+										},
+										{
+											"key": "X-MSEdge-Ref",
+											"value": "Ref A: B14D18B6B5024C3EAF7345662F01BC7E Ref B: BN3EDGE0208 Ref C: 2019-05-09T21:20:17Z"
+										},
+										{
+											"key": "Date",
+											"value": "Thu, 09 May 2019 21:20:17 GMT"
+										}
+									],
+									"cookie": [],
+									"body": "{\r\n    \"id\": 12,\r\n    \"rev\": 3,\r\n    \"fields\": {\r\n        \"System.AreaPath\": \"MyAgilePrj2\",\r\n        \"System.TeamProject\": \"MyAgilePrj2\",\r\n        \"System.IterationPath\": \"MyAgilePrj2\\\\Iteration 1\",\r\n        \"System.WorkItemType\": \"User Story\",\r\n        \"System.State\": \"Active\",\r\n        \"System.Reason\": \"Implementation started\",\r\n        \"System.AssignedTo\": {\r\n            \"displayName\": \"Jamal Hartnett\",\r\n            \"url\": \"https://vssps.dev.azure.com/fabrikam/_apis/Identities/d291b0c4-a05c-4ea6-8df1-4b41d5f39eff\",\r\n            \"_links\": {\r\n                \"avatar\": {\r\n                    \"href\": \"https://dev.azure.com/mseng/_apis/GraphProfile/MemberAvatars/aad.YTkzODFkODYtNTYxYS03ZDdiLWJjM2QtZDUzMjllMjM5OTAz\"\r\n                }\r\n            },\r\n            \"id\": \"d291b0c4-a05c-4ea6-8df1-4b41d5f39eff\",\r\n            \"uniqueName\": \"fabrikamfiber4@hotmail.com\",\r\n            \"imageUrl\": \"https://dev.azure.com/fabrikam/_api/_common/identityImage?id=d291b0c4-a05c-4ea6-8df1-4b41d5f39eff\",\r\n            \"descriptor\": \"aad.YTkzODFkODYtNTYxYS03ZDdiLWJjM2QtZDUzMjllMjM5OTAz\"\r\n        },\r\n        \"System.CreatedDate\": \"2017-09-04T06:11:59.05Z\",\r\n        \"System.CreatedBy\": {\r\n            \"displayName\": \"Jamal Hartnett\",\r\n            \"url\": \"https://vssps.dev.azure.com/fabrikam/_apis/Identities/d291b0c4-a05c-4ea6-8df1-4b41d5f39eff\",\r\n            \"_links\": {\r\n                \"avatar\": {\r\n                    \"href\": \"https://dev.azure.com/mseng/_apis/GraphProfile/MemberAvatars/aad.YTkzODFkODYtNTYxYS03ZDdiLWJjM2QtZDUzMjllMjM5OTAz\"\r\n                }\r\n            },\r\n            \"id\": \"d291b0c4-a05c-4ea6-8df1-4b41d5f39eff\",\r\n            \"uniqueName\": \"fabrikamfiber4@hotmail.com\",\r\n            \"imageUrl\": \"https://dev.azure.com/fabrikam/_api/_common/identityImage?id=d291b0c4-a05c-4ea6-8df1-4b41d5f39eff\",\r\n            \"descriptor\": \"aad.YTkzODFkODYtNTYxYS03ZDdiLWJjM2QtZDUzMjllMjM5OTAz\"\r\n        },\r\n        \"System.ChangedDate\": \"2017-10-04T23:32:02.18Z\",\r\n        \"System.ChangedBy\": {\r\n            \"displayName\": \"Jamal Hartnett\",\r\n            \"url\": \"https://vssps.dev.azure.com/fabrikam/_apis/Identities/d291b0c4-a05c-4ea6-8df1-4b41d5f39eff\",\r\n            \"_links\": {\r\n                \"avatar\": {\r\n                    \"href\": \"https://dev.azure.com/mseng/_apis/GraphProfile/MemberAvatars/aad.YTkzODFkODYtNTYxYS03ZDdiLWJjM2QtZDUzMjllMjM5OTAz\"\r\n                }\r\n            },\r\n            \"id\": \"d291b0c4-a05c-4ea6-8df1-4b41d5f39eff\",\r\n            \"uniqueName\": \"fabrikamfiber4@hotmail.com\",\r\n            \"imageUrl\": \"https://dev.azure.com/fabrikam/_api/_common/identityImage?id=d291b0c4-a05c-4ea6-8df1-4b41d5f39eff\",\r\n            \"descriptor\": \"aad.YTkzODFkODYtNTYxYS03ZDdiLWJjM2QtZDUzMjllMjM5OTAz\"\r\n        },\r\n        \"System.Title\": \"Epic 2\",\r\n        \"Microsoft.VSTS.Common.StateChangeDate\": \"2017-10-04T23:32:01.6Z\",\r\n        \"Microsoft.VSTS.Common.ActivatedDate\": \"2017-10-04T23:32:01.6Z\",\r\n        \"Microsoft.VSTS.Common.ActivatedBy\": \"Jamal Hartnett \\n<fabrikamfiber4@hotmail.com>\",\r\n        \"Microsoft.VSTS.Common.Priority\": 2,\r\n        \"Microsoft.VSTS.Common.ValueArea\": \"Business\",\r\n        \"System.Tags\": \"client; sample; teamservices\"\r\n    },\r\n    \"relations\": [\r\n        {\r\n            \"rel\": \"System.LinkTypes.Hierarchy-Forward\",\r\n            \"url\": \"https://dev.azure.com/fabrikam/54332e84-3d54-4c67-9bd0-0e88a9849330/_apis/wit/workItems/662\",\r\n            \"attributes\": {\r\n                \"isLocked\": false,\r\n                \"name\": \"Child\"\r\n            }\r\n        },\r\n        {\r\n            \"rel\": \"System.LinkTypes.Hierarchy-Forward\",\r\n            \"url\": \"https://dev.azure.com/fabrikam/54332e84-3d54-4c67-9bd0-0e88a9849330/_apis/wit/workItems/669\",\r\n            \"attributes\": {\r\n                \"isLocked\": false,\r\n                \"name\": \"Child\"\r\n            }\r\n        },\r\n        {\r\n            \"rel\": \"System.LinkTypes.Hierarchy-Forward\",\r\n            \"url\": \"https://dev.azure.com/fabrikam/54332e84-3d54-4c67-9bd0-0e88a9849330/_apis/wit/workItems/663\",\r\n            \"attributes\": {\r\n                \"isLocked\": false,\r\n                \"name\": \"Child\"\r\n            }\r\n        },\r\n        {\r\n            \"rel\": \"System.LinkTypes.Hierarchy-Forward\",\r\n            \"url\": \"https://dev.azure.com/fabrikam/54332e84-3d54-4c67-9bd0-0e88a9849330/_apis/wit/workItems/661\",\r\n            \"attributes\": {\r\n                \"isLocked\": false,\r\n                \"name\": \"Child\"\r\n            }\r\n        },\r\n        {\r\n            \"rel\": \"System.LinkTypes.Hierarchy-Forward\",\r\n            \"url\": \"https://dev.azure.com/fabrikam/54332e84-3d54-4c67-9bd0-0e88a9849330/_apis/wit/workItems/972\",\r\n            \"attributes\": {\r\n                \"isLocked\": false,\r\n                \"name\": \"Child\"\r\n            }\r\n        }\r\n    ],\r\n    \"_links\": {\r\n        \"self\": {\r\n            \"href\": \"https://dev.azure.com/fabrikam/_apis/wit/workItems/12\"\r\n        },\r\n        \"workItemUpdates\": {\r\n            \"href\": \"https://dev.azure.com/fabrikam/_apis/wit/workItems/12/updates\"\r\n        },\r\n        \"workItemRevisions\": {\r\n            \"href\": \"https://dev.azure.com/fabrikam/_apis/wit/workItems/12/revisions\"\r\n        },\r\n        \"workItemHistory\": {\r\n            \"href\": \"https://dev.azure.com/fabrikam/_apis/wit/workItems/12/history\"\r\n        },\r\n        \"html\": {\r\n            \"href\": \"https://dev.azure.com/fabrikam/web/wi.aspx?pcguid=20cda608-32f0-4e6e-9b7c-8def7b38d15a&id=12\"\r\n        },\r\n        \"workItemType\": {\r\n            \"href\": \"https://dev.azure.com/fabrikam/54332e84-3d54-4c67-9bd0-0e88a9849330/_apis/wit/workItemTypes/User%20Story\"\r\n        },\r\n        \"fields\": {\r\n            \"href\": \"https://dev.azure.com/fabrikam/_apis/wit/fields\"\r\n        }\r\n    },\r\n    \"url\": \"https://dev.azure.com/fabrikam/_apis/wit/workItems/12\"\r\n}"
+								}
+							]
+						},
+						{
+							"name": "List work item relationship types",
+							"event": [
+								{
+									"listen": "test",
+									"script": {
+										"id": "5a8ccbf9-92e0-4e73-b6bb-73015fa6f9e5",
+										"exec": [
+											""
+										],
+										"type": "text/javascript"
+									}
+								}
+							],
+							"request": {
+								"auth": {
+									"type": "basic",
+									"basic": [
+										{
+											"key": "password",
+											"value": "{{AccessToken}}",
+											"type": "string"
+										},
+										{
+											"key": "username",
+											"value": "Basic",
+											"type": "string"
+										}
+									]
+								},
+								"method": "GET",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": ""
+								},
+								"url": {
+									"raw": "https://{{coreServer}}/{{organization}}/_apis/wit/workitemrelationtypes?api-version={{api-version}}",
+									"protocol": "https",
+									"host": [
+										"{{coreServer}}"
+									],
+									"path": [
+										"{{organization}}",
+										"_apis",
+										"wit",
+										"workitemrelationtypes"
+									],
+									"query": [
+										{
+											"key": "api-version",
+											"value": "{{api-version}}"
+										}
+									]
+								},
+								"description": "Gets the work item relation types.\n\n[Documentation Link](https://docs.microsoft.com/en-us/rest/api/azure/devops/wit/work%20item%20relation%20types/list?view=azure-devops-rest-5.0)"
+							},
+							"response": [
+								{
+									"name": "Fabrikam work item relationships",
+									"originalRequest": {
+										"method": "GET",
+										"header": [],
+										"body": {
+											"mode": "raw",
+											"raw": ""
+										},
+										"url": {
+											"raw": "https://{{coreServer}}/{{organization}}/_apis/wit/workitemrelationtypes?api-version={{api-version}}",
+											"protocol": "https",
+											"host": [
+												"{{coreServer}}"
+											],
+											"path": [
+												"{{organization}}",
+												"_apis",
+												"wit",
+												"workitemrelationtypes"
+											],
+											"query": [
+												{
+													"key": "api-version",
+													"value": "{{api-version}}"
+												}
+											]
+										}
+									},
+									"status": "OK",
+									"code": 200,
+									"_postman_previewlanguage": "json",
+									"header": [
+										{
+											"key": "Cache-Control",
+											"value": "no-cache"
+										},
+										{
+											"key": "Pragma",
+											"value": "no-cache"
+										},
+										{
+											"key": "Content-Length",
+											"value": "1038"
+										},
+										{
+											"key": "Content-Type",
+											"value": "application/json; charset=utf-8; api-version=5.0"
+										},
+										{
+											"key": "Content-Encoding",
+											"value": "gzip"
+										},
+										{
+											"key": "Expires",
+											"value": "-1"
+										},
+										{
+											"key": "Vary",
+											"value": "Accept-Encoding"
+										},
+										{
+											"key": "P3P",
+											"value": "CP=\"CAO DSP COR ADMa DEV CONo TELo CUR PSA PSD TAI IVDo OUR SAMi BUS DEM NAV STA UNI COM INT PHY ONL FIN PUR LOC CNT\""
+										},
+										{
+											"key": "X-TFS-ProcessId",
+											"value": "b5926aec-f897-4bf8-b1e6-e89d697b03ca"
+										},
+										{
+											"key": "Strict-Transport-Security",
+											"value": "max-age=31536000; includeSubDomains"
+										},
+										{
+											"key": "ActivityId",
+											"value": "9490ac64-f62d-470d-aa13-bda7571a9852"
+										},
+										{
+											"key": "X-TFS-Session",
+											"value": "9490ac64-f62d-470d-aa13-bda7571a9852"
+										},
+										{
+											"key": "X-VSS-E2EID",
+											"value": "9490ac64-f62d-470d-aa13-bda7571a9852"
+										},
+										{
+											"key": "X-VSS-UserData",
+											"value": "e622a2cf-3745-6572-8ff2-25c1350faa8b:josh.kewley@bluechip-llc.com"
+										},
+										{
+											"key": "X-FRAME-OPTIONS",
+											"value": "SAMEORIGIN"
+										},
+										{
+											"key": "Request-Context",
+											"value": "appId=cid-v1:e3d45cd2-3b08-46bc-b297-cda72fdc1dc1"
+										},
+										{
+											"key": "Access-Control-Expose-Headers",
+											"value": "Request-Context"
+										},
+										{
+											"key": "X-Content-Type-Options",
+											"value": "nosniff"
+										},
+										{
+											"key": "X-MSEdge-Ref",
+											"value": "Ref A: 943CD81C268E4731976331035AAD7344 Ref B: BN3EDGE0521 Ref C: 2019-05-09T20:52:54Z"
+										},
+										{
+											"key": "Date",
+											"value": "Thu, 09 May 2019 20:52:53 GMT"
+										}
+									],
+									"cookie": [],
+									"body": "{\r\n  \"count\": 18,\r\n  \"value\": [\r\n    {\r\n      \"attributes\": {\r\n        \"usage\": \"workItemLink\",\r\n        \"editable\": true,\r\n        \"enabled\": true,\r\n        \"acyclic\": true,\r\n        \"directional\": true,\r\n        \"singleTarget\": true,\r\n        \"topology\": \"dependency\",\r\n        \"isForward\": true,\r\n        \"oppositeEndReferenceName\": \"Microsoft.VSTS.Common.Affects-Reverse\"\r\n      },\r\n      \"referenceName\": \"Microsoft.VSTS.Common.Affects-Forward\",\r\n      \"name\": \"Affects\",\r\n      \"url\": \"https://dev.azure.com/fabrikam/_apis/wit/workItemRelationTypes/Microsoft.VSTS.Common.Affects-Forward\"\r\n    },\r\n    {\r\n      \"attributes\": {\r\n        \"usage\": \"workItemLink\",\r\n        \"editable\": true,\r\n        \"enabled\": true,\r\n        \"acyclic\": true,\r\n        \"directional\": true,\r\n        \"singleTarget\": true,\r\n        \"topology\": \"dependency\",\r\n        \"isForward\": false,\r\n        \"oppositeEndReferenceName\": \"Microsoft.VSTS.Common.Affects-Forward\"\r\n      },\r\n      \"referenceName\": \"Microsoft.VSTS.Common.Affects-Reverse\",\r\n      \"name\": \"Affected By\",\r\n      \"url\": \"https://dev.azure.com/fabrikam/_apis/wit/workItemRelationTypes/Microsoft.VSTS.Common.Affects-Reverse\"\r\n    },\r\n    {\r\n      \"attributes\": {\r\n        \"usage\": \"workItemLink\",\r\n        \"editable\": true,\r\n        \"enabled\": true,\r\n        \"acyclic\": true,\r\n        \"directional\": true,\r\n        \"singleTarget\": true,\r\n        \"topology\": \"dependency\",\r\n        \"isForward\": true,\r\n        \"oppositeEndReferenceName\": \"Microsoft.VSTS.TestCase.SharedParameterReferencedBy-Reverse\"\r\n      },\r\n      \"referenceName\": \"Microsoft.VSTS.TestCase.SharedParameterReferencedBy-Forward\",\r\n      \"name\": \"Referenced By\",\r\n      \"url\": \"https://dev.azure.com/fabrikam/_apis/wit/workItemRelationTypes/Microsoft.VSTS.TestCase.SharedParameterReferencedBy-Forward\"\r\n    },\r\n    {\r\n      \"attributes\": {\r\n        \"usage\": \"workItemLink\",\r\n        \"editable\": true,\r\n        \"enabled\": true,\r\n        \"acyclic\": true,\r\n        \"directional\": true,\r\n        \"singleTarget\": true,\r\n        \"topology\": \"dependency\",\r\n        \"isForward\": false,\r\n        \"oppositeEndReferenceName\": \"Microsoft.VSTS.TestCase.SharedParameterReferencedBy-Forward\"\r\n      },\r\n      \"referenceName\": \"Microsoft.VSTS.TestCase.SharedParameterReferencedBy-Reverse\",\r\n      \"name\": \"References\",\r\n      \"url\": \"https://dev.azure.com/fabrikam/_apis/wit/workItemRelationTypes/Microsoft.VSTS.TestCase.SharedParameterReferencedBy-Reverse\"\r\n    },\r\n    {\r\n      \"attributes\": {\r\n        \"usage\": \"workItemLink\",\r\n        \"editable\": true,\r\n        \"enabled\": true,\r\n        \"acyclic\": true,\r\n        \"directional\": true,\r\n        \"singleTarget\": true,\r\n        \"topology\": \"dependency\",\r\n        \"isForward\": true,\r\n        \"oppositeEndReferenceName\": \"Microsoft.VSTS.Common.TestedBy-Reverse\"\r\n      },\r\n      \"referenceName\": \"Microsoft.VSTS.Common.TestedBy-Forward\",\r\n      \"name\": \"Tested By\",\r\n      \"url\": \"https://dev.azure.com/fabrikam/_apis/wit/workItemRelationTypes/Microsoft.VSTS.Common.TestedBy-Forward\"\r\n    },\r\n    {\r\n      \"attributes\": {\r\n        \"usage\": \"workItemLink\",\r\n        \"editable\": true,\r\n        \"enabled\": true,\r\n        \"acyclic\": true,\r\n        \"directional\": true,\r\n        \"singleTarget\": true,\r\n        \"topology\": \"dependency\",\r\n        \"isForward\": false,\r\n        \"oppositeEndReferenceName\": \"Microsoft.VSTS.Common.TestedBy-Forward\"\r\n      },\r\n      \"referenceName\": \"Microsoft.VSTS.Common.TestedBy-Reverse\",\r\n      \"name\": \"Tests\",\r\n      \"url\": \"https://dev.azure.com/fabrikam/_apis/wit/workItemRelationTypes/Microsoft.VSTS.Common.TestedBy-Reverse\"\r\n    },\r\n    {\r\n      \"attributes\": {\r\n        \"usage\": \"workItemLink\",\r\n        \"editable\": true,\r\n        \"enabled\": true,\r\n        \"acyclic\": true,\r\n        \"directional\": true,\r\n        \"singleTarget\": true,\r\n        \"topology\": \"dependency\",\r\n        \"isForward\": true,\r\n        \"oppositeEndReferenceName\": \"Microsoft.VSTS.TestCase.SharedStepReferencedBy-Reverse\"\r\n      },\r\n      \"referenceName\": \"Microsoft.VSTS.TestCase.SharedStepReferencedBy-Forward\",\r\n      \"name\": \"Test Case\",\r\n      \"url\": \"https://dev.azure.com/fabrikam/_apis/wit/workItemRelationTypes/Microsoft.VSTS.TestCase.SharedStepReferencedBy-Forward\"\r\n    },\r\n    {\r\n      \"attributes\": {\r\n        \"usage\": \"workItemLink\",\r\n        \"editable\": true,\r\n        \"enabled\": true,\r\n        \"acyclic\": true,\r\n        \"directional\": true,\r\n        \"singleTarget\": true,\r\n        \"topology\": \"dependency\",\r\n        \"isForward\": false,\r\n        \"oppositeEndReferenceName\": \"Microsoft.VSTS.TestCase.SharedStepReferencedBy-Forward\"\r\n      },\r\n      \"referenceName\": \"Microsoft.VSTS.TestCase.SharedStepReferencedBy-Reverse\",\r\n      \"name\": \"Shared Steps\",\r\n      \"url\": \"https://dev.azure.com/fabrikam/_apis/wit/workItemRelationTypes/Microsoft.VSTS.TestCase.SharedStepReferencedBy-Reverse\"\r\n    },\r\n    {\r\n      \"attributes\": {\r\n        \"usage\": \"workItemLink\",\r\n        \"editable\": false,\r\n        \"enabled\": true,\r\n        \"acyclic\": true,\r\n        \"directional\": true,\r\n        \"singleTarget\": false,\r\n        \"topology\": \"tree\",\r\n        \"isForward\": true,\r\n        \"oppositeEndReferenceName\": \"System.LinkTypes.Duplicate-Reverse\"\r\n      },\r\n      \"referenceName\": \"System.LinkTypes.Duplicate-Forward\",\r\n      \"name\": \"Duplicate\",\r\n      \"url\": \"https://dev.azure.com/fabrikam/_apis/wit/workItemRelationTypes/System.LinkTypes.Duplicate-Forward\"\r\n    },\r\n    {\r\n      \"attributes\": {\r\n        \"usage\": \"workItemLink\",\r\n        \"editable\": false,\r\n        \"enabled\": true,\r\n        \"acyclic\": true,\r\n        \"directional\": true,\r\n        \"singleTarget\": false,\r\n        \"topology\": \"tree\",\r\n        \"isForward\": false,\r\n        \"oppositeEndReferenceName\": \"System.LinkTypes.Duplicate-Forward\"\r\n      },\r\n      \"referenceName\": \"System.LinkTypes.Duplicate-Reverse\",\r\n      \"name\": \"Duplicate Of\",\r\n      \"url\": \"https://dev.azure.com/fabrikam/_apis/wit/workItemRelationTypes/System.LinkTypes.Duplicate-Reverse\"\r\n    },\r\n    {\r\n      \"attributes\": {\r\n        \"usage\": \"workItemLink\",\r\n        \"editable\": false,\r\n        \"enabled\": true,\r\n        \"acyclic\": true,\r\n        \"directional\": true,\r\n        \"singleTarget\": true,\r\n        \"topology\": \"dependency\",\r\n        \"isForward\": true,\r\n        \"oppositeEndReferenceName\": \"System.LinkTypes.Dependency-Reverse\"\r\n      },\r\n      \"referenceName\": \"System.LinkTypes.Dependency-Forward\",\r\n      \"name\": \"Successor\",\r\n      \"url\": \"https://dev.azure.com/fabrikam/_apis/wit/workItemRelationTypes/System.LinkTypes.Dependency-Forward\"\r\n    },\r\n    {\r\n      \"attributes\": {\r\n        \"usage\": \"workItemLink\",\r\n        \"editable\": false,\r\n        \"enabled\": true,\r\n        \"acyclic\": true,\r\n        \"directional\": true,\r\n        \"singleTarget\": true,\r\n        \"topology\": \"dependency\",\r\n        \"isForward\": false,\r\n        \"oppositeEndReferenceName\": \"System.LinkTypes.Dependency-Forward\"\r\n      },\r\n      \"referenceName\": \"System.LinkTypes.Dependency-Reverse\",\r\n      \"name\": \"Predecessor\",\r\n      \"url\": \"https://dev.azure.com/fabrikam/_apis/wit/workItemRelationTypes/System.LinkTypes.Dependency-Reverse\"\r\n    },\r\n    {\r\n      \"attributes\": {\r\n        \"usage\": \"workItemLink\",\r\n        \"editable\": false,\r\n        \"enabled\": true,\r\n        \"acyclic\": true,\r\n        \"directional\": true,\r\n        \"singleTarget\": false,\r\n        \"topology\": \"tree\",\r\n        \"isForward\": true,\r\n        \"oppositeEndReferenceName\": \"System.LinkTypes.Hierarchy-Reverse\"\r\n      },\r\n      \"referenceName\": \"System.LinkTypes.Hierarchy-Forward\",\r\n      \"name\": \"Child\",\r\n      \"url\": \"https://dev.azure.com/fabrikam/_apis/wit/workItemRelationTypes/System.LinkTypes.Hierarchy-Forward\"\r\n    },\r\n    {\r\n      \"attributes\": {\r\n        \"usage\": \"workItemLink\",\r\n        \"editable\": false,\r\n        \"enabled\": true,\r\n        \"acyclic\": true,\r\n        \"directional\": true,\r\n        \"singleTarget\": false,\r\n        \"topology\": \"tree\",\r\n        \"isForward\": false,\r\n        \"oppositeEndReferenceName\": \"System.LinkTypes.Hierarchy-Forward\"\r\n      },\r\n      \"referenceName\": \"System.LinkTypes.Hierarchy-Reverse\",\r\n      \"name\": \"Parent\",\r\n      \"url\": \"https://dev.azure.com/fabrikam/_apis/wit/workItemRelationTypes/System.LinkTypes.Hierarchy-Reverse\"\r\n    },\r\n    {\r\n      \"attributes\": {\r\n        \"usage\": \"workItemLink\",\r\n        \"editable\": false,\r\n        \"enabled\": true,\r\n        \"acyclic\": false,\r\n        \"directional\": false,\r\n        \"singleTarget\": true,\r\n        \"topology\": \"network\"\r\n      },\r\n      \"referenceName\": \"System.LinkTypes.Related\",\r\n      \"name\": \"Related\",\r\n      \"url\": \"https://dev.azure.com/fabrikam/_apis/wit/workItemRelationTypes/System.LinkTypes.Related\"\r\n    },\r\n    {\r\n      \"attributes\": {\r\n        \"usage\": \"resourceLink\",\r\n        \"editable\": false,\r\n        \"enabled\": true\r\n      },\r\n      \"referenceName\": \"AttachedFile\",\r\n      \"name\": \"Attached File\",\r\n      \"url\": \"https://dev.azure.com/fabrikam/_apis/wit/workItemRelationTypes/AttachedFile\"\r\n    },\r\n    {\r\n      \"attributes\": {\r\n        \"usage\": \"resourceLink\",\r\n        \"editable\": false,\r\n        \"enabled\": true\r\n      },\r\n      \"referenceName\": \"Hyperlink\",\r\n      \"name\": \"Hyperlink\",\r\n      \"url\": \"https://dev.azure.com/fabrikam/_apis/wit/workItemRelationTypes/Hyperlink\"\r\n    },\r\n    {\r\n      \"attributes\": {\r\n        \"usage\": \"resourceLink\",\r\n        \"editable\": false,\r\n        \"enabled\": true\r\n      },\r\n      \"referenceName\": \"ArtifactLink\",\r\n      \"name\": \"Artifact Link\",\r\n      \"url\": \"https://dev.azure.com/fabrikam/_apis/wit/workItemRelationTypes/ArtifactLink\"\r\n    }\r\n  ]\r\n}"
+								}
+							]
+						},
+						{
+							"name": "Get individual work item with expanded fields",
+							"event": [
+								{
+									"listen": "test",
+									"script": {
+										"id": "60b88978-98c8-461b-8cce-a6cbdb91ab0a",
+										"exec": [
+											"var data = JSON.parse(responseBody);\r",
+											"\r",
+											"pm.test(\"has extra field\", function () {\r",
+											"    //PM tests replace dots with underscores for fields with dots in name\r",
+											"    //https://www.chaijs.com/guide/styles/#expect\r",
+											"    pm.expect(data.fields.System_AreaId).to.not.be.null\r",
+											"});\r",
+											""
+										],
+										"type": "text/javascript"
+									}
+								}
+							],
+							"request": {
+								"auth": {
+									"type": "basic",
+									"basic": [
+										{
+											"key": "password",
+											"value": "{{AccessToken}}",
+											"type": "string"
+										},
+										{
+											"key": "username",
+											"value": "Basic",
+											"type": "string"
+										}
+									]
+								},
+								"method": "GET",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": ""
+								},
+								"url": {
+									"raw": "https://{{coreServer}}/{{organization}}/{{project}}/_apis/wit/workitems/{{workItemId}}?api-version={{api-version}}&$expand=fields",
+									"protocol": "https",
+									"host": [
+										"{{coreServer}}"
+									],
+									"path": [
+										"{{organization}}",
+										"{{project}}",
+										"_apis",
+										"wit",
+										"workitems",
+										"{{workItemId}}"
+									],
+									"query": [
+										{
+											"key": "api-version",
+											"value": "{{api-version}}"
+										},
+										{
+											"key": "$expand",
+											"value": "fields",
+											"description": "Directive to include the list of related work items in the resulting payload"
+										},
+										{
+											"key": "asOf",
+											"value": "11/21/2018",
+											"description": "Returns the state of the requested item as it was on the given date",
+											"disabled": true
+										}
+									]
+								},
+								"description": "Gets the details of an individual work item, optionally querying the state of the work item on a specific date\n\nPayload will include all available fields\n\n[Documentation Link](https://docs.microsoft.com/en-us/rest/api/azure/devops/wit/work%20items/get%20work%20item?view=azure-devops-rest-5.0)"
+							},
+							"response": []
+						},
+						{
+							"name": "Get individual work item with all links",
+							"event": [
+								{
+									"listen": "test",
+									"script": {
+										"id": "60b88978-98c8-461b-8cce-a6cbdb91ab0a",
+										"exec": [
+											"var data = JSON.parse(responseBody);\r",
+											"\r",
+											"pm.test(\"has extra field\", function () {\r",
+											"    //PM tests replace dots with underscores for fields with dots in name\r",
+											"    //https://www.chaijs.com/guide/styles/#expect\r",
+											"    pm.expect(data.fields.System_AreaId).to.not.be.null\r",
+											"});\r",
+											""
+										],
+										"type": "text/javascript"
+									}
+								}
+							],
+							"request": {
+								"auth": {
+									"type": "basic",
+									"basic": [
+										{
+											"key": "password",
+											"value": "{{AccessToken}}",
+											"type": "string"
+										},
+										{
+											"key": "username",
+											"value": "Basic",
+											"type": "string"
+										}
+									]
+								},
+								"method": "GET",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": ""
+								},
+								"url": {
+									"raw": "https://{{coreServer}}/{{organization}}/{{project}}/_apis/wit/workitems/{{workItemId}}?api-version={{api-version}}",
+									"protocol": "https",
+									"host": [
+										"{{coreServer}}"
+									],
+									"path": [
+										"{{organization}}",
+										"{{project}}",
+										"_apis",
+										"wit",
+										"workitems",
+										"{{workItemId}}"
+									],
+									"query": [
+										{
+											"key": "api-version",
+											"value": "{{api-version}}"
+										},
+										{
+											"key": "$expand",
+											"value": "links",
+											"description": "Directive to include the list of related work items in the resulting payload",
+											"disabled": true
+										},
+										{
+											"key": "asOf",
+											"value": "11/21/2018",
+											"description": "Returns the state of the requested item as it was on the given date",
+											"disabled": true
+										}
+									]
+								},
+								"description": "Gets the details of an individual work item, optionally querying the state of the work item on a specific date\n\nLinks doesn't appear to provide anything beyond the core payload. Perhaps earlier APIs didn't include the links segment by default\n\n[Documentation Link](https://docs.microsoft.com/en-us/rest/api/azure/devops/wit/work%20items/get%20work%20item?view=azure-devops-rest-5.0)"
 							},
 							"response": []
 						}
