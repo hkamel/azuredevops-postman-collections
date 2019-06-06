@@ -1,6 +1,6 @@
 {
 	"info": {
-		"_postman_id": "cc78453d-9038-460d-8be1-38404f79cccd",
+		"_postman_id": "8ac8804a-16d1-4240-9914-f0c88892f0ac",
 		"name": "Azure DevOps v5.0",
 		"description": "Azure DevOps Services REST API Reference.\n\nv1.1",
 		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
@@ -32,10 +32,6 @@
 								},
 								"method": "GET",
 								"header": [],
-								"body": {
-									"mode": "raw",
-									"raw": ""
-								},
 								"url": {
 									"raw": "https://{{feedsServer}}/{{organization}}/_apis/public/packaging/Feeds/{{feedId}}/Packages/{{packageId}}/badge?api-version={{api-version-preview}}",
 									"protocol": "https",
@@ -84,10 +80,6 @@
 								},
 								"method": "GET",
 								"header": [],
-								"body": {
-									"mode": "raw",
-									"raw": ""
-								},
 								"url": {
 									"raw": "https://{{feedsServer}}/{{organization}}/_apis/packaging/Feeds/{{feedId}}/packages/{{packageId}}?api-version={{api-version-preview}}",
 									"protocol": "https",
@@ -170,10 +162,6 @@
 								},
 								"method": "GET",
 								"header": [],
-								"body": {
-									"mode": "raw",
-									"raw": ""
-								},
 								"url": {
 									"raw": "https://{{feedsServer}}/{{organization}}/_apis/packaging/Feeds/{{feedId}}/Packages/{{packageId}}/versions/{{packageVersionId}}?api-version={{api-version-preview}}",
 									"protocol": "https",
@@ -240,10 +228,6 @@
 								},
 								"method": "GET",
 								"header": [],
-								"body": {
-									"mode": "raw",
-									"raw": ""
-								},
 								"url": {
 									"raw": "https://{{feedsServer}}/{{organization}}/_apis/packaging/Feeds/{{feedId}}/Packages/{{packageId}}/Versions/{{packageVersionId}}/provenance?api-version={{api-version-preview}}",
 									"protocol": "https",
@@ -293,10 +277,6 @@
 								},
 								"method": "GET",
 								"header": [],
-								"body": {
-									"mode": "raw",
-									"raw": ""
-								},
 								"url": {
 									"raw": "https://{{feedsServer}}/{{organization}}/_apis/packaging/Feeds/{{feedId}}/Packages/{{packageId}}/versions?api-version={{api-version-preview}}",
 									"protocol": "https",
@@ -362,10 +342,6 @@
 								},
 								"method": "GET",
 								"header": [],
-								"body": {
-									"mode": "raw",
-									"raw": ""
-								},
 								"url": {
 									"raw": "https://{{feedsServer}}/{{organization}}/_apis/packaging/Feeds/{{feedId}}/packages?api-version={{api-version-preview}}",
 									"protocol": "https",
@@ -489,10 +465,6 @@
 								},
 								"method": "GET",
 								"header": [],
-								"body": {
-									"mode": "raw",
-									"raw": ""
-								},
 								"url": {
 									"raw": "https://{{feedsServer}}/{{organization}}/_apis/packaging/feedchanges/{{feedId}}?api-version={{api-version-preview}}",
 									"protocol": "https",
@@ -537,10 +509,6 @@
 								},
 								"method": "GET",
 								"header": [],
-								"body": {
-									"mode": "raw",
-									"raw": ""
-								},
 								"url": {
 									"raw": "https://{{feedsServer}}/{{organization}}/_apis/packaging/feedchanges?api-version={{api-version-preview}}",
 									"protocol": "https",
@@ -602,10 +570,6 @@
 								},
 								"method": "GET",
 								"header": [],
-								"body": {
-									"mode": "raw",
-									"raw": ""
-								},
 								"url": {
 									"raw": "https://{{feedsServer}}/{{organization}}/_apis/packaging/Feeds/{{feedId}}/packagechanges?api-version={{api-version-preview}}",
 									"protocol": "https",
@@ -906,10 +870,6 @@
 								},
 								"method": "GET",
 								"header": [],
-								"body": {
-									"mode": "raw",
-									"raw": ""
-								},
 								"url": {
 									"raw": "https://{{feedsServer}}/{{organization}}/_apis/packaging/Feeds/{{feedId}}?api-version={{api-version-preview}}",
 									"protocol": "https",
@@ -954,10 +914,6 @@
 								},
 								"method": "GET",
 								"header": [],
-								"body": {
-									"mode": "raw",
-									"raw": ""
-								},
 								"url": {
 									"raw": "https://{{feedsServer}}/{{organization}}/_apis/packaging/Feeds/{{feedId}}/permissions?api-version={{api-version-preview}}",
 									"protocol": "https",
@@ -1021,10 +977,6 @@
 								},
 								"method": "GET",
 								"header": [],
-								"body": {
-									"mode": "raw",
-									"raw": ""
-								},
 								"url": {
 									"raw": "https://{{feedsServer}}/{{organization}}/_apis/packaging/Feeds/{{feedId}}/views/{{viewId}}?api-version={{api-version-preview}}",
 									"protocol": "https",
@@ -1083,10 +1035,6 @@
 								},
 								"method": "GET",
 								"header": [],
-								"body": {
-									"mode": "raw",
-									"raw": ""
-								},
 								"url": {
 									"raw": "https://{{feedsServer}}/{{organization}}/_apis/packaging/Feeds/{{feedId}}/views?api-version={{api-version-preview}}",
 									"protocol": "https",
@@ -1144,10 +1092,6 @@
 								},
 								"method": "GET",
 								"header": [],
-								"body": {
-									"mode": "raw",
-									"raw": ""
-								},
 								"url": {
 									"raw": "https://{{feedsServer}}/{{organization}}/_apis/packaging/Feeds?api-version={{api-version-preview}}",
 									"protocol": "https",
@@ -1397,10 +1341,6 @@
 							"request": {
 								"method": "GET",
 								"header": [],
-								"body": {
-									"mode": "raw",
-									"raw": ""
-								},
 								"url": {
 									"raw": "https://{{feedsServer}}/{{organization}}/_apis/packaging/Feeds/{{feedId}}/RecycleBin/Packages/{{packageId}}?api-version={{api-version-preview}}",
 									"protocol": "https",
@@ -1433,10 +1373,6 @@
 							"request": {
 								"method": "GET",
 								"header": [],
-								"body": {
-									"mode": "raw",
-									"raw": ""
-								},
 								"url": {
 									"raw": "https://{{feedsServer}}/{{organization}}/_apis/packaging/Feeds/{{feedId}}/RecycleBin/Packages/{{packageId}}/Versions/{{packageVersionGuid}}?api-version={{api-version-preview}}",
 									"protocol": "https",
@@ -1477,10 +1413,6 @@
 							"request": {
 								"method": "GET",
 								"header": [],
-								"body": {
-									"mode": "raw",
-									"raw": ""
-								},
 								"url": {
 									"raw": "https://{{feedsServer}}/{{organization}}/_apis/packaging/Feeds/{{feedId}}/RecycleBin/Packages/{{packageId}}/Versions?api-version={{api-version-preview}}",
 									"protocol": "https",
@@ -1520,10 +1452,6 @@
 							"request": {
 								"method": "GET",
 								"header": [],
-								"body": {
-									"mode": "raw",
-									"raw": ""
-								},
 								"url": {
 									"raw": "https://{{feedsServer}}/{{organization}}/_apis/packaging/Feeds/{{feedId}}/RecycleBin/Packages?api-version={{api-version-preview}}",
 									"protocol": "https",
@@ -1612,10 +1540,6 @@
 							"request": {
 								"method": "GET",
 								"header": [],
-								"body": {
-									"mode": "raw",
-									"raw": ""
-								},
 								"url": {
 									"raw": "https://{{feedsServer}}/{{organization}}/_apis/packaging/Feeds/{{feedId}}/retentionpolicies?api-version={{api-version-preview}}",
 									"protocol": "https",
@@ -1749,10 +1673,6 @@
 							"request": {
 								"method": "GET",
 								"header": [],
-								"body": {
-									"mode": "raw",
-									"raw": ""
-								},
 								"url": {
 									"raw": "https://{{feedsServer}}/{{organization}}/_apis/packaging/globalpermissions?api-version={{api-version-preview}}",
 									"protocol": "https",
@@ -1871,10 +1791,6 @@
 								},
 								"method": "GET",
 								"header": [],
-								"body": {
-									"mode": "raw",
-									"raw": ""
-								},
 								"url": {
 									"raw": "https://{{coreServer}}/{{organization}}/{{project}}/_apis/build/builds/{{buildId}}/artifacts?api-version={{api-version}}",
 									"protocol": "https",
@@ -1916,10 +1832,6 @@
 								},
 								"method": "GET",
 								"header": [],
-								"body": {
-									"mode": "raw",
-									"raw": ""
-								},
 								"url": {
 									"raw": "https://{{coreServer}}/{{organization}}/{{project}}/_apis/build/builds/{{buildId}}/artifacts?artifactName={{artifactName}}&api-version={{api-version}}",
 									"protocol": "https",
@@ -1977,10 +1889,6 @@
 								},
 								"method": "GET",
 								"header": [],
-								"body": {
-									"mode": "raw",
-									"raw": ""
-								},
 								"url": {
 									"raw": "https://{{coreServer}}/{{organization}}/{{project}}/_apis/build/builds/{{buildId}}/artifacts?artifactName={{artifactName}}&api-version={{api-version}}",
 									"protocol": "https",
@@ -2104,10 +2012,6 @@
 								},
 								"method": "GET",
 								"header": [],
-								"body": {
-									"mode": "raw",
-									"raw": ""
-								},
 								"url": {
 									"raw": "https://{{coreServer}}/{{organization}}/{{project}}/_apis/build/authorizedresources?api-version={{api-version-preview}}",
 									"protocol": "https",
@@ -2158,10 +2062,6 @@
 							"request": {
 								"method": "GET",
 								"header": [],
-								"body": {
-									"mode": "raw",
-									"raw": ""
-								},
 								"url": {
 									"raw": "https://{{coreServer}}/{{organization}}/_apis/build/controllers/{{}}?api-version={{api-version-previe",
 									"protocol": "https",
@@ -2191,10 +2091,6 @@
 							"request": {
 								"method": "GET",
 								"header": [],
-								"body": {
-									"mode": "raw",
-									"raw": ""
-								},
 								"url": {
 									"raw": "https://{{coreServer}}/{{organization}}/{{project}}/_apis/build/repos/git/badge?api-version={{api-version-preview2}}&branchName=master",
 									"protocol": "https",
@@ -2346,10 +2242,6 @@
 										"type": "text"
 									}
 								],
-								"body": {
-									"mode": "raw",
-									"raw": ""
-								},
 								"url": {
 									"raw": "https://{{coreServer}}/{{organization}}/{{project}}/_apis/build/builds/{{buildId}}?api-version={{api-version}}",
 									"protocol": "https",
@@ -2412,10 +2304,6 @@
 										"value": "Basic {{AccessToken}}"
 									}
 								],
-								"body": {
-									"mode": "raw",
-									"raw": ""
-								},
 								"url": {
 									"raw": "https://{{coreServer}}/{{organization}}/{{project}}/_apis/build/builds/{{buildId}}/changes?api-version={{api-version}}&includeSourceChange=true",
 									"protocol": "https",
@@ -2489,10 +2377,6 @@
 										"value": "Basic {{AccessToken}}"
 									}
 								],
-								"body": {
-									"mode": "raw",
-									"raw": ""
-								},
 								"url": {
 									"raw": "https://{{coreServer}}/{{organization}}/{{project}}/_apis/build/builds/{{buildId}}/logs?api-version={{api-version}}",
 									"protocol": "https",
@@ -2551,10 +2435,6 @@
 										"value": "Basic {{AccessToken}}"
 									}
 								],
-								"body": {
-									"mode": "raw",
-									"raw": ""
-								},
 								"url": {
 									"raw": "https://{{coreServer}}/{{organization}}/{{project}}/_apis/build/builds/{{buildId}}/logs/{{logId}}?api-version={{api-version}}",
 									"protocol": "https",
@@ -2626,10 +2506,6 @@
 										"value": "Basic {{AccessToken}}"
 									}
 								],
-								"body": {
-									"mode": "raw",
-									"raw": ""
-								},
 								"url": {
 									"raw": "https://{{coreServer}}/{{organization}}/{{project}}/_apis/build/builds/{{buildId}}/workitems?api-version={{api-version}}",
 									"protocol": "https",
@@ -2756,10 +2632,6 @@
 										"value": "Basic {{AccessToken}}"
 									}
 								],
-								"body": {
-									"mode": "raw",
-									"raw": ""
-								},
 								"url": {
 									"raw": "https://{{coreServer}}/{{organization}}/{{project}}/_apis/build/changes?api-version={{api-version-preview2}}&fromBuildId=1637&toBuildId=1638",
 									"protocol": "https",
@@ -2832,10 +2704,6 @@
 										"value": "Basic {{AccessToken}}"
 									}
 								],
-								"body": {
-									"mode": "raw",
-									"raw": ""
-								},
 								"url": {
 									"raw": "https://{{coreServer}}/{{organization}}/{{project}}/_apis/build/workitems?api-version={{api-version-preview2}}&fromBuildId=1637&toBuildId=1638",
 									"protocol": "https",
@@ -2908,10 +2776,6 @@
 										"value": "Basic {{AccessToken}}"
 									}
 								],
-								"body": {
-									"mode": "raw",
-									"raw": ""
-								},
 								"url": {
 									"raw": "https://{{coreServer}}/{{organization}}/{{project}}/_apis/build/builds?api-version={{api-version}}",
 									"protocol": "https",
@@ -3151,10 +3015,6 @@
 								},
 								"method": "GET",
 								"header": [],
-								"body": {
-									"mode": "raw",
-									"raw": ""
-								},
 								"url": {
 									"raw": "https://{{coreServer}}/{{organization}}/_apis/build/controllers?api-version={{api-version}}",
 									"protocol": "https",
@@ -3203,10 +3063,6 @@
 								},
 								"method": "GET",
 								"header": [],
-								"body": {
-									"mode": "raw",
-									"raw": ""
-								},
 								"url": {
 									"raw": "https://{{coreServer}}/{{organization}}/_apis/build/controllers/{{controllerId}}?api-version={{api-version}}",
 									"protocol": "https",
@@ -3262,10 +3118,6 @@
 							"request": {
 								"method": "GET",
 								"header": [],
-								"body": {
-									"mode": "raw",
-									"raw": ""
-								},
 								"url": {
 									"raw": "https://{{coreServer}}/{{organization}}/{{project}}/_apis/build/definitions/{{definitionId}}?api-version={{api-version}}",
 									"protocol": "https",
@@ -3320,10 +3172,6 @@
 							"request": {
 								"method": "GET",
 								"header": [],
-								"body": {
-									"mode": "raw",
-									"raw": ""
-								},
 								"url": {
 									"raw": "https://{{coreServer}}/{{organization}}/{{project}}/_apis/build/definitions/{{definitionId}}/revisions?api-version={{api-version}}",
 									"protocol": "https",
@@ -3355,10 +3203,6 @@
 							"request": {
 								"method": "GET",
 								"header": [],
-								"body": {
-									"mode": "raw",
-									"raw": ""
-								},
 								"url": {
 									"raw": "https://{{coreServer}}/{{organization}}/{{project}}/_apis/build/definitions?api-version={{api-version}}",
 									"protocol": "https",
@@ -3708,10 +3552,6 @@
 								},
 								"method": "GET",
 								"header": [],
-								"body": {
-									"mode": "raw",
-									"raw": ""
-								},
 								"url": {
 									"raw": "https://{{coreServer}}/{{organization}}/{{project}}/_apis/build/folders?api-version={{api-version-preview2}}",
 									"protocol": "https",
@@ -3954,10 +3794,6 @@
 							"request": {
 								"method": "GET",
 								"header": [],
-								"body": {
-									"mode": "raw",
-									"raw": ""
-								},
 								"url": {
 									"raw": "https://{{coreServer}}/{{organization}}/{{project}}/_apis/build/latest/{{definitonName}}?api-version={{api-version-preview}}",
 									"protocol": "https",
@@ -4030,10 +3866,6 @@
 								},
 								"method": "GET",
 								"header": [],
-								"body": {
-									"mode": "raw",
-									"raw": ""
-								},
 								"url": {
 									"raw": "https://{{coreServer}}/{{organization}}/{{project}}/_apis/build/definitions/{{definitionId}}/metrics?api-version={{api-version-preview}}",
 									"protocol": "https",
@@ -4086,10 +3918,6 @@
 								},
 								"method": "GET",
 								"header": [],
-								"body": {
-									"mode": "raw",
-									"raw": ""
-								},
 								"url": {
 									"raw": "https://{{coreServer}}/{{organization}}/{{project}}/_apis/build/metrics?api-version={{api-version-preview}}",
 									"protocol": "https",
@@ -4167,10 +3995,6 @@
 								},
 								"method": "GET",
 								"header": [],
-								"body": {
-									"mode": "raw",
-									"raw": ""
-								},
 								"url": {
 									"raw": "https://{{coreServer}}/{{organization}}/{{project}}/_apis/build/options?api-version={{api-version}}",
 									"protocol": "https",
@@ -4259,10 +4083,6 @@
 								},
 								"method": "GET",
 								"header": [],
-								"body": {
-									"mode": "raw",
-									"raw": ""
-								},
 								"url": {
 									"raw": "https://{{coreServer}}/{{organization}}/{{project}}/_apis/build/builds/{{buildId}}/properties?api-version={{api-version-preview}}",
 									"protocol": "https",
@@ -4315,10 +4135,6 @@
 								},
 								"method": "GET",
 								"header": [],
-								"body": {
-									"mode": "raw",
-									"raw": ""
-								},
 								"url": {
 									"raw": "https://{{coreServer}}/{{organization}}/{{project}}/_apis/build/definitions/{{definitionId}}/properties?api-version={{api-version-preview}}",
 									"protocol": "https",
@@ -4415,10 +4231,6 @@
 								},
 								"method": "GET",
 								"header": [],
-								"body": {
-									"mode": "raw",
-									"raw": ""
-								},
 								"url": {
 									"raw": "https://{{coreServer}}/{{organization}}/{{project}}/_apis/build/builds/{{buildId}}/report?api-version={{api-version-preview2}}",
 									"protocol": "https",
@@ -4514,10 +4326,6 @@
 								},
 								"method": "GET",
 								"header": [],
-								"body": {
-									"mode": "raw",
-									"raw": ""
-								},
 								"url": {
 									"raw": "https://{{coreServer}}/{{organization}}/_apis/build/resourceusage?api-version={{api-version-preview2}}",
 									"protocol": "https",
@@ -4605,10 +4413,6 @@
 								},
 								"method": "GET",
 								"header": [],
-								"body": {
-									"mode": "raw",
-									"raw": ""
-								},
 								"url": {
 									"raw": "https://{{coreServer}}/{{organization}}/{{project}}/_apis/build/definitions/{{definitionId}}/resources?api-version={{api-version-preview}}",
 									"protocol": "https",
@@ -4698,10 +4502,6 @@
 								},
 								"method": "GET",
 								"header": [],
-								"body": {
-									"mode": "raw",
-									"raw": ""
-								},
 								"url": {
 									"raw": "https://{{coreServer}}/{{organization}}/{{project}}/_apis/build/settings?api-version={{api-version}}",
 									"protocol": "https",
@@ -4775,10 +4575,6 @@
 							"request": {
 								"method": "GET",
 								"header": [],
-								"body": {
-									"mode": "raw",
-									"raw": ""
-								},
 								"url": {
 									"raw": "https://{{coreServer}}/{{organization}}/{{project}}/_apis/sourceproviders?api-version={{api-version-preview}}",
 									"protocol": "https",
@@ -4861,10 +4657,6 @@
 								},
 								"method": "GET",
 								"header": [],
-								"body": {
-									"mode": "raw",
-									"raw": ""
-								},
 								"url": {
 									"raw": "https://{{coreServer}}/{{organization}}/{{project}}/_apis/build/status/{{definitionId}}?api-version={{api-version-preview}}",
 									"protocol": "https",
@@ -4984,10 +4776,6 @@
 								},
 								"method": "GET",
 								"header": [],
-								"body": {
-									"mode": "raw",
-									"raw": ""
-								},
 								"url": {
 									"raw": "https://{{coreServer}}/{{organization}}/{{project}}/_apis/build/builds/{{buildId}}/timeline?api-version={{api-version}}",
 									"protocol": "https",
@@ -5115,10 +4903,6 @@
 								},
 								"method": "GET",
 								"header": [],
-								"body": {
-									"mode": "raw",
-									"raw": ""
-								},
 								"url": {
 									"raw": "https://{{coreServer}}/{{organization}}/{{project}}/{{team}}/_apis/work/backlogs?api-version={{api-version-preview}}",
 									"protocol": "https",
@@ -5148,10 +4932,6 @@
 									"originalRequest": {
 										"method": "GET",
 										"header": [],
-										"body": {
-											"mode": "raw",
-											"raw": ""
-										},
 										"url": {
 											"raw": "https://{{coreServer}}/{{organization}}/{{project}}/{{team}}/_apis/work/backlogs?api-version={{api-version-preview}}",
 											"protocol": "https",
@@ -5175,7 +4955,7 @@
 										}
 									},
 									"_postman_previewlanguage": "json",
-									"header": null,
+									"header": [],
 									"cookie": [],
 									"body": "{\n    \"count\": 4,\n    \"value\": [\n        {\n            \"id\": \"Microsoft.EpicCategory\",\n            \"name\": \"Epics\",\n            \"rank\": 4,\n            \"workItemCountLimit\": 1000,\n            \"addPanelFields\": [\n                {\n                    \"referenceName\": \"System.Title\",\n                    \"name\": \"Title\",\n                    \"url\": \"https://dev.azure.com/fabrikam/_apis/wit/fields/System.Title\"\n                }\n            ],\n            \"columnFields\": [\n                {\n                    \"columnFieldReference\": {\n                        \"referenceName\": \"System.WorkItemType\",\n                        \"name\": \"Work Item Type\",\n                        \"url\": \"https://dev.azure.com/fabrikam/_apis/wit/fields/System.WorkItemType\"\n                    },\n                    \"width\": 100\n                },\n                {\n                    \"columnFieldReference\": {\n                        \"referenceName\": \"System.Title\",\n                        \"name\": \"Title\",\n                        \"url\": \"https://dev.azure.com/fabrikam/_apis/wit/fields/System.Title\"\n                    },\n                    \"width\": 400\n                },\n                {\n                    \"columnFieldReference\": {\n                        \"referenceName\": \"System.State\",\n                        \"name\": \"State\",\n                        \"url\": \"https://dev.azure.com/fabrikam/_apis/wit/fields/System.State\"\n                    },\n                    \"width\": 100\n                },\n                {\n                    \"columnFieldReference\": {\n                        \"referenceName\": \"Microsoft.VSTS.Scheduling.Effort\",\n                        \"name\": \"Effort\",\n                        \"url\": \"https://dev.azure.com/fabrikam/_apis/wit/fields/Microsoft.VSTS.Scheduling.Effort\"\n                    },\n                    \"width\": 50\n                },\n                {\n                    \"columnFieldReference\": {\n                        \"referenceName\": \"Microsoft.VSTS.Common.BusinessValue\",\n                        \"name\": \"Business Value\",\n                        \"url\": \"https://dev.azure.com/fabrikam/_apis/wit/fields/Microsoft.VSTS.Common.BusinessValue\"\n                    },\n                    \"width\": 50\n                },\n                {\n                    \"columnFieldReference\": {\n                        \"referenceName\": \"Microsoft.VSTS.Common.ValueArea\",\n                        \"name\": \"Value Area\",\n                        \"url\": \"https://dev.azure.com/fabrikam/_apis/wit/fields/Microsoft.VSTS.Common.ValueArea\"\n                    },\n                    \"width\": 100\n                },\n                {\n                    \"columnFieldReference\": {\n                        \"referenceName\": \"System.Tags\",\n                        \"name\": \"Tags\",\n                        \"url\": \"https://dev.azure.com/fabrikam/_apis/wit/fields/System.Tags\"\n                    },\n                    \"width\": 200\n                }\n            ],\n            \"workItemTypes\": [\n                {\n                    \"name\": \"Epic\",\n                    \"url\": \"https://dev.azure.com/fabrikam/Fabrikam-Fiber/_apis/wit/workItemTypes/Epic\"\n                }\n            ],\n            \"defaultWorkItemType\": {\n                \"name\": \"Epic\",\n                \"url\": \"https://dev.azure.com/fabrikam/Fabrikam-Fiber/_apis/wit/workItemTypes/Epic\"\n            },\n            \"color\": \"FF7B00\",\n            \"isHidden\": false,\n            \"type\": \"portfolio\"\n        },\n        {\n            \"id\": \"Microsoft.FeatureCategory\",\n            \"name\": \"Features\",\n            \"rank\": 3,\n            \"workItemCountLimit\": 1000,\n            \"addPanelFields\": [\n                {\n                    \"referenceName\": \"System.Title\",\n                    \"name\": \"Title\",\n                    \"url\": \"https://dev.azure.com/fabrikam/_apis/wit/fields/System.Title\"\n                }\n            ],\n            \"columnFields\": [\n                {\n                    \"columnFieldReference\": {\n                        \"referenceName\": \"System.WorkItemType\",\n                        \"name\": \"Work Item Type\",\n                        \"url\": \"https://dev.azure.com/fabrikam/_apis/wit/fields/System.WorkItemType\"\n                    },\n                    \"width\": 100\n                },\n                {\n                    \"columnFieldReference\": {\n                        \"referenceName\": \"System.Title\",\n                        \"name\": \"Title\",\n                        \"url\": \"https://dev.azure.com/fabrikam/_apis/wit/fields/System.Title\"\n                    },\n                    \"width\": 400\n                },\n                {\n                    \"columnFieldReference\": {\n                        \"referenceName\": \"System.State\",\n                        \"name\": \"State\",\n                        \"url\": \"https://dev.azure.com/fabrikam/_apis/wit/fields/System.State\"\n                    },\n                    \"width\": 100\n                },\n                {\n                    \"columnFieldReference\": {\n                        \"referenceName\": \"Microsoft.VSTS.Scheduling.Effort\",\n                        \"name\": \"Effort\",\n                        \"url\": \"https://dev.azure.com/fabrikam/_apis/wit/fields/Microsoft.VSTS.Scheduling.Effort\"\n                    },\n                    \"width\": 50\n                },\n                {\n                    \"columnFieldReference\": {\n                        \"referenceName\": \"Microsoft.VSTS.Common.BusinessValue\",\n                        \"name\": \"Business Value\",\n                        \"url\": \"https://dev.azure.com/fabrikam/_apis/wit/fields/Microsoft.VSTS.Common.BusinessValue\"\n                    },\n                    \"width\": 50\n                },\n                {\n                    \"columnFieldReference\": {\n                        \"referenceName\": \"Microsoft.VSTS.Common.ValueArea\",\n                        \"name\": \"Value Area\",\n                        \"url\": \"https://dev.azure.com/fabrikam/_apis/wit/fields/Microsoft.VSTS.Common.ValueArea\"\n                    },\n                    \"width\": 100\n                },\n                {\n                    \"columnFieldReference\": {\n                        \"referenceName\": \"System.Tags\",\n                        \"name\": \"Tags\",\n                        \"url\": \"https://dev.azure.com/fabrikam/_apis/wit/fields/System.Tags\"\n                    },\n                    \"width\": 200\n                }\n            ],\n            \"workItemTypes\": [\n                {\n                    \"name\": \"Feature\",\n                    \"url\": \"https://dev.azure.com/fabrikam/Fabrikam-Fiber/_apis/wit/workItemTypes/Feature\"\n                }\n            ],\n            \"defaultWorkItemType\": {\n                \"name\": \"Feature\",\n                \"url\": \"https://dev.azure.com/fabrikam/Fabrikam-Fiber/_apis/wit/workItemTypes/Feature\"\n            },\n            \"color\": \"773B93\",\n            \"isHidden\": false,\n            \"type\": \"portfolio\"\n        },\n        {\n            \"id\": \"Microsoft.RequirementCategory\",\n            \"name\": \"Stories\",\n            \"rank\": 2,\n            \"workItemCountLimit\": 1000,\n            \"addPanelFields\": [\n                {\n                    \"referenceName\": \"System.Title\",\n                    \"name\": \"Title\",\n                    \"url\": \"https://dev.azure.com/fabrikam/_apis/wit/fields/System.Title\"\n                }\n            ],\n            \"columnFields\": [\n                {\n                    \"columnFieldReference\": {\n                        \"referenceName\": \"System.WorkItemType\",\n                        \"name\": \"Work Item Type\",\n                        \"url\": \"https://dev.azure.com/fabrikam/_apis/wit/fields/System.WorkItemType\"\n                    },\n                    \"width\": 100\n                },\n                {\n                    \"columnFieldReference\": {\n                        \"referenceName\": \"System.Title\",\n                        \"name\": \"Title\",\n                        \"url\": \"https://dev.azure.com/fabrikam/_apis/wit/fields/System.Title\"\n                    },\n                    \"width\": 400\n                },\n                {\n                    \"columnFieldReference\": {\n                        \"referenceName\": \"System.State\",\n                        \"name\": \"State\",\n                        \"url\": \"https://dev.azure.com/fabrikam/_apis/wit/fields/System.State\"\n                    },\n                    \"width\": 100\n                },\n                {\n                    \"columnFieldReference\": {\n                        \"referenceName\": \"Microsoft.VSTS.Scheduling.StoryPoints\",\n                        \"name\": \"Story Points\",\n                        \"url\": \"https://dev.azure.com/fabrikam/_apis/wit/fields/Microsoft.VSTS.Scheduling.StoryPoints\"\n                    },\n                    \"width\": 50\n                },\n                {\n                    \"columnFieldReference\": {\n                        \"referenceName\": \"Microsoft.VSTS.Common.ValueArea\",\n                        \"name\": \"Value Area\",\n                        \"url\": \"https://dev.azure.com/fabrikam/_apis/wit/fields/Microsoft.VSTS.Common.ValueArea\"\n                    },\n                    \"width\": 100\n                },\n                {\n                    \"columnFieldReference\": {\n                        \"referenceName\": \"System.IterationPath\",\n                        \"name\": \"Iteration Path\",\n                        \"url\": \"https://dev.azure.com/fabrikam/_apis/wit/fields/System.IterationPath\"\n                    },\n                    \"width\": 200\n                },\n                {\n                    \"columnFieldReference\": {\n                        \"referenceName\": \"System.Tags\",\n                        \"name\": \"Tags\",\n                        \"url\": \"https://dev.azure.com/fabrikam/_apis/wit/fields/System.Tags\"\n                    },\n                    \"width\": 200\n                }\n            ],\n            \"workItemTypes\": [\n                {\n                    \"name\": \"User Story\",\n                    \"url\": \"https://dev.azure.com/fabrikam/Fabrikam-Fiber/_apis/wit/workItemTypes/User%20Story\"\n                },\n                {\n                    \"name\": \"Bug\",\n                    \"url\": \"https://dev.azure.com/fabrikam/Fabrikam-Fiber/_apis/wit/workItemTypes/Bug\"\n                }\n            ],\n            \"defaultWorkItemType\": {\n                \"name\": \"User Story\",\n                \"url\": \"https://dev.azure.com/fabrikam/Fabrikam-Fiber/_apis/wit/workItemTypes/User%20Story\"\n            },\n            \"color\": \"009CCC\",\n            \"isHidden\": false,\n            \"type\": \"requirement\"\n        },\n        {\n            \"id\": \"Microsoft.TaskCategory\",\n            \"name\": \"Tasks\",\n            \"rank\": 1,\n            \"workItemCountLimit\": 1000,\n            \"addPanelFields\": [\n                {\n                    \"referenceName\": \"System.Title\",\n                    \"name\": \"Title\",\n                    \"url\": \"https://dev.azure.com/fabrikam/_apis/wit/fields/System.Title\"\n                }\n            ],\n            \"columnFields\": [\n                {\n                    \"columnFieldReference\": {\n                        \"referenceName\": \"System.Title\",\n                        \"name\": \"Title\",\n                        \"url\": \"https://dev.azure.com/fabrikam/_apis/wit/fields/System.Title\"\n                    },\n                    \"width\": 400\n                },\n                {\n                    \"columnFieldReference\": {\n                        \"referenceName\": \"System.State\",\n                        \"name\": \"State\",\n                        \"url\": \"https://dev.azure.com/fabrikam/_apis/wit/fields/System.State\"\n                    },\n                    \"width\": 100\n                },\n                {\n                    \"columnFieldReference\": {\n                        \"referenceName\": \"System.AssignedTo\",\n                        \"name\": \"Assigned To\",\n                        \"url\": \"https://dev.azure.com/fabrikam/_apis/wit/fields/System.AssignedTo\"\n                    },\n                    \"width\": 100\n                },\n                {\n                    \"columnFieldReference\": {\n                        \"referenceName\": \"Microsoft.VSTS.Scheduling.RemainingWork\",\n                        \"name\": \"Remaining Work\",\n                        \"url\": \"https://dev.azure.com/fabrikam/_apis/wit/fields/Microsoft.VSTS.Scheduling.RemainingWork\"\n                    },\n                    \"width\": 50\n                }\n            ],\n            \"workItemTypes\": [\n                {\n                    \"name\": \"Task\",\n                    \"url\": \"https://dev.azure.com/fabrikam/Fabrikam-Fiber/_apis/wit/workItemTypes/Task\"\n                }\n            ],\n            \"defaultWorkItemType\": {\n                \"name\": \"Task\",\n                \"url\": \"https://dev.azure.com/fabrikam/Fabrikam-Fiber/_apis/wit/workItemTypes/Task\"\n            },\n            \"color\": \"F2CB1D\",\n            \"isHidden\": false,\n            \"type\": \"task\"\n        }\n    ]\n}"
 								}
@@ -5201,10 +4981,6 @@
 								},
 								"method": "GET",
 								"header": [],
-								"body": {
-									"mode": "raw",
-									"raw": ""
-								},
 								"url": {
 									"raw": "https://{{coreServer}}/{{organization}}/{{project}}/{{team}}/_apis/work/backlogs/Microsoft.EpicCategory?api-version={{api-version-preview}}",
 									"protocol": "https",
@@ -5235,10 +5011,6 @@
 									"originalRequest": {
 										"method": "GET",
 										"header": [],
-										"body": {
-											"mode": "raw",
-											"raw": ""
-										},
 										"url": {
 											"raw": "https://{{coreServer}}/{{organization}}/{{project}}/{{team}}/_apis/work/backlogs/Microsoft.EpicCategory?api-version={{api-version-preview}}",
 											"protocol": "https",
@@ -5263,7 +5035,7 @@
 										}
 									},
 									"_postman_previewlanguage": "json",
-									"header": null,
+									"header": [],
 									"cookie": [],
 									"body": "{\n    \"id\": \"Microsoft.FeatureCategory\",\n    \"name\": \"Features\",\n    \"rank\": 3,\n    \"workItemCountLimit\": 1000,\n    \"addPanelFields\": [\n        {\n            \"referenceName\": \"System.Title\",\n            \"name\": \"Title\",\n            \"url\": \"https://dev.azure.com/fabrikam/_apis/wit/fields/System.Title\"\n        }\n    ],\n    \"columnFields\": [\n        {\n            \"columnFieldReference\": {\n                \"referenceName\": \"System.WorkItemType\",\n                \"name\": \"Work Item Type\",\n                \"url\": \"https://dev.azure.com/fabrikam/_apis/wit/fields/System.WorkItemType\"\n            },\n            \"width\": 100\n        },\n        {\n            \"columnFieldReference\": {\n                \"referenceName\": \"System.Title\",\n                \"name\": \"Title\",\n                \"url\": \"https://dev.azure.com/fabrikam/_apis/wit/fields/System.Title\"\n            },\n            \"width\": 400\n        },\n        {\n            \"columnFieldReference\": {\n                \"referenceName\": \"System.State\",\n                \"name\": \"State\",\n                \"url\": \"https://dev.azure.com/fabrikam/_apis/wit/fields/System.State\"\n            },\n            \"width\": 100\n        },\n        {\n            \"columnFieldReference\": {\n                \"referenceName\": \"Microsoft.VSTS.Scheduling.Effort\",\n                \"name\": \"Effort\",\n                \"url\": \"https://dev.azure.com/fabrikam/_apis/wit/fields/Microsoft.VSTS.Scheduling.Effort\"\n            },\n            \"width\": 50\n        },\n        {\n            \"columnFieldReference\": {\n                \"referenceName\": \"Microsoft.VSTS.Common.BusinessValue\",\n                \"name\": \"Business Value\",\n                \"url\": \"https://dev.azure.com/fabrikam/_apis/wit/fields/Microsoft.VSTS.Common.BusinessValue\"\n            },\n            \"width\": 50\n        },\n        {\n            \"columnFieldReference\": {\n                \"referenceName\": \"Microsoft.VSTS.Common.ValueArea\",\n                \"name\": \"Value Area\",\n                \"url\": \"https://dev.azure.com/fabrikam/_apis/wit/fields/Microsoft.VSTS.Common.ValueArea\"\n            },\n            \"width\": 100\n        },\n        {\n            \"columnFieldReference\": {\n                \"referenceName\": \"System.Tags\",\n                \"name\": \"Tags\",\n                \"url\": \"https://dev.azure.com/fabrikam/_apis/wit/fields/System.Tags\"\n            },\n            \"width\": 200\n        }\n    ],\n    \"workItemTypes\": [\n        {\n            \"name\": \"Feature\",\n            \"url\": \"https://dev.azure.com/fabrikam/Fabrikam-Fiber/_apis/wit/workItemTypes/Feature\"\n        }\n    ],\n    \"defaultWorkItemType\": {\n        \"name\": \"Feature\",\n        \"url\": \"https://dev.azure.com/fabrikam/Fabrikam-Fiber/_apis/wit/workItemTypes/Feature\"\n    },\n    \"color\": \"773B93\",\n    \"isHidden\": false,\n    \"type\": \"portfolio\"\n}"
 								}
@@ -5306,10 +5078,6 @@
 								},
 								"method": "GET",
 								"header": [],
-								"body": {
-									"mode": "raw",
-									"raw": ""
-								},
 								"url": {
 									"raw": "https://{{coreServer}}/{{organization}}/{{project}}/{{team}}/_apis/work/backlogs/Microsoft.EpicCategory/workItems?api-version={{api-version-preview}}",
 									"protocol": "https",
@@ -5341,10 +5109,6 @@
 									"originalRequest": {
 										"method": "GET",
 										"header": [],
-										"body": {
-											"mode": "raw",
-											"raw": ""
-										},
 										"url": {
 											"raw": "https://{{coreServer}}/{{organization}}/{{project}}/{{team}}/_apis/work/backlogs/Microsoft.EpicCategory/workItems?api-version={{api-version-preview}}",
 											"protocol": "https",
@@ -5370,7 +5134,7 @@
 										}
 									},
 									"_postman_previewlanguage": "json",
-									"header": null,
+									"header": [],
 									"cookie": [],
 									"body": "{\n    \"workItems\": [\n        {\n            \"rel\": null,\n            \"source\": null,\n            \"target\": {\n                \"id\": 50\n            }\n        },\n        {\n            \"rel\": null,\n            \"source\": null,\n            \"target\": {\n                \"id\": 49\n            }\n        }\n    ]\n}"
 								}
@@ -5396,10 +5160,6 @@
 								},
 								"method": "GET",
 								"header": [],
-								"body": {
-									"mode": "raw",
-									"raw": ""
-								},
 								"url": {
 									"raw": "https://{{coreServer}}/{{organization}}/{{project}}/{{team}}/_apis/work/backlogconfiguration/?api-version={{api-version-preview}}",
 									"protocol": "https",
@@ -5430,10 +5190,6 @@
 									"originalRequest": {
 										"method": "GET",
 										"header": [],
-										"body": {
-											"mode": "raw",
-											"raw": ""
-										},
 										"url": {
 											"raw": "https://{{coreServer}}/{{organization}}/{{project}}/{{team}}/_apis/work/backlogconfiguration/?api-version={{api-version-preview}}",
 											"protocol": "https",
@@ -5458,7 +5214,7 @@
 										}
 									},
 									"_postman_previewlanguage": "json",
-									"header": null,
+									"header": [],
 									"cookie": [],
 									"body": "{\n    \"taskBacklog\": {\n        \"id\": \"Microsoft.TaskCategory\",\n        \"name\": \"Tasks\",\n        \"rank\": 1,\n        \"workItemCountLimit\": 1000,\n        \"addPanelFields\": [\n            {\n                \"referenceName\": \"System.Title\",\n                \"name\": \"Title\",\n                \"url\": \"https://dev.azure.com/fabrikam/_apis/wit/fields\"\n            }\n        ],\n        \"columnFields\": [\n            {\n                \"columnFieldReference\": {\n                    \"referenceName\": \"System.Title\",\n                    \"name\": \"Title\",\n                    \"url\": \"https://dev.azure.com/fabrikam/_apis/wit/fields\"\n                },\n                \"width\": 400\n            },\n            {\n                \"columnFieldReference\": {\n                    \"referenceName\": \"System.State\",\n                    \"name\": \"State\",\n                    \"url\": \"https://dev.azure.com/fabrikam/_apis/wit/fields\"\n                },\n                \"width\": 100\n            },\n            {\n                \"columnFieldReference\": {\n                    \"referenceName\": \"System.AssignedTo\",\n                    \"name\": \"Assigned To\",\n                    \"url\": \"https://dev.azure.com/fabrikam/_apis/wit/fields\"\n                },\n                \"width\": 100\n            },\n            {\n                \"columnFieldReference\": {\n                    \"referenceName\": \"Microsoft.VSTS.Scheduling.RemainingWork\",\n                    \"name\": \"Remaining Work\",\n                    \"url\": \"https://dev.azure.com/fabrikam/_apis/wit/fields\"\n                },\n                \"width\": 50\n            }\n        ],\n        \"workItemTypes\": [\n            {\n                \"name\": \"Task\",\n                \"url\": \"https://dev.azure.com/fabrikam/c3b6da71-2b4a-497b-9137-ba8695203871/_apis/wit/workItemTypes/Task\"\n            }\n        ],\n        \"defaultWorkItemType\": {\n            \"name\": \"Task\",\n            \"url\": \"https://dev.azure.com/fabrikam/c3b6da71-2b4a-497b-9137-ba8695203871/_apis/wit/workItemTypes/Task\"\n        },\n        \"color\": \"F2CB1D\"\n    },\n    \"requirementBacklog\": {\n        \"id\": \"Microsoft.RequirementCategory\",\n        \"name\": \"Stories\",\n        \"rank\": 2,\n        \"workItemCountLimit\": 1000,\n        \"addPanelFields\": [\n            {\n                \"referenceName\": \"System.Title\",\n                \"name\": \"Title\",\n                \"url\": \"https://dev.azure.com/fabrikam/_apis/wit/fields\"\n            }\n        ],\n        \"columnFields\": [\n            {\n                \"columnFieldReference\": {\n                    \"referenceName\": \"System.WorkItemType\",\n                    \"name\": \"Work Item Type\",\n                    \"url\": \"https://dev.azure.com/fabrikam/_apis/wit/fields\"\n                },\n                \"width\": 100\n            },\n            {\n                \"columnFieldReference\": {\n                    \"referenceName\": \"System.Title\",\n                    \"name\": \"Title\",\n                    \"url\": \"https://dev.azure.com/fabrikam/_apis/wit/fields\"\n                },\n                \"width\": 400\n            },\n            {\n                \"columnFieldReference\": {\n                    \"referenceName\": \"System.State\",\n                    \"name\": \"State\",\n                    \"url\": \"https://dev.azure.com/fabrikam/_apis/wit/fields\"\n                },\n                \"width\": 100\n            },\n            {\n                \"columnFieldReference\": {\n                    \"referenceName\": \"Microsoft.VSTS.Scheduling.StoryPoints\",\n                    \"name\": \"Story Points\",\n                    \"url\": \"https://dev.azure.com/fabrikam/_apis/wit/fields\"\n                },\n                \"width\": 50\n            },\n            {\n                \"columnFieldReference\": {\n                    \"referenceName\": \"Microsoft.VSTS.Common.ValueArea\",\n                    \"name\": \"Value Area\",\n                    \"url\": \"https://dev.azure.com/fabrikam/_apis/wit/fields\"\n                },\n                \"width\": 100\n            },\n            {\n                \"columnFieldReference\": {\n                    \"referenceName\": \"System.IterationPath\",\n                    \"name\": \"Iteration Path\",\n                    \"url\": \"https://dev.azure.com/fabrikam/_apis/wit/fields\"\n                },\n                \"width\": 200\n            },\n            {\n                \"columnFieldReference\": {\n                    \"referenceName\": \"System.Tags\",\n                    \"name\": \"Tags\",\n                    \"url\": \"https://dev.azure.com/fabrikam/_apis/wit/fields\"\n                },\n                \"width\": 200\n            }\n        ],\n        \"workItemTypes\": [\n            {\n                \"name\": \"Ticket\",\n                \"url\": \"https://dev.azure.com/fabrikam/c3b6da71-2b4a-497b-9137-ba8695203871/_apis/wit/workItemTypes/Ticket\"\n            },\n            {\n                \"name\": \"User Story\",\n                \"url\": \"https://dev.azure.com/fabrikam/c3b6da71-2b4a-497b-9137-ba8695203871/_apis/wit/workItemTypes/User%20Story\"\n            }\n        ],\n        \"defaultWorkItemType\": {\n            \"name\": \"User Story\",\n            \"url\": \"https://dev.azure.com/fabrikam/c3b6da71-2b4a-497b-9137-ba8695203871/_apis/wit/workItemTypes/User%20Story\"\n        },\n        \"color\": \"009CCC\"\n    },\n    \"portfolioBacklogs\": [\n        {\n            \"id\": \"Microsoft.EpicCategory\",\n            \"name\": \"My level\",\n            \"rank\": 4,\n            \"workItemCountLimit\": 1000,\n            \"addPanelFields\": [\n                {\n                    \"referenceName\": \"System.Title\",\n                    \"name\": \"Title\",\n                    \"url\": \"https://dev.azure.com/fabrikam/_apis/wit/fields\"\n                }\n            ],\n            \"columnFields\": [\n                {\n                    \"columnFieldReference\": {\n                        \"referenceName\": \"System.WorkItemType\",\n                        \"name\": \"Work Item Type\",\n                        \"url\": \"https://dev.azure.com/fabrikam/_apis/wit/fields\"\n                    },\n                    \"width\": 100\n                },\n                {\n                    \"columnFieldReference\": {\n                        \"referenceName\": \"System.Title\",\n                        \"name\": \"Title\",\n                        \"url\": \"https://dev.azure.com/fabrikam/_apis/wit/fields\"\n                    },\n                    \"width\": 400\n                },\n                {\n                    \"columnFieldReference\": {\n                        \"referenceName\": \"System.State\",\n                        \"name\": \"State\",\n                        \"url\": \"https://dev.azure.com/fabrikam/_apis/wit/fields\"\n                    },\n                    \"width\": 100\n                },\n                {\n                    \"columnFieldReference\": {\n                        \"referenceName\": \"Microsoft.VSTS.Scheduling.Effort\",\n                        \"name\": \"Effort\",\n                        \"url\": \"https://dev.azure.com/fabrikam/_apis/wit/fields\"\n                    },\n                    \"width\": 50\n                },\n                {\n                    \"columnFieldReference\": {\n                        \"referenceName\": \"Microsoft.VSTS.Common.BusinessValue\",\n                        \"name\": \"Business Value\",\n                        \"url\": \"https://dev.azure.com/fabrikam/_apis/wit/fields\"\n                    },\n                    \"width\": 50\n                },\n                {\n                    \"columnFieldReference\": {\n                        \"referenceName\": \"Microsoft.VSTS.Common.ValueArea\",\n                        \"name\": \"Value Area\",\n                        \"url\": \"https://dev.azure.com/fabrikam/_apis/wit/fields\"\n                    },\n                    \"width\": 100\n                },\n                {\n                    \"columnFieldReference\": {\n                        \"referenceName\": \"System.Tags\",\n                        \"name\": \"Tags\",\n                        \"url\": \"https://dev.azure.com/fabrikam/_apis/wit/fields\"\n                    },\n                    \"width\": 200\n                }\n            ],\n            \"workItemTypes\": [\n                {\n                    \"name\": \"Epic\",\n                    \"url\": \"https://dev.azure.com/fabrikam/c3b6da71-2b4a-497b-9137-ba8695203871/_apis/wit/workItemTypes/Epic\"\n                }\n            ],\n            \"defaultWorkItemType\": {\n                \"name\": \"Epic\",\n                \"url\": \"https://dev.azure.com/fabrikam/c3b6da71-2b4a-497b-9137-ba8695203871/_apis/wit/workItemTypes/Epic\"\n            },\n            \"color\": \"60af49\"\n        },\n        {\n            \"id\": \"Microsoft.FeatureCategory\",\n            \"name\": \"Features\",\n            \"rank\": 3,\n            \"workItemCountLimit\": 1000,\n            \"addPanelFields\": [\n                {\n                    \"referenceName\": \"System.Title\",\n                    \"name\": \"Title\",\n                    \"url\": \"https://dev.azure.com/fabrikam/_apis/wit/fields\"\n                }\n            ],\n            \"columnFields\": [\n                {\n                    \"columnFieldReference\": {\n                        \"referenceName\": \"System.WorkItemType\",\n                        \"name\": \"Work Item Type\",\n                        \"url\": \"https://dev.azure.com/fabrikam/_apis/wit/fields\"\n                    },\n                    \"width\": 100\n                },\n                {\n                    \"columnFieldReference\": {\n                        \"referenceName\": \"System.Title\",\n                        \"name\": \"Title\",\n                        \"url\": \"https://dev.azure.com/fabrikam/_apis/wit/fields\"\n                    },\n                    \"width\": 400\n                },\n                {\n                    \"columnFieldReference\": {\n                        \"referenceName\": \"System.State\",\n                        \"name\": \"State\",\n                        \"url\": \"https://dev.azure.com/fabrikam/_apis/wit/fields\"\n                    },\n                    \"width\": 100\n                },\n                {\n                    \"columnFieldReference\": {\n                        \"referenceName\": \"Microsoft.VSTS.Scheduling.Effort\",\n                        \"name\": \"Effort\",\n                        \"url\": \"https://dev.azure.com/fabrikam/_apis/wit/fields\"\n                    },\n                    \"width\": 50\n                },\n                {\n                    \"columnFieldReference\": {\n                        \"referenceName\": \"Microsoft.VSTS.Common.BusinessValue\",\n                        \"name\": \"Business Value\",\n                        \"url\": \"https://dev.azure.com/fabrikam/_apis/wit/fields\"\n                    },\n                    \"width\": 50\n                },\n                {\n                    \"columnFieldReference\": {\n                        \"referenceName\": \"Microsoft.VSTS.Common.ValueArea\",\n                        \"name\": \"Value Area\",\n                        \"url\": \"https://dev.azure.com/fabrikam/_apis/wit/fields\"\n                    },\n                    \"width\": 100\n                },\n                {\n                    \"columnFieldReference\": {\n                        \"referenceName\": \"System.Tags\",\n                        \"name\": \"Tags\",\n                        \"url\": \"https://dev.azure.com/fabrikam/_apis/wit/fields\"\n                    },\n                    \"width\": 200\n                }\n            ],\n            \"workItemTypes\": [\n                {\n                    \"name\": \"Feature\",\n                    \"url\": \"https://dev.azure.com/fabrikam/c3b6da71-2b4a-497b-9137-ba8695203871/_apis/wit/workItemTypes/Feature\"\n                }\n            ],\n            \"defaultWorkItemType\": {\n                \"name\": \"Feature\",\n                \"url\": \"https://dev.azure.com/fabrikam/c3b6da71-2b4a-497b-9137-ba8695203871/_apis/wit/workItemTypes/Feature\"\n            },\n            \"color\": \"773B93\"\n        }\n    ],\n    \"workItemTypeMappedStates\": [\n        {\n            \"workItemTypeName\": \"User Story\",\n            \"states\": {\n                \"New\": \"Proposed\",\n                \"Active\": \"InProgress\",\n                \"Resolved\": \"InProgress\",\n                \"In Progress\": \"InProgress\",\n                \"Closed\": \"Completed\"\n            }\n        },\n        {\n            \"workItemTypeName\": \"Ticket\",\n            \"states\": {\n                \"New\": \"Proposed\",\n                \"Active\": \"InProgress\",\n                \"Closed\": \"Completed\"\n            }\n        },\n        {\n            \"workItemTypeName\": \"Feature\",\n            \"states\": {\n                \"New\": \"Proposed\",\n                \"Active\": \"InProgress\",\n                \"Resolved\": \"InProgress\",\n                \"Closed\": \"Completed\"\n            }\n        },\n        {\n            \"workItemTypeName\": \"Epic\",\n            \"states\": {\n                \"New\": \"Proposed\",\n                \"Active\": \"InProgress\",\n                \"Closed\": \"Completed\"\n            }\n        },\n        {\n            \"workItemTypeName\": \"Task\",\n            \"states\": {\n                \"New\": \"Proposed\",\n                \"Active\": \"InProgress\",\n                \"Closed\": \"Completed\"\n            }\n        },\n        {\n            \"workItemTypeName\": \"Bug\",\n            \"states\": {\n                \"Proposed\": \"Proposed\",\n                \"Testing\": \"InProgress\",\n                \"Resolved\": \"Resolved\",\n                \"Closed\": \"Completed\"\n            }\n        }\n    ],\n    \"backlogFields\": {\n        \"typeFields\": {\n            \"Order\": \"Microsoft.VSTS.Common.StackRank\",\n            \"Effort\": \"Microsoft.VSTS.Scheduling.StoryPoints\",\n            \"RemainingWork\": \"Microsoft.VSTS.Scheduling.RemainingWork\",\n            \"Activity\": \"Microsoft.VSTS.Common.Activity\"\n        }\n    },\n    \"bugsBehavior\": \"asTasks\",\n    \"hiddenBacklogs\": [\n        \"Microsoft.EpicCategory\"\n    ],\n    \"url\": \"https://dev.azure.com/fabrikam/c3b6da71-2b4a-497b-9137-ba8695203871/_apis/work/backlogconfiguration\"\n}"
 								}
@@ -5490,10 +5246,6 @@
 								},
 								"method": "GET",
 								"header": [],
-								"body": {
-									"mode": "raw",
-									"raw": ""
-								},
 								"url": {
 									"raw": "https://{{coreServer}}/{{organization}}/{{project}}/_apis/work/boardcolumns?api-version={{api-version}}",
 									"protocol": "https",
@@ -5544,10 +5296,6 @@
 								},
 								"method": "GET",
 								"header": [],
-								"body": {
-									"mode": "raw",
-									"raw": ""
-								},
 								"url": {
 									"raw": "https://{{coreServer}}/{{organization}}/{{project}}/{{team}}/_apis/work/boardcolumns?api-version={{api-version}}",
 									"protocol": "https",
@@ -5611,10 +5359,6 @@
 								},
 								"method": "GET",
 								"header": [],
-								"body": {
-									"mode": "raw",
-									"raw": ""
-								},
 								"url": {
 									"raw": "https://{{coreServer}}/{{organization}}/{{project}}/_apis/wit/workitems/{{workItemId}}?api-version={{api-version}}",
 									"protocol": "https",
@@ -5656,10 +5400,6 @@
 									"originalRequest": {
 										"method": "GET",
 										"header": [],
-										"body": {
-											"mode": "raw",
-											"raw": ""
-										},
 										"url": {
 											"raw": "https://{{coreServer}}/{{organization}}/{{project}}/_apis/wit/workitems/{{workItemId}}?api-version={{api-version}}&asOf=11/21/2018",
 											"protocol": "https",
@@ -5772,10 +5512,6 @@
 									"originalRequest": {
 										"method": "GET",
 										"header": [],
-										"body": {
-											"mode": "raw",
-											"raw": ""
-										},
 										"url": {
 											"raw": "https://{{coreServer}}/{{organization}}/{{project}}/_apis/wit/workitems/{{workItemId}}?api-version={{api-version}}",
 											"protocol": "https",
@@ -5920,10 +5656,6 @@
 								},
 								"method": "GET",
 								"header": [],
-								"body": {
-									"mode": "raw",
-									"raw": ""
-								},
 								"url": {
 									"raw": "https://{{coreServer}}/{{organization}}/{{project}}/_apis/wit/workitems/{{workItemId}}/comments?api-version={{api-version-preview2}}",
 									"protocol": "https",
@@ -5972,10 +5704,6 @@
 									"originalRequest": {
 										"method": "GET",
 										"header": [],
-										"body": {
-											"mode": "raw",
-											"raw": ""
-										},
 										"url": {
 											"raw": "https://{{coreServer}}/{{organization}}/{{project}}/_apis/wit/workitems/{{workItemId}}/comments?api-version={{api-version-preview2}}",
 											"protocol": "https",
@@ -6474,10 +6202,6 @@
 								},
 								"method": "GET",
 								"header": [],
-								"body": {
-									"mode": "raw",
-									"raw": ""
-								},
 								"url": {
 									"raw": "https://{{coreServer}}/{{organization}}/{{project}}/_apis/wit/workitems/{{workItemId}}?api-version={{api-version}}&$expand=relations",
 									"protocol": "https",
@@ -6518,10 +6242,6 @@
 									"originalRequest": {
 										"method": "GET",
 										"header": [],
-										"body": {
-											"mode": "raw",
-											"raw": ""
-										},
 										"url": {
 											"raw": "https://{{coreServer}}/{{organization}}/{{project}}/_apis/wit/workitems/{{workItemId}}?api-version={{api-version}}&$expand=relations",
 											"protocol": "https",
@@ -6677,10 +6397,6 @@
 								},
 								"method": "GET",
 								"header": [],
-								"body": {
-									"mode": "raw",
-									"raw": ""
-								},
 								"url": {
 									"raw": "https://{{coreServer}}/{{organization}}/_apis/wit/workitemrelationtypes?api-version={{api-version}}",
 									"protocol": "https",
@@ -6708,10 +6424,6 @@
 									"originalRequest": {
 										"method": "GET",
 										"header": [],
-										"body": {
-											"mode": "raw",
-											"raw": ""
-										},
 										"url": {
 											"raw": "https://{{coreServer}}/{{organization}}/_apis/wit/workitemrelationtypes?api-version={{api-version}}",
 											"protocol": "https",
@@ -6861,10 +6573,6 @@
 								},
 								"method": "GET",
 								"header": [],
-								"body": {
-									"mode": "raw",
-									"raw": ""
-								},
 								"url": {
 									"raw": "https://{{coreServer}}/{{organization}}/{{project}}/_apis/wit/workitems/{{workItemId}}?api-version={{api-version}}&$expand=fields",
 									"protocol": "https",
@@ -6940,10 +6648,6 @@
 								},
 								"method": "GET",
 								"header": [],
-								"body": {
-									"mode": "raw",
-									"raw": ""
-								},
 								"url": {
 									"raw": "https://{{coreServer}}/{{organization}}/{{project}}/_apis/wit/workitems/{{workItemId}}?api-version={{api-version}}",
 									"protocol": "https",
@@ -7012,10 +6716,6 @@
 								},
 								"method": "GET",
 								"header": [],
-								"body": {
-									"mode": "raw",
-									"raw": ""
-								},
 								"url": {
 									"raw": "https://{{coreServer}}/{{organization}}/_apis/projects?api-version={{api-version}}",
 									"protocol": "https",
@@ -7058,10 +6758,6 @@
 								},
 								"method": "GET",
 								"header": [],
-								"body": {
-									"mode": "raw",
-									"raw": ""
-								},
 								"url": {
 									"raw": "https://{{coreServer}}/{{organization}}/_apis/projects?api-version={{api-version}}&stateFilter=all&getDefaultTeamImageUrl=true",
 									"protocol": "https",
@@ -7128,10 +6824,6 @@
 								},
 								"method": "GET",
 								"header": [],
-								"body": {
-									"mode": "raw",
-									"raw": ""
-								},
 								"url": {
 									"raw": "https://{{coreServer}}/{{organization}}/_apis/projects/{{project}}?api-version={{api-version}}",
 									"protocol": "https",
@@ -7175,10 +6867,6 @@
 								},
 								"method": "GET",
 								"header": [],
-								"body": {
-									"mode": "raw",
-									"raw": ""
-								},
 								"url": {
 									"raw": "https://{{coreServer}}/{{organization}}/_apis/projects/{{project}}?api-version={{api-version}}&includeCapabilities=true&includeHistory=true",
 									"protocol": "https",
@@ -7232,10 +6920,6 @@
 								},
 								"method": "GET",
 								"header": [],
-								"body": {
-									"mode": "raw",
-									"raw": ""
-								},
 								"url": {
 									"raw": "https://{{coreServer}}/{{organization}}/_apis/projects/{{projectId}}/properties?api-version={{api-version-preview}}",
 									"protocol": "https",
@@ -7280,10 +6964,6 @@
 								},
 								"method": "GET",
 								"header": [],
-								"body": {
-									"mode": "raw",
-									"raw": ""
-								},
 								"url": {
 									"raw": "https://{{coreServer}}/{{organization}}/_apis/projects/{{projectId}}/properties?api-version={{api-version-preview}}&keys=System.CurrentProcessTemplateId,*SourceControl*",
 									"protocol": "https",
@@ -7537,6 +7217,259 @@
 					"name": "Processes",
 					"item": [
 						{
+							"name": "States",
+							"item": [
+								{
+									"name": "Get a state by ID",
+									"request": {
+										"auth": {
+											"type": "basic",
+											"basic": [
+												{
+													"key": "username",
+													"value": "Basic",
+													"type": "string"
+												},
+												{
+													"key": "password",
+													"value": "{{AccessToken}}",
+													"type": "string"
+												}
+											]
+										},
+										"method": "GET",
+										"header": [],
+										"url": {
+											"raw": "https://{{coreServer}}/{{organization}}/_apis/work/processes/{{processId}}/workItemTypes/{{workItemTypeName}}/states/{{stateId}}?api-version={{api-version-preview}}",
+											"protocol": "https",
+											"host": [
+												"{{coreServer}}"
+											],
+											"path": [
+												"{{organization}}",
+												"_apis",
+												"work",
+												"processes",
+												"{{processId}}",
+												"workItemTypes",
+												"{{workItemTypeName}}",
+												"states",
+												"{{stateId}}"
+											],
+											"query": [
+												{
+													"key": "api-version",
+													"value": "{{api-version-preview}}"
+												}
+											]
+										}
+									},
+									"response": []
+								},
+								{
+									"name": "Create a state",
+									"request": {
+										"auth": {
+											"type": "basic",
+											"basic": [
+												{
+													"key": "username",
+													"value": "Basic",
+													"type": "string"
+												},
+												{
+													"key": "password",
+													"value": "{{AccessToken}}",
+													"type": "string"
+												}
+											]
+										},
+										"method": "POST",
+										"header": [
+											{
+												"key": "Content-Type",
+												"name": "Content-Type",
+												"value": "application/json",
+												"type": "text"
+											}
+										],
+										"body": {
+											"mode": "raw",
+											"raw": "{\n    \"name\": \"New\",\n    \"color\": \"b2b2b2\",\n    \"stateCategory\": \"Proposed\",\n}"
+										},
+										"url": {
+											"raw": "https://{{coreServer}}/{{organization}}/_apis/work/processes/{{processId}}/workItemTypes/{{workItemTypeName}}/states?api-version={{api-version-preview}}",
+											"protocol": "https",
+											"host": [
+												"{{coreServer}}"
+											],
+											"path": [
+												"{{organization}}",
+												"_apis",
+												"work",
+												"processes",
+												"{{processId}}",
+												"workItemTypes",
+												"{{workItemTypeName}}",
+												"states"
+											],
+											"query": [
+												{
+													"key": "api-version",
+													"value": "{{api-version-preview}}"
+												}
+											]
+										}
+									},
+									"response": []
+								},
+								{
+									"name": "List all states",
+									"request": {
+										"auth": {
+											"type": "basic",
+											"basic": [
+												{
+													"key": "username",
+													"value": "Basic",
+													"type": "string"
+												},
+												{
+													"key": "password",
+													"value": "{{AccessToken}}",
+													"type": "string"
+												}
+											]
+										},
+										"method": "GET",
+										"header": [],
+										"url": {
+											"raw": "https://{{coreServer}}/{{organization}}/_apis/work/processes/{{processId}}/workItemTypes/{{workItemTypeName}}/states?api-version={{api-version-preview}}",
+											"protocol": "https",
+											"host": [
+												"{{coreServer}}"
+											],
+											"path": [
+												"{{organization}}",
+												"_apis",
+												"work",
+												"processes",
+												"{{processId}}",
+												"workItemTypes",
+												"{{workItemTypeName}}",
+												"states"
+											],
+											"query": [
+												{
+													"key": "api-version",
+													"value": "{{api-version-preview}}"
+												}
+											]
+										}
+									},
+									"response": []
+								}
+							],
+							"description": "The list of states defined in a Process and Work Item Type",
+							"_postman_isSubFolder": true
+						},
+						{
+							"name": "Work Item Types",
+							"item": [
+								{
+									"name": "Get a work item type by ID",
+									"request": {
+										"auth": {
+											"type": "basic",
+											"basic": [
+												{
+													"key": "username",
+													"value": "Basic",
+													"type": "string"
+												},
+												{
+													"key": "password",
+													"value": "{{AccessToken}}",
+													"type": "string"
+												}
+											]
+										},
+										"method": "GET",
+										"header": [],
+										"url": {
+											"raw": "https://{{coreServer}}/{{organization}}/_apis/work/processes/{{processId}}/workitemtypes/{{workItemTypeName}}?api-version={{api-version-preview2}}",
+											"protocol": "https",
+											"host": [
+												"{{coreServer}}"
+											],
+											"path": [
+												"{{organization}}",
+												"_apis",
+												"work",
+												"processes",
+												"{{processId}}",
+												"workitemtypes",
+												"{{workItemTypeName}}"
+											],
+											"query": [
+												{
+													"key": "api-version",
+													"value": "{{api-version-preview2}}"
+												}
+											]
+										}
+									},
+									"response": []
+								},
+								{
+									"name": "List all work item types",
+									"request": {
+										"auth": {
+											"type": "basic",
+											"basic": [
+												{
+													"key": "username",
+													"value": "Basic",
+													"type": "string"
+												},
+												{
+													"key": "password",
+													"value": "{{AccessToken}}",
+													"type": "string"
+												}
+											]
+										},
+										"method": "GET",
+										"header": [],
+										"url": {
+											"raw": "https://{{coreServer}}/{{organization}}/_apis/work/processes/{{processId}}/workitemtypes?api-version={{api-version-preview2}}",
+											"protocol": "https",
+											"host": [
+												"{{coreServer}}"
+											],
+											"path": [
+												"{{organization}}",
+												"_apis",
+												"work",
+												"processes",
+												"{{processId}}",
+												"workitemtypes"
+											],
+											"query": [
+												{
+													"key": "api-version",
+													"value": "{{api-version-preview2}}"
+												}
+											]
+										}
+									},
+									"response": []
+								}
+							],
+							"description": "Manage the list of Work Item Types associated to a given Process",
+							"_postman_isSubFolder": true
+						},
+						{
 							"name": "Get a process by ID",
 							"request": {
 								"auth": {
@@ -7556,10 +7489,6 @@
 								},
 								"method": "GET",
 								"header": [],
-								"body": {
-									"mode": "raw",
-									"raw": ""
-								},
 								"url": {
 									"raw": "https://{{coreServer}}/{{organization}}/_apis/process/processes/{{processId}}?api-version={{api-version}}",
 									"protocol": "https",
@@ -7604,10 +7533,6 @@
 								},
 								"method": "GET",
 								"header": [],
-								"body": {
-									"mode": "raw",
-									"raw": ""
-								},
 								"url": {
 									"raw": "https://{{coreServer}}/{{organization}}/_apis/process/processes?api-version={{api-version}}",
 									"protocol": "https",
@@ -7657,10 +7582,6 @@
 								},
 								"method": "GET",
 								"header": [],
-								"body": {
-									"mode": "raw",
-									"raw": ""
-								},
 								"url": {
 									"raw": "https://{{coreServer}}/{{organization}}/_apis/projects/{{projectId}}/teams/{{team}}?api-version={{api-version}}",
 									"protocol": "https",
@@ -7706,10 +7627,6 @@
 								},
 								"method": "GET",
 								"header": [],
-								"body": {
-									"mode": "raw",
-									"raw": ""
-								},
 								"url": {
 									"raw": "https://{{coreServer}}/{{organization}}/_apis/teams?$mine=false&$top=100&$skip&api-version={{api-version-preview2}}",
 									"protocol": "https",
@@ -7767,10 +7684,6 @@
 								},
 								"method": "GET",
 								"header": [],
-								"body": {
-									"mode": "raw",
-									"raw": ""
-								},
 								"url": {
 									"raw": "https://{{coreServer}}/{{organization}}/_apis/projects/{{projectId}}/teams?$mine=false&$top=10&$skip=&api-version={{api-version}}",
 									"protocol": "https",
@@ -7830,10 +7743,6 @@
 								},
 								"method": "GET",
 								"header": [],
-								"body": {
-									"mode": "raw",
-									"raw": ""
-								},
 								"url": {
 									"raw": "https://{{coreServer}}/{{organization}}/_apis/projects/{{projectId}}/teams/{{team}}/members?$mine=false&$top=10&$skip&api-version={{api-version}}",
 									"protocol": "https",
@@ -8017,10 +7926,6 @@
 								},
 								"method": "GET",
 								"header": [],
-								"body": {
-									"mode": "raw",
-									"raw": ""
-								},
 								"url": {
 									"raw": "https://{{graphServer}}/{{organization}}/_apis/graph/users?api-version={{api-version-preview}}&subjectTypes=aad&continuationToken=",
 									"protocol": "https",
@@ -8074,10 +7979,6 @@
 								},
 								"method": "GET",
 								"header": [],
-								"body": {
-									"mode": "raw",
-									"raw": ""
-								},
 								"url": {
 									"raw": "https://{{graphServer}}/{{organization}}/_apis/graph/users/{{userDescriptor}}?api-version={{api-version-preview}}",
 									"protocol": "https",
@@ -8138,10 +8039,6 @@
 								},
 								"method": "GET",
 								"header": [],
-								"body": {
-									"mode": "raw",
-									"raw": ""
-								},
 								"url": {
 									"raw": "https://{{releaseServer}}/{{organization}}/{{project}}/_apis/release/releases?api-version={{api-version}}",
 									"protocol": "https",
@@ -8304,10 +8201,6 @@
 								},
 								"method": "GET",
 								"header": [],
-								"body": {
-									"mode": "raw",
-									"raw": ""
-								},
 								"url": {
 									"raw": "https://{{releaseServer}}/{{organization}}/{{project}}/_apis/release/releases/{{releaseId}}?$expand=true&api-version={{api-version}}",
 									"protocol": "https",
@@ -8376,10 +8269,6 @@
 								},
 								"method": "GET",
 								"header": [],
-								"body": {
-									"mode": "raw",
-									"raw": ""
-								},
 								"url": {
 									"raw": "https://{{releaseServer}}/{{organization}}/{{project}}/_apis/release/releases/{{releaseId}}/logs?api-version={{api-version-preview2}}",
 									"protocol": "https",
@@ -8749,10 +8638,6 @@
 								},
 								"method": "GET",
 								"header": [],
-								"body": {
-									"mode": "raw",
-									"raw": ""
-								},
 								"url": {
 									"raw": "https://{{coreServer}}/{{organization}}/{{project}}/_apis/wiki/wikis/{{wikiIdentifier}}?api-version={{api-version}}",
 									"protocol": "https",
@@ -8798,10 +8683,6 @@
 								},
 								"method": "GET",
 								"header": [],
-								"body": {
-									"mode": "raw",
-									"raw": ""
-								},
 								"url": {
 									"raw": "https://{{coreServer}}/{{organization}}/{{project}}/_apis/wiki/wikis?api-version={{api-version}}",
 									"protocol": "https",
