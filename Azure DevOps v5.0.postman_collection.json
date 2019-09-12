@@ -4863,6 +4863,9 @@
 					"item": [
 						{
 							"name": "List Variable Groups",
+							"protocolProfileBehavior": {
+								"disableBodyPruning": true
+							},
 							"request": {
 								"auth": {
 									"type": "basic",
@@ -4893,6 +4896,10 @@
 										"type": "text"
 									}
 								],
+								"body": {
+									"mode": "raw",
+									"raw": ""
+								},
 								"url": {
 									"raw": "https://{{coreServer}}/{{organization}}/{{project}}/_apis/distributedtask/variablegroups?api-version={{api-version-preview}}",
 									"protocol": "https",
@@ -4913,12 +4920,15 @@
 										}
 									]
 								},
-								"description": "Get the list of variable groups\n\nhttps://docs.microsoft.com/en-us/rest/api/azure/devops/distributedtask/variablegroups/get%20variable%20groups?view=azure-devops-rest-5.0"
+								"description": "Get all variable groups\n\nhttps://docs.microsoft.com/en-us/rest/api/azure/devops/distributedtask/variablegroups/get%20variable%20groups?view=azure-devops-rest-5.0"
 							},
 							"response": []
 						},
 						{
 							"name": "Get Variable Group",
+							"protocolProfileBehavior": {
+								"disableBodyPruning": true
+							},
 							"request": {
 								"auth": {
 									"type": "basic",
@@ -4949,6 +4959,10 @@
 										"type": "text"
 									}
 								],
+								"body": {
+									"mode": "raw",
+									"raw": ""
+								},
 								"url": {
 									"raw": "https://{{coreServer}}/{{organization}}/{{project}}/_apis/distributedtask/variablegroups/{{variableGroupId}}?api-version={{api-version-preview}}",
 									"protocol": "https",
@@ -5114,7 +5128,7 @@
 										}
 									]
 								},
-								"method": "PUT",
+								"method": "DELETE",
 								"header": [
 									{
 										"key": "temp",
@@ -5128,10 +5142,6 @@
 										"value": "application/json"
 									}
 								],
-								"body": {
-									"mode": "raw",
-									"raw": ""
-								},
 								"url": {
 									"raw": "https://{{coreServer}}/{{organization}}/{{project}}/_apis/distributedtask/variablegroups/{{variableGroupId}}?api-version={{api-version-preview}}",
 									"protocol": "https",
