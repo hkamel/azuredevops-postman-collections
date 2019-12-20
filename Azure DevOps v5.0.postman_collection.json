@@ -1,6 +1,6 @@
 {
 	"info": {
-		"_postman_id": "1666ba65-0371-4e4f-9b24-d9cb46be5615",
+		"_postman_id": "7e82af05-82e8-4a5c-9c5a-2178dd1d23b5",
 		"name": "Azure DevOps v5.0",
 		"description": "Azure DevOps Services REST API Reference.\n\nv1.1",
 		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
@@ -440,6 +440,7 @@
 							"response": []
 						}
 					],
+					"protocolProfileBehavior": {},
 					"_postman_isSubFolder": true
 				},
 				{
@@ -623,6 +624,7 @@
 							}
 						]
 					},
+					"protocolProfileBehavior": {},
 					"_postman_isSubFolder": true
 				},
 				{
@@ -1311,6 +1313,7 @@
 							}
 						]
 					},
+					"protocolProfileBehavior": {},
 					"_postman_isSubFolder": true
 				},
 				{
@@ -1331,6 +1334,7 @@
 							}
 						]
 					},
+					"protocolProfileBehavior": {},
 					"_postman_isSubFolder": true
 				},
 				{
@@ -1530,6 +1534,7 @@
 							}
 						]
 					},
+					"protocolProfileBehavior": {},
 					"_postman_isSubFolder": true
 				},
 				{
@@ -1663,6 +1668,7 @@
 							}
 						]
 					},
+					"protocolProfileBehavior": {},
 					"_postman_isSubFolder": true
 				},
 				{
@@ -1751,6 +1757,7 @@
 							}
 						]
 					},
+					"protocolProfileBehavior": {},
 					"_postman_isSubFolder": true
 				}
 			],
@@ -1768,7 +1775,8 @@
 						"type": "string"
 					}
 				]
-			}
+			},
+			"protocolProfileBehavior": {}
 		},
 		{
 			"name": "Build",
@@ -1987,6 +1995,7 @@
 							}
 						]
 					},
+					"protocolProfileBehavior": {},
 					"_postman_isSubFolder": true
 				},
 				{
@@ -2052,6 +2061,7 @@
 							}
 						]
 					},
+					"protocolProfileBehavior": {},
 					"_postman_isSubFolder": true
 				},
 				{
@@ -2144,6 +2154,7 @@
 							}
 						]
 					},
+					"protocolProfileBehavior": {},
 					"_postman_isSubFolder": true
 				},
 				{
@@ -2990,6 +3001,7 @@
 							"response": []
 						}
 					],
+					"protocolProfileBehavior": {},
 					"_postman_isSubFolder": true
 				},
 				{
@@ -3108,6 +3120,7 @@
 							}
 						]
 					},
+					"protocolProfileBehavior": {},
 					"_postman_isSubFolder": true
 				},
 				{
@@ -3527,6 +3540,7 @@
 							}
 						]
 					},
+					"protocolProfileBehavior": {},
 					"_postman_isSubFolder": true
 				},
 				{
@@ -3784,6 +3798,7 @@
 							}
 						]
 					},
+					"protocolProfileBehavior": {},
 					"_postman_isSubFolder": true
 				},
 				{
@@ -3841,6 +3856,7 @@
 							}
 						]
 					},
+					"protocolProfileBehavior": {},
 					"_postman_isSubFolder": true
 				},
 				{
@@ -3970,6 +3986,7 @@
 							}
 						]
 					},
+					"protocolProfileBehavior": {},
 					"_postman_isSubFolder": true
 				},
 				{
@@ -4058,6 +4075,7 @@
 							}
 						}
 					],
+					"protocolProfileBehavior": {},
 					"_postman_isSubFolder": true
 				},
 				{
@@ -4206,6 +4224,7 @@
 							}
 						}
 					],
+					"protocolProfileBehavior": {},
 					"_postman_isSubFolder": true
 				},
 				{
@@ -4301,6 +4320,7 @@
 							}
 						}
 					],
+					"protocolProfileBehavior": {},
 					"_postman_isSubFolder": true
 				},
 				{
@@ -4388,6 +4408,7 @@
 							}
 						}
 					],
+					"protocolProfileBehavior": {},
 					"_postman_isSubFolder": true
 				},
 				{
@@ -4477,6 +4498,7 @@
 							}
 						}
 					],
+					"protocolProfileBehavior": {},
 					"_postman_isSubFolder": true
 				},
 				{
@@ -4565,6 +4587,7 @@
 							}
 						}
 					],
+					"protocolProfileBehavior": {},
 					"_postman_isSubFolder": true
 				},
 				{
@@ -4632,6 +4655,7 @@
 							}
 						}
 					],
+					"protocolProfileBehavior": {},
 					"_postman_isSubFolder": true
 				},
 				{
@@ -4751,6 +4775,7 @@
 							}
 						}
 					],
+					"protocolProfileBehavior": {},
 					"_postman_isSubFolder": true
 				},
 				{
@@ -4856,6 +4881,7 @@
 							}
 						}
 					],
+					"protocolProfileBehavior": {},
 					"_postman_isSubFolder": true
 				},
 				{
@@ -5169,9 +5195,11 @@
 						}
 					],
 					"description": "Library resources in the pipelines",
+					"protocolProfileBehavior": {},
 					"_postman_isSubFolder": true
 				}
-			]
+			],
+			"protocolProfileBehavior": {}
 		},
 		{
 			"name": "Work",
@@ -5534,6 +5562,7 @@
 							]
 						}
 					],
+					"protocolProfileBehavior": {},
 					"_postman_isSubFolder": true
 				},
 				{
@@ -5584,6 +5613,7 @@
 							"response": []
 						}
 					],
+					"protocolProfileBehavior": {},
 					"_postman_isSubFolder": true
 				},
 				{
@@ -5635,6 +5665,7 @@
 							"response": []
 						}
 					],
+					"protocolProfileBehavior": {},
 					"_postman_isSubFolder": true
 				},
 				{
@@ -5708,6 +5739,118 @@
 								"description": "Gets the details of an individual work item, optionally querying the state of the work item on a specific date\n\n[Documentation Link](https://docs.microsoft.com/en-us/rest/api/azure/devops/wit/work%20items/get%20work%20item?view=azure-devops-rest-5.0)"
 							},
 							"response": [
+								{
+									"name": "As Of date before work item existed",
+									"originalRequest": {
+										"method": "GET",
+										"header": [],
+										"url": {
+											"raw": "https://{{coreServer}}/{{organization}}/{{project}}/_apis/wit/workitems/{{workItemId}}?api-version={{api-version}}&asOf=11/21/2018",
+											"protocol": "https",
+											"host": [
+												"{{coreServer}}"
+											],
+											"path": [
+												"{{organization}}",
+												"{{project}}",
+												"_apis",
+												"wit",
+												"workitems",
+												"{{workItemId}}"
+											],
+											"query": [
+												{
+													"key": "api-version",
+													"value": "{{api-version}}"
+												},
+												{
+													"key": "asOf",
+													"value": "11/21/2018",
+													"description": "Returns the state of the requested item as it was on the given date"
+												}
+											]
+										}
+									},
+									"status": "Not Found",
+									"code": 404,
+									"_postman_previewlanguage": "json",
+									"header": [
+										{
+											"key": "Cache-Control",
+											"value": "no-cache"
+										},
+										{
+											"key": "Pragma",
+											"value": "no-cache"
+										},
+										{
+											"key": "Content-Length",
+											"value": "297"
+										},
+										{
+											"key": "Content-Type",
+											"value": "application/json; charset=utf-8"
+										},
+										{
+											"key": "Expires",
+											"value": "-1"
+										},
+										{
+											"key": "P3P",
+											"value": "CP=\"CAO DSP COR ADMa DEV CONo TELo CUR PSA PSD TAI IVDo OUR SAMi BUS DEM NAV STA UNI COM INT PHY ONL FIN PUR LOC CNT\""
+										},
+										{
+											"key": "X-TFS-ProcessId",
+											"value": "896a28f1-7f6e-429f-a85f-485a7d720e37"
+										},
+										{
+											"key": "Strict-Transport-Security",
+											"value": "max-age=31536000; includeSubDomains"
+										},
+										{
+											"key": "ActivityId",
+											"value": "030d74cd-98eb-4a4f-a445-87487e145570"
+										},
+										{
+											"key": "X-TFS-Session",
+											"value": "030d74cd-98eb-4a4f-a445-87487e145570"
+										},
+										{
+											"key": "X-VSS-E2EID",
+											"value": "030d74cd-98eb-4a4f-a445-87487e145570"
+										},
+										{
+											"key": "X-VSS-UserData",
+											"value": "e622a2cf-3745-6572-8ff2-25c1350faa8b:josh.kewley@bluechip-llc.com"
+										},
+										{
+											"key": "X-FRAME-OPTIONS",
+											"value": "SAMEORIGIN"
+										},
+										{
+											"key": "Request-Context",
+											"value": "appId=cid-v1:e3d45cd2-3b08-46bc-b297-cda72fdc1dc1"
+										},
+										{
+											"key": "Access-Control-Expose-Headers",
+											"value": "Request-Context"
+										},
+										{
+											"key": "X-Content-Type-Options",
+											"value": "nosniff"
+										},
+										{
+											"key": "X-MSEdge-Ref",
+											"value": "Ref A: E164F077FF2E4F5091891FB9B7AF64F2 Ref B: BN3EDGE0308 Ref C: 2019-05-09T21:11:12Z"
+										},
+										{
+											"key": "Date",
+											"value": "Thu, 09 May 2019 21:11:12 GMT"
+										}
+									],
+									"cookie": [],
+									"body": "{\n    \"$id\": \"1\",\n    \"innerException\": null,\n    \"message\": \"The work item ### does not exist at time 11/21/2018 12:00:00 AM.\",\n    \"typeName\": \"Microsoft.Azure.Boards.WebApi.Common.WitResourceNotFoundException, Microsoft.Azure.Boards.WebApi.Common\",\n    \"typeKey\": \"WitResourceNotFoundException\",\n    \"errorCode\": 0,\n    \"eventId\": 3000\n}"
+								},
 								{
 									"name": "Fabrikam work item",
 									"originalRequest": {
@@ -5822,7 +5965,77 @@
 									],
 									"cookie": [],
 									"body": "{\r\n  \"id\": 12,\r\n  \"rev\": 3,\r\n  \"fields\": {\r\n    \"System.AreaPath\": \"MyAgilePrj2\",\r\n    \"System.TeamProject\": \"MyAgilePrj2\",\r\n    \"System.IterationPath\": \"MyAgilePrj2\\\\Iteration 1\",\r\n    \"System.WorkItemType\": \"User Story\",\r\n    \"System.State\": \"Active\",\r\n    \"System.Reason\": \"Implementation started\",\r\n    \"System.AssignedTo\": {\r\n      \"displayName\": \"Jamal Hartnett\",\r\n      \"url\": \"https://vssps.dev.azure.com/fabrikam/_apis/Identities/d291b0c4-a05c-4ea6-8df1-4b41d5f39eff\",\r\n      \"_links\": {\r\n        \"avatar\": {\r\n          \"href\": \"https://dev.azure.com/mseng/_apis/GraphProfile/MemberAvatars/aad.YTkzODFkODYtNTYxYS03ZDdiLWJjM2QtZDUzMjllMjM5OTAz\"\r\n        }\r\n      },\r\n      \"id\": \"d291b0c4-a05c-4ea6-8df1-4b41d5f39eff\",\r\n      \"uniqueName\": \"fabrikamfiber4@hotmail.com\",\r\n      \"imageUrl\": \"https://dev.azure.com/fabrikam/_api/_common/identityImage?id=d291b0c4-a05c-4ea6-8df1-4b41d5f39eff\",\r\n      \"descriptor\": \"aad.YTkzODFkODYtNTYxYS03ZDdiLWJjM2QtZDUzMjllMjM5OTAz\"\r\n    },\r\n    \"System.CreatedDate\": \"2017-09-04T06:11:59.05Z\",\r\n    \"System.CreatedBy\": {\r\n      \"displayName\": \"Jamal Hartnett\",\r\n      \"url\": \"https://vssps.dev.azure.com/fabrikam/_apis/Identities/d291b0c4-a05c-4ea6-8df1-4b41d5f39eff\",\r\n      \"_links\": {\r\n        \"avatar\": {\r\n          \"href\": \"https://dev.azure.com/mseng/_apis/GraphProfile/MemberAvatars/aad.YTkzODFkODYtNTYxYS03ZDdiLWJjM2QtZDUzMjllMjM5OTAz\"\r\n        }\r\n      },\r\n      \"id\": \"d291b0c4-a05c-4ea6-8df1-4b41d5f39eff\",\r\n      \"uniqueName\": \"fabrikamfiber4@hotmail.com\",\r\n      \"imageUrl\": \"https://dev.azure.com/fabrikam/_api/_common/identityImage?id=d291b0c4-a05c-4ea6-8df1-4b41d5f39eff\",\r\n      \"descriptor\": \"aad.YTkzODFkODYtNTYxYS03ZDdiLWJjM2QtZDUzMjllMjM5OTAz\"\r\n    },\r\n    \"System.ChangedDate\": \"2017-10-04T23:32:02.18Z\",\r\n    \"System.ChangedBy\": {\r\n      \"displayName\": \"Jamal Hartnett\",\r\n      \"url\": \"https://vssps.dev.azure.com/fabrikam/_apis/Identities/d291b0c4-a05c-4ea6-8df1-4b41d5f39eff\",\r\n      \"_links\": {\r\n        \"avatar\": {\r\n          \"href\": \"https://dev.azure.com/mseng/_apis/GraphProfile/MemberAvatars/aad.YTkzODFkODYtNTYxYS03ZDdiLWJjM2QtZDUzMjllMjM5OTAz\"\r\n        }\r\n      },\r\n      \"id\": \"d291b0c4-a05c-4ea6-8df1-4b41d5f39eff\",\r\n      \"uniqueName\": \"fabrikamfiber4@hotmail.com\",\r\n      \"imageUrl\": \"https://dev.azure.com/fabrikam/_api/_common/identityImage?id=d291b0c4-a05c-4ea6-8df1-4b41d5f39eff\",\r\n      \"descriptor\": \"aad.YTkzODFkODYtNTYxYS03ZDdiLWJjM2QtZDUzMjllMjM5OTAz\"\r\n    },\r\n    \"System.Title\": \"Epic 2\",\r\n    \"Microsoft.VSTS.Common.StateChangeDate\": \"2017-10-04T23:32:01.6Z\",\r\n    \"Microsoft.VSTS.Common.ActivatedDate\": \"2017-10-04T23:32:01.6Z\",\r\n    \"Microsoft.VSTS.Common.ActivatedBy\": \"Jamal Hartnett <fabrikamfiber4@hotmail.com>\",\r\n    \"Microsoft.VSTS.Common.Priority\": 2,\r\n    \"Microsoft.VSTS.Common.ValueArea\": \"Business\",\r\n    \"System.Tags\": \"client; sample; teamservices\"\r\n  },\r\n  \"_links\": {\r\n    \"self\": {\r\n      \"href\": \"https://dev.azure.com/fabrikam/_apis/wit/workItems/12\"\r\n    },\r\n    \"workItemUpdates\": {\r\n      \"href\": \"https://dev.azure.com/fabrikam/_apis/wit/workItems/12/updates\"\r\n    },\r\n    \"workItemRevisions\": {\r\n      \"href\": \"https://dev.azure.com/fabrikam/_apis/wit/workItems/12/revisions\"\r\n    },\r\n    \"workItemHistory\": {\r\n      \"href\": \"https://dev.azure.com/fabrikam/_apis/wit/workItems/12/history\"\r\n    },\r\n    \"html\": {\r\n      \"href\": \"https://dev.azure.com/fabrikam/web/wi.aspx?pcguid=20cda608-32f0-4e6e-9b7c-8def7b38d15a&id=12\"\r\n    },\r\n    \"workItemType\": {\r\n      \"href\": \"https://dev.azure.com/fabrikam/54332e84-3d54-4c67-9bd0-0e88a9849330/_apis/wit/workItemTypes/User%20Story\"\r\n    },\r\n    \"fields\": {\r\n      \"href\": \"https://dev.azure.com/fabrikam/_apis/wit/fields\"\r\n    }\r\n  },\r\n  \"url\": \"https://dev.azure.com/fabrikam/_apis/wit/workItems/12\"\r\n}"
+								}
+							]
+						},
+						{
+							"name": "List work items",
+							"event": [
+								{
+									"listen": "test",
+									"script": {
+										"id": "60b88978-98c8-461b-8cce-a6cbdb91ab0a",
+										"exec": [
+											""
+										],
+										"type": "text/javascript"
+									}
+								}
+							],
+							"request": {
+								"auth": {
+									"type": "basic",
+									"basic": [
+										{
+											"key": "password",
+											"value": "{{AccessToken}}",
+											"type": "string"
+										},
+										{
+											"key": "username",
+											"value": "Basic",
+											"type": "string"
+										}
+									]
 								},
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "https://{{coreServer}}/{{organization}}/{{project}}/_apis/wit/workitems/{{workItemId}}?api-version={{api-version}}",
+									"protocol": "https",
+									"host": [
+										"{{coreServer}}"
+									],
+									"path": [
+										"{{organization}}",
+										"{{project}}",
+										"_apis",
+										"wit",
+										"workitems",
+										"{{workItemId}}"
+									],
+									"query": [
+										{
+											"key": "api-version",
+											"value": "{{api-version}}"
+										},
+										{
+											"key": "asOf",
+											"value": "11/21/2018",
+											"description": "Returns the state of the requested item as it was on the given date",
+											"disabled": true
+										},
+										{
+											"key": "fields",
+											"value": "System.TeamProject,System.AreaPath",
+											"description": "Comma-separated list of requested fields",
+											"disabled": true
+										}
+									]
+								},
+								"description": "Returns a list of work items (Maximum 200)\n\nUse the workitemid variable with a comma separated list of ids\n\n[Documentation Link](https://docs.microsoft.com/en-us/rest/api/azure/devops/wit/work%20items/list?view=azure-devops-rest-5.1)"
+							},
+							"response": [
 								{
 									"name": "As Of date before work item existed",
 									"originalRequest": {
@@ -5934,6 +6147,121 @@
 									],
 									"cookie": [],
 									"body": "{\n    \"$id\": \"1\",\n    \"innerException\": null,\n    \"message\": \"The work item ### does not exist at time 11/21/2018 12:00:00 AM.\",\n    \"typeName\": \"Microsoft.Azure.Boards.WebApi.Common.WitResourceNotFoundException, Microsoft.Azure.Boards.WebApi.Common\",\n    \"typeKey\": \"WitResourceNotFoundException\",\n    \"errorCode\": 0,\n    \"eventId\": 3000\n}"
+								},
+								{
+									"name": "Fabrikam work item",
+									"originalRequest": {
+										"method": "GET",
+										"header": [],
+										"url": {
+											"raw": "https://{{coreServer}}/{{organization}}/{{project}}/_apis/wit/workitems/{{workItemId}}?api-version={{api-version}}",
+											"protocol": "https",
+											"host": [
+												"{{coreServer}}"
+											],
+											"path": [
+												"{{organization}}",
+												"{{project}}",
+												"_apis",
+												"wit",
+												"workitems",
+												"{{workItemId}}"
+											],
+											"query": [
+												{
+													"key": "api-version",
+													"value": "{{api-version}}"
+												}
+											]
+										}
+									},
+									"status": "OK",
+									"code": 200,
+									"_postman_previewlanguage": "json",
+									"header": [
+										{
+											"key": "Cache-Control",
+											"value": "no-cache"
+										},
+										{
+											"key": "Pragma",
+											"value": "no-cache"
+										},
+										{
+											"key": "Content-Length",
+											"value": "1163"
+										},
+										{
+											"key": "Content-Type",
+											"value": "application/json; charset=utf-8; api-version=5.0"
+										},
+										{
+											"key": "Content-Encoding",
+											"value": "gzip"
+										},
+										{
+											"key": "Expires",
+											"value": "-1"
+										},
+										{
+											"key": "Vary",
+											"value": "Accept-Encoding"
+										},
+										{
+											"key": "P3P",
+											"value": "CP=\"CAO DSP COR ADMa DEV CONo TELo CUR PSA PSD TAI IVDo OUR SAMi BUS DEM NAV STA UNI COM INT PHY ONL FIN PUR LOC CNT\""
+										},
+										{
+											"key": "X-TFS-ProcessId",
+											"value": "8c044192-381a-453f-a46d-bcd7dbe0a146"
+										},
+										{
+											"key": "Strict-Transport-Security",
+											"value": "max-age=31536000; includeSubDomains"
+										},
+										{
+											"key": "ActivityId",
+											"value": "3d898a74-bbe8-4087-b9d1-27e794f5a7d3"
+										},
+										{
+											"key": "X-TFS-Session",
+											"value": "3d898a74-bbe8-4087-b9d1-27e794f5a7d3"
+										},
+										{
+											"key": "X-VSS-E2EID",
+											"value": "3d898a74-bbe8-4087-b9d1-27e794f5a7d3"
+										},
+										{
+											"key": "X-VSS-UserData",
+											"value": "e622a2cf-3745-6572-8ff2-25c1350faa8b:josh.kewley@bluechip-llc.com"
+										},
+										{
+											"key": "X-FRAME-OPTIONS",
+											"value": "SAMEORIGIN"
+										},
+										{
+											"key": "Request-Context",
+											"value": "appId=cid-v1:e3d45cd2-3b08-46bc-b297-cda72fdc1dc1"
+										},
+										{
+											"key": "Access-Control-Expose-Headers",
+											"value": "Request-Context"
+										},
+										{
+											"key": "X-Content-Type-Options",
+											"value": "nosniff"
+										},
+										{
+											"key": "X-MSEdge-Ref",
+											"value": "Ref A: 6A07424B1D4741BD9C55714C26276D17 Ref B: BN3EDGE0320 Ref C: 2019-05-09T21:04:42Z"
+										},
+										{
+											"key": "Date",
+											"value": "Thu, 09 May 2019 21:04:41 GMT"
+										}
+									],
+									"cookie": [],
+									"body": "{\r\n  \"id\": 12,\r\n  \"rev\": 3,\r\n  \"fields\": {\r\n    \"System.AreaPath\": \"MyAgilePrj2\",\r\n    \"System.TeamProject\": \"MyAgilePrj2\",\r\n    \"System.IterationPath\": \"MyAgilePrj2\\\\Iteration 1\",\r\n    \"System.WorkItemType\": \"User Story\",\r\n    \"System.State\": \"Active\",\r\n    \"System.Reason\": \"Implementation started\",\r\n    \"System.AssignedTo\": {\r\n      \"displayName\": \"Jamal Hartnett\",\r\n      \"url\": \"https://vssps.dev.azure.com/fabrikam/_apis/Identities/d291b0c4-a05c-4ea6-8df1-4b41d5f39eff\",\r\n      \"_links\": {\r\n        \"avatar\": {\r\n          \"href\": \"https://dev.azure.com/mseng/_apis/GraphProfile/MemberAvatars/aad.YTkzODFkODYtNTYxYS03ZDdiLWJjM2QtZDUzMjllMjM5OTAz\"\r\n        }\r\n      },\r\n      \"id\": \"d291b0c4-a05c-4ea6-8df1-4b41d5f39eff\",\r\n      \"uniqueName\": \"fabrikamfiber4@hotmail.com\",\r\n      \"imageUrl\": \"https://dev.azure.com/fabrikam/_api/_common/identityImage?id=d291b0c4-a05c-4ea6-8df1-4b41d5f39eff\",\r\n      \"descriptor\": \"aad.YTkzODFkODYtNTYxYS03ZDdiLWJjM2QtZDUzMjllMjM5OTAz\"\r\n    },\r\n    \"System.CreatedDate\": \"2017-09-04T06:11:59.05Z\",\r\n    \"System.CreatedBy\": {\r\n      \"displayName\": \"Jamal Hartnett\",\r\n      \"url\": \"https://vssps.dev.azure.com/fabrikam/_apis/Identities/d291b0c4-a05c-4ea6-8df1-4b41d5f39eff\",\r\n      \"_links\": {\r\n        \"avatar\": {\r\n          \"href\": \"https://dev.azure.com/mseng/_apis/GraphProfile/MemberAvatars/aad.YTkzODFkODYtNTYxYS03ZDdiLWJjM2QtZDUzMjllMjM5OTAz\"\r\n        }\r\n      },\r\n      \"id\": \"d291b0c4-a05c-4ea6-8df1-4b41d5f39eff\",\r\n      \"uniqueName\": \"fabrikamfiber4@hotmail.com\",\r\n      \"imageUrl\": \"https://dev.azure.com/fabrikam/_api/_common/identityImage?id=d291b0c4-a05c-4ea6-8df1-4b41d5f39eff\",\r\n      \"descriptor\": \"aad.YTkzODFkODYtNTYxYS03ZDdiLWJjM2QtZDUzMjllMjM5OTAz\"\r\n    },\r\n    \"System.ChangedDate\": \"2017-10-04T23:32:02.18Z\",\r\n    \"System.ChangedBy\": {\r\n      \"displayName\": \"Jamal Hartnett\",\r\n      \"url\": \"https://vssps.dev.azure.com/fabrikam/_apis/Identities/d291b0c4-a05c-4ea6-8df1-4b41d5f39eff\",\r\n      \"_links\": {\r\n        \"avatar\": {\r\n          \"href\": \"https://dev.azure.com/mseng/_apis/GraphProfile/MemberAvatars/aad.YTkzODFkODYtNTYxYS03ZDdiLWJjM2QtZDUzMjllMjM5OTAz\"\r\n        }\r\n      },\r\n      \"id\": \"d291b0c4-a05c-4ea6-8df1-4b41d5f39eff\",\r\n      \"uniqueName\": \"fabrikamfiber4@hotmail.com\",\r\n      \"imageUrl\": \"https://dev.azure.com/fabrikam/_api/_common/identityImage?id=d291b0c4-a05c-4ea6-8df1-4b41d5f39eff\",\r\n      \"descriptor\": \"aad.YTkzODFkODYtNTYxYS03ZDdiLWJjM2QtZDUzMjllMjM5OTAz\"\r\n    },\r\n    \"System.Title\": \"Epic 2\",\r\n    \"Microsoft.VSTS.Common.StateChangeDate\": \"2017-10-04T23:32:01.6Z\",\r\n    \"Microsoft.VSTS.Common.ActivatedDate\": \"2017-10-04T23:32:01.6Z\",\r\n    \"Microsoft.VSTS.Common.ActivatedBy\": \"Jamal Hartnett <fabrikamfiber4@hotmail.com>\",\r\n    \"Microsoft.VSTS.Common.Priority\": 2,\r\n    \"Microsoft.VSTS.Common.ValueArea\": \"Business\",\r\n    \"System.Tags\": \"client; sample; teamservices\"\r\n  },\r\n  \"_links\": {\r\n    \"self\": {\r\n      \"href\": \"https://dev.azure.com/fabrikam/_apis/wit/workItems/12\"\r\n    },\r\n    \"workItemUpdates\": {\r\n      \"href\": \"https://dev.azure.com/fabrikam/_apis/wit/workItems/12/updates\"\r\n    },\r\n    \"workItemRevisions\": {\r\n      \"href\": \"https://dev.azure.com/fabrikam/_apis/wit/workItems/12/revisions\"\r\n    },\r\n    \"workItemHistory\": {\r\n      \"href\": \"https://dev.azure.com/fabrikam/_apis/wit/workItems/12/history\"\r\n    },\r\n    \"html\": {\r\n      \"href\": \"https://dev.azure.com/fabrikam/web/wi.aspx?pcguid=20cda608-32f0-4e6e-9b7c-8def7b38d15a&id=12\"\r\n    },\r\n    \"workItemType\": {\r\n      \"href\": \"https://dev.azure.com/fabrikam/54332e84-3d54-4c67-9bd0-0e88a9849330/_apis/wit/workItemTypes/User%20Story\"\r\n    },\r\n    \"fields\": {\r\n      \"href\": \"https://dev.azure.com/fabrikam/_apis/wit/fields\"\r\n    }\r\n  },\r\n  \"url\": \"https://dev.azure.com/fabrikam/_apis/wit/workItems/12\"\r\n}"
 								}
 							]
 						},
@@ -6203,131 +6531,6 @@
 							},
 							"response": [
 								{
-									"name": "Error policy omit with very old asOf date (no results)",
-									"originalRequest": {
-										"method": "POST",
-										"header": [
-											{
-												"key": "Content-Type",
-												"name": "Content-Type",
-												"value": "application/json",
-												"type": "text"
-											}
-										],
-										"body": {
-											"mode": "raw",
-											"raw": "{\n    \"ids\": [\n        297,\n        299,\n        300\n    ],\n    \"asOf\": \"2000-12-27T00:00:00.000Z\",\n    \"errorPolicy\": \"omit\",\n    \"fields\": [\n        \"System.Id\",\n        \"System.Title\",\n        \"System.WorkItemType\",\n        \"Microsoft.VSTS.Scheduling.RemainingWork\"\n    ]\n}"
-										},
-										"url": {
-											"raw": "https://{{coreServer}}/{{organization}}/{{project}}/_apis/wit/workitemsbatch?api-version={{api-version}}",
-											"protocol": "https",
-											"host": [
-												"{{coreServer}}"
-											],
-											"path": [
-												"{{organization}}",
-												"{{project}}",
-												"_apis",
-												"wit",
-												"workitemsbatch"
-											],
-											"query": [
-												{
-													"key": "api-version",
-													"value": "{{api-version}}"
-												}
-											]
-										}
-									},
-									"status": "OK",
-									"code": 200,
-									"_postman_previewlanguage": "json",
-									"header": [
-										{
-											"key": "Cache-Control",
-											"value": "no-cache"
-										},
-										{
-											"key": "Pragma",
-											"value": "no-cache"
-										},
-										{
-											"key": "Content-Length",
-											"value": "143"
-										},
-										{
-											"key": "Content-Type",
-											"value": "application/json; charset=utf-8; api-version=5.0"
-										},
-										{
-											"key": "Content-Encoding",
-											"value": "gzip"
-										},
-										{
-											"key": "Expires",
-											"value": "-1"
-										},
-										{
-											"key": "Vary",
-											"value": "Accept-Encoding"
-										},
-										{
-											"key": "P3P",
-											"value": "CP=\"CAO DSP COR ADMa DEV CONo TELo CUR PSA PSD TAI IVDo OUR SAMi BUS DEM NAV STA UNI COM INT PHY ONL FIN PUR LOC CNT\""
-										},
-										{
-											"key": "X-TFS-ProcessId",
-											"value": "8c044192-381a-453f-a46d-bcd7dbe0a146"
-										},
-										{
-											"key": "Strict-Transport-Security",
-											"value": "max-age=31536000; includeSubDomains"
-										},
-										{
-											"key": "ActivityId",
-											"value": "3dbf0f88-bbe8-4087-b9d1-27e794f5a7d3"
-										},
-										{
-											"key": "X-TFS-Session",
-											"value": "3dbf0f88-bbe8-4087-b9d1-27e794f5a7d3"
-										},
-										{
-											"key": "X-VSS-E2EID",
-											"value": "3dbf0f88-bbe8-4087-b9d1-27e794f5a7d3"
-										},
-										{
-											"key": "X-VSS-UserData",
-											"value": "e622a2cf-3745-6572-8ff2-25c1350faa8b:josh.kewley@bluechip-llc.com"
-										},
-										{
-											"key": "X-FRAME-OPTIONS",
-											"value": "SAMEORIGIN"
-										},
-										{
-											"key": "Request-Context",
-											"value": "appId=cid-v1:e3d45cd2-3b08-46bc-b297-cda72fdc1dc1"
-										},
-										{
-											"key": "Access-Control-Expose-Headers",
-											"value": "Request-Context"
-										},
-										{
-											"key": "X-Content-Type-Options",
-											"value": "nosniff"
-										},
-										{
-											"key": "X-MSEdge-Ref",
-											"value": "Ref A: 893F3109060E41AEAF03A06E6F6AD6A1 Ref B: BN3EDGE0714 Ref C: 2019-05-09T21:42:10Z"
-										},
-										{
-											"key": "Date",
-											"value": "Thu, 09 May 2019 21:42:10 GMT"
-										}
-									],
-									"cookie": [],
-									"body": "{\n    \"count\": 0,\n    \"value\": []\n}"
-								},
-								{
 									"name": "Fabrikam bulk work item response",
 									"originalRequest": {
 										"method": "POST",
@@ -6451,6 +6654,131 @@
 									],
 									"cookie": [],
 									"body": "{\r\n  \"count\": 3,\r\n  \"value\": [\r\n    {\r\n      \"id\": 297,\r\n      \"rev\": 1,\r\n      \"fields\": {\r\n        \"System.Id\": 297,\r\n        \"System.WorkItemType\": \"Product Backlog Item\",\r\n        \"System.Title\": \"Customer can sign in using their Microsoft Account\"\r\n      },\r\n      \"url\": \"https://dev.azure.com/fabrikam/_apis/wit/workItems/297\"\r\n    },\r\n    {\r\n      \"id\": 299,\r\n      \"rev\": 7,\r\n      \"fields\": {\r\n        \"System.Id\": 299,\r\n        \"System.WorkItemType\": \"Task\",\r\n        \"System.Title\": \"JavaScript implementation for Microsoft Account\",\r\n        \"Microsoft.VSTS.Scheduling.RemainingWork\": 4\r\n      },\r\n      \"url\": \"https://dev.azure.com/fabrikam/_apis/wit/workItems/299\"\r\n    },\r\n    {\r\n      \"id\": 300,\r\n      \"rev\": 1,\r\n      \"fields\": {\r\n        \"System.Id\": 300,\r\n        \"System.WorkItemType\": \"Task\",\r\n        \"System.Title\": \"Unit Testing for MSA login\",\r\n        \"Microsoft.VSTS.Scheduling.RemainingWork\": 3\r\n      },\r\n      \"url\": \"https://dev.azure.com/fabrikam/_apis/wit/workItems/300\"\r\n    }\r\n  ]\r\n}"
+								},
+								{
+									"name": "Error policy omit with very old asOf date (no results)",
+									"originalRequest": {
+										"method": "POST",
+										"header": [
+											{
+												"key": "Content-Type",
+												"name": "Content-Type",
+												"value": "application/json",
+												"type": "text"
+											}
+										],
+										"body": {
+											"mode": "raw",
+											"raw": "{\n    \"ids\": [\n        297,\n        299,\n        300\n    ],\n    \"asOf\": \"2000-12-27T00:00:00.000Z\",\n    \"errorPolicy\": \"omit\",\n    \"fields\": [\n        \"System.Id\",\n        \"System.Title\",\n        \"System.WorkItemType\",\n        \"Microsoft.VSTS.Scheduling.RemainingWork\"\n    ]\n}"
+										},
+										"url": {
+											"raw": "https://{{coreServer}}/{{organization}}/{{project}}/_apis/wit/workitemsbatch?api-version={{api-version}}",
+											"protocol": "https",
+											"host": [
+												"{{coreServer}}"
+											],
+											"path": [
+												"{{organization}}",
+												"{{project}}",
+												"_apis",
+												"wit",
+												"workitemsbatch"
+											],
+											"query": [
+												{
+													"key": "api-version",
+													"value": "{{api-version}}"
+												}
+											]
+										}
+									},
+									"status": "OK",
+									"code": 200,
+									"_postman_previewlanguage": "json",
+									"header": [
+										{
+											"key": "Cache-Control",
+											"value": "no-cache"
+										},
+										{
+											"key": "Pragma",
+											"value": "no-cache"
+										},
+										{
+											"key": "Content-Length",
+											"value": "143"
+										},
+										{
+											"key": "Content-Type",
+											"value": "application/json; charset=utf-8; api-version=5.0"
+										},
+										{
+											"key": "Content-Encoding",
+											"value": "gzip"
+										},
+										{
+											"key": "Expires",
+											"value": "-1"
+										},
+										{
+											"key": "Vary",
+											"value": "Accept-Encoding"
+										},
+										{
+											"key": "P3P",
+											"value": "CP=\"CAO DSP COR ADMa DEV CONo TELo CUR PSA PSD TAI IVDo OUR SAMi BUS DEM NAV STA UNI COM INT PHY ONL FIN PUR LOC CNT\""
+										},
+										{
+											"key": "X-TFS-ProcessId",
+											"value": "8c044192-381a-453f-a46d-bcd7dbe0a146"
+										},
+										{
+											"key": "Strict-Transport-Security",
+											"value": "max-age=31536000; includeSubDomains"
+										},
+										{
+											"key": "ActivityId",
+											"value": "3dbf0f88-bbe8-4087-b9d1-27e794f5a7d3"
+										},
+										{
+											"key": "X-TFS-Session",
+											"value": "3dbf0f88-bbe8-4087-b9d1-27e794f5a7d3"
+										},
+										{
+											"key": "X-VSS-E2EID",
+											"value": "3dbf0f88-bbe8-4087-b9d1-27e794f5a7d3"
+										},
+										{
+											"key": "X-VSS-UserData",
+											"value": "e622a2cf-3745-6572-8ff2-25c1350faa8b:josh.kewley@bluechip-llc.com"
+										},
+										{
+											"key": "X-FRAME-OPTIONS",
+											"value": "SAMEORIGIN"
+										},
+										{
+											"key": "Request-Context",
+											"value": "appId=cid-v1:e3d45cd2-3b08-46bc-b297-cda72fdc1dc1"
+										},
+										{
+											"key": "Access-Control-Expose-Headers",
+											"value": "Request-Context"
+										},
+										{
+											"key": "X-Content-Type-Options",
+											"value": "nosniff"
+										},
+										{
+											"key": "X-MSEdge-Ref",
+											"value": "Ref A: 893F3109060E41AEAF03A06E6F6AD6A1 Ref B: BN3EDGE0714 Ref C: 2019-05-09T21:42:10Z"
+										},
+										{
+											"key": "Date",
+											"value": "Thu, 09 May 2019 21:42:10 GMT"
+										}
+									],
+									"cookie": [],
+									"body": "{\n    \"count\": 0,\n    \"value\": []\n}"
 								}
 							]
 						},
@@ -6999,9 +7327,330 @@
 							"response": []
 						}
 					],
+					"protocolProfileBehavior": {},
+					"_postman_isSubFolder": true
+				},
+				{
+					"name": "Wiql",
+					"item": [
+						{
+							"name": "Wiql - Query by Wiql",
+							"event": [
+								{
+									"listen": "test",
+									"script": {
+										"id": "60b88978-98c8-461b-8cce-a6cbdb91ab0a",
+										"exec": [
+											""
+										],
+										"type": "text/javascript"
+									}
+								}
+							],
+							"request": {
+								"auth": {
+									"type": "basic",
+									"basic": [
+										{
+											"key": "password",
+											"value": "{{AccessToken}}",
+											"type": "string"
+										},
+										{
+											"key": "username",
+											"value": "Basic",
+											"type": "string"
+										}
+									]
+								},
+								"method": "POST",
+								"header": [
+									{
+										"key": "Content-Type",
+										"value": "application/json",
+										"type": "text"
+									}
+								],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n  \"query\": \"Select [System.Id], [System.Title], [System.State] From WorkItems order by [Microsoft.VSTS.Common.Priority] asc, [System.CreatedDate] desc\"\r\n}"
+								},
+								"url": {
+									"raw": "https://{{coreServer}}/{{organization}}/{{project}}/{{team}}/_apis/wit/wiql?api-version={{api-version}}&top=100",
+									"protocol": "https",
+									"host": [
+										"{{coreServer}}"
+									],
+									"path": [
+										"{{organization}}",
+										"{{project}}",
+										"{{team}}",
+										"_apis",
+										"wit",
+										"wiql"
+									],
+									"query": [
+										{
+											"key": "asOf",
+											"value": "11/21/2018",
+											"description": "Returns the state of the requested item as it was on the given date",
+											"disabled": true
+										},
+										{
+											"key": "fields",
+											"value": "System.TeamProject,System.AreaPath",
+											"description": "Comma-separated list of requested fields",
+											"disabled": true
+										},
+										{
+											"key": "api-version",
+											"value": "{{api-version}}"
+										},
+										{
+											"key": "top",
+											"value": "100"
+										}
+									]
+								},
+								"description": "Gets the results of the query given its WIQL.\n\n[Documentation Link](https://docs.microsoft.com/en-us/rest/api/azure/devops/wit/wiql/query%20by%20wiql?view=azure-devops-rest-5.0)"
+							},
+							"response": [
+								{
+									"name": "As Of date before work item existed",
+									"originalRequest": {
+										"method": "GET",
+										"header": [],
+										"url": {
+											"raw": "https://{{coreServer}}/{{organization}}/{{project}}/_apis/wit/workitems/{{workItemId}}?api-version={{api-version}}&asOf=11/21/2018",
+											"protocol": "https",
+											"host": [
+												"{{coreServer}}"
+											],
+											"path": [
+												"{{organization}}",
+												"{{project}}",
+												"_apis",
+												"wit",
+												"workitems",
+												"{{workItemId}}"
+											],
+											"query": [
+												{
+													"key": "api-version",
+													"value": "{{api-version}}"
+												},
+												{
+													"key": "asOf",
+													"value": "11/21/2018",
+													"description": "Returns the state of the requested item as it was on the given date"
+												}
+											]
+										}
+									},
+									"status": "Not Found",
+									"code": 404,
+									"_postman_previewlanguage": "json",
+									"header": [
+										{
+											"key": "Cache-Control",
+											"value": "no-cache"
+										},
+										{
+											"key": "Pragma",
+											"value": "no-cache"
+										},
+										{
+											"key": "Content-Length",
+											"value": "297"
+										},
+										{
+											"key": "Content-Type",
+											"value": "application/json; charset=utf-8"
+										},
+										{
+											"key": "Expires",
+											"value": "-1"
+										},
+										{
+											"key": "P3P",
+											"value": "CP=\"CAO DSP COR ADMa DEV CONo TELo CUR PSA PSD TAI IVDo OUR SAMi BUS DEM NAV STA UNI COM INT PHY ONL FIN PUR LOC CNT\""
+										},
+										{
+											"key": "X-TFS-ProcessId",
+											"value": "896a28f1-7f6e-429f-a85f-485a7d720e37"
+										},
+										{
+											"key": "Strict-Transport-Security",
+											"value": "max-age=31536000; includeSubDomains"
+										},
+										{
+											"key": "ActivityId",
+											"value": "030d74cd-98eb-4a4f-a445-87487e145570"
+										},
+										{
+											"key": "X-TFS-Session",
+											"value": "030d74cd-98eb-4a4f-a445-87487e145570"
+										},
+										{
+											"key": "X-VSS-E2EID",
+											"value": "030d74cd-98eb-4a4f-a445-87487e145570"
+										},
+										{
+											"key": "X-VSS-UserData",
+											"value": "e622a2cf-3745-6572-8ff2-25c1350faa8b:josh.kewley@bluechip-llc.com"
+										},
+										{
+											"key": "X-FRAME-OPTIONS",
+											"value": "SAMEORIGIN"
+										},
+										{
+											"key": "Request-Context",
+											"value": "appId=cid-v1:e3d45cd2-3b08-46bc-b297-cda72fdc1dc1"
+										},
+										{
+											"key": "Access-Control-Expose-Headers",
+											"value": "Request-Context"
+										},
+										{
+											"key": "X-Content-Type-Options",
+											"value": "nosniff"
+										},
+										{
+											"key": "X-MSEdge-Ref",
+											"value": "Ref A: E164F077FF2E4F5091891FB9B7AF64F2 Ref B: BN3EDGE0308 Ref C: 2019-05-09T21:11:12Z"
+										},
+										{
+											"key": "Date",
+											"value": "Thu, 09 May 2019 21:11:12 GMT"
+										}
+									],
+									"cookie": [],
+									"body": "{\n    \"$id\": \"1\",\n    \"innerException\": null,\n    \"message\": \"The work item ### does not exist at time 11/21/2018 12:00:00 AM.\",\n    \"typeName\": \"Microsoft.Azure.Boards.WebApi.Common.WitResourceNotFoundException, Microsoft.Azure.Boards.WebApi.Common\",\n    \"typeKey\": \"WitResourceNotFoundException\",\n    \"errorCode\": 0,\n    \"eventId\": 3000\n}"
+								},
+								{
+									"name": "Fabrikam work item",
+									"originalRequest": {
+										"method": "GET",
+										"header": [],
+										"url": {
+											"raw": "https://{{coreServer}}/{{organization}}/{{project}}/_apis/wit/workitems/{{workItemId}}?api-version={{api-version}}",
+											"protocol": "https",
+											"host": [
+												"{{coreServer}}"
+											],
+											"path": [
+												"{{organization}}",
+												"{{project}}",
+												"_apis",
+												"wit",
+												"workitems",
+												"{{workItemId}}"
+											],
+											"query": [
+												{
+													"key": "api-version",
+													"value": "{{api-version}}"
+												}
+											]
+										}
+									},
+									"status": "OK",
+									"code": 200,
+									"_postman_previewlanguage": "json",
+									"header": [
+										{
+											"key": "Cache-Control",
+											"value": "no-cache"
+										},
+										{
+											"key": "Pragma",
+											"value": "no-cache"
+										},
+										{
+											"key": "Content-Length",
+											"value": "1163"
+										},
+										{
+											"key": "Content-Type",
+											"value": "application/json; charset=utf-8; api-version=5.0"
+										},
+										{
+											"key": "Content-Encoding",
+											"value": "gzip"
+										},
+										{
+											"key": "Expires",
+											"value": "-1"
+										},
+										{
+											"key": "Vary",
+											"value": "Accept-Encoding"
+										},
+										{
+											"key": "P3P",
+											"value": "CP=\"CAO DSP COR ADMa DEV CONo TELo CUR PSA PSD TAI IVDo OUR SAMi BUS DEM NAV STA UNI COM INT PHY ONL FIN PUR LOC CNT\""
+										},
+										{
+											"key": "X-TFS-ProcessId",
+											"value": "8c044192-381a-453f-a46d-bcd7dbe0a146"
+										},
+										{
+											"key": "Strict-Transport-Security",
+											"value": "max-age=31536000; includeSubDomains"
+										},
+										{
+											"key": "ActivityId",
+											"value": "3d898a74-bbe8-4087-b9d1-27e794f5a7d3"
+										},
+										{
+											"key": "X-TFS-Session",
+											"value": "3d898a74-bbe8-4087-b9d1-27e794f5a7d3"
+										},
+										{
+											"key": "X-VSS-E2EID",
+											"value": "3d898a74-bbe8-4087-b9d1-27e794f5a7d3"
+										},
+										{
+											"key": "X-VSS-UserData",
+											"value": "e622a2cf-3745-6572-8ff2-25c1350faa8b:josh.kewley@bluechip-llc.com"
+										},
+										{
+											"key": "X-FRAME-OPTIONS",
+											"value": "SAMEORIGIN"
+										},
+										{
+											"key": "Request-Context",
+											"value": "appId=cid-v1:e3d45cd2-3b08-46bc-b297-cda72fdc1dc1"
+										},
+										{
+											"key": "Access-Control-Expose-Headers",
+											"value": "Request-Context"
+										},
+										{
+											"key": "X-Content-Type-Options",
+											"value": "nosniff"
+										},
+										{
+											"key": "X-MSEdge-Ref",
+											"value": "Ref A: 6A07424B1D4741BD9C55714C26276D17 Ref B: BN3EDGE0320 Ref C: 2019-05-09T21:04:42Z"
+										},
+										{
+											"key": "Date",
+											"value": "Thu, 09 May 2019 21:04:41 GMT"
+										}
+									],
+									"cookie": [],
+									"body": "{\r\n  \"id\": 12,\r\n  \"rev\": 3,\r\n  \"fields\": {\r\n    \"System.AreaPath\": \"MyAgilePrj2\",\r\n    \"System.TeamProject\": \"MyAgilePrj2\",\r\n    \"System.IterationPath\": \"MyAgilePrj2\\\\Iteration 1\",\r\n    \"System.WorkItemType\": \"User Story\",\r\n    \"System.State\": \"Active\",\r\n    \"System.Reason\": \"Implementation started\",\r\n    \"System.AssignedTo\": {\r\n      \"displayName\": \"Jamal Hartnett\",\r\n      \"url\": \"https://vssps.dev.azure.com/fabrikam/_apis/Identities/d291b0c4-a05c-4ea6-8df1-4b41d5f39eff\",\r\n      \"_links\": {\r\n        \"avatar\": {\r\n          \"href\": \"https://dev.azure.com/mseng/_apis/GraphProfile/MemberAvatars/aad.YTkzODFkODYtNTYxYS03ZDdiLWJjM2QtZDUzMjllMjM5OTAz\"\r\n        }\r\n      },\r\n      \"id\": \"d291b0c4-a05c-4ea6-8df1-4b41d5f39eff\",\r\n      \"uniqueName\": \"fabrikamfiber4@hotmail.com\",\r\n      \"imageUrl\": \"https://dev.azure.com/fabrikam/_api/_common/identityImage?id=d291b0c4-a05c-4ea6-8df1-4b41d5f39eff\",\r\n      \"descriptor\": \"aad.YTkzODFkODYtNTYxYS03ZDdiLWJjM2QtZDUzMjllMjM5OTAz\"\r\n    },\r\n    \"System.CreatedDate\": \"2017-09-04T06:11:59.05Z\",\r\n    \"System.CreatedBy\": {\r\n      \"displayName\": \"Jamal Hartnett\",\r\n      \"url\": \"https://vssps.dev.azure.com/fabrikam/_apis/Identities/d291b0c4-a05c-4ea6-8df1-4b41d5f39eff\",\r\n      \"_links\": {\r\n        \"avatar\": {\r\n          \"href\": \"https://dev.azure.com/mseng/_apis/GraphProfile/MemberAvatars/aad.YTkzODFkODYtNTYxYS03ZDdiLWJjM2QtZDUzMjllMjM5OTAz\"\r\n        }\r\n      },\r\n      \"id\": \"d291b0c4-a05c-4ea6-8df1-4b41d5f39eff\",\r\n      \"uniqueName\": \"fabrikamfiber4@hotmail.com\",\r\n      \"imageUrl\": \"https://dev.azure.com/fabrikam/_api/_common/identityImage?id=d291b0c4-a05c-4ea6-8df1-4b41d5f39eff\",\r\n      \"descriptor\": \"aad.YTkzODFkODYtNTYxYS03ZDdiLWJjM2QtZDUzMjllMjM5OTAz\"\r\n    },\r\n    \"System.ChangedDate\": \"2017-10-04T23:32:02.18Z\",\r\n    \"System.ChangedBy\": {\r\n      \"displayName\": \"Jamal Hartnett\",\r\n      \"url\": \"https://vssps.dev.azure.com/fabrikam/_apis/Identities/d291b0c4-a05c-4ea6-8df1-4b41d5f39eff\",\r\n      \"_links\": {\r\n        \"avatar\": {\r\n          \"href\": \"https://dev.azure.com/mseng/_apis/GraphProfile/MemberAvatars/aad.YTkzODFkODYtNTYxYS03ZDdiLWJjM2QtZDUzMjllMjM5OTAz\"\r\n        }\r\n      },\r\n      \"id\": \"d291b0c4-a05c-4ea6-8df1-4b41d5f39eff\",\r\n      \"uniqueName\": \"fabrikamfiber4@hotmail.com\",\r\n      \"imageUrl\": \"https://dev.azure.com/fabrikam/_api/_common/identityImage?id=d291b0c4-a05c-4ea6-8df1-4b41d5f39eff\",\r\n      \"descriptor\": \"aad.YTkzODFkODYtNTYxYS03ZDdiLWJjM2QtZDUzMjllMjM5OTAz\"\r\n    },\r\n    \"System.Title\": \"Epic 2\",\r\n    \"Microsoft.VSTS.Common.StateChangeDate\": \"2017-10-04T23:32:01.6Z\",\r\n    \"Microsoft.VSTS.Common.ActivatedDate\": \"2017-10-04T23:32:01.6Z\",\r\n    \"Microsoft.VSTS.Common.ActivatedBy\": \"Jamal Hartnett <fabrikamfiber4@hotmail.com>\",\r\n    \"Microsoft.VSTS.Common.Priority\": 2,\r\n    \"Microsoft.VSTS.Common.ValueArea\": \"Business\",\r\n    \"System.Tags\": \"client; sample; teamservices\"\r\n  },\r\n  \"_links\": {\r\n    \"self\": {\r\n      \"href\": \"https://dev.azure.com/fabrikam/_apis/wit/workItems/12\"\r\n    },\r\n    \"workItemUpdates\": {\r\n      \"href\": \"https://dev.azure.com/fabrikam/_apis/wit/workItems/12/updates\"\r\n    },\r\n    \"workItemRevisions\": {\r\n      \"href\": \"https://dev.azure.com/fabrikam/_apis/wit/workItems/12/revisions\"\r\n    },\r\n    \"workItemHistory\": {\r\n      \"href\": \"https://dev.azure.com/fabrikam/_apis/wit/workItems/12/history\"\r\n    },\r\n    \"html\": {\r\n      \"href\": \"https://dev.azure.com/fabrikam/web/wi.aspx?pcguid=20cda608-32f0-4e6e-9b7c-8def7b38d15a&id=12\"\r\n    },\r\n    \"workItemType\": {\r\n      \"href\": \"https://dev.azure.com/fabrikam/54332e84-3d54-4c67-9bd0-0e88a9849330/_apis/wit/workItemTypes/User%20Story\"\r\n    },\r\n    \"fields\": {\r\n      \"href\": \"https://dev.azure.com/fabrikam/_apis/wit/fields\"\r\n    }\r\n  },\r\n  \"url\": \"https://dev.azure.com/fabrikam/_apis/wit/workItems/12\"\r\n}"
+								}
+							]
+						}
+					],
+					"description": "The WIQL API is used to run a query given the WIQL text or a saved query ID.\n\nhttps://docs.microsoft.com/en-us/rest/api/azure/devops/wit/wiql?view=azure-devops-rest-5.1",
+					"protocolProfileBehavior": {},
 					"_postman_isSubFolder": true
 				}
-			]
+			],
+			"protocolProfileBehavior": {}
 		},
 		{
 			"name": "Core",
@@ -7524,6 +8173,7 @@
 							"response": []
 						}
 					],
+					"protocolProfileBehavior": {},
 					"_postman_isSubFolder": true
 				},
 				{
@@ -7617,6 +8267,7 @@
 							"response": []
 						}
 					],
+					"protocolProfileBehavior": {},
 					"_postman_isSubFolder": true
 				},
 				{
@@ -7956,9 +8607,11 @@
 							"response": []
 						}
 					],
+					"protocolProfileBehavior": {},
 					"_postman_isSubFolder": true
 				}
-			]
+			],
+			"protocolProfileBehavior": {}
 		},
 		{
 			"name": "Graph",
@@ -8069,9 +8722,11 @@
 							"response": []
 						}
 					],
+					"protocolProfileBehavior": {},
 					"_postman_isSubFolder": true
 				}
-			]
+			],
+			"protocolProfileBehavior": {}
 		},
 		{
 			"name": "Release",
@@ -8356,9 +9011,11 @@
 							"response": []
 						}
 					],
+					"protocolProfileBehavior": {},
 					"_postman_isSubFolder": true
 				}
-			]
+			],
+			"protocolProfileBehavior": {}
 		},
 		{
 			"name": "Wiki",
@@ -8847,6 +9504,7 @@
 							}
 						}
 					],
+					"protocolProfileBehavior": {},
 					"_postman_isSubFolder": true
 				}
 			],
@@ -8886,7 +9544,8 @@
 						]
 					}
 				}
-			]
+			],
+			"protocolProfileBehavior": {}
 		}
 	],
 	"event": [
@@ -8910,5 +9569,6 @@
 				]
 			}
 		}
-	]
+	],
+	"protocolProfileBehavior": {}
 }
