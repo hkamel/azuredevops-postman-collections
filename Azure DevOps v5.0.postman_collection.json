@@ -1,6 +1,6 @@
 {
 	"info": {
-		"_postman_id": "7e82af05-82e8-4a5c-9c5a-2178dd1d23b5",
+		"_postman_id": "fe4993e8-83d2-4bd1-a0c4-600f31abc566",
 		"name": "Azure DevOps v5.0",
 		"description": "Azure DevOps Services REST API Reference.\n\nv1.1",
 		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
@@ -4057,7 +4057,7 @@
 						{
 							"listen": "prerequest",
 							"script": {
-								"id": "ff346cc3-8f53-4948-b95c-46455b4f5193",
+								"id": "efcc1216-fcd8-489c-97d6-3da10cdce212",
 								"type": "text/javascript",
 								"exec": [
 									""
@@ -4067,7 +4067,7 @@
 						{
 							"listen": "test",
 							"script": {
-								"id": "9f4945f7-5e05-4e55-8365-a46e39b515b1",
+								"id": "fe9b66ce-9a52-49da-9aaf-f7ec8c060923",
 								"type": "text/javascript",
 								"exec": [
 									""
@@ -4206,7 +4206,7 @@
 						{
 							"listen": "prerequest",
 							"script": {
-								"id": "ff346cc3-8f53-4948-b95c-46455b4f5193",
+								"id": "fcd99deb-2475-4bf5-bec3-7256729fe541",
 								"type": "text/javascript",
 								"exec": [
 									""
@@ -4216,7 +4216,7 @@
 						{
 							"listen": "test",
 							"script": {
-								"id": "9f4945f7-5e05-4e55-8365-a46e39b515b1",
+								"id": "761fea4e-c24d-437c-bb43-0a370c292c05",
 								"type": "text/javascript",
 								"exec": [
 									""
@@ -4302,7 +4302,7 @@
 						{
 							"listen": "prerequest",
 							"script": {
-								"id": "ff346cc3-8f53-4948-b95c-46455b4f5193",
+								"id": "af98b2f0-fc21-4e1c-8418-325062b1f570",
 								"type": "text/javascript",
 								"exec": [
 									""
@@ -4312,7 +4312,7 @@
 						{
 							"listen": "test",
 							"script": {
-								"id": "9f4945f7-5e05-4e55-8365-a46e39b515b1",
+								"id": "94ab5cf7-e06d-48b1-8361-a7f40840eda8",
 								"type": "text/javascript",
 								"exec": [
 									""
@@ -4390,7 +4390,7 @@
 						{
 							"listen": "prerequest",
 							"script": {
-								"id": "ff346cc3-8f53-4948-b95c-46455b4f5193",
+								"id": "f4401d1e-6bfc-4f1b-b15d-c39d85567367",
 								"type": "text/javascript",
 								"exec": [
 									""
@@ -4400,7 +4400,7 @@
 						{
 							"listen": "test",
 							"script": {
-								"id": "9f4945f7-5e05-4e55-8365-a46e39b515b1",
+								"id": "36a68870-7729-4c62-b74f-b5cdbbe74512",
 								"type": "text/javascript",
 								"exec": [
 									""
@@ -4480,7 +4480,7 @@
 						{
 							"listen": "prerequest",
 							"script": {
-								"id": "ff346cc3-8f53-4948-b95c-46455b4f5193",
+								"id": "335d0117-1259-45be-a4e8-4e18d8a4f7e6",
 								"type": "text/javascript",
 								"exec": [
 									""
@@ -4490,7 +4490,7 @@
 						{
 							"listen": "test",
 							"script": {
-								"id": "9f4945f7-5e05-4e55-8365-a46e39b515b1",
+								"id": "6d07aea8-e980-4b51-a8b3-a87d4f2dd2ec",
 								"type": "text/javascript",
 								"exec": [
 									""
@@ -4569,7 +4569,7 @@
 						{
 							"listen": "prerequest",
 							"script": {
-								"id": "ff346cc3-8f53-4948-b95c-46455b4f5193",
+								"id": "66529c5a-4efa-45bf-9871-09c2af710e57",
 								"type": "text/javascript",
 								"exec": [
 									""
@@ -4579,7 +4579,7 @@
 						{
 							"listen": "test",
 							"script": {
-								"id": "9f4945f7-5e05-4e55-8365-a46e39b515b1",
+								"id": "530f565a-005a-45c0-ab5d-00b5e0720af5",
 								"type": "text/javascript",
 								"exec": [
 									""
@@ -4637,7 +4637,7 @@
 						{
 							"listen": "prerequest",
 							"script": {
-								"id": "c27dae11-4903-48b0-94f7-ca889ce993a4",
+								"id": "ccc72eb7-a13a-4932-ba35-e9942d48d98e",
 								"type": "text/javascript",
 								"exec": [
 									""
@@ -4647,7 +4647,7 @@
 						{
 							"listen": "test",
 							"script": {
-								"id": "63d42119-f4a9-4d0f-9713-f6c9c45a0224",
+								"id": "fb74a4cc-222b-45ed-a5c2-c00d5287181c",
 								"type": "text/javascript",
 								"exec": [
 									""
@@ -4757,7 +4757,7 @@
 						{
 							"listen": "prerequest",
 							"script": {
-								"id": "ff346cc3-8f53-4948-b95c-46455b4f5193",
+								"id": "da77827e-1c78-4fde-89d5-ccea5c440917",
 								"type": "text/javascript",
 								"exec": [
 									""
@@ -4767,7 +4767,7 @@
 						{
 							"listen": "test",
 							"script": {
-								"id": "9f4945f7-5e05-4e55-8365-a46e39b515b1",
+								"id": "d98a7196-4115-41c6-bc79-ede361956031",
 								"type": "text/javascript",
 								"exec": [
 									""
@@ -4863,7 +4863,7 @@
 						{
 							"listen": "prerequest",
 							"script": {
-								"id": "ff346cc3-8f53-4948-b95c-46455b4f5193",
+								"id": "667ecaef-d7c0-4870-a7be-0af4443a5999",
 								"type": "text/javascript",
 								"exec": [
 									""
@@ -4873,7 +4873,7 @@
 						{
 							"listen": "test",
 							"script": {
-								"id": "9f4945f7-5e05-4e55-8365-a46e39b515b1",
+								"id": "9329c6e6-a395-4e58-ab62-3277e9a38843",
 								"type": "text/javascript",
 								"exec": [
 									""
@@ -5213,7 +5213,7 @@
 								{
 									"listen": "test",
 									"script": {
-										"id": "8a5173c8-455a-4474-8872-70aec775d255",
+										"id": "ff5dc39f-dab1-4ed0-b94a-e147f9b99cf8",
 										"exec": [
 											"",
 											"var jsonData = pm.response.json();",
@@ -5388,7 +5388,7 @@
 								{
 									"listen": "test",
 									"script": {
-										"id": "18138f9d-bb11-46e3-bbb3-cf10100ad6aa",
+										"id": "09832ca5-b3c3-46a4-97d2-fc78bbb32828",
 										"exec": [
 											"",
 											"var jsonData = pm.response.json();",
@@ -5677,7 +5677,7 @@
 								{
 									"listen": "test",
 									"script": {
-										"id": "60b88978-98c8-461b-8cce-a6cbdb91ab0a",
+										"id": "f6881e08-669d-4330-b135-bc3df74d8f98",
 										"exec": [
 											""
 										],
@@ -5740,118 +5740,6 @@
 							},
 							"response": [
 								{
-									"name": "As Of date before work item existed",
-									"originalRequest": {
-										"method": "GET",
-										"header": [],
-										"url": {
-											"raw": "https://{{coreServer}}/{{organization}}/{{project}}/_apis/wit/workitems/{{workItemId}}?api-version={{api-version}}&asOf=11/21/2018",
-											"protocol": "https",
-											"host": [
-												"{{coreServer}}"
-											],
-											"path": [
-												"{{organization}}",
-												"{{project}}",
-												"_apis",
-												"wit",
-												"workitems",
-												"{{workItemId}}"
-											],
-											"query": [
-												{
-													"key": "api-version",
-													"value": "{{api-version}}"
-												},
-												{
-													"key": "asOf",
-													"value": "11/21/2018",
-													"description": "Returns the state of the requested item as it was on the given date"
-												}
-											]
-										}
-									},
-									"status": "Not Found",
-									"code": 404,
-									"_postman_previewlanguage": "json",
-									"header": [
-										{
-											"key": "Cache-Control",
-											"value": "no-cache"
-										},
-										{
-											"key": "Pragma",
-											"value": "no-cache"
-										},
-										{
-											"key": "Content-Length",
-											"value": "297"
-										},
-										{
-											"key": "Content-Type",
-											"value": "application/json; charset=utf-8"
-										},
-										{
-											"key": "Expires",
-											"value": "-1"
-										},
-										{
-											"key": "P3P",
-											"value": "CP=\"CAO DSP COR ADMa DEV CONo TELo CUR PSA PSD TAI IVDo OUR SAMi BUS DEM NAV STA UNI COM INT PHY ONL FIN PUR LOC CNT\""
-										},
-										{
-											"key": "X-TFS-ProcessId",
-											"value": "896a28f1-7f6e-429f-a85f-485a7d720e37"
-										},
-										{
-											"key": "Strict-Transport-Security",
-											"value": "max-age=31536000; includeSubDomains"
-										},
-										{
-											"key": "ActivityId",
-											"value": "030d74cd-98eb-4a4f-a445-87487e145570"
-										},
-										{
-											"key": "X-TFS-Session",
-											"value": "030d74cd-98eb-4a4f-a445-87487e145570"
-										},
-										{
-											"key": "X-VSS-E2EID",
-											"value": "030d74cd-98eb-4a4f-a445-87487e145570"
-										},
-										{
-											"key": "X-VSS-UserData",
-											"value": "e622a2cf-3745-6572-8ff2-25c1350faa8b:josh.kewley@bluechip-llc.com"
-										},
-										{
-											"key": "X-FRAME-OPTIONS",
-											"value": "SAMEORIGIN"
-										},
-										{
-											"key": "Request-Context",
-											"value": "appId=cid-v1:e3d45cd2-3b08-46bc-b297-cda72fdc1dc1"
-										},
-										{
-											"key": "Access-Control-Expose-Headers",
-											"value": "Request-Context"
-										},
-										{
-											"key": "X-Content-Type-Options",
-											"value": "nosniff"
-										},
-										{
-											"key": "X-MSEdge-Ref",
-											"value": "Ref A: E164F077FF2E4F5091891FB9B7AF64F2 Ref B: BN3EDGE0308 Ref C: 2019-05-09T21:11:12Z"
-										},
-										{
-											"key": "Date",
-											"value": "Thu, 09 May 2019 21:11:12 GMT"
-										}
-									],
-									"cookie": [],
-									"body": "{\n    \"$id\": \"1\",\n    \"innerException\": null,\n    \"message\": \"The work item ### does not exist at time 11/21/2018 12:00:00 AM.\",\n    \"typeName\": \"Microsoft.Azure.Boards.WebApi.Common.WitResourceNotFoundException, Microsoft.Azure.Boards.WebApi.Common\",\n    \"typeKey\": \"WitResourceNotFoundException\",\n    \"errorCode\": 0,\n    \"eventId\": 3000\n}"
-								},
-								{
 									"name": "Fabrikam work item",
 									"originalRequest": {
 										"method": "GET",
@@ -5965,6 +5853,118 @@
 									],
 									"cookie": [],
 									"body": "{\r\n  \"id\": 12,\r\n  \"rev\": 3,\r\n  \"fields\": {\r\n    \"System.AreaPath\": \"MyAgilePrj2\",\r\n    \"System.TeamProject\": \"MyAgilePrj2\",\r\n    \"System.IterationPath\": \"MyAgilePrj2\\\\Iteration 1\",\r\n    \"System.WorkItemType\": \"User Story\",\r\n    \"System.State\": \"Active\",\r\n    \"System.Reason\": \"Implementation started\",\r\n    \"System.AssignedTo\": {\r\n      \"displayName\": \"Jamal Hartnett\",\r\n      \"url\": \"https://vssps.dev.azure.com/fabrikam/_apis/Identities/d291b0c4-a05c-4ea6-8df1-4b41d5f39eff\",\r\n      \"_links\": {\r\n        \"avatar\": {\r\n          \"href\": \"https://dev.azure.com/mseng/_apis/GraphProfile/MemberAvatars/aad.YTkzODFkODYtNTYxYS03ZDdiLWJjM2QtZDUzMjllMjM5OTAz\"\r\n        }\r\n      },\r\n      \"id\": \"d291b0c4-a05c-4ea6-8df1-4b41d5f39eff\",\r\n      \"uniqueName\": \"fabrikamfiber4@hotmail.com\",\r\n      \"imageUrl\": \"https://dev.azure.com/fabrikam/_api/_common/identityImage?id=d291b0c4-a05c-4ea6-8df1-4b41d5f39eff\",\r\n      \"descriptor\": \"aad.YTkzODFkODYtNTYxYS03ZDdiLWJjM2QtZDUzMjllMjM5OTAz\"\r\n    },\r\n    \"System.CreatedDate\": \"2017-09-04T06:11:59.05Z\",\r\n    \"System.CreatedBy\": {\r\n      \"displayName\": \"Jamal Hartnett\",\r\n      \"url\": \"https://vssps.dev.azure.com/fabrikam/_apis/Identities/d291b0c4-a05c-4ea6-8df1-4b41d5f39eff\",\r\n      \"_links\": {\r\n        \"avatar\": {\r\n          \"href\": \"https://dev.azure.com/mseng/_apis/GraphProfile/MemberAvatars/aad.YTkzODFkODYtNTYxYS03ZDdiLWJjM2QtZDUzMjllMjM5OTAz\"\r\n        }\r\n      },\r\n      \"id\": \"d291b0c4-a05c-4ea6-8df1-4b41d5f39eff\",\r\n      \"uniqueName\": \"fabrikamfiber4@hotmail.com\",\r\n      \"imageUrl\": \"https://dev.azure.com/fabrikam/_api/_common/identityImage?id=d291b0c4-a05c-4ea6-8df1-4b41d5f39eff\",\r\n      \"descriptor\": \"aad.YTkzODFkODYtNTYxYS03ZDdiLWJjM2QtZDUzMjllMjM5OTAz\"\r\n    },\r\n    \"System.ChangedDate\": \"2017-10-04T23:32:02.18Z\",\r\n    \"System.ChangedBy\": {\r\n      \"displayName\": \"Jamal Hartnett\",\r\n      \"url\": \"https://vssps.dev.azure.com/fabrikam/_apis/Identities/d291b0c4-a05c-4ea6-8df1-4b41d5f39eff\",\r\n      \"_links\": {\r\n        \"avatar\": {\r\n          \"href\": \"https://dev.azure.com/mseng/_apis/GraphProfile/MemberAvatars/aad.YTkzODFkODYtNTYxYS03ZDdiLWJjM2QtZDUzMjllMjM5OTAz\"\r\n        }\r\n      },\r\n      \"id\": \"d291b0c4-a05c-4ea6-8df1-4b41d5f39eff\",\r\n      \"uniqueName\": \"fabrikamfiber4@hotmail.com\",\r\n      \"imageUrl\": \"https://dev.azure.com/fabrikam/_api/_common/identityImage?id=d291b0c4-a05c-4ea6-8df1-4b41d5f39eff\",\r\n      \"descriptor\": \"aad.YTkzODFkODYtNTYxYS03ZDdiLWJjM2QtZDUzMjllMjM5OTAz\"\r\n    },\r\n    \"System.Title\": \"Epic 2\",\r\n    \"Microsoft.VSTS.Common.StateChangeDate\": \"2017-10-04T23:32:01.6Z\",\r\n    \"Microsoft.VSTS.Common.ActivatedDate\": \"2017-10-04T23:32:01.6Z\",\r\n    \"Microsoft.VSTS.Common.ActivatedBy\": \"Jamal Hartnett <fabrikamfiber4@hotmail.com>\",\r\n    \"Microsoft.VSTS.Common.Priority\": 2,\r\n    \"Microsoft.VSTS.Common.ValueArea\": \"Business\",\r\n    \"System.Tags\": \"client; sample; teamservices\"\r\n  },\r\n  \"_links\": {\r\n    \"self\": {\r\n      \"href\": \"https://dev.azure.com/fabrikam/_apis/wit/workItems/12\"\r\n    },\r\n    \"workItemUpdates\": {\r\n      \"href\": \"https://dev.azure.com/fabrikam/_apis/wit/workItems/12/updates\"\r\n    },\r\n    \"workItemRevisions\": {\r\n      \"href\": \"https://dev.azure.com/fabrikam/_apis/wit/workItems/12/revisions\"\r\n    },\r\n    \"workItemHistory\": {\r\n      \"href\": \"https://dev.azure.com/fabrikam/_apis/wit/workItems/12/history\"\r\n    },\r\n    \"html\": {\r\n      \"href\": \"https://dev.azure.com/fabrikam/web/wi.aspx?pcguid=20cda608-32f0-4e6e-9b7c-8def7b38d15a&id=12\"\r\n    },\r\n    \"workItemType\": {\r\n      \"href\": \"https://dev.azure.com/fabrikam/54332e84-3d54-4c67-9bd0-0e88a9849330/_apis/wit/workItemTypes/User%20Story\"\r\n    },\r\n    \"fields\": {\r\n      \"href\": \"https://dev.azure.com/fabrikam/_apis/wit/fields\"\r\n    }\r\n  },\r\n  \"url\": \"https://dev.azure.com/fabrikam/_apis/wit/workItems/12\"\r\n}"
+								},
+								{
+									"name": "As Of date before work item existed",
+									"originalRequest": {
+										"method": "GET",
+										"header": [],
+										"url": {
+											"raw": "https://{{coreServer}}/{{organization}}/{{project}}/_apis/wit/workitems/{{workItemId}}?api-version={{api-version}}&asOf=11/21/2018",
+											"protocol": "https",
+											"host": [
+												"{{coreServer}}"
+											],
+											"path": [
+												"{{organization}}",
+												"{{project}}",
+												"_apis",
+												"wit",
+												"workitems",
+												"{{workItemId}}"
+											],
+											"query": [
+												{
+													"key": "api-version",
+													"value": "{{api-version}}"
+												},
+												{
+													"key": "asOf",
+													"value": "11/21/2018",
+													"description": "Returns the state of the requested item as it was on the given date"
+												}
+											]
+										}
+									},
+									"status": "Not Found",
+									"code": 404,
+									"_postman_previewlanguage": "json",
+									"header": [
+										{
+											"key": "Cache-Control",
+											"value": "no-cache"
+										},
+										{
+											"key": "Pragma",
+											"value": "no-cache"
+										},
+										{
+											"key": "Content-Length",
+											"value": "297"
+										},
+										{
+											"key": "Content-Type",
+											"value": "application/json; charset=utf-8"
+										},
+										{
+											"key": "Expires",
+											"value": "-1"
+										},
+										{
+											"key": "P3P",
+											"value": "CP=\"CAO DSP COR ADMa DEV CONo TELo CUR PSA PSD TAI IVDo OUR SAMi BUS DEM NAV STA UNI COM INT PHY ONL FIN PUR LOC CNT\""
+										},
+										{
+											"key": "X-TFS-ProcessId",
+											"value": "896a28f1-7f6e-429f-a85f-485a7d720e37"
+										},
+										{
+											"key": "Strict-Transport-Security",
+											"value": "max-age=31536000; includeSubDomains"
+										},
+										{
+											"key": "ActivityId",
+											"value": "030d74cd-98eb-4a4f-a445-87487e145570"
+										},
+										{
+											"key": "X-TFS-Session",
+											"value": "030d74cd-98eb-4a4f-a445-87487e145570"
+										},
+										{
+											"key": "X-VSS-E2EID",
+											"value": "030d74cd-98eb-4a4f-a445-87487e145570"
+										},
+										{
+											"key": "X-VSS-UserData",
+											"value": "e622a2cf-3745-6572-8ff2-25c1350faa8b:josh.kewley@bluechip-llc.com"
+										},
+										{
+											"key": "X-FRAME-OPTIONS",
+											"value": "SAMEORIGIN"
+										},
+										{
+											"key": "Request-Context",
+											"value": "appId=cid-v1:e3d45cd2-3b08-46bc-b297-cda72fdc1dc1"
+										},
+										{
+											"key": "Access-Control-Expose-Headers",
+											"value": "Request-Context"
+										},
+										{
+											"key": "X-Content-Type-Options",
+											"value": "nosniff"
+										},
+										{
+											"key": "X-MSEdge-Ref",
+											"value": "Ref A: E164F077FF2E4F5091891FB9B7AF64F2 Ref B: BN3EDGE0308 Ref C: 2019-05-09T21:11:12Z"
+										},
+										{
+											"key": "Date",
+											"value": "Thu, 09 May 2019 21:11:12 GMT"
+										}
+									],
+									"cookie": [],
+									"body": "{\n    \"$id\": \"1\",\n    \"innerException\": null,\n    \"message\": \"The work item ### does not exist at time 11/21/2018 12:00:00 AM.\",\n    \"typeName\": \"Microsoft.Azure.Boards.WebApi.Common.WitResourceNotFoundException, Microsoft.Azure.Boards.WebApi.Common\",\n    \"typeKey\": \"WitResourceNotFoundException\",\n    \"errorCode\": 0,\n    \"eventId\": 3000\n}"
 								}
 							]
 						},
@@ -5974,7 +5974,7 @@
 								{
 									"listen": "test",
 									"script": {
-										"id": "60b88978-98c8-461b-8cce-a6cbdb91ab0a",
+										"id": "e274980f-05c5-414b-a503-0fe1111e3153",
 										"exec": [
 											""
 										],
@@ -6037,118 +6037,6 @@
 							},
 							"response": [
 								{
-									"name": "As Of date before work item existed",
-									"originalRequest": {
-										"method": "GET",
-										"header": [],
-										"url": {
-											"raw": "https://{{coreServer}}/{{organization}}/{{project}}/_apis/wit/workitems/{{workItemId}}?api-version={{api-version}}&asOf=11/21/2018",
-											"protocol": "https",
-											"host": [
-												"{{coreServer}}"
-											],
-											"path": [
-												"{{organization}}",
-												"{{project}}",
-												"_apis",
-												"wit",
-												"workitems",
-												"{{workItemId}}"
-											],
-											"query": [
-												{
-													"key": "api-version",
-													"value": "{{api-version}}"
-												},
-												{
-													"key": "asOf",
-													"value": "11/21/2018",
-													"description": "Returns the state of the requested item as it was on the given date"
-												}
-											]
-										}
-									},
-									"status": "Not Found",
-									"code": 404,
-									"_postman_previewlanguage": "json",
-									"header": [
-										{
-											"key": "Cache-Control",
-											"value": "no-cache"
-										},
-										{
-											"key": "Pragma",
-											"value": "no-cache"
-										},
-										{
-											"key": "Content-Length",
-											"value": "297"
-										},
-										{
-											"key": "Content-Type",
-											"value": "application/json; charset=utf-8"
-										},
-										{
-											"key": "Expires",
-											"value": "-1"
-										},
-										{
-											"key": "P3P",
-											"value": "CP=\"CAO DSP COR ADMa DEV CONo TELo CUR PSA PSD TAI IVDo OUR SAMi BUS DEM NAV STA UNI COM INT PHY ONL FIN PUR LOC CNT\""
-										},
-										{
-											"key": "X-TFS-ProcessId",
-											"value": "896a28f1-7f6e-429f-a85f-485a7d720e37"
-										},
-										{
-											"key": "Strict-Transport-Security",
-											"value": "max-age=31536000; includeSubDomains"
-										},
-										{
-											"key": "ActivityId",
-											"value": "030d74cd-98eb-4a4f-a445-87487e145570"
-										},
-										{
-											"key": "X-TFS-Session",
-											"value": "030d74cd-98eb-4a4f-a445-87487e145570"
-										},
-										{
-											"key": "X-VSS-E2EID",
-											"value": "030d74cd-98eb-4a4f-a445-87487e145570"
-										},
-										{
-											"key": "X-VSS-UserData",
-											"value": "e622a2cf-3745-6572-8ff2-25c1350faa8b:josh.kewley@bluechip-llc.com"
-										},
-										{
-											"key": "X-FRAME-OPTIONS",
-											"value": "SAMEORIGIN"
-										},
-										{
-											"key": "Request-Context",
-											"value": "appId=cid-v1:e3d45cd2-3b08-46bc-b297-cda72fdc1dc1"
-										},
-										{
-											"key": "Access-Control-Expose-Headers",
-											"value": "Request-Context"
-										},
-										{
-											"key": "X-Content-Type-Options",
-											"value": "nosniff"
-										},
-										{
-											"key": "X-MSEdge-Ref",
-											"value": "Ref A: E164F077FF2E4F5091891FB9B7AF64F2 Ref B: BN3EDGE0308 Ref C: 2019-05-09T21:11:12Z"
-										},
-										{
-											"key": "Date",
-											"value": "Thu, 09 May 2019 21:11:12 GMT"
-										}
-									],
-									"cookie": [],
-									"body": "{\n    \"$id\": \"1\",\n    \"innerException\": null,\n    \"message\": \"The work item ### does not exist at time 11/21/2018 12:00:00 AM.\",\n    \"typeName\": \"Microsoft.Azure.Boards.WebApi.Common.WitResourceNotFoundException, Microsoft.Azure.Boards.WebApi.Common\",\n    \"typeKey\": \"WitResourceNotFoundException\",\n    \"errorCode\": 0,\n    \"eventId\": 3000\n}"
-								},
-								{
 									"name": "Fabrikam work item",
 									"originalRequest": {
 										"method": "GET",
@@ -6262,6 +6150,118 @@
 									],
 									"cookie": [],
 									"body": "{\r\n  \"id\": 12,\r\n  \"rev\": 3,\r\n  \"fields\": {\r\n    \"System.AreaPath\": \"MyAgilePrj2\",\r\n    \"System.TeamProject\": \"MyAgilePrj2\",\r\n    \"System.IterationPath\": \"MyAgilePrj2\\\\Iteration 1\",\r\n    \"System.WorkItemType\": \"User Story\",\r\n    \"System.State\": \"Active\",\r\n    \"System.Reason\": \"Implementation started\",\r\n    \"System.AssignedTo\": {\r\n      \"displayName\": \"Jamal Hartnett\",\r\n      \"url\": \"https://vssps.dev.azure.com/fabrikam/_apis/Identities/d291b0c4-a05c-4ea6-8df1-4b41d5f39eff\",\r\n      \"_links\": {\r\n        \"avatar\": {\r\n          \"href\": \"https://dev.azure.com/mseng/_apis/GraphProfile/MemberAvatars/aad.YTkzODFkODYtNTYxYS03ZDdiLWJjM2QtZDUzMjllMjM5OTAz\"\r\n        }\r\n      },\r\n      \"id\": \"d291b0c4-a05c-4ea6-8df1-4b41d5f39eff\",\r\n      \"uniqueName\": \"fabrikamfiber4@hotmail.com\",\r\n      \"imageUrl\": \"https://dev.azure.com/fabrikam/_api/_common/identityImage?id=d291b0c4-a05c-4ea6-8df1-4b41d5f39eff\",\r\n      \"descriptor\": \"aad.YTkzODFkODYtNTYxYS03ZDdiLWJjM2QtZDUzMjllMjM5OTAz\"\r\n    },\r\n    \"System.CreatedDate\": \"2017-09-04T06:11:59.05Z\",\r\n    \"System.CreatedBy\": {\r\n      \"displayName\": \"Jamal Hartnett\",\r\n      \"url\": \"https://vssps.dev.azure.com/fabrikam/_apis/Identities/d291b0c4-a05c-4ea6-8df1-4b41d5f39eff\",\r\n      \"_links\": {\r\n        \"avatar\": {\r\n          \"href\": \"https://dev.azure.com/mseng/_apis/GraphProfile/MemberAvatars/aad.YTkzODFkODYtNTYxYS03ZDdiLWJjM2QtZDUzMjllMjM5OTAz\"\r\n        }\r\n      },\r\n      \"id\": \"d291b0c4-a05c-4ea6-8df1-4b41d5f39eff\",\r\n      \"uniqueName\": \"fabrikamfiber4@hotmail.com\",\r\n      \"imageUrl\": \"https://dev.azure.com/fabrikam/_api/_common/identityImage?id=d291b0c4-a05c-4ea6-8df1-4b41d5f39eff\",\r\n      \"descriptor\": \"aad.YTkzODFkODYtNTYxYS03ZDdiLWJjM2QtZDUzMjllMjM5OTAz\"\r\n    },\r\n    \"System.ChangedDate\": \"2017-10-04T23:32:02.18Z\",\r\n    \"System.ChangedBy\": {\r\n      \"displayName\": \"Jamal Hartnett\",\r\n      \"url\": \"https://vssps.dev.azure.com/fabrikam/_apis/Identities/d291b0c4-a05c-4ea6-8df1-4b41d5f39eff\",\r\n      \"_links\": {\r\n        \"avatar\": {\r\n          \"href\": \"https://dev.azure.com/mseng/_apis/GraphProfile/MemberAvatars/aad.YTkzODFkODYtNTYxYS03ZDdiLWJjM2QtZDUzMjllMjM5OTAz\"\r\n        }\r\n      },\r\n      \"id\": \"d291b0c4-a05c-4ea6-8df1-4b41d5f39eff\",\r\n      \"uniqueName\": \"fabrikamfiber4@hotmail.com\",\r\n      \"imageUrl\": \"https://dev.azure.com/fabrikam/_api/_common/identityImage?id=d291b0c4-a05c-4ea6-8df1-4b41d5f39eff\",\r\n      \"descriptor\": \"aad.YTkzODFkODYtNTYxYS03ZDdiLWJjM2QtZDUzMjllMjM5OTAz\"\r\n    },\r\n    \"System.Title\": \"Epic 2\",\r\n    \"Microsoft.VSTS.Common.StateChangeDate\": \"2017-10-04T23:32:01.6Z\",\r\n    \"Microsoft.VSTS.Common.ActivatedDate\": \"2017-10-04T23:32:01.6Z\",\r\n    \"Microsoft.VSTS.Common.ActivatedBy\": \"Jamal Hartnett <fabrikamfiber4@hotmail.com>\",\r\n    \"Microsoft.VSTS.Common.Priority\": 2,\r\n    \"Microsoft.VSTS.Common.ValueArea\": \"Business\",\r\n    \"System.Tags\": \"client; sample; teamservices\"\r\n  },\r\n  \"_links\": {\r\n    \"self\": {\r\n      \"href\": \"https://dev.azure.com/fabrikam/_apis/wit/workItems/12\"\r\n    },\r\n    \"workItemUpdates\": {\r\n      \"href\": \"https://dev.azure.com/fabrikam/_apis/wit/workItems/12/updates\"\r\n    },\r\n    \"workItemRevisions\": {\r\n      \"href\": \"https://dev.azure.com/fabrikam/_apis/wit/workItems/12/revisions\"\r\n    },\r\n    \"workItemHistory\": {\r\n      \"href\": \"https://dev.azure.com/fabrikam/_apis/wit/workItems/12/history\"\r\n    },\r\n    \"html\": {\r\n      \"href\": \"https://dev.azure.com/fabrikam/web/wi.aspx?pcguid=20cda608-32f0-4e6e-9b7c-8def7b38d15a&id=12\"\r\n    },\r\n    \"workItemType\": {\r\n      \"href\": \"https://dev.azure.com/fabrikam/54332e84-3d54-4c67-9bd0-0e88a9849330/_apis/wit/workItemTypes/User%20Story\"\r\n    },\r\n    \"fields\": {\r\n      \"href\": \"https://dev.azure.com/fabrikam/_apis/wit/fields\"\r\n    }\r\n  },\r\n  \"url\": \"https://dev.azure.com/fabrikam/_apis/wit/workItems/12\"\r\n}"
+								},
+								{
+									"name": "As Of date before work item existed",
+									"originalRequest": {
+										"method": "GET",
+										"header": [],
+										"url": {
+											"raw": "https://{{coreServer}}/{{organization}}/{{project}}/_apis/wit/workitems/{{workItemId}}?api-version={{api-version}}&asOf=11/21/2018",
+											"protocol": "https",
+											"host": [
+												"{{coreServer}}"
+											],
+											"path": [
+												"{{organization}}",
+												"{{project}}",
+												"_apis",
+												"wit",
+												"workitems",
+												"{{workItemId}}"
+											],
+											"query": [
+												{
+													"key": "api-version",
+													"value": "{{api-version}}"
+												},
+												{
+													"key": "asOf",
+													"value": "11/21/2018",
+													"description": "Returns the state of the requested item as it was on the given date"
+												}
+											]
+										}
+									},
+									"status": "Not Found",
+									"code": 404,
+									"_postman_previewlanguage": "json",
+									"header": [
+										{
+											"key": "Cache-Control",
+											"value": "no-cache"
+										},
+										{
+											"key": "Pragma",
+											"value": "no-cache"
+										},
+										{
+											"key": "Content-Length",
+											"value": "297"
+										},
+										{
+											"key": "Content-Type",
+											"value": "application/json; charset=utf-8"
+										},
+										{
+											"key": "Expires",
+											"value": "-1"
+										},
+										{
+											"key": "P3P",
+											"value": "CP=\"CAO DSP COR ADMa DEV CONo TELo CUR PSA PSD TAI IVDo OUR SAMi BUS DEM NAV STA UNI COM INT PHY ONL FIN PUR LOC CNT\""
+										},
+										{
+											"key": "X-TFS-ProcessId",
+											"value": "896a28f1-7f6e-429f-a85f-485a7d720e37"
+										},
+										{
+											"key": "Strict-Transport-Security",
+											"value": "max-age=31536000; includeSubDomains"
+										},
+										{
+											"key": "ActivityId",
+											"value": "030d74cd-98eb-4a4f-a445-87487e145570"
+										},
+										{
+											"key": "X-TFS-Session",
+											"value": "030d74cd-98eb-4a4f-a445-87487e145570"
+										},
+										{
+											"key": "X-VSS-E2EID",
+											"value": "030d74cd-98eb-4a4f-a445-87487e145570"
+										},
+										{
+											"key": "X-VSS-UserData",
+											"value": "e622a2cf-3745-6572-8ff2-25c1350faa8b:josh.kewley@bluechip-llc.com"
+										},
+										{
+											"key": "X-FRAME-OPTIONS",
+											"value": "SAMEORIGIN"
+										},
+										{
+											"key": "Request-Context",
+											"value": "appId=cid-v1:e3d45cd2-3b08-46bc-b297-cda72fdc1dc1"
+										},
+										{
+											"key": "Access-Control-Expose-Headers",
+											"value": "Request-Context"
+										},
+										{
+											"key": "X-Content-Type-Options",
+											"value": "nosniff"
+										},
+										{
+											"key": "X-MSEdge-Ref",
+											"value": "Ref A: E164F077FF2E4F5091891FB9B7AF64F2 Ref B: BN3EDGE0308 Ref C: 2019-05-09T21:11:12Z"
+										},
+										{
+											"key": "Date",
+											"value": "Thu, 09 May 2019 21:11:12 GMT"
+										}
+									],
+									"cookie": [],
+									"body": "{\n    \"$id\": \"1\",\n    \"innerException\": null,\n    \"message\": \"The work item ### does not exist at time 11/21/2018 12:00:00 AM.\",\n    \"typeName\": \"Microsoft.Azure.Boards.WebApi.Common.WitResourceNotFoundException, Microsoft.Azure.Boards.WebApi.Common\",\n    \"typeKey\": \"WitResourceNotFoundException\",\n    \"errorCode\": 0,\n    \"eventId\": 3000\n}"
 								}
 							]
 						},
@@ -6271,7 +6271,7 @@
 								{
 									"listen": "test",
 									"script": {
-										"id": "60b88978-98c8-461b-8cce-a6cbdb91ab0a",
+										"id": "7888e0e5-22a2-46ed-a728-fae0ce4075f9",
 										"exec": [
 											""
 										],
@@ -6470,7 +6470,7 @@
 								{
 									"listen": "test",
 									"script": {
-										"id": "60b88978-98c8-461b-8cce-a6cbdb91ab0a",
+										"id": "6472f2b0-545d-4787-af44-a143f2b34be4",
 										"exec": [
 											""
 										],
@@ -6788,7 +6788,7 @@
 								{
 									"listen": "test",
 									"script": {
-										"id": "60b88978-98c8-461b-8cce-a6cbdb91ab0a",
+										"id": "fb1bd2fd-a914-4db9-86fd-67647f21e3e6",
 										"exec": [
 											"var data = JSON.parse(responseBody);\r",
 											"\r",
@@ -7012,7 +7012,7 @@
 								{
 									"listen": "test",
 									"script": {
-										"id": "5a8ccbf9-92e0-4e73-b6bb-73015fa6f9e5",
+										"id": "562b475e-bc92-4d49-b952-7a91dd43177c",
 										"exec": [
 											""
 										],
@@ -7181,7 +7181,7 @@
 								{
 									"listen": "test",
 									"script": {
-										"id": "60b88978-98c8-461b-8cce-a6cbdb91ab0a",
+										"id": "90338a68-2ced-47c9-bd35-c989897a1ce7",
 										"exec": [
 											"var data = JSON.parse(responseBody);\r",
 											"\r",
@@ -7256,7 +7256,7 @@
 								{
 									"listen": "test",
 									"script": {
-										"id": "60b88978-98c8-461b-8cce-a6cbdb91ab0a",
+										"id": "8d95e839-bdea-41f5-aebe-2c76c0fffa54",
 										"exec": [
 											"var data = JSON.parse(responseBody);\r",
 											"\r",
@@ -7339,7 +7339,7 @@
 								{
 									"listen": "test",
 									"script": {
-										"id": "60b88978-98c8-461b-8cce-a6cbdb91ab0a",
+										"id": "0186a217-dd5b-4811-a6f9-539e70a6b5bb",
 										"exec": [
 											""
 										],
@@ -9013,6 +9013,238 @@
 					],
 					"protocolProfileBehavior": {},
 					"_postman_isSubFolder": true
+				},
+				{
+					"name": "Definitions",
+					"item": [
+						{
+							"name": "List release definitions",
+							"request": {
+								"auth": {
+									"type": "basic",
+									"basic": [
+										{
+											"key": "username",
+											"value": "Basic",
+											"type": "string"
+										},
+										{
+											"key": "password",
+											"value": "{{AccessToken}}",
+											"type": "string"
+										}
+									]
+								},
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "https://{{releaseServer}}/{{organization}}/{{project}}/_apis/release/definitions?api-version={{api-version}}",
+									"protocol": "https",
+									"host": [
+										"{{releaseServer}}"
+									],
+									"path": [
+										"{{organization}}",
+										"{{project}}",
+										"_apis",
+										"release",
+										"definitions"
+									],
+									"query": [
+										{
+											"key": "propertyFilters",
+											"value": "",
+											"description": "A comma-delimited list of extended properties to be retrieved. If set, the returned Releases will contain values for the specified property Ids (if they exist). If not set, properties will not be included. Note that this will not filter out any Release from results irrespective of whether it has property set or not.",
+											"disabled": true
+										},
+										{
+											"key": "tagFilter",
+											"value": "",
+											"description": "A comma-delimited list of tags. Only releases with these tags will be returned.",
+											"disabled": true
+										},
+										{
+											"key": "isDeleted",
+											"value": "false",
+											"description": "Gets the soft deleted releases, if true.",
+											"disabled": true
+										},
+										{
+											"key": "sourceBranchFilter",
+											"value": "",
+											"description": "Releases with given sourceBranchFilter will be returned.",
+											"disabled": true
+										},
+										{
+											"key": "artifactVersionId",
+											"value": "",
+											"description": "Releases with given artifactVersionId will be returned. E.g. in case of Build artifactType, it is buildId.",
+											"disabled": true
+										},
+										{
+											"key": "sourceId",
+											"value": "",
+											"description": "Unique identifier of the artifact used. e.g. For build it would be {projectGuid}:{BuildDefinitionId}, for Jenkins it would be {JenkinsConnectionId}:{JenkinsDefinitionId}, for TfsOnPrem it would be {TfsOnPremConnectionId}:{ProjectName}:{TfsOnPremDefinitionId}. For third-party artifacts e.g. TeamCity, BitBucket you may refer 'uniqueSourceIdentifier' inside vss-extension.json https://github.com/Microsoft/vsts-rm-extensions/blob/master/Extensions.",
+											"disabled": true
+										},
+										{
+											"key": "artifactTypeId",
+											"value": "",
+											"description": "Releases with given artifactTypeId will be returned. Values can be Build, Jenkins, GitHub, Nuget, Team Build (external), ExternalTFSBuild, Git, TFVC, ExternalTfsXamlBuild.",
+											"disabled": true
+										},
+										{
+											"key": "$expand",
+											"value": "",
+											"description": "The property that should be expanded in the list of releases.",
+											"disabled": true
+										},
+										{
+											"key": "continuationToken",
+											"value": "",
+											"description": "Gets the releases after the continuation token provided.",
+											"disabled": true
+										},
+										{
+											"key": "$top",
+											"value": "",
+											"description": "Number of releases to get. Default is 50.",
+											"disabled": true
+										},
+										{
+											"key": "queryOrder",
+											"value": "",
+											"description": "Gets the results in the defined order of created date for releases. Default is descending.",
+											"disabled": true
+										},
+										{
+											"key": "maxCreatedTime",
+											"value": "",
+											"description": "Releases that were created before this time.",
+											"disabled": true
+										},
+										{
+											"key": "minCreatedTime",
+											"value": "",
+											"description": "Releases that were created after this time.",
+											"disabled": true
+										},
+										{
+											"key": "environmentStatusFilter",
+											"value": "",
+											"disabled": true
+										},
+										{
+											"key": "statusFilter",
+											"value": "",
+											"description": "Releases that have this status.",
+											"disabled": true
+										},
+										{
+											"key": "createdBy",
+											"value": "",
+											"description": "Releases created by this user.",
+											"disabled": true
+										},
+										{
+											"key": "searchText",
+											"value": "",
+											"description": "Releases with names containing searchText.",
+											"disabled": true
+										},
+										{
+											"key": "definitionEnvironmentId",
+											"value": "",
+											"disabled": true
+										},
+										{
+											"key": "definitionId",
+											"value": "",
+											"description": "Releases from this release definition Id.",
+											"disabled": true
+										},
+										{
+											"key": "releaseIdFilter",
+											"value": "",
+											"description": "A comma-delimited list of releases Ids. Only releases with these Ids will be returned.",
+											"disabled": true
+										},
+										{
+											"key": "api-version",
+											"value": "{{api-version}}"
+										}
+									]
+								},
+								"description": "Get a list of releases\r\n[https://docs.microsoft.com/en-us/rest/api/azure/devops/release/releases/list?view=azure-devops-rest-5.0](https://docs.microsoft.com/en-us/rest/api/azure/devops/release/releases/list?view=azure-devops-rest-5.0)"
+							},
+							"response": []
+						},
+						{
+							"name": "Get a release definition",
+							"request": {
+								"auth": {
+									"type": "basic",
+									"basic": [
+										{
+											"key": "username",
+											"value": "Basic",
+											"type": "string"
+										},
+										{
+											"key": "password",
+											"value": "{{AccessToken}}",
+											"type": "string"
+										}
+									]
+								},
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "https://{{releaseServer}}/{{organization}}/{{project}}/_apis/release/definitions/{{releaseId}}?api-version={{api-version}}",
+									"protocol": "https",
+									"host": [
+										"{{releaseServer}}"
+									],
+									"path": [
+										"{{organization}}",
+										"{{project}}",
+										"_apis",
+										"release",
+										"definitions",
+										"{{releaseId}}"
+									],
+									"query": [
+										{
+											"key": "approvalFilters",
+											"value": null,
+											"description": "A filter which would allow fetching approval steps selectively based on whether it is automated, or manual. This would also decide whether we should fetch pre and post approval snapshots. Assumes All by default",
+											"disabled": true
+										},
+										{
+											"key": "propertyFilters",
+											"value": null,
+											"description": "A comma-delimited list of extended properties to be retrieved. If set, the returned Release will contain values for the specified property Ids (if they exist). If not set, properties will not be included.",
+											"disabled": true
+										},
+										{
+											"key": "$topGateRecords",
+											"value": null,
+											"description": "Number of release gate records to get. Default is 5.",
+											"disabled": true
+										},
+										{
+											"key": "api-version",
+											"value": "{{api-version}}"
+										}
+									]
+								},
+								"description": "Get a Release\r\n[https://docs.microsoft.com/en-us/rest/api/azure/devops/release/releases/get%20release?view=azure-devops-rest-5.0](https://docs.microsoft.com/en-us/rest/api/azure/devops/release/releases/get%20release?view=azure-devops-rest-5.0)"
+							},
+							"response": []
+						}
+					],
+					"protocolProfileBehavior": {},
+					"_postman_isSubFolder": true
 				}
 			],
 			"protocolProfileBehavior": {}
@@ -9486,7 +9718,7 @@
 						{
 							"listen": "prerequest",
 							"script": {
-								"id": "fa7730ad-e8cf-429d-8697-401872ac46b0",
+								"id": "98027751-efba-43d9-a095-87704433e240",
 								"type": "text/javascript",
 								"exec": [
 									""
@@ -9496,7 +9728,7 @@
 						{
 							"listen": "test",
 							"script": {
-								"id": "84486755-1942-4a8b-85ae-d1c2bcc328ab",
+								"id": "b134a50b-997b-4dbd-8c31-a66e63c0e612",
 								"type": "text/javascript",
 								"exec": [
 									""
@@ -9527,7 +9759,7 @@
 				{
 					"listen": "prerequest",
 					"script": {
-						"id": "c154c472-d53f-44a0-91fd-4040d345fef4",
+						"id": "ce57ed7e-f7ad-4cb1-b9db-278cbbb2e843",
 						"type": "text/javascript",
 						"exec": [
 							""
@@ -9537,7 +9769,7 @@
 				{
 					"listen": "test",
 					"script": {
-						"id": "52e8946b-8ef9-4f29-8f39-3ecee81c8ee5",
+						"id": "49790923-4a68-41b0-ac76-ffcdb500033d",
 						"type": "text/javascript",
 						"exec": [
 							""
@@ -9552,7 +9784,7 @@
 		{
 			"listen": "prerequest",
 			"script": {
-				"id": "dd0e4f31-e4aa-419c-81d0-89e8d22feb90",
+				"id": "74bd8cb5-c411-4ee4-a03a-2399cb30e649",
 				"type": "text/javascript",
 				"exec": [
 					""
@@ -9562,7 +9794,7 @@
 		{
 			"listen": "test",
 			"script": {
-				"id": "0331b1a2-5387-4059-9a72-aac4ea848f59",
+				"id": "5e3b0a3e-de5b-4e86-99c0-05aa98cfea18",
 				"type": "text/javascript",
 				"exec": [
 					""
