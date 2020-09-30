@@ -9788,21 +9788,6 @@
 						{
 							"name": "Get",
 							"request": {
-								"auth": {
-									"type": "basic",
-									"basic": [
-										{
-											"key": "username",
-											"value": "Basic",
-											"type": "string"
-										},
-										{
-											"key": "password",
-											"value": "{{AccessToken}}",
-											"type": "string"
-										}
-									]
-								},
 								"method": "GET",
 								"header": [],
 								"url": {
@@ -9835,21 +9820,6 @@
 						{
 							"name": "Get Changes",
 							"request": {
-								"auth": {
-									"type": "basic",
-									"basic": [
-										{
-											"key": "username",
-											"value": "Basic",
-											"type": "string"
-										},
-										{
-											"key": "password",
-											"value": "{{AccessToken}}",
-											"type": "string"
-										}
-									]
-								},
 								"method": "GET",
 								"header": [],
 								"url": {
@@ -9895,21 +9865,6 @@
 						{
 							"name": "Get Commits",
 							"request": {
-								"auth": {
-									"type": "basic",
-									"basic": [
-										{
-											"key": "username",
-											"value": "Basic",
-											"type": "string"
-										},
-										{
-											"key": "password",
-											"value": "{{AccessToken}}",
-											"type": "string"
-										}
-									]
-								},
 								"method": "GET",
 								"header": [],
 								"url": {
@@ -10073,21 +10028,6 @@
 						{
 							"name": "Get Commits Batch",
 							"request": {
-								"auth": {
-									"type": "basic",
-									"basic": [
-										{
-											"key": "username",
-											"value": "Basic",
-											"type": "string"
-										},
-										{
-											"key": "password",
-											"value": "{{AccessToken}}",
-											"type": "string"
-										}
-									]
-								},
 								"method": "POST",
 								"header": [],
 								"body": {
@@ -10268,21 +10208,6 @@
 						{
 							"name": "Get Push Commits",
 							"request": {
-								"auth": {
-									"type": "basic",
-									"basic": [
-										{
-											"key": "username",
-											"value": "Basic",
-											"type": "string"
-										},
-										{
-											"key": "password",
-											"value": "{{AccessToken}}",
-											"type": "string"
-										}
-									]
-								},
 								"method": "GET",
 								"header": [],
 								"url": {
