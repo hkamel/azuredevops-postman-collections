@@ -1,6 +1,6 @@
 {
 	"info": {
-		"_postman_id": "f0074204-6550-46c7-b867-7a94bb4406a8",
+		"_postman_id": "ed2348cb-4e33-4192-97c8-a7e29fdea079",
 		"name": "Azure DevOps v5.0",
 		"description": "Azure DevOps Services REST API Reference.\n\nv1.1",
 		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
@@ -4057,7 +4057,7 @@
 						{
 							"listen": "prerequest",
 							"script": {
-								"id": "0531da93-5865-4659-be75-b673afd4731f",
+								"id": "08ead74a-5677-40cc-8552-2a44d57dd10c",
 								"type": "text/javascript",
 								"exec": [
 									""
@@ -4067,7 +4067,7 @@
 						{
 							"listen": "test",
 							"script": {
-								"id": "25b3b255-9740-4594-8d09-010310b4fce3",
+								"id": "9ef2aaf3-92ac-41d5-8b66-2cf35024568d",
 								"type": "text/javascript",
 								"exec": [
 									""
@@ -4206,7 +4206,7 @@
 						{
 							"listen": "prerequest",
 							"script": {
-								"id": "e95d1260-8e7b-4df8-8439-41b8b4eefe1e",
+								"id": "4f955e6f-9803-4dfd-9133-11aaf49f0226",
 								"type": "text/javascript",
 								"exec": [
 									""
@@ -4216,7 +4216,7 @@
 						{
 							"listen": "test",
 							"script": {
-								"id": "68920a17-85da-458c-9b3b-f7b53b8f9b13",
+								"id": "506a6e53-4a6c-483a-9787-dddd198bfd07",
 								"type": "text/javascript",
 								"exec": [
 									""
@@ -4302,7 +4302,7 @@
 						{
 							"listen": "prerequest",
 							"script": {
-								"id": "2c771a6e-557c-4ecf-8b27-683317b3e171",
+								"id": "fde90fb1-df28-4394-8afa-d54b8d74b85e",
 								"type": "text/javascript",
 								"exec": [
 									""
@@ -4312,7 +4312,7 @@
 						{
 							"listen": "test",
 							"script": {
-								"id": "e262de78-c8d6-4ea5-9e3e-50d1791d37e6",
+								"id": "d0ce147a-337d-4850-8533-8f40e90133a4",
 								"type": "text/javascript",
 								"exec": [
 									""
@@ -4390,7 +4390,7 @@
 						{
 							"listen": "prerequest",
 							"script": {
-								"id": "51e859da-3cde-4eec-8f3e-9a85a41eee9b",
+								"id": "d8c6ddaa-08fb-4287-87ac-97baa614ab25",
 								"type": "text/javascript",
 								"exec": [
 									""
@@ -4400,7 +4400,7 @@
 						{
 							"listen": "test",
 							"script": {
-								"id": "f780523d-6e6c-4ded-928d-4d3e3b9dffca",
+								"id": "ab028e41-9c63-4cd5-85b4-b4b0bcb229bf",
 								"type": "text/javascript",
 								"exec": [
 									""
@@ -4480,7 +4480,7 @@
 						{
 							"listen": "prerequest",
 							"script": {
-								"id": "bfbc4620-f98e-4f53-8825-021ebb0cfaca",
+								"id": "6d3b6eb9-ebeb-4e52-be67-f6d689cb0f76",
 								"type": "text/javascript",
 								"exec": [
 									""
@@ -4490,7 +4490,7 @@
 						{
 							"listen": "test",
 							"script": {
-								"id": "eccc5a01-9bee-4c57-961f-41bc0ac32fb1",
+								"id": "0f77fdff-997e-4bd8-92c7-41f1990df605",
 								"type": "text/javascript",
 								"exec": [
 									""
@@ -4569,7 +4569,7 @@
 						{
 							"listen": "prerequest",
 							"script": {
-								"id": "2cf57d8a-d2f0-4ce8-b9d6-d3376de9bf2c",
+								"id": "4851a2ee-b982-4163-a391-9948bed90565",
 								"type": "text/javascript",
 								"exec": [
 									""
@@ -4579,7 +4579,7 @@
 						{
 							"listen": "test",
 							"script": {
-								"id": "6dc1760a-a900-4549-bf6a-1829bd073cc0",
+								"id": "847496f4-4cfa-457c-b3d5-f86a52719df1",
 								"type": "text/javascript",
 								"exec": [
 									""
@@ -4637,7 +4637,7 @@
 						{
 							"listen": "prerequest",
 							"script": {
-								"id": "aa12657e-77a3-499b-a24b-c9782e8b9d48",
+								"id": "05c05104-4686-4c13-a1c8-38d1124a8080",
 								"type": "text/javascript",
 								"exec": [
 									""
@@ -4647,7 +4647,7 @@
 						{
 							"listen": "test",
 							"script": {
-								"id": "a3902deb-ea25-4543-b893-d9e7f1809033",
+								"id": "61100152-d421-4193-9fbf-501016efd0d2",
 								"type": "text/javascript",
 								"exec": [
 									""
@@ -4757,7 +4757,7 @@
 						{
 							"listen": "prerequest",
 							"script": {
-								"id": "44ea44e5-b915-40d4-9f68-0c54de1ab10e",
+								"id": "a5ce363b-07f3-4f6d-8583-693869599f65",
 								"type": "text/javascript",
 								"exec": [
 									""
@@ -4767,7 +4767,7 @@
 						{
 							"listen": "test",
 							"script": {
-								"id": "6f18babf-80b6-49d5-90f6-af5d20b8da6c",
+								"id": "b1efee61-1897-4112-9e55-02654a4c0b92",
 								"type": "text/javascript",
 								"exec": [
 									""
@@ -4863,7 +4863,7 @@
 						{
 							"listen": "prerequest",
 							"script": {
-								"id": "403ad63e-dd54-4034-8283-95be96acc9a7",
+								"id": "e564cd8a-3616-4f7d-a513-370b7ba310f2",
 								"type": "text/javascript",
 								"exec": [
 									""
@@ -4873,7 +4873,7 @@
 						{
 							"listen": "test",
 							"script": {
-								"id": "638c08ce-8270-44da-aa42-eff303a3a2e3",
+								"id": "d80f7999-6595-493a-b73c-f6b0ca5491d0",
 								"type": "text/javascript",
 								"exec": [
 									""
@@ -5213,7 +5213,7 @@
 								{
 									"listen": "test",
 									"script": {
-										"id": "47ace013-0297-4c16-99d8-beca6858806e",
+										"id": "04371b70-221f-46c1-a649-62c1004b0ab6",
 										"exec": [
 											"",
 											"var jsonData = pm.response.json();",
@@ -5388,7 +5388,7 @@
 								{
 									"listen": "test",
 									"script": {
-										"id": "4807bddf-4cd3-4ef9-9b46-fecaebe02002",
+										"id": "21748906-4494-46ea-ad2c-56f167e5f444",
 										"exec": [
 											"",
 											"var jsonData = pm.response.json();",
@@ -5677,7 +5677,7 @@
 								{
 									"listen": "test",
 									"script": {
-										"id": "72daa0f4-bc65-4308-97fc-78d1b8fcbeb9",
+										"id": "096a28f8-b1bb-4e72-b716-573921bbc6f7",
 										"exec": [
 											""
 										],
@@ -5974,7 +5974,7 @@
 								{
 									"listen": "test",
 									"script": {
-										"id": "3c0591b1-42fd-43ba-a1e3-3cb611e637c3",
+										"id": "f0fccc90-1377-4287-bb0b-9a788ac39f31",
 										"exec": [
 											""
 										],
@@ -6271,7 +6271,7 @@
 								{
 									"listen": "test",
 									"script": {
-										"id": "884827d7-b034-4d73-857f-7f66e3a72b88",
+										"id": "4ae3d34c-c873-467c-82aa-9b8778059e60",
 										"exec": [
 											""
 										],
@@ -6470,7 +6470,7 @@
 								{
 									"listen": "test",
 									"script": {
-										"id": "81eea8ff-b95b-43ec-b284-53f0ddfeb8bc",
+										"id": "4389ed4d-446a-438d-95a3-a5de64057b48",
 										"exec": [
 											""
 										],
@@ -6530,131 +6530,6 @@
 								"description": "Gets the details of up to 200 work items, optionally querying the state of the work item on a specific date\n\nThe request can include a list of fields which should be returned in the response\n\n[Documentation Link](https://docs.microsoft.com/en-us/rest/api/azure/devops/wit/work%20items/get%20work%20items%20batch?view=azure-devops-rest-5.0)"
 							},
 							"response": [
-								{
-									"name": "Error policy omit with very old asOf date (no results)",
-									"originalRequest": {
-										"method": "POST",
-										"header": [
-											{
-												"key": "Content-Type",
-												"name": "Content-Type",
-												"value": "application/json",
-												"type": "text"
-											}
-										],
-										"body": {
-											"mode": "raw",
-											"raw": "{\n    \"ids\": [\n        297,\n        299,\n        300\n    ],\n    \"asOf\": \"2000-12-27T00:00:00.000Z\",\n    \"errorPolicy\": \"omit\",\n    \"fields\": [\n        \"System.Id\",\n        \"System.Title\",\n        \"System.WorkItemType\",\n        \"Microsoft.VSTS.Scheduling.RemainingWork\"\n    ]\n}"
-										},
-										"url": {
-											"raw": "https://{{coreServer}}/{{organization}}/{{project}}/_apis/wit/workitemsbatch?api-version={{api-version}}",
-											"protocol": "https",
-											"host": [
-												"{{coreServer}}"
-											],
-											"path": [
-												"{{organization}}",
-												"{{project}}",
-												"_apis",
-												"wit",
-												"workitemsbatch"
-											],
-											"query": [
-												{
-													"key": "api-version",
-													"value": "{{api-version}}"
-												}
-											]
-										}
-									},
-									"status": "OK",
-									"code": 200,
-									"_postman_previewlanguage": "json",
-									"header": [
-										{
-											"key": "Cache-Control",
-											"value": "no-cache"
-										},
-										{
-											"key": "Pragma",
-											"value": "no-cache"
-										},
-										{
-											"key": "Content-Length",
-											"value": "143"
-										},
-										{
-											"key": "Content-Type",
-											"value": "application/json; charset=utf-8; api-version=5.0"
-										},
-										{
-											"key": "Content-Encoding",
-											"value": "gzip"
-										},
-										{
-											"key": "Expires",
-											"value": "-1"
-										},
-										{
-											"key": "Vary",
-											"value": "Accept-Encoding"
-										},
-										{
-											"key": "P3P",
-											"value": "CP=\"CAO DSP COR ADMa DEV CONo TELo CUR PSA PSD TAI IVDo OUR SAMi BUS DEM NAV STA UNI COM INT PHY ONL FIN PUR LOC CNT\""
-										},
-										{
-											"key": "X-TFS-ProcessId",
-											"value": "8c044192-381a-453f-a46d-bcd7dbe0a146"
-										},
-										{
-											"key": "Strict-Transport-Security",
-											"value": "max-age=31536000; includeSubDomains"
-										},
-										{
-											"key": "ActivityId",
-											"value": "3dbf0f88-bbe8-4087-b9d1-27e794f5a7d3"
-										},
-										{
-											"key": "X-TFS-Session",
-											"value": "3dbf0f88-bbe8-4087-b9d1-27e794f5a7d3"
-										},
-										{
-											"key": "X-VSS-E2EID",
-											"value": "3dbf0f88-bbe8-4087-b9d1-27e794f5a7d3"
-										},
-										{
-											"key": "X-VSS-UserData",
-											"value": "e622a2cf-3745-6572-8ff2-25c1350faa8b:josh.kewley@bluechip-llc.com"
-										},
-										{
-											"key": "X-FRAME-OPTIONS",
-											"value": "SAMEORIGIN"
-										},
-										{
-											"key": "Request-Context",
-											"value": "appId=cid-v1:e3d45cd2-3b08-46bc-b297-cda72fdc1dc1"
-										},
-										{
-											"key": "Access-Control-Expose-Headers",
-											"value": "Request-Context"
-										},
-										{
-											"key": "X-Content-Type-Options",
-											"value": "nosniff"
-										},
-										{
-											"key": "X-MSEdge-Ref",
-											"value": "Ref A: 893F3109060E41AEAF03A06E6F6AD6A1 Ref B: BN3EDGE0714 Ref C: 2019-05-09T21:42:10Z"
-										},
-										{
-											"key": "Date",
-											"value": "Thu, 09 May 2019 21:42:10 GMT"
-										}
-									],
-									"cookie": [],
-									"body": "{\n    \"count\": 0,\n    \"value\": []\n}"
-								},
 								{
 									"name": "Fabrikam bulk work item response",
 									"originalRequest": {
@@ -6779,6 +6654,131 @@
 									],
 									"cookie": [],
 									"body": "{\r\n  \"count\": 3,\r\n  \"value\": [\r\n    {\r\n      \"id\": 297,\r\n      \"rev\": 1,\r\n      \"fields\": {\r\n        \"System.Id\": 297,\r\n        \"System.WorkItemType\": \"Product Backlog Item\",\r\n        \"System.Title\": \"Customer can sign in using their Microsoft Account\"\r\n      },\r\n      \"url\": \"https://dev.azure.com/fabrikam/_apis/wit/workItems/297\"\r\n    },\r\n    {\r\n      \"id\": 299,\r\n      \"rev\": 7,\r\n      \"fields\": {\r\n        \"System.Id\": 299,\r\n        \"System.WorkItemType\": \"Task\",\r\n        \"System.Title\": \"JavaScript implementation for Microsoft Account\",\r\n        \"Microsoft.VSTS.Scheduling.RemainingWork\": 4\r\n      },\r\n      \"url\": \"https://dev.azure.com/fabrikam/_apis/wit/workItems/299\"\r\n    },\r\n    {\r\n      \"id\": 300,\r\n      \"rev\": 1,\r\n      \"fields\": {\r\n        \"System.Id\": 300,\r\n        \"System.WorkItemType\": \"Task\",\r\n        \"System.Title\": \"Unit Testing for MSA login\",\r\n        \"Microsoft.VSTS.Scheduling.RemainingWork\": 3\r\n      },\r\n      \"url\": \"https://dev.azure.com/fabrikam/_apis/wit/workItems/300\"\r\n    }\r\n  ]\r\n}"
+								},
+								{
+									"name": "Error policy omit with very old asOf date (no results)",
+									"originalRequest": {
+										"method": "POST",
+										"header": [
+											{
+												"key": "Content-Type",
+												"name": "Content-Type",
+												"value": "application/json",
+												"type": "text"
+											}
+										],
+										"body": {
+											"mode": "raw",
+											"raw": "{\n    \"ids\": [\n        297,\n        299,\n        300\n    ],\n    \"asOf\": \"2000-12-27T00:00:00.000Z\",\n    \"errorPolicy\": \"omit\",\n    \"fields\": [\n        \"System.Id\",\n        \"System.Title\",\n        \"System.WorkItemType\",\n        \"Microsoft.VSTS.Scheduling.RemainingWork\"\n    ]\n}"
+										},
+										"url": {
+											"raw": "https://{{coreServer}}/{{organization}}/{{project}}/_apis/wit/workitemsbatch?api-version={{api-version}}",
+											"protocol": "https",
+											"host": [
+												"{{coreServer}}"
+											],
+											"path": [
+												"{{organization}}",
+												"{{project}}",
+												"_apis",
+												"wit",
+												"workitemsbatch"
+											],
+											"query": [
+												{
+													"key": "api-version",
+													"value": "{{api-version}}"
+												}
+											]
+										}
+									},
+									"status": "OK",
+									"code": 200,
+									"_postman_previewlanguage": "json",
+									"header": [
+										{
+											"key": "Cache-Control",
+											"value": "no-cache"
+										},
+										{
+											"key": "Pragma",
+											"value": "no-cache"
+										},
+										{
+											"key": "Content-Length",
+											"value": "143"
+										},
+										{
+											"key": "Content-Type",
+											"value": "application/json; charset=utf-8; api-version=5.0"
+										},
+										{
+											"key": "Content-Encoding",
+											"value": "gzip"
+										},
+										{
+											"key": "Expires",
+											"value": "-1"
+										},
+										{
+											"key": "Vary",
+											"value": "Accept-Encoding"
+										},
+										{
+											"key": "P3P",
+											"value": "CP=\"CAO DSP COR ADMa DEV CONo TELo CUR PSA PSD TAI IVDo OUR SAMi BUS DEM NAV STA UNI COM INT PHY ONL FIN PUR LOC CNT\""
+										},
+										{
+											"key": "X-TFS-ProcessId",
+											"value": "8c044192-381a-453f-a46d-bcd7dbe0a146"
+										},
+										{
+											"key": "Strict-Transport-Security",
+											"value": "max-age=31536000; includeSubDomains"
+										},
+										{
+											"key": "ActivityId",
+											"value": "3dbf0f88-bbe8-4087-b9d1-27e794f5a7d3"
+										},
+										{
+											"key": "X-TFS-Session",
+											"value": "3dbf0f88-bbe8-4087-b9d1-27e794f5a7d3"
+										},
+										{
+											"key": "X-VSS-E2EID",
+											"value": "3dbf0f88-bbe8-4087-b9d1-27e794f5a7d3"
+										},
+										{
+											"key": "X-VSS-UserData",
+											"value": "e622a2cf-3745-6572-8ff2-25c1350faa8b:josh.kewley@bluechip-llc.com"
+										},
+										{
+											"key": "X-FRAME-OPTIONS",
+											"value": "SAMEORIGIN"
+										},
+										{
+											"key": "Request-Context",
+											"value": "appId=cid-v1:e3d45cd2-3b08-46bc-b297-cda72fdc1dc1"
+										},
+										{
+											"key": "Access-Control-Expose-Headers",
+											"value": "Request-Context"
+										},
+										{
+											"key": "X-Content-Type-Options",
+											"value": "nosniff"
+										},
+										{
+											"key": "X-MSEdge-Ref",
+											"value": "Ref A: 893F3109060E41AEAF03A06E6F6AD6A1 Ref B: BN3EDGE0714 Ref C: 2019-05-09T21:42:10Z"
+										},
+										{
+											"key": "Date",
+											"value": "Thu, 09 May 2019 21:42:10 GMT"
+										}
+									],
+									"cookie": [],
+									"body": "{\n    \"count\": 0,\n    \"value\": []\n}"
 								}
 							]
 						},
@@ -6788,7 +6788,7 @@
 								{
 									"listen": "test",
 									"script": {
-										"id": "7e4f020d-83a9-4bd5-80f1-80bb9cc1c418",
+										"id": "c204dac5-bd64-4fa1-a515-b8f1ac31b0d3",
 										"exec": [
 											"var data = JSON.parse(responseBody);\r",
 											"\r",
@@ -7012,7 +7012,7 @@
 								{
 									"listen": "test",
 									"script": {
-										"id": "880ed9a0-3fa2-4bd6-8f3a-6f3eacc8f357",
+										"id": "ae368aa2-e3c3-4d35-a03e-ad8e08feae0f",
 										"exec": [
 											""
 										],
@@ -7181,7 +7181,7 @@
 								{
 									"listen": "test",
 									"script": {
-										"id": "e3a97824-1126-4c4e-b2ef-6a536d759414",
+										"id": "6c018958-c692-4bf7-83d3-0189da621526",
 										"exec": [
 											"var data = JSON.parse(responseBody);\r",
 											"\r",
@@ -7256,7 +7256,7 @@
 								{
 									"listen": "test",
 									"script": {
-										"id": "5aacec5c-303c-4739-b62f-43e3cba022d4",
+										"id": "ca7e4e84-a036-4b71-819c-5f72b1a1f5d0",
 										"exec": [
 											"var data = JSON.parse(responseBody);\r",
 											"\r",
@@ -7339,7 +7339,7 @@
 								{
 									"listen": "test",
 									"script": {
-										"id": "16971cb8-b6d7-4572-be4d-d1140975b5d1",
+										"id": "5bdc29ab-0799-4d32-b161-2d8e42a58e26",
 										"exec": [
 											""
 										],
@@ -9718,7 +9718,7 @@
 						{
 							"listen": "prerequest",
 							"script": {
-								"id": "31ecdde0-8606-4334-a74a-1c48cf8b2cba",
+								"id": "8203bc5a-3052-4776-b2f9-7e98cc37affa",
 								"type": "text/javascript",
 								"exec": [
 									""
@@ -9728,7 +9728,7 @@
 						{
 							"listen": "test",
 							"script": {
-								"id": "ed94cf55-3996-4af7-9325-1651bdc6b18c",
+								"id": "ee49b9f6-4e44-4ecf-bf11-1ce141e01b5b",
 								"type": "text/javascript",
 								"exec": [
 									""
@@ -9759,7 +9759,7 @@
 				{
 					"listen": "prerequest",
 					"script": {
-						"id": "25ecdcdf-779a-4125-a959-f8b1d9d5640e",
+						"id": "5b5ab79d-2c05-4912-971c-399646bfd692",
 						"type": "text/javascript",
 						"exec": [
 							""
@@ -9769,7 +9769,7 @@
 				{
 					"listen": "test",
 					"script": {
-						"id": "52ab5219-67bd-4a58-b99f-2b9bd5cdca1b",
+						"id": "e3f91a87-4d0a-4af7-8a54-74cf0445785e",
 						"type": "text/javascript",
 						"exec": [
 							""
@@ -9782,6 +9782,486 @@
 		{
 			"name": "Git",
 			"item": [
+				{
+					"name": "Commits",
+					"item": [
+						{
+							"name": "Get",
+							"request": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "https://{{coreServer}}/{{organization}}/{{project}}/_apis/git/repositories/{{repositoryId}}/commits/{{commitId}}?api-version={{api-version}}",
+									"protocol": "https",
+									"host": [
+										"{{coreServer}}"
+									],
+									"path": [
+										"{{organization}}",
+										"{{project}}",
+										"_apis",
+										"git",
+										"repositories",
+										"{{repositoryId}}",
+										"commits",
+										"{{commitId}}"
+									],
+									"query": [
+										{
+											"key": "api-version",
+											"value": "{{api-version}}"
+										}
+									]
+								},
+								"description": "Retrieve a particular commit.\r\n[https://docs.microsoft.com/en-us/rest/api/azure/devops/git/commits/get?view=azure-devops-rest-5.1](https://docs.microsoft.com/en-us/rest/api/azure/devops/git/commits/get?view=azure-devops-rest-5.1)"
+							},
+							"response": []
+						},
+						{
+							"name": "Get Changes",
+							"request": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "https://{{coreServer}}/{{organization}}/{{project}}/_apis/git/repositories/{{repositoryId}}/commits/{{commitId}}/changes?api-version={{api-version}}",
+									"protocol": "https",
+									"host": [
+										"{{coreServer}}"
+									],
+									"path": [
+										"{{organization}}",
+										"{{project}}",
+										"_apis",
+										"git",
+										"repositories",
+										"{{repositoryId}}",
+										"commits",
+										"{{commitId}}",
+										"changes"
+									],
+									"query": [
+										{
+											"key": "api-version",
+											"value": "{{api-version}}"
+										},
+										{
+											"key": "top",
+											"value": "",
+											"description": "The maximum number of changes to return.",
+											"disabled": true
+										},
+										{
+											"key": "skip",
+											"value": "",
+											"description": "The number of changes to skip",
+											"disabled": true
+										}
+									]
+								},
+								"description": "Retrieve changes for a particular commit.\r\n[https://docs.microsoft.com/en-us/rest/api/azure/devops/git/commits/get%20changes?view=azure-devops-rest-5.1](https://docs.microsoft.com/en-us/rest/api/azure/devops/git/commits/get%20changes?view=azure-devops-rest-5.1)"
+							},
+							"response": []
+						},
+						{
+							"name": "Get Commits",
+							"request": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "https://{{coreServer}}/{{organization}}/{{project}}/_apis/git/repositories/{{repositoryId}}/commits?api-version={{api-version}}",
+									"protocol": "https",
+									"host": [
+										"{{coreServer}}"
+									],
+									"path": [
+										"{{organization}}",
+										"{{project}}",
+										"_apis",
+										"git",
+										"repositories",
+										"{{repositoryId}}",
+										"commits"
+									],
+									"query": [
+										{
+											"key": "api-version",
+											"value": "{{api-version}}"
+										},
+										{
+											"key": "searchCriteria.$skip",
+											"value": null,
+											"description": "Number of entries to skip",
+											"disabled": true
+										},
+										{
+											"key": "searchCriteria.$top",
+											"value": null,
+											"description": "Maximum number of entries to retrieve",
+											"disabled": true
+										},
+										{
+											"key": "searchCriteria.author",
+											"value": null,
+											"description": "Alias or display name of the author",
+											"disabled": true
+										},
+										{
+											"key": "searchCriteria.compareVersion.version",
+											"value": null,
+											"description": "Version string identifier (name of tag/branch, SHA1 of commit)",
+											"disabled": true
+										},
+										{
+											"key": "searchCriteria.compareVersion.versionOptions",
+											"value": null,
+											"description": "Version options - Specify additional modifiers to version (e.g Previous)",
+											"disabled": true
+										},
+										{
+											"key": "searchCriteria.compareVersion.versionType",
+											"value": null,
+											"description": "Version type (branch, tag, or commit). Determines how Id is interpreted",
+											"disabled": true
+										},
+										{
+											"key": "searchCriteria.excludeDeletes",
+											"value": null,
+											"description": "Only applies when an itemPath is specified. This determines whether to exclude delete entries of the specified path.",
+											"disabled": true
+										},
+										{
+											"key": "searchCriteria.fromCommitId",
+											"value": null,
+											"description": "If provided, a lower bound for filtering commits alphabetically",
+											"disabled": true
+										},
+										{
+											"key": "searchCriteria.fromDate",
+											"value": null,
+											"description": "If provided, only include history entries created after this date (string)",
+											"disabled": true
+										},
+										{
+											"key": "searchCriteria.historyMode",
+											"value": null,
+											"description": "What Git history mode should be used. This only applies to the search criteria when Ids = null and an itemPath is specified.",
+											"disabled": true
+										},
+										{
+											"key": "searchCriteria.ids",
+											"value": null,
+											"description": "Specifies the exact commit ids of the commits to fetch. May not be combined with other parameters.",
+											"disabled": true
+										},
+										{
+											"key": "searchCriteria.includeLinks",
+											"value": "",
+											"description": "Whether to include the _links field on the shallow references",
+											"disabled": true
+										},
+										{
+											"key": "searchCriteria.includePushData",
+											"value": null,
+											"description": "Whether to include the push information",
+											"disabled": true
+										},
+										{
+											"key": "searchCriteria.includeUserImageUrl",
+											"value": null,
+											"description": "Whether to include the image Url for committers and authors",
+											"disabled": true
+										},
+										{
+											"key": "searchCriteria.includeWorkItems",
+											"value": null,
+											"description": "Whether to include linked work items",
+											"disabled": true
+										},
+										{
+											"key": "searchCriteria.itemPath",
+											"value": null,
+											"description": "Path of item to search under",
+											"disabled": true
+										},
+										{
+											"key": "searchCriteria.itemVersion.version",
+											"value": null,
+											"description": "Version string identifier (name of tag/branch, SHA1 of commit)",
+											"disabled": true
+										},
+										{
+											"key": "searchCriteria.itemVersion.versionOptions",
+											"value": null,
+											"description": "Version options - Specify additional modifiers to version (e.g Previous)",
+											"disabled": true
+										},
+										{
+											"key": "searchCriteria.itemVersion.versionType",
+											"value": null,
+											"description": "Version type (branch, tag, or commit). Determines how Id is interpreted",
+											"disabled": true
+										},
+										{
+											"key": "searchCriteria.toCommitId",
+											"value": null,
+											"description": "If provided, an upper bound for filtering commits alphabetically",
+											"disabled": true
+										},
+										{
+											"key": "searchCriteria.toDate",
+											"value": null,
+											"description": "If provided, only include history entries created before this date (string)",
+											"disabled": true
+										},
+										{
+											"key": "searchCriteria.user",
+											"value": null,
+											"description": "Alias or display name of the committer",
+											"disabled": true
+										}
+									]
+								},
+								"description": "Retrieve git commits for a project.\r\n[https://docs.microsoft.com/en-us/rest/api/azure/devops/git/commits/get%20commits?view=azure-devops-rest-5.1](https://docs.microsoft.com/en-us/rest/api/azure/devops/git/commits/get%20commits?view=azure-devops-rest-5.1)"
+							},
+							"response": []
+						},
+						{
+							"name": "Get Commits Batch",
+							"request": {
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "formdata",
+									"formdata": [
+										{
+											"key": "$skip",
+											"value": "",
+											"description": "Number of entries to skip",
+											"type": "text",
+											"disabled": true
+										},
+										{
+											"key": "$top",
+											"value": "",
+											"description": "Maximum number of entries to retrieve",
+											"type": "text",
+											"disabled": true
+										},
+										{
+											"key": "author",
+											"value": "",
+											"description": "Alias or display name of the author",
+											"type": "text",
+											"disabled": true
+										},
+										{
+											"key": "compareVersion",
+											"value": "",
+											"description": "Only applicable when ItemVersion specified. If provided, start walking history starting at this commit.",
+											"type": "text",
+											"disabled": true
+										},
+										{
+											"key": "excludeDeletes",
+											"value": "",
+											"description": "Only applies when an itemPath is specified. This determines whether to exclude delete entries of the specified path.",
+											"type": "text",
+											"disabled": true
+										},
+										{
+											"key": "fromCommitId",
+											"value": "",
+											"description": "A lower bound for filtering commits alphabetically",
+											"type": "text",
+											"disabled": true
+										},
+										{
+											"key": "fromDate",
+											"value": "",
+											"description": "Only include history entries created after this date (string)",
+											"type": "text",
+											"disabled": true
+										},
+										{
+											"key": "historyMode",
+											"value": "",
+											"description": "What Git history mode should be used. This only applies to the search criteria when Ids = null and an itemPath is specified.",
+											"type": "text",
+											"disabled": true
+										},
+										{
+											"key": "ids",
+											"value": "",
+											"description": "Specifies the exact commit ids of the commits to fetch. May not be combined with other parameters.",
+											"type": "text",
+											"disabled": true
+										},
+										{
+											"key": "includeLinks",
+											"value": "",
+											"description": "Whether to include the _links field on the shallow references",
+											"type": "text",
+											"disabled": true
+										},
+										{
+											"key": "includePushData",
+											"value": "",
+											"description": "Whether to include the push information",
+											"type": "text",
+											"disabled": true
+										},
+										{
+											"key": "includeUserImageUrl",
+											"value": "",
+											"description": "Whether to include the image Url for committers and authors",
+											"type": "text",
+											"disabled": true
+										},
+										{
+											"key": "includeWorkItems",
+											"value": "",
+											"description": "Whether to include linked work items",
+											"type": "text",
+											"disabled": true
+										},
+										{
+											"key": "itemPath",
+											"value": "",
+											"description": "Path of item to search under",
+											"type": "text",
+											"disabled": true
+										},
+										{
+											"key": "itemVersion",
+											"value": "",
+											"description": "If provided, identifies the commit or branch to search",
+											"type": "text",
+											"disabled": true
+										},
+										{
+											"key": "toCommitId",
+											"value": "",
+											"description": "If provided, an upper bound for filtering commits alphabetically",
+											"type": "text",
+											"disabled": true
+										},
+										{
+											"key": "toDate",
+											"value": "",
+											"description": "If provided, only include history entries created before this date (string)",
+											"type": "text",
+											"disabled": true
+										},
+										{
+											"key": "user",
+											"value": "",
+											"description": "Alias or display name of the committer",
+											"type": "text",
+											"disabled": true
+										}
+									]
+								},
+								"url": {
+									"raw": "https://{{coreServer}}/{{organization}}/{{project}}/_apis/git/repositories/{{repositoryId}}/commitsbatch?api-version={{api-version}}",
+									"protocol": "https",
+									"host": [
+										"{{coreServer}}"
+									],
+									"path": [
+										"{{organization}}",
+										"{{project}}",
+										"_apis",
+										"git",
+										"repositories",
+										"{{repositoryId}}",
+										"commitsbatch"
+									],
+									"query": [
+										{
+											"key": "api-version",
+											"value": "{{api-version}}"
+										},
+										{
+											"key": "$skip",
+											"value": "",
+											"description": "Number of commits to skip.",
+											"disabled": true
+										},
+										{
+											"key": "$top",
+											"value": "",
+											"description": "Maximum number of commits to return.",
+											"disabled": true
+										},
+										{
+											"key": "includeStatuses",
+											"value": null,
+											"description": "True to include additional commit status information",
+											"disabled": true
+										}
+									]
+								},
+								"description": "Retrieve git commits for a project matching the search criteria.\r\n[https://docs.microsoft.com/en-us/rest/api/azure/devops/git/commits/get%20commits%20batch?view=azure-devops-rest-5.1](https://docs.microsoft.com/en-us/rest/api/azure/devops/git/commits/get%20commits%20batch?view=azure-devops-rest-5.1)"
+							},
+							"response": []
+						},
+						{
+							"name": "Get Push Commits",
+							"request": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "https://{{coreServer}}/{{organization}}/{{project}}/_apis/git/repositories/{{repositoryId}}/commits?pushId=1&api-version={{api-version}}",
+									"protocol": "https",
+									"host": [
+										"{{coreServer}}"
+									],
+									"path": [
+										"{{organization}}",
+										"{{project}}",
+										"_apis",
+										"git",
+										"repositories",
+										"{{repositoryId}}",
+										"commits"
+									],
+									"query": [
+										{
+											"key": "pushId",
+											"value": "1"
+										},
+										{
+											"key": "api-version",
+											"value": "{{api-version}}"
+										},
+										{
+											"key": "includeLinks",
+											"value": null,
+											"description": "Set to false to avoid including REST Url links for resources. Defaults to true.",
+											"disabled": true
+										},
+										{
+											"key": "skip",
+											"value": "",
+											"description": "The number of commits to skip.",
+											"disabled": true
+										},
+										{
+											"key": "top",
+											"value": "",
+											"description": "The maximum number of commits to return (\"get the top x commits\").",
+											"disabled": true
+										}
+									]
+								},
+								"description": "Retrieve a list of commits associated with a particular push.\r\n[https://docs.microsoft.com/en-us/rest/api/azure/devops/git/commits/get%20push%20commits?view=azure-devops-rest-5.1](https://docs.microsoft.com/en-us/rest/api/azure/devops/git/commits/get%20push%20commits?view=azure-devops-rest-5.1)"
+							},
+							"response": []
+						}
+					],
+					"protocolProfileBehavior": {},
+					"_postman_isSubFolder": true
+				},
 				{
 					"name": "Repositories",
 					"item": [
@@ -10318,7 +10798,7 @@
 				{
 					"listen": "prerequest",
 					"script": {
-						"id": "df933520-0d0f-4cc5-a47c-df78788576e5",
+						"id": "25c41463-6ffa-42d0-bdd7-22b57fa46dfb",
 						"type": "text/javascript",
 						"exec": [
 							""
@@ -10328,7 +10808,7 @@
 				{
 					"listen": "test",
 					"script": {
-						"id": "6137daac-4481-451e-9390-0b1d749d7169",
+						"id": "80dccf5e-77cc-453c-9b37-28e9e64c1dfc",
 						"type": "text/javascript",
 						"exec": [
 							""
@@ -10358,7 +10838,7 @@
 		{
 			"listen": "prerequest",
 			"script": {
-				"id": "6fae1db1-a468-45bf-aafe-97be70c26532",
+				"id": "3c08777a-cdcb-42d8-a4c8-cd351185e54f",
 				"type": "text/javascript",
 				"exec": [
 					""
@@ -10368,7 +10848,7 @@
 		{
 			"listen": "test",
 			"script": {
-				"id": "e842a7ff-1d92-4571-a56b-b6a52b3417ea",
+				"id": "a4fd1e50-f9f2-47ed-8e5e-5688fc7be937",
 				"type": "text/javascript",
 				"exec": [
 					""
