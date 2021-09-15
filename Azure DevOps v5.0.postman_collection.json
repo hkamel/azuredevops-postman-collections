@@ -1,6 +1,6 @@
 {
 	"info": {
-		"_postman_id": "f0074204-6550-46c7-b867-7a94bb4406a8",
+		"_postman_id": "18380afd-8d92-467b-886a-6b2bd9c7108b",
 		"name": "Azure DevOps v5.0",
 		"description": "Azure DevOps Services REST API Reference.\n\nv1.1",
 		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
@@ -439,9 +439,7 @@
 							},
 							"response": []
 						}
-					],
-					"protocolProfileBehavior": {},
-					"_postman_isSubFolder": true
+					]
 				},
 				{
 					"name": "Change Tracking",
@@ -623,9 +621,7 @@
 								"type": "string"
 							}
 						]
-					},
-					"protocolProfileBehavior": {},
-					"_postman_isSubFolder": true
+					}
 				},
 				{
 					"name": "Feed Management",
@@ -1312,9 +1308,7 @@
 								"type": "string"
 							}
 						]
-					},
-					"protocolProfileBehavior": {},
-					"_postman_isSubFolder": true
+					}
 				},
 				{
 					"name": "Provenance",
@@ -1333,9 +1327,7 @@
 								"type": "string"
 							}
 						]
-					},
-					"protocolProfileBehavior": {},
-					"_postman_isSubFolder": true
+					}
 				},
 				{
 					"name": "Recycle Bin",
@@ -1533,9 +1525,7 @@
 								"type": "string"
 							}
 						]
-					},
-					"protocolProfileBehavior": {},
-					"_postman_isSubFolder": true
+					}
 				},
 				{
 					"name": "Retention Policies",
@@ -1667,9 +1657,7 @@
 								"type": "string"
 							}
 						]
-					},
-					"protocolProfileBehavior": {},
-					"_postman_isSubFolder": true
+					}
 				},
 				{
 					"name": "Service Settings",
@@ -1756,9 +1744,7 @@
 								"type": "string"
 							}
 						]
-					},
-					"protocolProfileBehavior": {},
-					"_postman_isSubFolder": true
+					}
 				}
 			],
 			"auth": {
@@ -1775,8 +1761,7 @@
 						"type": "string"
 					}
 				]
-			},
-			"protocolProfileBehavior": {}
+			}
 		},
 		{
 			"name": "Build",
@@ -1866,13 +1851,13 @@
 										},
 										{
 											"key": "fileId",
-											"value": null,
+											"value": "",
 											"description": "The primary key for the file.",
 											"disabled": true
 										},
 										{
 											"key": "fileName",
-											"value": null,
+											"value": "",
 											"description": "The name that the file will be set to.",
 											"disabled": true
 										}
@@ -1994,9 +1979,7 @@
 								"type": "string"
 							}
 						]
-					},
-					"protocolProfileBehavior": {},
-					"_postman_isSubFolder": true
+					}
 				},
 				{
 					"name": "Authorizedresources ",
@@ -2060,9 +2043,7 @@
 								"type": "string"
 							}
 						]
-					},
-					"protocolProfileBehavior": {},
-					"_postman_isSubFolder": true
+					}
 				},
 				{
 					"name": "Badge",
@@ -2153,9 +2134,7 @@
 								"type": "string"
 							}
 						]
-					},
-					"protocolProfileBehavior": {},
-					"_postman_isSubFolder": true
+					}
 				},
 				{
 					"name": "Builds",
@@ -3000,9 +2979,7 @@
 							},
 							"response": []
 						}
-					],
-					"protocolProfileBehavior": {},
-					"_postman_isSubFolder": true
+					]
 				},
 				{
 					"name": "Controllers ",
@@ -3119,9 +3096,7 @@
 								"type": "string"
 							}
 						]
-					},
-					"protocolProfileBehavior": {},
-					"_postman_isSubFolder": true
+					}
 				},
 				{
 					"name": "Definitions",
@@ -3539,9 +3514,7 @@
 								"type": "string"
 							}
 						]
-					},
-					"protocolProfileBehavior": {},
-					"_postman_isSubFolder": true
+					}
 				},
 				{
 					"name": "Folders",
@@ -3797,9 +3770,7 @@
 								"type": "string"
 							}
 						]
-					},
-					"protocolProfileBehavior": {},
-					"_postman_isSubFolder": true
+					}
 				},
 				{
 					"name": "Latest",
@@ -3855,9 +3826,7 @@
 								"type": "string"
 							}
 						]
-					},
-					"protocolProfileBehavior": {},
-					"_postman_isSubFolder": true
+					}
 				},
 				{
 					"name": "Metrics",
@@ -3985,9 +3954,7 @@
 								"type": "string"
 							}
 						]
-					},
-					"protocolProfileBehavior": {},
-					"_postman_isSubFolder": true
+					}
 				},
 				{
 					"name": "Options",
@@ -4057,7 +4024,6 @@
 						{
 							"listen": "prerequest",
 							"script": {
-								"id": "0531da93-5865-4659-be75-b673afd4731f",
 								"type": "text/javascript",
 								"exec": [
 									""
@@ -4067,16 +4033,13 @@
 						{
 							"listen": "test",
 							"script": {
-								"id": "25b3b255-9740-4594-8d09-010310b4fce3",
 								"type": "text/javascript",
 								"exec": [
 									""
 								]
 							}
 						}
-					],
-					"protocolProfileBehavior": {},
-					"_postman_isSubFolder": true
+					]
 				},
 				{
 					"name": "Properties",
@@ -4206,7 +4169,6 @@
 						{
 							"listen": "prerequest",
 							"script": {
-								"id": "e95d1260-8e7b-4df8-8439-41b8b4eefe1e",
 								"type": "text/javascript",
 								"exec": [
 									""
@@ -4216,16 +4178,13 @@
 						{
 							"listen": "test",
 							"script": {
-								"id": "68920a17-85da-458c-9b3b-f7b53b8f9b13",
 								"type": "text/javascript",
 								"exec": [
 									""
 								]
 							}
 						}
-					],
-					"protocolProfileBehavior": {},
-					"_postman_isSubFolder": true
+					]
 				},
 				{
 					"name": "Report",
@@ -4302,7 +4261,6 @@
 						{
 							"listen": "prerequest",
 							"script": {
-								"id": "2c771a6e-557c-4ecf-8b27-683317b3e171",
 								"type": "text/javascript",
 								"exec": [
 									""
@@ -4312,16 +4270,13 @@
 						{
 							"listen": "test",
 							"script": {
-								"id": "e262de78-c8d6-4ea5-9e3e-50d1791d37e6",
 								"type": "text/javascript",
 								"exec": [
 									""
 								]
 							}
 						}
-					],
-					"protocolProfileBehavior": {},
-					"_postman_isSubFolder": true
+					]
 				},
 				{
 					"name": "Resource Usage",
@@ -4390,7 +4345,6 @@
 						{
 							"listen": "prerequest",
 							"script": {
-								"id": "51e859da-3cde-4eec-8f3e-9a85a41eee9b",
 								"type": "text/javascript",
 								"exec": [
 									""
@@ -4400,16 +4354,13 @@
 						{
 							"listen": "test",
 							"script": {
-								"id": "f780523d-6e6c-4ded-928d-4d3e3b9dffca",
 								"type": "text/javascript",
 								"exec": [
 									""
 								]
 							}
 						}
-					],
-					"protocolProfileBehavior": {},
-					"_postman_isSubFolder": true
+					]
 				},
 				{
 					"name": "Resources",
@@ -4480,7 +4431,6 @@
 						{
 							"listen": "prerequest",
 							"script": {
-								"id": "bfbc4620-f98e-4f53-8825-021ebb0cfaca",
 								"type": "text/javascript",
 								"exec": [
 									""
@@ -4490,16 +4440,13 @@
 						{
 							"listen": "test",
 							"script": {
-								"id": "eccc5a01-9bee-4c57-961f-41bc0ac32fb1",
 								"type": "text/javascript",
 								"exec": [
 									""
 								]
 							}
 						}
-					],
-					"protocolProfileBehavior": {},
-					"_postman_isSubFolder": true
+					]
 				},
 				{
 					"name": "Settings",
@@ -4569,7 +4516,6 @@
 						{
 							"listen": "prerequest",
 							"script": {
-								"id": "2cf57d8a-d2f0-4ce8-b9d6-d3376de9bf2c",
 								"type": "text/javascript",
 								"exec": [
 									""
@@ -4579,16 +4525,13 @@
 						{
 							"listen": "test",
 							"script": {
-								"id": "6dc1760a-a900-4549-bf6a-1829bd073cc0",
 								"type": "text/javascript",
 								"exec": [
 									""
 								]
 							}
 						}
-					],
-					"protocolProfileBehavior": {},
-					"_postman_isSubFolder": true
+					]
 				},
 				{
 					"name": "Source Providers",
@@ -4637,7 +4580,6 @@
 						{
 							"listen": "prerequest",
 							"script": {
-								"id": "aa12657e-77a3-499b-a24b-c9782e8b9d48",
 								"type": "text/javascript",
 								"exec": [
 									""
@@ -4647,16 +4589,13 @@
 						{
 							"listen": "test",
 							"script": {
-								"id": "a3902deb-ea25-4543-b893-d9e7f1809033",
 								"type": "text/javascript",
 								"exec": [
 									""
 								]
 							}
 						}
-					],
-					"protocolProfileBehavior": {},
-					"_postman_isSubFolder": true
+					]
 				},
 				{
 					"name": "Status",
@@ -4757,7 +4696,6 @@
 						{
 							"listen": "prerequest",
 							"script": {
-								"id": "44ea44e5-b915-40d4-9f68-0c54de1ab10e",
 								"type": "text/javascript",
 								"exec": [
 									""
@@ -4767,16 +4705,13 @@
 						{
 							"listen": "test",
 							"script": {
-								"id": "6f18babf-80b6-49d5-90f6-af5d20b8da6c",
 								"type": "text/javascript",
 								"exec": [
 									""
 								]
 							}
 						}
-					],
-					"protocolProfileBehavior": {},
-					"_postman_isSubFolder": true
+					]
 				},
 				{
 					"name": "Timeline",
@@ -4863,7 +4798,6 @@
 						{
 							"listen": "prerequest",
 							"script": {
-								"id": "403ad63e-dd54-4034-8283-95be96acc9a7",
 								"type": "text/javascript",
 								"exec": [
 									""
@@ -4873,16 +4807,13 @@
 						{
 							"listen": "test",
 							"script": {
-								"id": "638c08ce-8270-44da-aa42-eff303a3a2e3",
 								"type": "text/javascript",
 								"exec": [
 									""
 								]
 							}
 						}
-					],
-					"protocolProfileBehavior": {},
-					"_postman_isSubFolder": true
+					]
 				},
 				{
 					"name": "Library",
@@ -5194,12 +5125,9 @@
 							"response": []
 						}
 					],
-					"description": "Library resources in the pipelines",
-					"protocolProfileBehavior": {},
-					"_postman_isSubFolder": true
+					"description": "Library resources in the pipelines"
 				}
-			],
-			"protocolProfileBehavior": {}
+			]
 		},
 		{
 			"name": "Work",
@@ -5213,7 +5141,6 @@
 								{
 									"listen": "test",
 									"script": {
-										"id": "47ace013-0297-4c16-99d8-beca6858806e",
 										"exec": [
 											"",
 											"var jsonData = pm.response.json();",
@@ -5388,7 +5315,6 @@
 								{
 									"listen": "test",
 									"script": {
-										"id": "4807bddf-4cd3-4ef9-9b46-fecaebe02002",
 										"exec": [
 											"",
 											"var jsonData = pm.response.json();",
@@ -5561,9 +5487,7 @@
 								}
 							]
 						}
-					],
-					"protocolProfileBehavior": {},
-					"_postman_isSubFolder": true
+					]
 				},
 				{
 					"name": "Boardcolumns ",
@@ -5612,9 +5536,7 @@
 							},
 							"response": []
 						}
-					],
-					"protocolProfileBehavior": {},
-					"_postman_isSubFolder": true
+					]
 				},
 				{
 					"name": "Boardparents ",
@@ -5664,20 +5586,658 @@
 							},
 							"response": []
 						}
-					],
-					"protocolProfileBehavior": {},
-					"_postman_isSubFolder": true
+					]
 				},
 				{
 					"name": "Work Items",
 					"item": [
+						{
+							"name": "Picklists",
+							"item": [
+								{
+									"name": "Get picklist",
+									"event": [
+										{
+											"listen": "test",
+											"script": {
+												"exec": [
+													"var data = JSON.parse(responseBody);\r",
+													"\r",
+													"pm.test(\"has extra field\", function () {\r",
+													"    //PM tests replace dots with underscores for fields with dots in name\r",
+													"    //https://www.chaijs.com/guide/styles/#expect\r",
+													"    pm.expect(data.fields.System_AreaId).to.not.be.null\r",
+													"});\r",
+													""
+												],
+												"type": "text/javascript"
+											}
+										}
+									],
+									"request": {
+										"auth": {
+											"type": "basic",
+											"basic": [
+												{
+													"key": "password",
+													"value": "{{AccessToken}}",
+													"type": "string"
+												},
+												{
+													"key": "username",
+													"value": "Basic",
+													"type": "string"
+												}
+											]
+										},
+										"method": "GET",
+										"header": [],
+										"url": {
+											"raw": "https://{{coreServer}}/{{organization}}/_apis/work/processes/lists/{{picklistId}}?api-version={{api-version}}",
+											"protocol": "https",
+											"host": [
+												"{{coreServer}}"
+											],
+											"path": [
+												"{{organization}}",
+												"_apis",
+												"work",
+												"processes",
+												"lists",
+												"{{picklistId}}"
+											],
+											"query": [
+												{
+													"key": "api-version",
+													"value": "{{api-version}}"
+												},
+												{
+													"key": "$expand",
+													"value": "links",
+													"description": "Directive to include the list of related work items in the resulting payload",
+													"disabled": true
+												},
+												{
+													"key": "asOf",
+													"value": "11/21/2018",
+													"description": "Returns the state of the requested item as it was on the given date",
+													"disabled": true
+												}
+											]
+										},
+										"description": "Gets the details of an individual work item, optionally querying the state of the work item on a specific date\n\nLinks doesn't appear to provide anything beyond the core payload. Perhaps earlier APIs didn't include the links segment by default\n\n[Documentation Link](https://docs.microsoft.com/en-us/rest/api/azure/devops/wit/work%20items/get%20work%20item?view=azure-devops-rest-5.0)"
+									},
+									"response": []
+								},
+								{
+									"name": "List picklists",
+									"event": [
+										{
+											"listen": "test",
+											"script": {
+												"exec": [
+													"var data = JSON.parse(responseBody);\r",
+													"\r",
+													"pm.test(\"has extra field\", function () {\r",
+													"    //PM tests replace dots with underscores for fields with dots in name\r",
+													"    //https://www.chaijs.com/guide/styles/#expect\r",
+													"    pm.expect(data.fields.System_AreaId).to.not.be.null\r",
+													"});\r",
+													""
+												],
+												"type": "text/javascript"
+											}
+										}
+									],
+									"request": {
+										"auth": {
+											"type": "basic",
+											"basic": [
+												{
+													"key": "password",
+													"value": "{{AccessToken}}",
+													"type": "string"
+												},
+												{
+													"key": "username",
+													"value": "Basic",
+													"type": "string"
+												}
+											]
+										},
+										"method": "GET",
+										"header": [],
+										"url": {
+											"raw": "https://{{coreServer}}/{{organization}}/_apis/work/processes/lists?api-version={{api-version}}",
+											"protocol": "https",
+											"host": [
+												"{{coreServer}}"
+											],
+											"path": [
+												"{{organization}}",
+												"_apis",
+												"work",
+												"processes",
+												"lists"
+											],
+											"query": [
+												{
+													"key": "$expand",
+													"value": "links",
+													"description": "Directive to include the list of related work items in the resulting payload",
+													"disabled": true
+												},
+												{
+													"key": "asOf",
+													"value": "11/21/2018",
+													"description": "Returns the state of the requested item as it was on the given date",
+													"disabled": true
+												},
+												{
+													"key": "api-version",
+													"value": "{{api-version}}"
+												}
+											]
+										},
+										"description": "Gets the details of an individual work item, optionally querying the state of the work item on a specific date\n\nLinks doesn't appear to provide anything beyond the core payload. Perhaps earlier APIs didn't include the links segment by default\n\n[Documentation Link](https://docs.microsoft.com/en-us/rest/api/azure/devops/wit/work%20items/get%20work%20item?view=azure-devops-rest-5.0)"
+									},
+									"response": []
+								},
+								{
+									"name": "Create picklist",
+									"event": [
+										{
+											"listen": "test",
+											"script": {
+												"exec": [
+													""
+												],
+												"type": "text/javascript"
+											}
+										}
+									],
+									"request": {
+										"auth": {
+											"type": "basic",
+											"basic": [
+												{
+													"key": "password",
+													"value": "{{AccessToken}}",
+													"type": "string"
+												},
+												{
+													"key": "username",
+													"value": "Basic",
+													"type": "string"
+												}
+											]
+										},
+										"method": "POST",
+										"header": [
+											{
+												"key": "Content-Type",
+												"name": "Content-Type",
+												"value": "application/json",
+												"type": "text"
+											}
+										],
+										"body": {
+											"mode": "raw",
+											"raw": "{\n  \"id\": null,\n  \"name\": \"picklist_test\",\n  \"type\": \"String\",\n  \"url\": null,\n  \"items\": [\n    \"One\",\n    \"Two\",\n    \"Three\"\n  ],\n  \"isSuggested\": false\n}"
+										},
+										"url": {
+											"raw": "https://{{coreServer}}/{{organization}}/_apis/work/processes/lists?api-version={{api-version}}",
+											"protocol": "https",
+											"host": [
+												"{{coreServer}}"
+											],
+											"path": [
+												"{{organization}}",
+												"_apis",
+												"work",
+												"processes",
+												"lists"
+											],
+											"query": [
+												{
+													"key": "api-version",
+													"value": "{{api-version}}"
+												}
+											]
+										},
+										"description": "Gets the details of up to 200 work items, optionally querying the state of the work item on a specific date\n\nThe request can include a list of fields which should be returned in the response\n\n[Documentation Link](https://docs.microsoft.com/en-us/rest/api/azure/devops/wit/work%20items/get%20work%20items%20batch?view=azure-devops-rest-5.0)"
+									},
+									"response": []
+								},
+								{
+									"name": "Update picklist",
+									"event": [
+										{
+											"listen": "test",
+											"script": {
+												"exec": [
+													""
+												],
+												"type": "text/javascript"
+											}
+										}
+									],
+									"request": {
+										"auth": {
+											"type": "basic",
+											"basic": [
+												{
+													"key": "password",
+													"value": "{{AccessToken}}",
+													"type": "string"
+												},
+												{
+													"key": "username",
+													"value": "Basic",
+													"type": "string"
+												}
+											]
+										},
+										"method": "PUT",
+										"header": [
+											{
+												"key": "Content-Type",
+												"name": "Content-Type",
+												"value": "application/json",
+												"type": "text"
+											}
+										],
+										"body": {
+											"mode": "raw",
+											"raw": "{\n  \"id\": \"ad45d06f-3590-43bc-8ff4-2c9b079d892f\",\n  \"name\": null,\n  \"type\": null,\n  \"items\": [\n    \"Item1\",\n    \"Item2\",\n    \"Item3\",\n    \"Item4\",\n    \"Item5\"\n  ],\n  \"isSuggested\": false,\n  \"url\": null\n}"
+										},
+										"url": {
+											"raw": "https://{{coreServer}}/{{organization}}/_apis/work/processes/lists/{{picklistId}}?api-version={{api-version}}",
+											"protocol": "https",
+											"host": [
+												"{{coreServer}}"
+											],
+											"path": [
+												"{{organization}}",
+												"_apis",
+												"work",
+												"processes",
+												"lists",
+												"{{picklistId}}"
+											],
+											"query": [
+												{
+													"key": "api-version",
+													"value": "{{api-version}}"
+												}
+											]
+										},
+										"description": "Gets the details of up to 200 work items, optionally querying the state of the work item on a specific date\n\nThe request can include a list of fields which should be returned in the response\n\n[Documentation Link](https://docs.microsoft.com/en-us/rest/api/azure/devops/wit/work%20items/get%20work%20items%20batch?view=azure-devops-rest-5.0)"
+									},
+									"response": []
+								},
+								{
+									"name": "Delete picklist",
+									"event": [
+										{
+											"listen": "test",
+											"script": {
+												"exec": [
+													""
+												],
+												"type": "text/javascript"
+											}
+										}
+									],
+									"request": {
+										"auth": {
+											"type": "basic",
+											"basic": [
+												{
+													"key": "password",
+													"value": "{{AccessToken}}",
+													"type": "string"
+												},
+												{
+													"key": "username",
+													"value": "Basic",
+													"type": "string"
+												}
+											]
+										},
+										"method": "DELETE",
+										"header": [
+											{
+												"key": "Content-Type",
+												"name": "Content-Type",
+												"value": "application/json",
+												"type": "text"
+											}
+										],
+										"body": {
+											"mode": "raw",
+											"raw": "{\n  \"id\": null,\n  \"name\": \"picklist_test\",\n  \"type\": \"String\",\n  \"url\": null,\n  \"items\": [\n    \"One\",\n    \"Two\",\n    \"Three\"\n  ],\n  \"isSuggested\": false\n}"
+										},
+										"url": {
+											"raw": "https://{{coreServer}}/{{organization}}/_apis/work/processes/lists/{{picklistId}}?api-version={{api-version}} ",
+											"protocol": "https",
+											"host": [
+												"{{coreServer}}"
+											],
+											"path": [
+												"{{organization}}",
+												"_apis",
+												"work",
+												"processes",
+												"lists",
+												"{{picklistId}}"
+											],
+											"query": [
+												{
+													"key": "api-version",
+													"value": "{{api-version}} "
+												}
+											]
+										},
+										"description": "Gets the details of up to 200 work items, optionally querying the state of the work item on a specific date\n\nThe request can include a list of fields which should be returned in the response\n\n[Documentation Link](https://docs.microsoft.com/en-us/rest/api/azure/devops/wit/work%20items/get%20work%20items%20batch?view=azure-devops-rest-5.0)"
+									},
+									"response": []
+								}
+							]
+						},
+						{
+							"name": "Fields",
+							"item": [
+								{
+									"name": "Create field",
+									"event": [
+										{
+											"listen": "test",
+											"script": {
+												"exec": [
+													""
+												],
+												"type": "text/javascript"
+											}
+										}
+									],
+									"request": {
+										"auth": {
+											"type": "basic",
+											"basic": [
+												{
+													"key": "password",
+													"value": "{{AccessToken}}",
+													"type": "string"
+												},
+												{
+													"key": "username",
+													"value": "Basic",
+													"type": "string"
+												}
+											]
+										},
+										"method": "POST",
+										"header": [
+											{
+												"key": "Content-Type",
+												"name": "Content-Type",
+												"value": "application/json",
+												"type": "text"
+											}
+										],
+										"body": {
+											"mode": "raw",
+											"raw": "{\n  \"name\": \"_Test_Field_1\",\n  \"referenceName\": \"SupportedOperations.GreaterThanEquals\",\n  \"description\": null,\n  \"type\": \"string\",\n  \"usage\": \"workItem\",\n  \"readOnly\": false,\n  \"canSortBy\": true,\n  \"isQueryable\": true,\n  \"supportedOperations\": [\n    {\n      \"referenceName\": \"SupportedOperations.Equals\",\n      \"name\": \"=\"\n    }\n  ],\n  \"isIdentity\": true,\n  \"isPicklist\": true,\n  \"picklistId\" : \"c2ad46a4-d1bd-4994-b4fd-cf2e64071b18\",\n  \"isPicklistSuggested\": true,\n  \"url\": null\n}"
+										},
+										"url": {
+											"raw": "https://{{coreServer}}/{{organization}}/{{project}}/_apis/wit/fields?api-version={{api-version}}",
+											"protocol": "https",
+											"host": [
+												"{{coreServer}}"
+											],
+											"path": [
+												"{{organization}}",
+												"{{project}}",
+												"_apis",
+												"wit",
+												"fields"
+											],
+											"query": [
+												{
+													"key": "api-version",
+													"value": "{{api-version}}"
+												}
+											]
+										},
+										"description": "Gets the details of up to 200 work items, optionally querying the state of the work item on a specific date\n\nThe request can include a list of fields which should be returned in the response\n\n[Documentation Link](https://docs.microsoft.com/en-us/rest/api/azure/devops/wit/work%20items/get%20work%20items%20batch?view=azure-devops-rest-5.0)"
+									},
+									"response": []
+								},
+								{
+									"name": "Delete field",
+									"event": [
+										{
+											"listen": "test",
+											"script": {
+												"exec": [
+													""
+												],
+												"type": "text/javascript"
+											}
+										}
+									],
+									"request": {
+										"auth": {
+											"type": "basic",
+											"basic": [
+												{
+													"key": "password",
+													"value": "{{AccessToken}}",
+													"type": "string"
+												},
+												{
+													"key": "username",
+													"value": "Basic",
+													"type": "string"
+												}
+											]
+										},
+										"method": "DELETE",
+										"header": [
+											{
+												"key": "Content-Type",
+												"name": "Content-Type",
+												"value": "application/json",
+												"type": "text"
+											}
+										],
+										"body": {
+											"mode": "raw",
+											"raw": "{\n  \"id\": null,\n  \"name\": \"picklist_test\",\n  \"type\": \"String\",\n  \"url\": null,\n  \"items\": [\n    \"One\",\n    \"Two\",\n    \"Three\"\n  ],\n  \"isSuggested\": false\n}"
+										},
+										"url": {
+											"raw": "https://{{coreServer}}/{{organization}}/{{project}}/_apis/wit/fields/{fieldNameOrRefName?api-version={{api-version}} ",
+											"protocol": "https",
+											"host": [
+												"{{coreServer}}"
+											],
+											"path": [
+												"{{organization}}",
+												"{{project}}",
+												"_apis",
+												"wit",
+												"fields",
+												"{fieldNameOrRefName"
+											],
+											"query": [
+												{
+													"key": "api-version",
+													"value": "{{api-version}} "
+												}
+											]
+										},
+										"description": "Gets the details of up to 200 work items, optionally querying the state of the work item on a specific date\n\nThe request can include a list of fields which should be returned in the response\n\n[Documentation Link](https://docs.microsoft.com/en-us/rest/api/azure/devops/wit/work%20items/get%20work%20items%20batch?view=azure-devops-rest-5.0)"
+									},
+									"response": []
+								},
+								{
+									"name": "Get field",
+									"event": [
+										{
+											"listen": "test",
+											"script": {
+												"exec": [
+													"var data = JSON.parse(responseBody);\r",
+													"\r",
+													"pm.test(\"has extra field\", function () {\r",
+													"    //PM tests replace dots with underscores for fields with dots in name\r",
+													"    //https://www.chaijs.com/guide/styles/#expect\r",
+													"    pm.expect(data.fields.System_AreaId).to.not.be.null\r",
+													"});\r",
+													""
+												],
+												"type": "text/javascript"
+											}
+										}
+									],
+									"request": {
+										"auth": {
+											"type": "basic",
+											"basic": [
+												{
+													"key": "password",
+													"value": "{{AccessToken}}",
+													"type": "string"
+												},
+												{
+													"key": "username",
+													"value": "Basic",
+													"type": "string"
+												}
+											]
+										},
+										"method": "GET",
+										"header": [],
+										"url": {
+											"raw": "https://{{coreServer}}/{{organization}}/{{project}}/_apis/wit/fields/{FieldReferenceName}?api-version={{api-version}}",
+											"protocol": "https",
+											"host": [
+												"{{coreServer}}"
+											],
+											"path": [
+												"{{organization}}",
+												"{{project}}",
+												"_apis",
+												"wit",
+												"fields",
+												"{FieldReferenceName}"
+											],
+											"query": [
+												{
+													"key": "$expand",
+													"value": "links",
+													"description": "Directive to include the list of related work items in the resulting payload",
+													"disabled": true
+												},
+												{
+													"key": "asOf",
+													"value": "11/21/2018",
+													"description": "Returns the state of the requested item as it was on the given date",
+													"disabled": true
+												},
+												{
+													"key": "api-version",
+													"value": "{{api-version}}"
+												}
+											]
+										},
+										"description": "Gets the details of an individual work item, optionally querying the state of the work item on a specific date\n\nLinks doesn't appear to provide anything beyond the core payload. Perhaps earlier APIs didn't include the links segment by default\n\n[Documentation Link](https://docs.microsoft.com/en-us/rest/api/azure/devops/wit/work%20items/get%20work%20item?view=azure-devops-rest-5.0)"
+									},
+									"response": []
+								},
+								{
+									"name": "List fields",
+									"event": [
+										{
+											"listen": "test",
+											"script": {
+												"exec": [
+													"var data = JSON.parse(responseBody);\r",
+													"\r",
+													"pm.test(\"has extra field\", function () {\r",
+													"    //PM tests replace dots with underscores for fields with dots in name\r",
+													"    //https://www.chaijs.com/guide/styles/#expect\r",
+													"    pm.expect(data.fields.System_AreaId).to.not.be.null\r",
+													"});\r",
+													""
+												],
+												"type": "text/javascript"
+											}
+										}
+									],
+									"request": {
+										"auth": {
+											"type": "basic",
+											"basic": [
+												{
+													"key": "password",
+													"value": "{{AccessToken}}",
+													"type": "string"
+												},
+												{
+													"key": "username",
+													"value": "Basic",
+													"type": "string"
+												}
+											]
+										},
+										"method": "GET",
+										"header": [],
+										"url": {
+											"raw": "https://{{coreServer}}/{{organization}}/{{project}}/_apis/wit/fields?api-version={{api-version}} ",
+											"protocol": "https",
+											"host": [
+												"{{coreServer}}"
+											],
+											"path": [
+												"{{organization}}",
+												"{{project}}",
+												"_apis",
+												"wit",
+												"fields"
+											],
+											"query": [
+												{
+													"key": "$expand",
+													"value": "links",
+													"description": "Directive to include the list of related work items in the resulting payload",
+													"disabled": true
+												},
+												{
+													"key": "asOf",
+													"value": "11/21/2018",
+													"description": "Returns the state of the requested item as it was on the given date",
+													"disabled": true
+												},
+												{
+													"key": "api-version",
+													"value": "{{api-version}} "
+												}
+											]
+										},
+										"description": "Gets the details of an individual work item, optionally querying the state of the work item on a specific date\n\nLinks doesn't appear to provide anything beyond the core payload. Perhaps earlier APIs didn't include the links segment by default\n\n[Documentation Link](https://docs.microsoft.com/en-us/rest/api/azure/devops/wit/work%20items/get%20work%20item?view=azure-devops-rest-5.0)"
+									},
+									"response": []
+								}
+							]
+						},
 						{
 							"name": "Get individual work item",
 							"event": [
 								{
 									"listen": "test",
 									"script": {
-										"id": "72daa0f4-bc65-4308-97fc-78d1b8fcbeb9",
 										"exec": [
 											""
 										],
@@ -5974,7 +6534,6 @@
 								{
 									"listen": "test",
 									"script": {
-										"id": "3c0591b1-42fd-43ba-a1e3-3cb611e637c3",
 										"exec": [
 											""
 										],
@@ -6271,7 +6830,6 @@
 								{
 									"listen": "test",
 									"script": {
-										"id": "884827d7-b034-4d73-857f-7f66e3a72b88",
 										"exec": [
 											""
 										],
@@ -6470,7 +7028,6 @@
 								{
 									"listen": "test",
 									"script": {
-										"id": "81eea8ff-b95b-43ec-b284-53f0ddfeb8bc",
 										"exec": [
 											""
 										],
@@ -6788,7 +7345,6 @@
 								{
 									"listen": "test",
 									"script": {
-										"id": "7e4f020d-83a9-4bd5-80f1-80bb9cc1c418",
 										"exec": [
 											"var data = JSON.parse(responseBody);\r",
 											"\r",
@@ -7012,7 +7568,6 @@
 								{
 									"listen": "test",
 									"script": {
-										"id": "880ed9a0-3fa2-4bd6-8f3a-6f3eacc8f357",
 										"exec": [
 											""
 										],
@@ -7181,7 +7736,6 @@
 								{
 									"listen": "test",
 									"script": {
-										"id": "e3a97824-1126-4c4e-b2ef-6a536d759414",
 										"exec": [
 											"var data = JSON.parse(responseBody);\r",
 											"\r",
@@ -7256,7 +7810,6 @@
 								{
 									"listen": "test",
 									"script": {
-										"id": "5aacec5c-303c-4739-b62f-43e3cba022d4",
 										"exec": [
 											"var data = JSON.parse(responseBody);\r",
 											"\r",
@@ -7326,9 +7879,7 @@
 							},
 							"response": []
 						}
-					],
-					"protocolProfileBehavior": {},
-					"_postman_isSubFolder": true
+					]
 				},
 				{
 					"name": "Wiql",
@@ -7339,7 +7890,6 @@
 								{
 									"listen": "test",
 									"script": {
-										"id": "16971cb8-b6d7-4572-be4d-d1140975b5d1",
 										"exec": [
 											""
 										],
@@ -7645,12 +8195,9 @@
 							]
 						}
 					],
-					"description": "The WIQL API is used to run a query given the WIQL text or a saved query ID.\n\nhttps://docs.microsoft.com/en-us/rest/api/azure/devops/wit/wiql?view=azure-devops-rest-5.1",
-					"protocolProfileBehavior": {},
-					"_postman_isSubFolder": true
+					"description": "The WIQL API is used to run a query given the WIQL text or a saved query ID.\n\nhttps://docs.microsoft.com/en-us/rest/api/azure/devops/wit/wiql?view=azure-devops-rest-5.1"
 				}
-			],
-			"protocolProfileBehavior": {}
+			]
 		},
 		{
 			"name": "Core",
@@ -8172,9 +8719,7 @@
 							},
 							"response": []
 						}
-					],
-					"protocolProfileBehavior": {},
-					"_postman_isSubFolder": true
+					]
 				},
 				{
 					"name": "Processes",
@@ -8266,9 +8811,7 @@
 							},
 							"response": []
 						}
-					],
-					"protocolProfileBehavior": {},
-					"_postman_isSubFolder": true
+					]
 				},
 				{
 					"name": "Teams ",
@@ -8362,7 +8905,7 @@
 										},
 										{
 											"key": "$skip",
-											"value": null,
+											"value": "",
 											"description": "Number of teams to skip."
 										},
 										{
@@ -8482,7 +9025,7 @@
 										},
 										{
 											"key": "$skip",
-											"value": null,
+											"value": "",
 											"description": "Number of teams to skip."
 										},
 										{
@@ -8606,12 +9149,9 @@
 							},
 							"response": []
 						}
-					],
-					"protocolProfileBehavior": {},
-					"_postman_isSubFolder": true
+					]
 				}
-			],
-			"protocolProfileBehavior": {}
+			]
 		},
 		{
 			"name": "Graph",
@@ -8721,12 +9261,9 @@
 							},
 							"response": []
 						}
-					],
-					"protocolProfileBehavior": {},
-					"_postman_isSubFolder": true
+					]
 				}
-			],
-			"protocolProfileBehavior": {}
+			]
 		},
 		{
 			"name": "Release",
@@ -8933,13 +9470,13 @@
 									"query": [
 										{
 											"key": "approvalFilters",
-											"value": null,
+											"value": "",
 											"description": "A filter which would allow fetching approval steps selectively based on whether it is automated, or manual. This would also decide whether we should fetch pre and post approval snapshots. Assumes All by default",
 											"disabled": true
 										},
 										{
 											"key": "propertyFilters",
-											"value": null,
+											"value": "",
 											"description": "A comma-delimited list of extended properties to be retrieved. If set, the returned Release will contain values for the specified property Ids (if they exist). If not set, properties will not be included.",
 											"disabled": true
 										},
@@ -8950,7 +9487,7 @@
 										},
 										{
 											"key": "$topGateRecords",
-											"value": null,
+											"value": "",
 											"description": "Number of release gate records to get. Default is 5.",
 											"disabled": true
 										},
@@ -9010,9 +9547,7 @@
 							},
 							"response": []
 						}
-					],
-					"protocolProfileBehavior": {},
-					"_postman_isSubFolder": true
+					]
 				},
 				{
 					"name": "Definitions",
@@ -9216,19 +9751,19 @@
 									"query": [
 										{
 											"key": "approvalFilters",
-											"value": null,
+											"value": "",
 											"description": "A filter which would allow fetching approval steps selectively based on whether it is automated, or manual. This would also decide whether we should fetch pre and post approval snapshots. Assumes All by default",
 											"disabled": true
 										},
 										{
 											"key": "propertyFilters",
-											"value": null,
+											"value": "",
 											"description": "A comma-delimited list of extended properties to be retrieved. If set, the returned Release will contain values for the specified property Ids (if they exist). If not set, properties will not be included.",
 											"disabled": true
 										},
 										{
 											"key": "$topGateRecords",
-											"value": null,
+											"value": "",
 											"description": "Number of release gate records to get. Default is 5.",
 											"disabled": true
 										},
@@ -9242,12 +9777,9 @@
 							},
 							"response": []
 						}
-					],
-					"protocolProfileBehavior": {},
-					"_postman_isSubFolder": true
+					]
 				}
-			],
-			"protocolProfileBehavior": {}
+			]
 		},
 		{
 			"name": "Wiki",
@@ -9718,7 +10250,6 @@
 						{
 							"listen": "prerequest",
 							"script": {
-								"id": "31ecdde0-8606-4334-a74a-1c48cf8b2cba",
 								"type": "text/javascript",
 								"exec": [
 									""
@@ -9728,16 +10259,13 @@
 						{
 							"listen": "test",
 							"script": {
-								"id": "ed94cf55-3996-4af7-9325-1651bdc6b18c",
 								"type": "text/javascript",
 								"exec": [
 									""
 								]
 							}
 						}
-					],
-					"protocolProfileBehavior": {},
-					"_postman_isSubFolder": true
+					]
 				}
 			],
 			"auth": {
@@ -9759,7 +10287,6 @@
 				{
 					"listen": "prerequest",
 					"script": {
-						"id": "25ecdcdf-779a-4125-a959-f8b1d9d5640e",
 						"type": "text/javascript",
 						"exec": [
 							""
@@ -9769,15 +10296,13 @@
 				{
 					"listen": "test",
 					"script": {
-						"id": "52ab5219-67bd-4a58-b99f-2b9bd5cdca1b",
 						"type": "text/javascript",
 						"exec": [
 							""
 						]
 					}
 				}
-			],
-			"protocolProfileBehavior": {}
+			]
 		},
 		{
 			"name": "Git",
@@ -9978,7 +10503,7 @@
 										},
 										{
 											"key": "sourceRef",
-											"value": null,
+											"value": "",
 											"description": "[optional] Specify the source refs to use while creating a fork repo",
 											"disabled": true
 										}
@@ -10025,19 +10550,19 @@
 									"query": [
 										{
 											"key": "includeAllUrls",
-											"value": null,
+											"value": "",
 											"description": "[optional] True to include all remote URLs. The default value is false.\n",
 											"disabled": true
 										},
 										{
 											"key": "includeHidden",
-											"value": null,
+											"value": "",
 											"description": "[optional] True to include hidden repositories. The default value is false.",
 											"disabled": true
 										},
 										{
 											"key": "includeLinks",
-											"value": null,
+											"value": "",
 											"description": "[optional] True to include reference links. The default value is false.",
 											"disabled": true
 										},
@@ -10138,19 +10663,19 @@
 									"query": [
 										{
 											"key": "includeAllUrls",
-											"value": null,
+											"value": "",
 											"description": "[optional] True to include all remote URLs. The default value is false.\n",
 											"disabled": true
 										},
 										{
 											"key": "includeHidden",
-											"value": null,
+											"value": "",
 											"description": "[optional] True to include hidden repositories. The default value is false.",
 											"disabled": true
 										},
 										{
 											"key": "includeLinks",
-											"value": null,
+											"value": "",
 											"description": "[optional] True to include reference links. The default value is false.",
 											"disabled": true
 										},
@@ -10308,9 +10833,7 @@
 							},
 							"response": []
 						}
-					],
-					"protocolProfileBehavior": {},
-					"_postman_isSubFolder": true
+					]
 				}
 			],
 			"description": "Use these APIs to work with Git repositories in Azure DevOps Services. Repositories contain objects representing core Git concepts:\r\n\r\nblobs (files)\r\ntrees (folders)\r\ncommits\r\nrefs (branches, lightweight tags)\r\nand other resources that represent the history of those items or act on their state.",
@@ -10318,7 +10841,6 @@
 				{
 					"listen": "prerequest",
 					"script": {
-						"id": "df933520-0d0f-4cc5-a47c-df78788576e5",
 						"type": "text/javascript",
 						"exec": [
 							""
@@ -10328,15 +10850,13 @@
 				{
 					"listen": "test",
 					"script": {
-						"id": "6137daac-4481-451e-9390-0b1d749d7169",
 						"type": "text/javascript",
 						"exec": [
 							""
 						]
 					}
 				}
-			],
-			"protocolProfileBehavior": {}
+			]
 		}
 	],
 	"auth": {
@@ -10358,7 +10878,6 @@
 		{
 			"listen": "prerequest",
 			"script": {
-				"id": "6fae1db1-a468-45bf-aafe-97be70c26532",
 				"type": "text/javascript",
 				"exec": [
 					""
@@ -10368,13 +10887,11 @@
 		{
 			"listen": "test",
 			"script": {
-				"id": "e842a7ff-1d92-4571-a56b-b6a52b3417ea",
 				"type": "text/javascript",
 				"exec": [
 					""
 				]
 			}
 		}
-	],
-	"protocolProfileBehavior": {}
+	]
 }
